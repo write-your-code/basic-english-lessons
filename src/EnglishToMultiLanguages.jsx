@@ -261,7 +261,7 @@ const EnglishToMultiLanguages = () => {
   }, []);
 
   useEffect(() => {
-    getData();
+    // getData();
   }, []);
 
   //   const { question, a, b, c, d } = data;

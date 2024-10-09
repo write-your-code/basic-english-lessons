@@ -64,7 +64,7 @@ const EnglishIdioms = () => {
     audioRef.current?.play();
     setTimeout(() => {
       speechStart(res?.answer + " is correct answer", 0);
-    }, 500);
+    }, 1000);
     setTimeout(showReason, 2000);
   };
   const showReason = () => {
@@ -89,7 +89,10 @@ const EnglishIdioms = () => {
     setDisabled(false);
     if (flag === 1) {
       u.addEventListener("start", () => setDisabled(true));
-      u.addEventListener("end", () => setDisabled(false));
+      u.addEventListener("end", () => {
+        setDisabled(false);
+        ok = false;
+      });
       u.addEventListener("boundary", ({ charIndex, charLength }) => {
         setHighlightSection({ from: charIndex, to: charIndex + charLength });
       });
@@ -283,7 +286,7 @@ const EnglishIdioms = () => {
           {reason && (
             <p
               //   onClick={() => playReason(data)}
-              className="bg-teal-900 p-4  text-white text-wrap text-lg font-medium w-[700px] rounded  bottom-4 mx-10 trans-reason"
+              className="bg-teal-900 p-4  text-white text-wrap text-lg font-medium w-[700px] rounded absolute bottom-5 mx-10 trans-reason"
             >
               {/* {data?.explanation} */}
               <HighlightedText

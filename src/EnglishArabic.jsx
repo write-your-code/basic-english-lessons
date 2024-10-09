@@ -42,7 +42,11 @@ const EnglishArabic = () => {
     res = dailySentences[index];
     audioRef1.current?.play();
     setSpeaker(0);
-    speechStart("Next senetnce ", 1, 0, 82);
+    if (index === 0) {
+      speechStart("Lets discuss basic sentences of daily use. ", 1, 0, 82);
+    } else {
+      speechStart("Next senetnce ", 1, 0, 82);
+    }
     // const dataArray = await res.json();
     setExp(false);
     setOrigin(false);
@@ -272,7 +276,7 @@ const EnglishArabic = () => {
     };
   }, []);
   useEffect(() => {
-    getData();
+    // getData();
   }, []);
 
   //   const { question, a, b, c, d } = data;
@@ -289,7 +293,7 @@ const EnglishArabic = () => {
   return (
     <div className="bg-black w-full h-full py-2 rounded">
       <div className="flex justify-center items-start mt-[30px] w-full h-[520px]">
-      <span className="px-2 py-0 text-cyan-50 ml-4 border-b-2">
+        <span className="px-2 py-0 text-cyan-50 ml-4 border-b-2">
           {questionNo}
         </span>
         {/* <p className="text-red-600">Total: {collocationsEnglish.length}</p> */}
