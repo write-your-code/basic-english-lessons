@@ -14,6 +14,11 @@ import EnglishCollocations from "./EnglishCollocations";
 import EnglishSentences from "./EnglishSentences";
 import EnglishArabic from "./EnglishArabic";
 import EnglishToMultiLanguages from "./EnglishToMultiLanguages";
+import EnglishTenses from "./EnglishTenses";
+import EnglishDialogue from "./EnglishDialogue";
+import EnglishDailyConversation from "./EnglishDailyConversation";
+import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
+import { conversation } from "./data/dailyConversation";
 
 function App() {
   const [layout, setLayout] = useState(0);
@@ -80,10 +85,10 @@ function App() {
     return <p>loading...</p>;
   }
   return (
-    <main className="p-4">
+    <main className="p-0">
       {layout === 0 && (
         <>
-          <div className="grid grid-cols-6 gap-2 text-sm">
+          <div className="grid grid-cols-6 gap-2 text-sm mt-6">
             <button
               className="text-white bg-green-600 p-2 mx-2"
               onClick={() => setLayout(1)}
@@ -126,6 +131,24 @@ function App() {
             >
               English-Arabic-russian-french-german Sentences -
               {dailySentencesIn5Languages.length}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(8)}
+            >
+              English Tenses -{listAll12TensesMixMcqs.length}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(9)}
+            >
+              English Dialogue
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(10)}
+            >
+              English Daily Conversation - {conversation?.length}
             </button>
           </div>
           {/* voice box and textarea */}
@@ -185,6 +208,9 @@ function App() {
       {layout === 5 && <EnglishSentences />}
       {layout === 6 && <EnglishArabic />}
       {layout === 7 && <EnglishToMultiLanguages />}
+      {layout === 8 && <EnglishTenses />}
+      {layout === 9 && <EnglishDialogue />}
+      {layout === 10 && <EnglishDailyConversation />}
     </main>
   );
 }

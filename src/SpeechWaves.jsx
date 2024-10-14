@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./SpeechWaves.css";
 
-const SpeechWaves = () => {
+const SpeechWaves = ({ color = 0 }) => {
   useEffect(() => {
     for (let i = 0; i < 20; i++) {
       const left = i * 2 + 2;
@@ -14,9 +14,7 @@ const SpeechWaves = () => {
       ).innerHTML += `<div class="bar" style="left:${left}px;animation-duration:${anim}ms;height:${height}px"></div>`; //`<div class="bar" style="left:${left}px">Hello</div>`;
     }
   }, []);
-  return <div id="bars"></div>;
+  return <div id="bars" ></div>;
 };
 
 export default SpeechWaves;
-
-

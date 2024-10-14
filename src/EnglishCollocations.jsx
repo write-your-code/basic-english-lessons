@@ -25,7 +25,7 @@ const EnglishCollocations = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 0;
+  let index = 2;
   let totalCount = collocationsEnglish.length;
   let res;
   // create a reference to synth
@@ -76,13 +76,14 @@ const EnglishCollocations = () => {
       from: 0,
       to: 0,
     });
-    setReason(true);
     playReason(data);
+    setReason(true);
     setTimeout(getData, 15000);
   };
   const playReason = () => {
     setDisabled(false);
     // speechStart(res?.exp + " is correct exp because ", 0);
+    speechStart(res?.example, 1);
     speechStart(res?.example, 1);
   };
 
@@ -120,7 +121,8 @@ const EnglishCollocations = () => {
     const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
-      u.voice = voices[82];
+      // u.voice = voices[82];
+      u.voice = voices[114];
     }
     synth.speak(u);
     console.log("state:", synth.pending);
@@ -171,7 +173,7 @@ const EnglishCollocations = () => {
 
   if (!data) {
     return (
-      <div className="flex justify-center items-center mt-[50px] w-full h-[520px]">
+      <div className="flex justify-center items-center mt-[50px] w-full h-screen">
         <div className="w-full h-full flex justify-center items-center">
           <p>Loading...</p>
         </div>
@@ -179,8 +181,9 @@ const EnglishCollocations = () => {
     );
   }
   return (
-    <div className="bg-black w-full h-full py-2 rounded">
-      <div className="flex justify-center items-start mt-[30px] w-full h-[515px]">
+    <div className="bg-black w-full h-full py-2 border-8 border-orange-300 rounded">
+      {/* <div className="bg-black w-full h-full py-2 rounded bg-gradient-to-r from-amber-200 to-yellow-500"> */}
+      <div className="flex justify-center items-start mt-[30px] w-full h-[530px]">
         {/* <p className="text-red-600">Total: {collocationsEnglish.length}</p> */}
         {/* {timer && (
         // <div className="absolute top-[10px]">
@@ -191,10 +194,14 @@ const EnglishCollocations = () => {
         <div className="mx-[250px] flex flex-col gap-4 w-full justify-center items-center">
           {/* Collocation */}
           <div className="flex-1 flex-col  rounded text-white text-2xl justify-center items-center font-semibold mb-4 w-full">
-            <span className="px-4 text-lg ml-[2pxs] py-4 rounded-l text-gray-100 uppercase">
+            <span className="px-4 text-lg ml-[2pxs] py-4 rounded-l bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent uppercase">
               Collocation
             </span>
-            <p className="px-6 flex-1 text-teal-600 py-2 rounded text-center text-5xl">
+            <p
+              className={`px-2 flex-1 bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent py-2 rounded text-center ${
+                data.collocation.length > 20 ? "text-4xl" : "text-6xl"
+              }`}
+            >
               {data?.collocation}
               {/* <HighlightedText
               text={data.idiom}
@@ -208,11 +215,11 @@ const EnglishCollocations = () => {
             {/* Explanation */}
             {exp && (
               <div className="flex-1 flex flex-col items-start justify-start rounded text-white text-lg font-semibold">
-                <span className="px-2 text-xl py-1 text-gray-100 uppercase">
+                <span className="px-2 text-xl py-1 bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent uppercase">
                   Explanation
                 </span>
                 <p
-                  className={`flex-1 py-4 px-6 rounded bg-teal-700 text-white/[0.9] trans text-xl font-semibold text-wrap
+                  className={`flex-1 py-4 px-6 rounded text-gray-700 bg-gradient-to-r from-amber-200 to-yellow-500  trans text-xl font-semibold text-wrap
                      ${
                        timer
                          ? data?.exp === "c"
@@ -227,11 +234,11 @@ const EnglishCollocations = () => {
             )}
             {/* Origin */}
             <div className="flex-1 flex flex-col items-start justify-center rounded text-white text-lg font-semibold">
-              <span className="px-2 text-xl py-2 rounded text-gray-100 flex items-start justify-center uppercase">
+              <span className="px-2 text-xl py-2 rounded bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent flex items-start justify-center uppercase">
                 Origin
               </span>
               <p
-                className={`flex-1 py-4 px-6 rounded bg-teal-600 text-white/[0.9] trans text-lg font-semibold text-wrap ${
+                className={`flex-1 py-4 px-6 rounded text-gray-700 bg-gradient-to-r from-amber-200 to-yellow-500  trans text-xl font-semibold text-wrap ${
                   timer
                     ? data?.exp === "d"
                       ? "!bg-green-700 text-white "
@@ -244,11 +251,13 @@ const EnglishCollocations = () => {
             </div>
             {/* example */}
             {reason && (
-              <div className="text-left mt-4">
-                <span className="text-cyan-50 text-lg">For Example:</span>
+              <div className="text-left mt-6">
+                <span className="text-cyan-50 bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent text-xl font-semibold">
+                  For Example:
+                </span>
                 <p
                   //   onClick={() => playReason(data)}
-                  className="p-4 py-2 mt-0 text-white text-xl font-medium rounded mx-1 absolute bottom-16 trans-reason text-center text-wrap"
+                  className="p-4 py-2 mt-0 text-white text-2xl font-medium rounded mx-1 absolute bottom-16  text-center text-wrap"
                 >
                   {/* {data?.explanation} */}
                   <HighlightedText
@@ -306,8 +315,8 @@ const HighlightedText = ({ text, from, to, disabled }) => {
         className={`${
           highlight.length === 0
             ? "bg-transparent"
-            : "bg-teal-600 text-white mt-1"
-        }  rounded p-1`}
+            : "bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent "
+        }  rounded p-0 mt-1`}
       >
         {highlight}
         {/* {highlight.length} */}
