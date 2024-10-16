@@ -9520,1626 +9520,3633 @@ export const idiomsWithExample = [
     explanation:
       "'Like a fish out of water' means feeling uncomfortable in an unfamiliar situation. Example: She felt like a fish out of water at her first corporate event.",
   },
-];
+  {
+    idiom: "To make a clean breast of",
+    options: {
+      a: "To gain prominence",
+      b: "To praise oneself",
+      c: "To confess without reserve",
+      d: "To destroy before it blooms",
+    },
+    answer: "c",
+    explanation:
+      "'To make a clean breast of' means to admit to something fully, especially a wrongdoing or mistake.",
+  },
 
-export const collocationsEnglish = [
+  {
+    idiom: "To keep one's temper",
+    options: {
+      a: "To become hungry",
+      b: "To be in a good mood",
+      c: "To preserve one's energy",
+      d: "To be aloof from",
+    },
+    answer: "b",
+    explanation:
+      "'To keep one's temper' means to remain calm and not lose one's temper, especially in difficult situations.",
+  },
+
+  {
+    idiom: "To catch a Tartar",
+    options: {
+      a: "To trap a wanted criminal with great difficulty",
+      b: "To catch a dangerous person",
+      c: "To meet with disaster",
+      d: "To deal with a person who is more than one's match",
+    },
+    answer: "d",
+    explanation:
+      "'To catch a Tartar' refers to encountering someone who is unexpectedly formidable or difficult to handle.",
+  },
+
+  {
+    idiom: "To drive home",
+    options: {
+      a: "To find one's roots",
+      b: "To return to a place of rest",
+      c: "Back to original position",
+      d: "To emphasize",
+    },
+    answer: "d",
+    explanation:
+      "'To drive home' means to make a point very clear or to stress the importance of something.",
+  },
+
+  {
+    idiom: "To have an axe to grind",
+    options: {
+      a: "A private end to serve",
+      b: "To fail to arouse interest",
+      c: "To have no result",
+      d: "To work for both sides",
+    },
+    answer: "a",
+    explanation:
+      "'To have an axe to grind' means having a personal interest or motive in a matter, often implying selfish intent.",
+  },
+
+  {
+    idiom: "To cry wolf",
+    options: {
+      a: "To listen eagerly",
+      b: "To give a false alarm",
+      c: "To turn pale",
+      d: "To keep off starvation",
+    },
+    answer: "b",
+    explanation:
+      "'To cry wolf' means to raise a false alarm or claim something is wrong when it isn't, leading to being ignored later.",
+  },
+
+  {
+    idiom: "To end in smoke",
+    options: {
+      a: "To make completely understand",
+      b: "To ruin oneself",
+      c: "To have no result",
+      d: "To overcome someone",
+    },
+    answer: "c",
+    explanation:
+      "'To end in smoke' means to come to nothing or fail to produce any significant outcome.",
+  },
+
+  {
+    idiom: "To be above board",
+    options: {
+      a: "To have a good height",
+      b: "To be honest in any business deal",
+      c: "They have no debts",
+      d: "To try to be beautiful",
+    },
+    answer: "b",
+    explanation:
+      "'To be above board' means to be open and honest in dealings, without any hidden agendas or deceit.",
+  },
+
+  {
+    idiom: "To put one's hand to the plough",
+    options: {
+      a: "To take up agricultural farming",
+      b: "To take a difficult task",
+      c: "To get entangled into unnecessary things",
+      d: "To take interest in technical work",
+    },
+    answer: "b",
+    explanation:
+      "'To put one's hand to the plough' means to commit oneself to a challenging task or to work hard on something.",
+  },
+
+  {
+    idiom: "To pick holes",
+    options: {
+      a: "To find some reason to quarrel",
+      b: "To destroy something",
+      c: "To criticize someone",
+      d: "To cut some part of an item",
+    },
+    answer: "c",
+    explanation:
+      "'To pick holes' means to find faults or criticize something, often in a petty or nitpicking manner.",
+  },
+  {
+    idiom: "To leave someone in the lurch",
+    options: {
+      a: "To come to compromise with someone",
+      b: "Constant source of annoyance to someone",
+      c: "To put someone at ease",
+      d: "To desert someone in his difficulties",
+      e: "None of these",
+    },
+    answer: "d",
+    explanation:
+      "'To leave someone in the lurch' means to abandon or desert someone when they are in trouble or need help.",
+  },
+
+  {
+    idiom: "To play second fiddle",
+    options: {
+      a: "To be happy, cheerful and healthy",
+      b: "To reduce importance of one's senior",
+      c: "To support the role and view of another person",
+      d: "To do back seat driving",
+      e: "None of these",
+    },
+    answer: "c",
+    explanation:
+      "'To play second fiddle' means to take a subordinate role or support another person.",
+  },
+
+  {
+    idiom: "To beg the question",
+    options: {
+      a: "To refer to",
+      b: "To take for granted",
+      c: "To raise objections",
+      d: "To be discussed",
+      e: "None of these",
+    },
+    answer: "b",
+    explanation:
+      "'To beg the question' means to assume something as true without evidence or to avoid the main issue.",
+  },
+
+  {
+    idiom: "A black sheep",
+    options: {
+      a: "An unlucky person",
+      b: "A lucky person",
+      c: "An ugly person",
+      d: "A partner who takes no share of the profits",
+      e: "None of these",
+    },
+    answer: "e",
+    explanation:
+      "'A black sheep' refers to a person who is considered a disgrace to a group or family, often due to their behavior.",
+  },
+
+  {
+    idiom: "A man of straw",
+    options: {
+      a: "A man of no substance",
+      b: "A very active person",
+      c: "A worthy fellow",
+      d: "An unreasonable person",
+      e: "None of these",
+    },
+    answer: "a",
+    explanation:
+      "'A man of straw' means a person with no real substance, power, or integrity.",
+  },
+
+  {
+    idiom: "To smell a rat",
+    options: {
+      a: "To see signs of plague epidemic",
+      b: "To get bad smell of a dead rat",
+      c: "To suspect foul dealings",
+      d: "To be in a bad mood",
+      e: "None of these",
+    },
+    answer: "c",
+    explanation:
+      "'To smell a rat' means to suspect something is wrong or that someone is being dishonest.",
+  },
+
+  {
+    idiom: "To hit the nail right on the head",
+    options: {
+      a: "To do the right thing",
+      b: "To destroy one's reputation",
+      c: "To announce one's fixed views",
+      d: "To teach someone a lesson",
+      e: "None of these",
+    },
+    answer: "a",
+    explanation:
+      "'To hit the nail right on the head' means to do or say something exactly right or accurately.",
+  },
+
+  {
+    idiom: "To set one's face against",
+    options: {
+      a: "To oppose with determination",
+      b: "To judge by appearance",
+      c: "To get out of difficulty",
+      d: "To look at one steadily",
+      e: "None of these",
+    },
+    answer: "a",
+    explanation:
+      "'To set one's face against' means to strongly oppose something.",
+  },
+
+  {
+    idiom:
+      "Sobhraj could be easily arrested because the police were tipped off in advance.",
+    options: {
+      a: "Toppled over",
+      b: "Bribed",
+      c: "Given advance information",
+      d: "Threatened",
+    },
+    answer: "c",
+    explanation:
+      "'Tipped off' means given advance warning or information about something.",
+  },
+
+  {
+    idiom: "I met him after a long time, but he gave me the cold shoulder.",
+    options: {
+      a: "Scolded me",
+      b: "Insulted me",
+      c: "Abused me",
+      d: "Ignored me",
+    },
+    answer: "d",
+    explanation:
+      "'To give the cold shoulder' means to ignore someone or treat them with indifference.",
+  },
+  {
+    idiom: "He passed himself off as a noble man.",
+    options: {
+      a: "Was regarded as",
+      b: "Pretended to be",
+      c: "Was thought to be",
+      d: "Was looked upon",
+    },
+    answer: "b",
+    explanation:
+      "'To pass oneself off' means to pretend to be someone or something that one is not.",
+  },
+
+  {
+    idiom:
+      "This matter has been hanging fire for the last many months and must therefore be decided one way or the other.",
+    options: {
+      a: "Going on slowly",
+      b: "Hotly debated",
+      c: "Stuck up",
+      d: "Ignored",
+    },
+    answer: "a",
+    explanation:
+      "'Hanging fire' means to be delayed or to be in a state of inaction for a long period.",
+  },
+
+  {
+    idiom:
+      "In the armed forces, it is considered a great privilege to die in harness.",
+    options: {
+      a: "Die on horseback",
+      b: "Die in the battlefield",
+      c: "Die while still working",
+      d: "Die with honour",
+    },
+    answer: "c",
+    explanation:
+      "'To die in harness' means to die while still working or actively involved in one's duties.",
+  },
+
+  {
+    idiom: "The cricket match proved to be a big draw.",
+    options: {
+      a: "A keen contest",
+      b: "A huge attraction",
+      c: "A lovely spectacle",
+      d: "A game without any result",
+    },
+    answer: "b",
+    explanation:
+      "'A big draw' means something that attracts a large audience or generates a lot of interest.",
+  },
+
+  {
+    idiom:
+      "When he heard that he had once again not been selected, he lost heart.",
+    options: {
+      a: "Became desperate",
+      b: "Felt sad",
+      c: "Became angry",
+      d: "Became discouraged",
+    },
+    answer: "d",
+    explanation:
+      "'To lose heart' means to become discouraged or lose confidence.",
+  },
+
+  {
+    idiom: "He was undecided. He let the grass grow under his feet.",
+    options: {
+      a: "Loitered around",
+      b: "Stayed out",
+      c: "Sat unmoving",
+      d: "Moved away",
+    },
+    answer: "c",
+    explanation:
+      "'To let the grass grow under one's feet' means to delay or be slow in taking action.",
+  },
+
+  {
+    idiom:
+      "Although he has failed in the written examination, he is using backstairs influence to get the job.",
+    options: {
+      a: "Political influence",
+      b: "Backing influence",
+      c: "Deserving and proper influence",
+      d: "Secret and unfair influence",
+    },
+    answer: "d",
+    explanation:
+      "'Backstairs influence' refers to secret, underhanded, or improper means of gaining favor or influence.",
+  },
+
+  {
+    idiom:
+      "Companies producing goods play to the gallery to boost their sales.",
+    options: {
+      a: "Advertise",
+      b: "Cater to the public taste",
+      c: "Attempt to appeal to popular taste",
+      d: "Depend upon the public for approval",
+    },
+    answer: "c",
+    explanation:
+      "'To play to the gallery' means to seek the approval of the public by appealing to popular or lowbrow tastes.",
+  },
+
+  {
+    idiom:
+      "Since he knew what would happen, he should be left to stew in his own juice.",
+    options: {
+      a: "Make a stew",
+      b: "Boil",
+      c: "Suffer in his own juice",
+      d: "Suffer for his own act",
+    },
+    answer: "d",
+    explanation:
+      "'To stew in one's own juice' means to suffer the consequences of one's actions without outside help.",
+  },
+
+  {
+    idiom: "The project did not appear to hold out bright prospects.",
+    options: {
+      a: "Highlight",
+      b: "Show",
+      c: "Offer",
+      d: "Promise",
+    },
+    answer: "d",
+    explanation:
+      "'To hold out bright prospects' means to promise or indicate a favorable or successful outcome.",
+  },
+  {
+    idiom: "He passed himself off as a noble man.",
+    idiomUsed: "passed himself off",
+    options: {
+      a: "Was regarded as",
+      b: "Pretended to be",
+      c: "Was thought to be",
+      d: "Was looked upon",
+    },
+    answer: "b",
+    explanation:
+      "'Passed himself off' means to pretend to be someone else, usually to deceive.",
+  },
+
+  {
+    idiom:
+      "This matter has been hanging fire for the last many months and must therefore be decided one way or the other.",
+    idiomUsed: "hanging fire",
+    options: {
+      a: "Going on slowly",
+      b: "Hotly debated",
+      c: "Stuck up",
+      d: "Ignored",
+    },
+    answer: "a",
+    explanation:
+      "'Hanging fire' refers to something that is delayed or slow in progressing.",
+  },
+
+  {
+    idiom:
+      "In the armed forces, it is considered a great privilege to die in harness.",
+    idiomUsed: "die in harness",
+    options: {
+      a: "Die on a horseback",
+      b: "Die in the battlefield",
+      c: "Die while still working",
+      d: "Die with honour",
+    },
+    answer: "c",
+    explanation:
+      "'Die in harness' means to die while still working or in service.",
+  },
+
+  {
+    idiom: "The cricket match proved to be a big draw.",
+    idiomUsed: "big draw",
+    options: {
+      a: "A keen contest",
+      b: "A huge attraction",
+      c: "A lovely spectacle",
+      d: "A game without any result",
+    },
+    answer: "b",
+    explanation:
+      "'Big draw' means something that attracts a large audience or great interest.",
+  },
+
+  {
+    idiom:
+      "When he heard that he had once again not been selected, he lost heart.",
+    idiomUsed: "lost heart",
+    options: {
+      a: "Became desperate",
+      b: "Felt sad",
+      c: "Became angry",
+      d: "Became discouraged",
+    },
+    answer: "d",
+    explanation: "'Lost heart' means to become discouraged or lose hope.",
+  },
+
+  {
+    idiom: "He was undecided. He let the grass grow under his feet.",
+    idiomUsed: "let the grass grow under his feet",
+    options: {
+      a: "Loitered around",
+      b: "Stayed out",
+      c: "Sat unmoving",
+      d: "Moved away",
+    },
+    answer: "c",
+    explanation:
+      "'Let the grass grow under one's feet' means to delay or be inactive.",
+  },
+
+  {
+    idiom:
+      "Although he has failed in the written examination, he is using backstairs influence to get the job.",
+    idiomUsed: "backstairs influence",
+    options: {
+      a: "Political influence",
+      b: "Backing influence",
+      c: "Deserving and proper influence",
+      d: "Secret and unfair influence",
+    },
+    answer: "d",
+    explanation:
+      "'Backstairs influence' refers to using secret, unfair, or underhanded means to get something.",
+  },
+
+  {
+    idiom:
+      "Companies producing goods play to the gallery to boost their sales.",
+    idiomUsed: "play to the gallery",
+    options: {
+      a: "Advertise",
+      b: "Cater to the public taste",
+      c: "Attempt to appeal to popular taste",
+      d: "Depend upon the public for approval",
+    },
+    answer: "c",
+    explanation:
+      "'Play to the gallery' means to appeal to the tastes of the masses, often in a showy or exaggerated way.",
+  },
+
+  {
+    idiom:
+      "Since he knew what would happen, he should be left to stew in his own juice.",
+    idiomUsed: "stew in his own juice",
+    options: {
+      a: "Make a stew",
+      b: "Boil",
+      c: "Suffer in his own juice",
+      d: "Suffer for his own act",
+    },
+    answer: "d",
+    explanation:
+      "'Stew in one's own juice' means to suffer the consequences of one's own actions.",
+  },
+
+  {
+    idiom: "The project did not appear to hold out bright prospects.",
+    idiomUsed: "hold out bright prospects",
+    options: {
+      a: "Highlight",
+      b: "Show",
+      c: "Offer",
+      d: "Promise",
+    },
+    answer: "d",
+    explanation:
+      "'Hold out bright prospects' means to offer or promise a hopeful or successful outcome.",
+  },
   {
     id: 1,
-    collocation: "Make a decision",
-    explanation: "To choose something after consideration.",
-    origin:
-      "This phrase combines 'make,' meaning to create or produce, with 'decision,' from Latin 'decisio,' meaning a cutting off.",
-    example:
-      "After hours of discussion, we finally made a decision on the new policy.",
+    idiom: "He went to his friend's house in the evening as was his wont.",
+    idiomUsed: "as was his wont",
+    options: {
+      a: "As usual",
+      b: "As he wanted",
+      c: "As his want was",
+      d: "As he wanted that day",
+    },
+    answer: "a",
+    explanation:
+      "'As was his wont' means that it was a habitual action for him.",
   },
   {
     id: 2,
-    collocation: "Take a break",
-    explanation: "To pause from an activity to rest.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or grab, with 'break,' meaning a period of rest.",
-    example: "Let’s take a break before we continue with the meeting.",
+    idiom: "Why do you wish to tread on the toes?",
+    idiomUsed: "tread on the toes",
+    options: {
+      a: "To give offence to them",
+      b: "To follow them grudgingly",
+      c: "To treat them indifferently",
+      d: "To be kicked by them",
+    },
+    answer: "a",
+    explanation:
+      "'Tread on the toes' means to offend someone by encroaching on their territory.",
   },
   {
     id: 3,
-    collocation: "Catch someone's attention",
-    explanation: "To attract someone's focus.",
-    origin:
-      "This phrase combines 'catch,' which means to seize or capture, with 'attention,' referring to mental focus.",
-    example: "The advertisement was designed to catch the viewer's attention.",
+    idiom: "He intends setting up as a lawyer in the adjoining district.",
+    idiomUsed: "setting up as a lawyer",
+    options: {
+      a: "To establish himself",
+      b: "To migrate",
+      c: "To join",
+      d: "To settle",
+    },
+    answer: "a",
+    explanation: "'Setting up' means to start a new business or profession.",
   },
   {
     id: 4,
-    collocation: "Run a business",
-    explanation: "To manage or operate a company.",
-    origin:
-      "This phrase combines 'run,' meaning to operate or control, with 'business,' referring to commercial activity.",
-    example:
-      "She decided to run her own business after working in corporate for years.",
+    idiom:
+      "The autographed bat from the famous cricketer Sunil Gavaskar is worth a jew's eye.",
+    idiomUsed: "worth a jew's eye",
+    options: {
+      a: "Not a worthy possession",
+      b: "Unnecessary",
+      c: "A costly item",
+      d: "A possession of high value",
+    },
+    answer: "d",
+    explanation: "'Worth a jew's eye' means something is very valuable.",
   },
   {
     id: 5,
-    collocation: "Break the news",
-    explanation: "To inform someone of important or surprising information.",
-    origin:
-      "The phrase suggests 'breaking' in the sense of interrupting the usual flow of information.",
-    example:
-      "I had to break the news to her that her application was rejected.",
+    idiom:
+      "The speaker gave a bird's eye view of the political conditions in the country.",
+    idiomUsed: "bird's eye view",
+    options: {
+      a: "A personal view",
+      b: "A detailed analysis",
+      c: "A general overview",
+      d: "An incorrect perspective",
+    },
+    answer: "c",
+    explanation: "'Bird's eye view' means a general overview of a situation.",
   },
   {
     id: 6,
-    collocation: "Pay attention",
-    explanation: "To focus on something or someone.",
-    origin:
-      "This phrase combines 'pay,' meaning to give or contribute, with 'attention,' referring to mental focus.",
-    example: "You need to pay attention in class if you want to pass the exam.",
+    idiom: "The project did not appear to hold out bright prospects.",
+    idiomUsed: "hold out bright prospects",
+    options: {
+      a: "Highlight",
+      b: "Show",
+      c: "Offer",
+      d: "Promise",
+    },
+    answer: "d",
+    explanation:
+      "'Hold out bright prospects' means to offer or promise a hopeful or successful outcome.",
   },
   {
     id: 7,
-    collocation: "Take advantage of",
-    explanation: "To make use of something for one's benefit.",
-    origin:
-      "This phrase suggests using an opportunity or situation to gain an advantage.",
-    example: "She took advantage of the sales to buy a new wardrobe.",
+    idiom:
+      "Vikram said that he has got a problem to square up with the manager.",
+    idiomUsed: "square up",
+    options: {
+      a: "Consider",
+      b: "Discuss",
+      c: "Settle",
+      d: "Work out",
+    },
+    answer: "c",
+    explanation: "'Square up' means to settle or resolve a problem.",
   },
   {
     id: 8,
-    collocation: "Keep in mind",
-    explanation: "To remember or consider something.",
-    origin:
-      "This phrase suggests maintaining a thought or consideration in one’s thoughts.",
-    example: "Keep in mind that we have a deadline next week.",
+    idiom:
+      "Although both the parents are running the show for the last ten years but their business is now on its last legs.",
+    idiomUsed: "on its last legs",
+    options: {
+      a: "About to fructify",
+      b: "About to perish",
+      c: "About to produce results",
+      d: "About to take off",
+    },
+    answer: "b",
+    explanation: "'On its last legs' means to be near collapse or failure.",
   },
   {
     id: 9,
-    collocation: "Do your best",
-    explanation: "To make the greatest effort you can.",
-    origin:
-      "This phrase combines 'do,' meaning to perform or execute, with 'best,' referring to the highest quality of effort.",
-    example: "Just do your best, and I'm sure you'll succeed.",
+    idiom: "The time is running out, you must look sharp.",
+    idiomUsed: "look sharp",
+    options: {
+      a: "Be careful",
+      b: "Make haste",
+      c: "Be punctual",
+      d: "Be sensible",
+    },
+    answer: "b",
+    explanation: "'Look sharp' means to hurry or act quickly.",
   },
   {
     id: 10,
-    collocation: "Face the challenge",
-    explanation: "To confront or deal with a difficult situation.",
-    origin:
-      "This phrase combines 'face,' meaning to confront, with 'challenge,' referring to a task or situation requiring effort.",
-    example: "We need to face the challenge of meeting the new requirements.",
+    idiom: "He is in the habit of throwing dust in the eyes of his superiors.",
+    idiomUsed: "throwing dust in the eyes",
+    options: {
+      a: "To put sand into eyes",
+      b: "To make blind",
+      c: "To deceive",
+      d: "To show false things",
+    },
+    answer: "c",
+    explanation:
+      "'Throwing dust in the eyes' means to deceive or mislead someone.",
   },
   {
     id: 11,
-    collocation: "Save time",
-    explanation: "To use less time to accomplish a task.",
-    origin:
-      "This phrase suggests finding a more efficient way to complete something.",
-    example: "Using a template can help you save time on your project.",
+    idiom:
+      "In modern democratic societies lynch law seems to have become the spheres of life.",
+    idiomUsed: "lynch law",
+    options: {
+      a: "Law of the mob",
+      b: "Law of the underworld",
+      c: "Law of the constitution",
+      d: "Law of the parliament",
+    },
+    answer: "a",
+    explanation:
+      "'Lynch law' refers to a situation where the mob takes justice into their own hands.",
   },
   {
     id: 12,
-    collocation: "Take responsibility",
-    explanation: "To accept the duty or accountability for something.",
-    origin:
-      "This phrase combines 'take,' meaning to assume or accept, with 'responsibility,' referring to a duty.",
-    example: "He needs to take responsibility for his actions.",
+    idiom: "He was in high spirits when I met him in the restaurant.",
+    idiomUsed: "in high spirits",
+    options: {
+      a: "He was in a drunken state",
+      b: "He was very cheerful",
+      c: "He talked incoherently",
+      d: "He was deeply engrossed in thoughts",
+    },
+    answer: "b",
+    explanation: "'In high spirits' means to be very happy or cheerful.",
   },
   {
     id: 13,
-    collocation: "Build a relationship",
-    explanation: "To develop a connection or bond with someone.",
-    origin:
-      "This phrase combines 'build,' meaning to create or develop, with 'relationship,' referring to a connection between people.",
-    example: "It takes time to build a strong relationship with clients.",
+    idiom: "In his youth, he was practically rolling in money.",
+    idiomUsed: "rolling in money",
+    options: {
+      a: "Spending more than his income",
+      b: "Borrowing money liberally",
+      c: "Very rich",
+      d: "Wasting a lot of money",
+    },
+    answer: "c",
+    explanation: "'Rolling in money' means to be very wealthy.",
   },
   {
     id: 14,
-    collocation: "Make an effort",
-    explanation: "To try hard to do something.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'effort,' referring to exertion or hard work.",
-    example: "If you want to improve, you need to make an effort.",
+    idiom:
+      "Maya had a checkered career since I first knew him as an office assistant in the insurance company.",
+    idiomUsed: "checkered career",
+    options: {
+      a: "Had a variety of jobs and experiences",
+      b: "A career which helped him make a lot of money",
+      c: "A career where he signed a lot of cheques",
+      d: "Did odd jobs",
+    },
+    answer: "a",
+    explanation:
+      "'Checkered career' refers to a career with many ups and downs.",
   },
   {
     id: 15,
-    collocation: "Keep a promise",
-    explanation: "To do what one said one would do.",
-    origin:
-      "This phrase combines 'keep,' meaning to hold onto, with 'promise,' referring to a commitment made.",
-    example: "It’s important to keep a promise to build trust.",
+    idiom: "The sight of the accident made my flesh creep.",
+    idiomUsed: "made my flesh creep",
+    options: {
+      a: "Draw my attention",
+      b: "Confused me",
+      c: "Frightened me",
+      d: "Worried me",
+    },
+    answer: "c",
+    explanation:
+      "'Made my flesh creep' means to feel a strong sense of fear or horror.",
   },
   {
     id: 16,
-    collocation: "Take notes",
-    explanation: "To write down important information.",
-    origin:
-      "This phrase combines 'take,' meaning to grab or capture, with 'notes,' referring to written information.",
-    example: "Make sure to take notes during the lecture.",
+    idiom: "There is no hard and fast rule regarding this subject.",
+    idiomUsed: "hard and fast rule",
+    options: {
+      a: "Rule that is difficult",
+      b: "Rule that is fast changing",
+      c: "Rule that cannot be broken or modified",
+      d: "Rule that can be broken or modified",
+    },
+    answer: "c",
+    explanation:
+      "'Hard and fast rule' refers to a strict rule that does not allow for any exceptions.",
   },
   {
     id: 17,
-    collocation: "Raise awareness",
-    explanation: "To increase understanding or knowledge about a topic.",
-    origin:
-      "This phrase combines 'raise,' meaning to elevate or increase, with 'awareness,' referring to knowledge or understanding.",
-    example: "The campaign aims to raise awareness about climate change.",
+    idiom:
+      "Some people now wonder whether we just pay lip service or genuinely subscribe to democracy.",
+    idiomUsed: "pay lip service",
+    options: {
+      a: "Pay oral tribute",
+      b: "Attach no value",
+      c: "Remain indifferent",
+      d: "Show only outward respect",
+    },
+    answer: "d",
+    explanation:
+      "'Pay lip service' means to express support for something without actually being committed.",
   },
   {
     id: 18,
-    collocation: "Make an appointment",
-    explanation: "To schedule a meeting or event.",
-    origin:
-      "This phrase combines 'make,' meaning to create or arrange, with 'appointment,' referring to a scheduled meeting.",
-    example: "I need to make an appointment with the doctor.",
+    idiom: "Don't thrust your nose into my affairs.",
+    idiomUsed: "thrust your nose",
+    options: {
+      a: "Advise me about",
+      b: "Be in opposition",
+      c: "Deal with",
+      d: "Meddle officiously in",
+    },
+    answer: "d",
+    explanation:
+      "'Thrust your nose into' means to interfere in someone else's business.",
   },
   {
     id: 19,
-    collocation: "Have a conversation",
-    explanation: "To engage in spoken exchange of thoughts or ideas.",
-    origin:
-      "This phrase combines 'have,' meaning to possess or engage in, with 'conversation,' referring to dialogue.",
-    example: "Let’s have a conversation about your ideas for the project.",
+    idiom: "He visits the doctor off and on.",
+    idiomUsed: "off and on",
+    options: {
+      a: "Everyday",
+      b: "Regularly",
+      c: "Never at all",
+      d: "Occasionally",
+    },
+    answer: "d",
+    explanation: "'Off and on' means occasionally or from time to time.",
   },
   {
     id: 20,
-    collocation: "Get in touch",
-    explanation: "To make contact with someone.",
-    origin:
-      "This phrase combines 'get,' meaning to achieve or obtain, with 'in touch,' referring to maintaining communication.",
-    example: "Please get in touch if you need any assistance.",
+    idiom:
+      "The recent film 'Secular India' has tried to keep the pot boiling for Muslim women's issues.",
+    idiomUsed: "keep the pot boiling",
+    options: {
+      a: "Earning enough to keep body and soul together",
+      b: "Keep a controversy alive",
+      c: "Boil the bill",
+      d: "Boil something in a pot",
+    },
+    answer: "b",
+    explanation:
+      "'Keep the pot boiling' means to maintain interest or keep a discussion active.",
   },
   {
     id: 21,
-    collocation: "Take action",
-    explanation: "To do something to achieve a goal.",
-    origin:
-      "This phrase combines 'take,' meaning to engage or commit, with 'action,' referring to the process of doing something.",
-    example: "If you want to improve the situation, you need to take action.",
+    idiom: "The robber took to his heels when the police arrived.",
+    idiomUsed: "took to his heels",
+    options: {
+      a: "Opened fire",
+      b: "Hid himself",
+      c: "Ran off",
+      d: "Surrendered",
+    },
+    answer: "c",
+    explanation: "'Took to his heels' means to run away quickly.",
   },
   {
     id: 22,
-    collocation: "Follow the rules",
-    explanation: "To adhere to established guidelines or laws.",
-    origin:
-      "This phrase combines 'follow,' meaning to comply with, with 'rules,' referring to set guidelines.",
-    example: "It’s important to follow the rules for safety.",
+    idiom: "You cannot have your cake and eat it too.",
+    idiomUsed: "have your cake and eat it too",
+    options: {
+      a: "Enjoy forever",
+      b: "Have it both ways",
+      c: "Run away from responsibility",
+      d: "Absolve yourself of guilt",
+    },
+    answer: "b",
+    explanation:
+      "'Have your cake and eat it too' means wanting to enjoy two desirable but mutually exclusive things.",
   },
   {
     id: 23,
-    collocation: "Make a choice",
-    explanation: "To select an option from a set of alternatives.",
-    origin:
-      "This phrase combines 'make,' meaning to create or produce, with 'choice,' referring to an option.",
-    example: "You need to make a choice between the two job offers.",
+    idiom: "The rebels held out for about a month.",
+    idiomUsed: "held out",
+    options: {
+      a: "Waited",
+      b: "Retreated",
+      c: "Bargained",
+      d: "Resisted",
+    },
+    answer: "d",
+    explanation: "'Held out' means to resist or endure against opposition.",
   },
   {
     id: 24,
-    collocation: "Take a look",
-    explanation: "To examine or glance at something.",
-    origin:
-      "This phrase combines 'take,' meaning to grab or seize, with 'look,' referring to the act of seeing.",
-    example: "Take a look at this report and let me know what you think.",
+    idiom: "The new economic policy is likely to run into rough weather.",
+    idiomUsed: "run into rough weather",
+    options: {
+      a: "Create problems",
+      b: "Encounter difficulties",
+      c: "Confuse matters",
+      d: "Make things difficult",
+    },
+    answer: "b",
+    explanation:
+      "'Run into rough weather' means to encounter problems or difficulties.",
   },
   {
     id: 25,
-    collocation: "Give a presentation",
-    explanation: "To deliver a talk or speech to an audience.",
-    origin:
-      "This phrase combines 'give,' meaning to provide, with 'presentation,' referring to a formal display of information.",
-    example: "I have to give a presentation on marketing strategies tomorrow.",
+    idiom:
+      "The old father brought home the moral of unity by asking each of his sons to break the bundle of sticks.",
+    idiomUsed: "break the bundle of sticks",
+    options: {
+      a: "Emphasised",
+      b: "Voiced",
+      c: "Declared",
+      d: "Suggested",
+    },
+    answer: "a",
+    explanation:
+      "'Break the bundle of sticks' symbolizes the strength in unity.",
   },
   {
     id: 26,
-    collocation: "Do homework",
-    explanation: "To complete assignments or tasks assigned by a teacher.",
-    origin:
-      "This phrase combines 'do,' meaning to perform or execute, with 'homework,' referring to school assignments.",
-    example: "Make sure to do your homework before the next class.",
+    idiom:
+      "If you give John all your money, you are likely to burn your fingers.",
+    idiomUsed: "burn your fingers",
+    options: {
+      a: "Be cautious",
+      b: "Be on the defensive",
+      c: "Take rest",
+      d: "Show no reaction",
+    },
+    answer: "a",
+    explanation:
+      "'Burn your fingers' means to suffer consequences from a risky action.",
   },
   {
     id: 27,
-    collocation: "Take time",
-    explanation: "To spend a duration doing something.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or use, with 'time,' referring to a measurable period.",
-    example: "It’s important to take time to relax after a busy week.",
+    idiom: "Why must you look a gift horse in the mouth?",
+    idiomUsed: "look a gift horse in the mouth",
+    options: {
+      a: "Welcome a gift",
+      b: "Find fault with a gift",
+      c: "Be fastidious",
+      d: "Examine a gift carefully",
+    },
+    answer: "b",
+    explanation:
+      "'Look a gift horse in the mouth' means to find fault with something received as a gift.",
   },
   {
     id: 28,
-    collocation: "Run a meeting",
-    explanation: "To organize and lead a meeting.",
-    origin:
-      "This phrase combines 'run,' meaning to manage, with 'meeting,' referring to a gathering of people.",
-    example: "She will run the meeting while the manager is away.",
+    idiom: "Dowry is a burning question of the day.",
+    idiomUsed: "burning question",
+    options: {
+      a: "A widely debated issue",
+      b: "A dying issue",
+      c: "A relevant problem",
+      d: "An irrelevant issue",
+    },
+    answer: "a",
+    explanation:
+      "'Burning question' refers to a pressing or important issue that is widely discussed.",
   },
   {
     id: 29,
-    collocation: "Make a mistake",
-    explanation: "To perform an action incorrectly or inaccurately.",
-    origin:
-      "This phrase combines 'make,' meaning to create or perform, with 'mistake,' referring to an error.",
-    example: "Everyone makes a mistake from time to time.",
+    idiom:
+      "Leaders should not only make speeches; they should also be prepared to bell the cat.",
+    idiomUsed: "bell the cat",
+    options: {
+      a: "Take lead in danger.",
+      b: "Tie a bell to a cat's neck.",
+      c: "Be alert of the enemy.",
+      d: "Make noise.",
+    },
+    answer: "a",
+    explanation:
+      "'Belling the cat' means taking on a difficult task that others are afraid to do.",
   },
   {
     id: 30,
-    collocation: "Take risks",
-    explanation:
-      "To engage in actions that involve uncertainty or potential loss.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'risks,' referring to the possibility of loss or danger.",
-    example:
-      "Successful entrepreneurs often take risks to achieve their goals.",
+    idiom: "The popularity of yesterday's superstar is on the wane.",
+    idiomUsed: "on the wane",
+    options: {
+      a: "At its peak",
+      b: "At rock bottom",
+      c: "Growing more",
+      d: "Growing less",
+    },
+    answer: "d",
+    explanation: "'On the wane' means to be decreasing or diminishing.",
   },
   {
     id: 31,
-    collocation: "Meet a deadline",
-    explanation: "To finish a task by a specified time.",
-    origin:
-      "This phrase combines 'meet,' meaning to satisfy or fulfill, with 'deadline,' referring to a final date for completion.",
-    example: "I need to work hard to meet the deadline for this project.",
+    idiom: "He is leaving the country for a good.",
+    idiomUsed: "for a good",
+    options: {
+      a: "For better prospects",
+      b: "For a good cause",
+      c: "Forever",
+      d: "For others good",
+    },
+    answer: "a",
+    explanation: "'For a good' suggests leaving for better opportunities.",
   },
   {
     id: 32,
-    collocation: "Build confidence",
-    explanation: "To develop self-assurance or belief in one's abilities.",
-    origin:
-      "This phrase combines 'build,' meaning to develop or create, with 'confidence,' referring to self-belief.",
-    example: "Public speaking classes can help build confidence.",
+    idiom: "He is an interesting speaker but tends to go off at a tangent.",
+    idiomUsed: "go off at a tangent",
+    options: {
+      a: "Change the subject immediately",
+      b: "Forget things in between",
+      c: "Go on at great length",
+      d: "Become boisterous",
+    },
+    answer: "a",
+    explanation:
+      "'Go off at a tangent' means to digress or stray from the main topic.",
   },
   {
     id: 33,
-    collocation: "Make friends",
-    explanation: "To form new friendships.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'friends,' referring to companions or allies.",
-    example: "It’s easy to make friends in a new city if you join clubs.",
+    idiom: "He sold his house for a song.",
+    idiomUsed: "for a song",
+    options: {
+      a: "At a reasonable price",
+      b: "At a discount",
+      c: "Very cheaply",
+      d: "At a premium",
+    },
+    answer: "c",
+    explanation: "'For a song' means to sell something very cheaply.",
   },
   {
     id: 34,
-    collocation: "Raise funds",
-    explanation: "To collect money for a specific purpose, usually charitable.",
-    origin:
-      "This phrase combines 'raise,' meaning to collect or increase, with 'funds,' referring to monetary resources.",
-    example:
-      "They organized a gala to raise funds for the local animal shelter.",
+    idiom:
+      "Despite the trust bestowed on the minister, he turned out to be a snake in the grass during the revolution.",
+    idiomUsed: "snake in the grass",
+    options: {
+      a: "A secret enemy",
+      b: "A treacherous person",
+      c: "An unforeseen danger",
+      d: "An unexpected misfortune",
+    },
+    answer: "b",
+    explanation:
+      "'Snake in the grass' refers to someone who is deceitful or treacherous.",
   },
   {
     id: 35,
-    collocation: "Take control",
-    explanation: "To assume responsibility or authority over something.",
-    origin:
-      "This phrase combines 'take,' meaning to seize, with 'control,' referring to power or authority.",
-    example:
-      "She decided to take control of the project to ensure its success.",
+    idiom:
+      "Women should be paid the same as men when they do the same job, for, surely what is sauce for the goose is sauce for the gander.",
+    idiomUsed: "sauce for the goose is sauce for the gander",
+    options: {
+      a: "What is thought suitable pay for a man should also be for a woman",
+      b: "Goose and the gander eat the same sauce",
+      c: "Both goose and gander should be equally treated",
+      d: "The principle of equal treatment should be implemented",
+    },
+    answer: "a",
+    explanation:
+      "'Sauce for the goose is sauce for the gander' means what is good for one should also be good for the other.",
   },
   {
     id: 36,
-    collocation: "Keep a secret",
-    explanation: "To not disclose confidential information.",
-    origin:
-      "This phrase combines 'keep,' meaning to hold or maintain, with 'secret,' referring to undisclosed information.",
-    example: "I trust you to keep my secret.",
+    idiom:
+      "The party stalwarts have advised the President to take it lying down for a while.",
+    idiomUsed: "take it lying down",
+    options: {
+      a: "To be cautious",
+      b: "To be on the defensive",
+      c: "To take rest",
+      d: "To show no reaction",
+    },
+    answer: "d",
+    explanation:
+      "'Take it lying down' means to accept a situation without protest.",
   },
   {
     id: 37,
-    collocation: "Take part",
-    explanation: "To participate in an activity.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'part,' referring to a role or share.",
-    example: "I want to take part in the community service event.",
+    idiom: "I am sure they will fight tooth and nail for their rights.",
+    idiomUsed: "fight tooth and nail",
+    options: {
+      a: "With all their might",
+      b: "Without any other weapon",
+      c: "Resorting to violence",
+      d: "Very cowardly",
+    },
+    answer: "a",
+    explanation:
+      "'Fight tooth and nail' means to fight fiercely or with great determination.",
   },
   {
     id: 38,
-    collocation: "Reach an agreement",
-    explanation: "To come to a mutual decision or understanding.",
-    origin:
-      "This phrase combines 'reach,' meaning to arrive at, with 'agreement,' referring to a shared decision.",
-    example: "We need to reach an agreement before moving forward.",
+    idiom:
+      "We were in a hurry. The road being zigzag we had to cut off a corner to reach in time.",
+    idiomUsed: "cut off a corner",
+    options: {
+      a: "To cut a portion of the road",
+      b: "To take a short cut",
+      c: "To go fast",
+      d: "To take an alternative route",
+    },
+    answer: "b",
+    explanation:
+      "'Cut off a corner' means to take a shortcut or a quicker route.",
   },
   {
     id: 39,
-    collocation: "Set a goal",
-    explanation: "To define an objective or target to achieve.",
-    origin:
-      "This phrase combines 'set,' meaning to establish, with 'goal,' referring to an aim or desired outcome.",
-    example: "It’s important to set a goal for your career.",
+    idiom:
+      "When he explained the complex issue, he left no stone unturned to make it clear.",
+    idiomUsed: "leave no stone unturned",
+    options: {
+      a: "Leave no question unasked",
+      b: "Use all means available",
+      c: "Reach the bottom of a problem",
+      d: "Leave no doubt",
+    },
+    answer: "b",
+    explanation:
+      "'Leave no stone unturned' means to do everything possible to achieve something.",
   },
   {
     id: 40,
-    collocation: "Create an opportunity",
-    explanation: "To generate a chance for advancement or success.",
-    origin:
-      "This phrase combines 'create,' meaning to bring into existence, with 'opportunity,' referring to a favorable circumstance.",
-    example: "Networking can help you create an opportunity for a new job.",
+    idiom:
+      "My sister is not good at decision-making and often takes the wrong turn.",
+    idiomUsed: "takes the wrong turn",
+    options: {
+      a: "Makes mistakes",
+      b: "Takes a wrong route",
+      c: "Is absent-minded",
+      d: "Is not careful",
+    },
+    answer: "a",
+    explanation:
+      "'Takes the wrong turn' means to make mistakes or poor choices.",
   },
   {
     id: 41,
-    collocation: "Give feedback",
-    explanation: "To provide opinions or suggestions about someone's work.",
-    origin:
-      "This phrase combines 'give,' meaning to provide, with 'feedback,' referring to responses or evaluations.",
-    example: "I appreciate you giving feedback on my presentation.",
+    idiom:
+      "The actor was soon in the limelight after his brilliant performance.",
+    idiomUsed: "in the limelight",
+    options: {
+      a: "In the spotlight",
+      b: "Being watched carefully",
+      c: "Being criticized",
+      d: "In public view",
+    },
+    answer: "a",
+    explanation: "'In the limelight' means to be the center of attention.",
   },
   {
     id: 42,
-    collocation: "Take a risk",
-    explanation: "To do something that could have a negative outcome.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'risk,' referring to potential danger or loss.",
-    example: "Sometimes you have to take a risk to achieve your dreams.",
+    idiom: "Do you think the advertisement will bring home the bacon?",
+    idiomUsed: "bring home the bacon",
+    options: {
+      a: "Earn a living",
+      b: "Provide food",
+      c: "Create trouble",
+      d: "Make money",
+    },
+    answer: "d",
+    explanation: "'Bring home the bacon' means to earn a living or make money.",
   },
   {
     id: 43,
-    collocation: "Make an impression",
-    explanation: "To create a strong effect or impact on someone.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'impression,' referring to an effect on someone's perception.",
-    example: "You want to make a good impression during the interview.",
+    idiom: "This scheme is just a flash in the pan.",
+    idiomUsed: "flash in the pan",
+    options: {
+      a: "A momentary success",
+      b: "A long-lasting success",
+      c: "A sudden downturn",
+      d: "A continuous progress",
+    },
+    answer: "a",
+    explanation:
+      "'Flash in the pan' means something that is successful only briefly.",
   },
   {
     id: 44,
-    collocation: "Take a chance",
-    explanation: "To risk something in hopes of a favorable outcome.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'chance,' referring to the possibility of success.",
-    example: "I decided to take a chance and apply for my dream job.",
+    idiom: "Don't make waves; it's best to keep a low profile.",
+    idiomUsed: "make waves",
+    options: {
+      a: "Make a big noise",
+      b: "Draw attention",
+      c: "Create problems",
+      d: "Be quiet",
+    },
+    answer: "c",
+    explanation: "'Make waves' means to cause trouble or create a disturbance.",
   },
   {
     id: 45,
-    collocation: "Make progress",
-    explanation: "To move forward or improve in a task or goal.",
-    origin:
-      "This phrase combines 'make,' meaning to create or achieve, with 'progress,' referring to forward movement.",
-    example: "I’m happy to see that you’re making progress in your studies.",
+    idiom: "He is a bit of a wet blanket in social gatherings.",
+    idiomUsed: "wet blanket",
+    options: {
+      a: "A person who brings excitement",
+      b: "A person who is enthusiastic",
+      c: "A person who dampens the mood",
+      d: "A person who is easily swayed",
+    },
+    answer: "c",
+    explanation:
+      "'Wet blanket' refers to someone who spoils the fun or enthusiasm.",
   },
   {
     id: 46,
-    collocation: "Play a role",
+    idiom: "He is still in the woods and does not know how to proceed.",
+    idiomUsed: "in the woods",
+    options: {
+      a: "Confused",
+      b: "Lost",
+      c: "In danger",
+      d: "In a safe place",
+    },
+    answer: "a",
     explanation:
-      "To have a specific function or responsibility in a situation.",
-    origin:
-      "This phrase combines 'play,' meaning to perform, with 'role,' referring to a part or function.",
-    example: "Parents play an important role in their children's education.",
+      "'In the woods' means to be confused or in a difficult situation.",
   },
   {
     id: 47,
-    collocation: "Take advantage",
-    explanation: "To exploit a situation for one's benefit.",
-    origin:
-      "This phrase combines 'take,' meaning to use, with 'advantage,' referring to a favorable circumstance.",
-    example: "She took advantage of the opportunity to advance her career.",
+    idiom:
+      "The sales department has hit the nail on the head with this strategy.",
+    idiomUsed: "hit the nail on the head",
+    options: {
+      a: "Made a mistake",
+      b: "Identified the right problem",
+      c: "Hit the target",
+      d: "Spoke too soon",
+    },
+    answer: "b",
+    explanation:
+      "'Hit the nail on the head' means to accurately identify or address a problem.",
   },
   {
     id: 48,
-    collocation: "Have a discussion",
-    explanation: "To engage in a conversation about a topic.",
-    origin:
-      "This phrase combines 'have,' meaning to possess or engage in, with 'discussion,' referring to a dialogue about a particular topic.",
-    example:
-      "We need to have a discussion about the upcoming project deadlines.",
+    idiom: "We should not jump the gun before all the facts are in.",
+    idiomUsed: "jump the gun",
+    options: {
+      a: "Be too hasty",
+      b: "Take a chance",
+      c: "Miss the point",
+      d: "Be late",
+    },
+    answer: "a",
+    explanation:
+      "'Jump the gun' means to act prematurely or before the appropriate time.",
   },
   {
     id: 49,
-    collocation: "Catch someone's eye",
-    explanation: "To attract someone's attention.",
-    origin: "This phrase suggests capturing the visual attention of someone.",
-    example: "The colorful painting really caught my eye.",
+    idiom:
+      "He has got to know the ropes if he wants to survive in this business.",
+    idiomUsed: "know the ropes",
+    options: {
+      a: "Know the rules",
+      b: "Be smart",
+      c: "Be educated",
+      d: "Be experienced",
+    },
+    answer: "d",
+    explanation:
+      "'Know the ropes' means to be knowledgeable or experienced in a particular area.",
   },
   {
     id: 50,
-    collocation: "Have an impact",
-    explanation: "To have a significant effect or influence on something.",
-    origin:
-      "This phrase combines 'have,' meaning to possess, with 'impact,' referring to a strong effect.",
-    example: "The new policy will have a positive impact on employee morale.",
+    idiom: "He is a jack of all trades but master of none.",
+    idiomUsed: "jack of all trades but master of none",
+    options: {
+      a: "Knows a lot about many things",
+      b: "Specializes in one area",
+      c: "Is mediocre at many skills",
+      d: "Is excellent in everything",
+    },
+    answer: "c",
+    explanation:
+      "'Jack of all trades but master of none' refers to someone who has many skills but isn't an expert in any.",
   },
   {
     id: 51,
-    collocation: "Go for a walk",
-    explanation: "To take a stroll or leisurely walk.",
-    origin:
-      "This phrase combines 'go,' meaning to move or travel, with 'for a walk,' referring to walking as a form of exercise.",
-    example: "Let's go for a walk in the park after lunch.",
+    idiom: "The thief took to his heels when he saw a policeman on the beat.",
+    idiomUsed: "took to his heels",
+    options: {
+      a: "had some pain in his heels",
+      b: "ran away from the scene",
+      c: "confronted the policeman",
+      d: "could not decide what to do",
+    },
+    answer: "b",
+    explanation:
+      "'Took to his heels' means to run away quickly from a situation.",
   },
   {
     id: 52,
-    collocation: "Set an example",
-    explanation: "To act in a way that others can follow.",
-    origin:
-      "This phrase combines 'set,' meaning to establish, with 'example,' referring to a model or standard.",
-    example: "Teachers should set an example for their students.",
+    idiom: "He struck several bad patches before he made good.",
+    idiomUsed: "struck several bad patches",
+    options: {
+      a: "came across bad soil",
+      b: "had a bad time",
+      c: "went through many illnesses",
+      d: "had many professional difficulties",
+    },
+    answer: "b",
+    explanation:
+      "'Struck several bad patches' refers to experiencing difficulties or challenges.",
   },
   {
     id: 53,
-    collocation: "Make a difference",
-    explanation: "To have a significant effect or impact.",
-    origin:
-      "This phrase combines 'make,' meaning to create or produce, with 'difference,' referring to a change or effect.",
-    example: "Volunteering can really make a difference in your community.",
+    idiom: "The accounts of the murder made her flesh creep.",
+    idiomUsed: "made her flesh creep",
+    options: {
+      a: "made her sad",
+      b: "surprised her",
+      c: "made her cry bitterly",
+      d: "filled her with horror",
+    },
+    answer: "d",
+    explanation:
+      "'Made her flesh creep' means to cause her to feel horror or revulsion.",
   },
   {
     id: 54,
-    collocation: "Create a plan",
-    explanation: "To devise a strategy for achieving something.",
-    origin:
-      "This phrase combines 'create,' meaning to bring into existence, with 'plan,' referring to a detailed proposal.",
-    example: "We need to create a plan for the upcoming marketing campaign.",
+    idiom:
+      "How long will the people put up with the increasing economic hardships?",
+    idiomUsed: "put up with",
+    options: {
+      a: "welcome",
+      b: "take easily",
+      c: "remain satisfied with",
+      d: "tolerate",
+    },
+    answer: "d",
+    explanation:
+      "'Put up with' means to tolerate or endure something unpleasant.",
   },
   {
     id: 55,
-    collocation: "Give a call",
-    explanation: "To make a phone call to someone.",
-    origin:
-      "This phrase combines 'give,' meaning to provide or make, with 'call,' referring to a telephone communication.",
-    example: "I'll give you a call later to discuss the details.",
+    idiom:
+      "The teacher warned the student once for all that no mischief shall be tolerated in the class.",
+    idiomUsed: "once for all",
+    options: {
+      a: "authoritatively",
+      b: "finally",
+      c: "angrily",
+      d: "coldly",
+    },
+    answer: "b",
+    explanation:
+      "'Once for all' means to do something decisively and finally, leaving no room for doubt.",
   },
   {
     id: 56,
-    collocation: "Go on vacation",
-    explanation: "To take a holiday or break from work.",
-    origin:
-      "This phrase combines 'go on,' meaning to proceed or start, with 'vacation,' referring to time spent away from work.",
-    example: "We are planning to go on vacation to the beach this summer.",
+    idiom: "I hope it will not put you out if I am late.",
+    idiomUsed: "put you out",
+    options: {
+      a: "harm you",
+      b: "irritate you",
+      c: "please you",
+      d: "worry you out",
+    },
+    answer: "b",
+    explanation: "'Put you out' means to inconvenience or annoy someone.",
   },
   {
     id: 57,
-    collocation: "Take notes",
-    explanation:
-      "To write down important information during a lecture or meeting.",
-    origin:
-      "This phrase combines 'take,' meaning to capture or record, with 'notes,' referring to written information.",
-    example: "Please take notes during the lecture so you can study later.",
+    idiom: "Govind has left his country for good.",
+    idiomUsed: "for good",
+    options: {
+      a: "for better opportunities",
+      b: "on an important mission",
+      c: "forever",
+      d: "to return soon",
+    },
+    answer: "c",
+    explanation: "'For good' means permanently or forever.",
   },
   {
     id: 58,
-    collocation: "Make a list",
-    explanation: "To create a record of items or tasks.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'list,' referring to an itemized series.",
-    example: "I need to make a list of groceries before going shopping.",
+    idiom:
+      "Sanjay was the real power behind the throne and all politicians were aware of this.",
+    idiomUsed: "power behind the throne",
+    options: {
+      a: "the person who had the real control and power",
+      b: "the acknowledged leader",
+      c: "the person who controlled the monarch",
+      d: "the person who advised the queen",
+    },
+    answer: "a",
+    explanation:
+      "'Power behind the throne' refers to someone who has influence or control, often without being publicly recognized.",
   },
   {
     id: 59,
-    collocation: "Break a record",
-    explanation: "To achieve a new best or highest performance.",
-    origin:
-      "This phrase combines 'break,' meaning to surpass, with 'record,' referring to the best performance noted.",
-    example: "The athlete broke the world record in the 100 meters.",
+    idiom: "His friends let him down.",
+    idiomUsed: "let him down",
+    options: {
+      a: "failed",
+      b: "comforted",
+      c: "succeeded",
+      d: "stood by",
+    },
+    answer: "a",
+    explanation:
+      "'Let him down' means to fail to support someone when they need it.",
   },
   {
     id: 60,
-    collocation: "Take a seat",
-    explanation: "To sit down.",
-    origin:
-      "This phrase combines 'take,' meaning to assume, with 'seat,' referring to a place to sit.",
-    example: "Please take a seat while you wait for your appointment.",
+    idiom: "I felt like a fish out of water among all those business tycoons.",
+    idiomUsed: "fish out of water",
+    options: {
+      a: "troubled",
+      b: "stupid",
+      c: "uncomfortable",
+      d: "inferior",
+    },
+    answer: "c",
+    explanation:
+      "'Fish out of water' means to feel uncomfortable or out of place in a particular situation.",
   },
   {
     id: 61,
-    collocation: "Have a party",
-    explanation: "To host a gathering or celebration.",
-    origin:
-      "This phrase combines 'have,' meaning to organize, with 'party,' referring to a social gathering.",
-    example: "We are going to have a party for her birthday next week.",
+    idiom: "He passed himself off as a noble man.",
+    idiomUsed: "passed himself off",
+    options: {
+      a: "was regarded as",
+      b: "pretended to be",
+      c: "was thought to be",
+      d: "was looked upon",
+    },
+    answer: "b",
+    explanation:
+      "'Passed himself off' means to pretend to be something or someone that one is not.",
   },
   {
     id: 62,
-    collocation: "Play a game",
-    explanation: "To engage in a recreational activity.",
-    origin:
-      "This phrase combines 'play,' meaning to participate in an activity, with 'game,' referring to a structured form of play.",
-    example: "Let’s play a game of chess to pass the time.",
+    idiom: "This matter has been hanging fire for the last many months.",
+    idiomUsed: "hanging fire",
+    options: {
+      a: "going on slowly",
+      b: "hotly debated",
+      c: "stuck up",
+      d: "ignored",
+    },
+    answer: "a",
+    explanation:
+      "'Hanging fire' means to be delayed or not resolved for a period of time.",
   },
   {
     id: 63,
-    collocation: "Make a suggestion",
-    explanation: "To propose an idea or recommendation.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'suggestion,' referring to a proposal.",
-    example: "I’d like to make a suggestion about the project timeline.",
+    idiom:
+      "In the armed forces, it is considered a great privilege to die in harness.",
+    idiomUsed: "die in harness",
+    options: {
+      a: "die on horseback",
+      b: "die in the battlefield",
+      c: "die while still working",
+      d: "die with honour",
+    },
+    answer: "c",
+    explanation:
+      "'Die in harness' means to die while still engaged in one's duties or work.",
   },
   {
     id: 64,
-    collocation: "Take a photo",
-    explanation: "To capture an image using a camera.",
-    origin:
-      "This phrase combines 'take,' meaning to capture, with 'photo,' short for photograph, referring to an image.",
-    example: "Let’s take a photo to remember this moment.",
+    idiom: "The cricket match proved to be a big draw.",
+    idiomUsed: "a big draw",
+    options: {
+      a: "a keen contest",
+      b: "a huge attraction",
+      c: "a lovely spectacle",
+      d: "a game without any result",
+    },
+    answer: "b",
+    explanation:
+      "'A big draw' means something that attracts a lot of attention or interest.",
   },
   {
     id: 65,
-    collocation: "Run a test",
-    explanation: "To perform an examination or evaluation.",
-    origin:
-      "This phrase combines 'run,' meaning to execute, with 'test,' referring to a trial or examination.",
-    example: "We need to run a test to check the system's performance.",
+    idiom:
+      "When he heard that he had once again not been selected, he lost heart.",
+    idiomUsed: "lost heart",
+    options: {
+      a: "became desperate",
+      b: "felt sad",
+      c: "became angry",
+      d: "became discouraged",
+    },
+    answer: "d",
+    explanation: "'Lost heart' means to become discouraged or lose confidence.",
   },
   {
     id: 66,
-    collocation: "Have faith",
-    explanation: "To trust or believe in something or someone.",
-    origin:
-      "This phrase combines 'have,' meaning to possess, with 'faith,' referring to strong belief or trust.",
-    example: "You should have faith in your abilities.",
+    idiom: "He was undecided. He let the grass grow under his feet.",
+    idiomUsed: "let the grass grow under his feet",
+    options: {
+      a: "loitered around",
+      b: "stayed out",
+      c: "sat unmoving",
+      d: "moved away",
+    },
+    answer: "a",
+    explanation:
+      "'Let the grass grow under his feet' means to delay or waste time instead of taking action.",
   },
   {
     id: 67,
-    collocation: "Take a stand",
-    explanation: "To assert a position or opinion.",
-    origin:
-      "This phrase combines 'take,' meaning to assume, with 'stand,' referring to a position on an issue.",
-    example: "She decided to take a stand on the environmental issues.",
+    idiom:
+      "Although he has failed in the written examination, he is using backstairs influence to get the job.",
+    idiomUsed: "backstairs influence",
+    options: {
+      a: "political influence",
+      b: "backing influence",
+      c: "deserving and proper influence",
+      d: "secret and unfair influence",
+    },
+    answer: "d",
+    explanation:
+      "'Backstairs influence' refers to secretive or unethical methods of gaining power or position.",
   },
   {
     id: 68,
-    collocation: "Give a speech",
-    explanation: "To deliver a formal talk to an audience.",
-    origin:
-      "This phrase combines 'give,' meaning to present, with 'speech,' referring to a spoken presentation.",
-    example: "He was invited to give a speech at the conference.",
+    idiom:
+      "Companies producing goods play to the gallery to boost their sales.",
+    idiomUsed: "play to the gallery",
+    options: {
+      a: "advertise",
+      b: "cater to the public taste",
+      c: "attempt to appeal to popular taste",
+      d: "depend upon the public for approval",
+    },
+    answer: "c",
+    explanation:
+      "'Play to the gallery' means to behave in a way that is intended to impress or please an audience.",
   },
   {
     id: 69,
-    collocation: "Take a deep breath",
-    explanation: "To inhale deeply to relax or calm oneself.",
-    origin:
-      "This phrase combines 'take,' meaning to capture, with 'deep breath,' referring to inhaling air deeply.",
-    example:
-      "Before you start speaking, take a deep breath to calm your nerves.",
+    idiom:
+      "Since he knew what would happen, he should be left to stew in his own juice.",
+    idiomUsed: "stew in his own juice",
+    options: {
+      a: "make a stew",
+      b: "boil",
+      c: "suffer in his own juice",
+      d: "suffer for his own act",
+    },
+    answer: "c",
+    explanation:
+      "'Stew in his own juice' means to suffer the consequences of one's own actions.",
   },
   {
     id: 70,
-    collocation: "Make a complaint",
-    explanation: "To express dissatisfaction about something.",
-    origin:
-      "This phrase combines 'make,' meaning to create or express, with 'complaint,' referring to an expression of dissatisfaction.",
-    example: "You can make a complaint to customer service if you're unhappy.",
+    idiom: "The project did not appear to hold out bright prospects.",
+    idiomUsed: "hold out bright prospects",
+    options: {
+      a: "highlight",
+      b: "show",
+      c: "offer",
+      d: "promise",
+    },
+    answer: "d",
+    explanation:
+      "'Hold out bright prospects' means to offer or promise a hopeful or successful outcome.",
   },
   {
     id: 71,
-    collocation: "Take responsibility",
-    explanation: "To accept accountability for something.",
-    origin:
-      "This phrase combines 'take,' meaning to assume, with 'responsibility,' referring to a duty or obligation.",
-    example: "He needs to take responsibility for his mistakes.",
+    idiom: "The thief took to his heels when he saw a policeman on the beat.",
+    idiomUsed: "took to his heels",
+    options: {
+      a: "had some pain in his heels",
+      b: "ran away from the scene",
+      c: "confronted the policeman",
+      d: "could not decide what to do",
+    },
+    answer: "b",
+    explanation:
+      "'Took to his heels' means to run away quickly, especially to escape from danger.",
   },
   {
     id: 72,
-    collocation: "Keep a record",
-    explanation: "To maintain documentation or information.",
-    origin:
-      "This phrase combines 'keep,' meaning to hold onto, with 'record,' referring to documentation of information.",
-    example: "It’s important to keep a record of all transactions.",
+    idiom: "He struck several bad patches before he made good.",
+    idiomUsed: "struck several bad patches",
+    options: {
+      a: "came across bad soil",
+      b: "had a bad time",
+      c: "went through many illnesses",
+      d: "had many professional difficulties",
+    },
+    answer: "b",
+    explanation:
+      "'Struck several bad patches' means to experience difficulties or challenges.",
   },
   {
     id: 73,
-    collocation: "Run into someone",
-    explanation: "To meet someone unexpectedly.",
-    origin:
-      "This phrase combines 'run into,' meaning to encounter, with 'someone,' referring to a person.",
-    example: "I ran into my old friend at the grocery store.",
+    idiom: "The accounts of the murder made her flesh creep.",
+    idiomUsed: "made her flesh creep",
+    options: {
+      a: "made her sad",
+      b: "surprised her",
+      c: "made her cry bitterly",
+      d: "fill her with horror",
+    },
+    answer: "d",
+    explanation:
+      "'Made her flesh creep' means to cause someone to feel intense fear or horror.",
   },
   {
     id: 74,
-    collocation: "Take a moment",
-    explanation: "To pause briefly.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or use, with 'moment,' referring to a short period.",
-    example: "Let’s take a moment to reflect on what we’ve learned.",
+    idiom:
+      "How long will the people put up with the increasing economic hardships?",
+    idiomUsed: "put up with",
+    options: {
+      a: "welcome",
+      b: "take easily",
+      c: "remain satisfied with",
+      d: "tolerate",
+    },
+    answer: "d",
+    explanation:
+      "'Put up with' means to tolerate or endure something unpleasant.",
   },
   {
     id: 75,
-    collocation: "Get a job",
-    explanation: "To find employment.",
-    origin:
-      "This phrase combines 'get,' meaning to acquire, with 'job,' referring to a position of employment.",
-    example: "I need to get a job before I can afford my own place.",
+    idiom:
+      "The teacher warned the student once for all that no mischief shall be tolerated in the class.",
+    idiomUsed: "once for all",
+    options: {
+      a: "authoritatively",
+      b: "finally",
+      c: "angrily",
+      d: "coldly",
+    },
+    answer: "b",
+    explanation:
+      "'Once for all' means to do something decisively or finally, so that it is not repeated.",
   },
   {
     id: 76,
-    collocation: "Make a phone call",
-    explanation: "To place a telephone call to someone.",
-    origin:
-      "This phrase combines 'make,' meaning to perform or create, with 'phone call,' referring to a conversation via telephone.",
-    example: "I need to make a phone call to confirm my appointment.",
+    idiom: "I hope it will not put you out if I am late.",
+    idiomUsed: "put you out",
+    options: {
+      a: "harm you",
+      b: "irritate you",
+      c: "please you",
+      d: "worry you",
+    },
+    answer: "b",
+    explanation: "'Put you out' means to cause inconvenience or annoyance.",
   },
   {
     id: 77,
-    collocation: "Take a trip",
-    explanation: "To go on a journey or travel.",
-    origin:
-      "This phrase combines 'take,' meaning to embark on, with 'trip,' referring to a journey.",
-    example: "We’re planning to take a trip to Italy next summer.",
+    idiom: "Govind has left his country for good.",
+    idiomUsed: "for good",
+    options: {
+      a: "for better opportunities",
+      b: "on an important mission",
+      c: "forever",
+      d: "to return soon",
+    },
+    answer: "c",
+    explanation: "'For good' means permanently or forever.",
   },
   {
     id: 78,
-    collocation: "Have a conversation",
-    explanation: "To engage in spoken exchange of thoughts or ideas.",
-    origin:
-      "This phrase combines 'have,' meaning to engage in, with 'conversation,' referring to verbal communication.",
-    example: "Let’s have a conversation about your ideas for the project.",
+    idiom:
+      "Sanjay was the real power behind the throne and all politicians were aware of this.",
+    idiomUsed: "the real power behind the throne",
+    options: {
+      a: "the person who had the real control and power",
+      b: "the acknowledged leader",
+      c: "the person who controlled the monarch",
+      d: "the person who advised the queen",
+    },
+    answer: "a",
+    explanation:
+      "'The real power behind the throne' refers to someone who has influence or control, although not holding the official position.",
   },
   {
     id: 79,
-    collocation: "Run for office",
-    explanation: "To seek a political position or candidacy.",
-    origin:
-      "This phrase combines 'run,' meaning to campaign for, with 'office,' referring to a position of authority.",
-    example: "She plans to run for office in the next election.",
-  },
-  {
-    id: 80,
-    collocation: "Give advice",
-    explanation: "To offer recommendations or guidance.",
-    origin:
-      "This phrase combines 'give,' meaning to provide, with 'advice,' referring to suggestions or recommendations.",
-    example: "I always give my friends advice when they ask for it.",
+    idiom: "His friends let him down.",
+    idiomUsed: "let him down",
+    options: {
+      a: "failed",
+      b: "comforted",
+      c: "succeeded",
+      d: "stood by",
+    },
+    answer: "a",
+    explanation: "'Let him down' means to disappoint someone.",
   },
   {
     id: 81,
-    collocation: "Make an effort",
-    explanation: "To try hard to achieve something.",
-    origin:
-      "This phrase combines 'make,' meaning to create or exert, with 'effort,' referring to exertion of energy.",
-    example: "You need to make an effort if you want to succeed.",
+    idiom: "The thief took to his heels when he saw a policeman on the beat.",
+    idiomUsed: "took to his heels",
+    options: {
+      a: "had some pain in his heels",
+      b: "ran away from the scene",
+      c: "confronted the policeman",
+      d: "could not decide what to do",
+    },
+    answer: "b",
+    explanation:
+      "'Took to his heels' means to run away quickly, especially to escape from danger.",
   },
   {
     id: 82,
-    collocation: "Take advantage of",
-    explanation: "To exploit or utilize a situation or opportunity.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or use, with 'advantage of,' referring to benefiting from something.",
-    example: "You should take advantage of the discounts during the sale.",
+    idiom: "He struck several bad patches before he made good.",
+    idiomUsed: "struck several bad patches",
+    options: {
+      a: "came across bad soil",
+      b: "had a bad time",
+      c: "went through many illnesses",
+      d: "had many professional difficulties",
+    },
+    answer: "b",
+    explanation:
+      "'Struck several bad patches' means to experience difficulties or challenges.",
   },
   {
     id: 83,
-    collocation: "Keep in touch",
-    explanation: "To maintain communication with someone.",
-    origin:
-      "This phrase combines 'keep,' meaning to retain, with 'in touch,' referring to maintaining contact.",
-    example: "Let’s keep in touch after graduation.",
+    idiom: "The accounts of the murder made her flesh creep.",
+    idiomUsed: "made her flesh creep",
+    options: {
+      a: "made her sad",
+      b: "surprised her",
+      c: "made her cry bitterly",
+      d: "filled her with horror",
+    },
+    answer: "d",
+    explanation:
+      "'Made her flesh creep' means to cause someone to feel intense fear or horror.",
   },
   {
     id: 84,
-    collocation: "Make a decision",
-    explanation: "To choose or determine a course of action.",
-    origin:
-      "This phrase combines 'make,' meaning to create or reach, with 'decision,' referring to a choice made after consideration.",
-    example: "It’s time to make a decision about your career path.",
+    idiom:
+      "How long will the people put up with the increasing economic hardships?",
+    idiomUsed: "put up with",
+    options: {
+      a: "welcome",
+      b: "take easily",
+      c: "remain satisfied with",
+      d: "tolerate",
+    },
+    answer: "d",
+    explanation:
+      "'Put up with' means to tolerate or endure something unpleasant.",
   },
   {
     id: 85,
-    collocation: "Take a break",
-    explanation: "To pause from work or activity for rest.",
-    origin:
-      "This phrase combines 'take,' meaning to seize, with 'break,' referring to a pause in activity.",
-    example: "Let’s take a break and grab some coffee.",
+    idiom:
+      "The teacher warned the student once for all that no mischief shall be tolerated in the class.",
+    idiomUsed: "once for all",
+    options: {
+      a: "authoritatively",
+      b: "finally",
+      c: "angrily",
+      d: "coldly",
+    },
+    answer: "b",
+    explanation:
+      "'Once for all' means to do something decisively or finally, so that it is not repeated.",
   },
   {
     id: 86,
-    collocation: "Run out of",
-    explanation: "To use up all of something.",
-    origin:
-      "This phrase combines 'run out,' meaning to exhaust a supply, with 'of,' referring to the item being depleted.",
-    example: "We have run out of milk; can you buy some?",
+    idiom: "I hope it will not put you out if I am late.",
+    idiomUsed: "put you out",
+    options: {
+      a: "harm you",
+      b: "irritate you",
+      c: "please you",
+      d: "worry you",
+    },
+    answer: "b",
+    explanation: "'Put you out' means to cause inconvenience or annoyance.",
   },
   {
     id: 87,
-    collocation: "Have a good time",
-    explanation: "To enjoy oneself.",
-    origin:
-      "This phrase combines 'have,' meaning to experience, with 'good time,' referring to enjoyable moments.",
-    example: "I hope you have a good time at the party.",
+    idiom: "Govind has left his country for good.",
+    idiomUsed: "for good",
+    options: {
+      a: "for better opportunities",
+      b: "on an important mission",
+      c: "forever",
+      d: "to return soon",
+    },
+    answer: "c",
+    explanation: "'For good' means permanently or forever.",
   },
   {
     id: 88,
-    collocation: "Pay attention",
-    explanation: "To focus or concentrate on something.",
-    origin:
-      "This phrase combines 'pay,' meaning to give, with 'attention,' referring to the mental focus.",
-    example: "You need to pay attention to the instructions.",
+    idiom:
+      "Sanjay was the real power behind the throne and all politicians were aware of this.",
+    idiomUsed: "the real power behind the throne",
+    options: {
+      a: "the person who had the real control and power",
+      b: "the acknowledged leader",
+      c: "the person who controlled the monarch",
+      d: "the person who advised the queen",
+    },
+    answer: "a",
+    explanation:
+      "'The real power behind the throne' refers to someone who has influence or control, although not holding the official position.",
   },
   {
     id: 89,
-    collocation: "Take turns",
-    explanation: "To alternate doing something.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'turns,' referring to alternating roles or actions.",
-    example: "Let’s take turns driving on our road trip.",
+    idiom: "His friends let him down.",
+    idiomUsed: "let him down",
+    options: {
+      a: "failed",
+      b: "comforted",
+      c: "succeeded",
+      d: "stood by",
+    },
+    answer: "a",
+    explanation: "'Let him down' means to disappoint someone.",
   },
   {
     id: 90,
-    collocation: "Lose weight",
-    explanation: "To reduce body mass or fat.",
-    origin:
-      "This phrase combines 'lose,' meaning to reduce or decrease, with 'weight,' referring to body mass.",
-    example: "She is trying to lose weight for the summer.",
+    idiom: "I felt like a fish out of water among all those business tycoons.",
+    idiomUsed: "a fish out of water",
+    options: {
+      a: "troubled",
+      b: "stupid",
+      c: "uncomfortable",
+      d: "inferior",
+    },
+    answer: "c",
+    explanation:
+      "'A fish out of water' means feeling uncomfortable or out of place in a particular situation.",
   },
   {
     id: 91,
-    collocation: "Have a snack",
-    explanation: "To eat a small amount of food between meals.",
-    origin:
-      "This phrase combines 'have,' meaning to consume, with 'snack,' referring to a small meal.",
-    example: "I usually have a snack in the afternoon.",
+    idiom: "The thief took to his heels when he saw a policeman on the beat.",
+    idiomUsed: "took to his heels",
+    options: {
+      a: "had some pain in his heels",
+      b: "ran away from the scene",
+      c: "confronted the policeman",
+      d: "could not decide what to do",
+    },
+    answer: "b",
+    explanation:
+      "'Took to his heels' means to run away quickly, especially to escape.",
   },
   {
     id: 92,
-    collocation: "Make time",
-    explanation: "To allocate time for a specific purpose.",
-    origin:
-      "This phrase combines 'make,' meaning to create or provide, with 'time,' referring to a duration.",
-    example: "You need to make time for your hobbies.",
+    idiom: "He struck several bad patches before he made good.",
+    idiomUsed: "struck several bad patches",
+    options: {
+      a: "came across bad soil",
+      b: "had a bad time",
+      c: "went through many illnesses",
+      d: "had many professional difficulties",
+    },
+    answer: "b",
+    explanation:
+      "'Struck several bad patches' means to experience difficulties or setbacks.",
   },
   {
     id: 93,
-    collocation: "Catch someone's attention",
-    explanation: "To attract someone’s interest.",
-    origin:
-      "This phrase combines 'catch,' meaning to seize, with 'someone's attention,' referring to drawing focus.",
-    example: "The ad was designed to catch the viewer's attention.",
+    idiom: "The accounts of the murder made her flesh creep.",
+    idiomUsed: "made her flesh creep",
+    options: {
+      a: "made her sad",
+      b: "surprised her",
+      c: "made her cry bitterly",
+      d: "filled her with horror",
+    },
+    answer: "d",
+    explanation:
+      "'Made her flesh creep' means to cause a feeling of horror or revulsion.",
   },
   {
     id: 94,
-    collocation: "Do your best",
-    explanation: "To try as hard as possible.",
-    origin:
-      "This phrase combines 'do,' meaning to perform, with 'your best,' referring to the highest quality of effort.",
-    example: "Just do your best on the exam.",
+    idiom:
+      "How long will the people put up with the increasing economic hardships?",
+    idiomUsed: "put up with",
+    options: {
+      a: "welcome",
+      b: "take easily",
+      c: "remain satisfied with",
+      d: "tolerate",
+    },
+    answer: "d",
+    explanation:
+      "'Put up with' means to tolerate or endure something unpleasant.",
   },
   {
     id: 95,
-    collocation: "Go on a diet",
-    explanation: "To restrict food intake for health or weight loss.",
-    origin:
-      "This phrase combines 'go on,' meaning to start, with 'diet,' referring to a regulated food intake.",
-    example: "I decided to go on a diet to improve my health.",
+    idiom:
+      "The teacher warned the student once for all that no mischief shall be tolerated in the class.",
+    idiomUsed: "once for all",
+    options: {
+      a: "authoritatively",
+      b: "finally",
+      c: "angrily",
+      d: "coldly",
+    },
+    answer: "b",
+    explanation:
+      "'Once for all' means finally or decisively, often indicating a definitive warning or action.",
   },
   {
     id: 96,
-    collocation: "Get to know",
-    explanation: "To become familiar with someone or something.",
-    origin:
-      "This phrase combines 'get,' meaning to reach or attain, with 'to know,' referring to gaining knowledge about someone or something.",
-    example: "I want to get to know my new coworkers better.",
+    idiom: "I hope it will not put you out if I am late.",
+    idiomUsed: "put you out",
+    options: {
+      a: "harm you",
+      b: "irritate you",
+      c: "please you",
+      d: "worry you",
+    },
+    answer: "b",
+    explanation: "'Put you out' means to cause inconvenience or annoyance.",
   },
   {
     id: 97,
-    collocation: "Hold a meeting",
-    explanation: "To conduct a formal gathering of people.",
-    origin:
-      "This phrase combines 'hold,' meaning to organize, with 'meeting,' referring to a gathering for discussion.",
-    example: "We will hold a meeting to discuss the project updates.",
+    idiom: "Govind has left his country for good.",
+    idiomUsed: "for good",
+    options: {
+      a: "for better opportunities",
+      b: "on an important mission",
+      c: "forever",
+      d: "to return soon",
+    },
+    answer: "c",
+    explanation: "'For good' means permanently or forever.",
   },
   {
     id: 98,
-    collocation: "Take a risk",
-    explanation: "To engage in an action that could result in loss or gain.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'risk,' referring to the possibility of loss.",
-    example: "Investing in stocks involves taking a risk.",
+    idiom:
+      "Sanjay was the real power behind the throne and all politicians were aware of this.",
+    idiomUsed: "the real power behind the throne",
+    options: {
+      a: "the person who had the real control and power",
+      b: "the acknowledged leader",
+      c: "the person who controlled the monarch",
+      d: "the person who advised the queen",
+    },
+    answer: "a",
+    explanation:
+      "'The real power behind the throne' refers to someone who holds influence or power without being in the official position.",
   },
   {
     id: 99,
-    collocation: "Make the most of",
-    explanation: "To utilize something to the fullest potential.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'the most of,' referring to maximizing value.",
-    example: "Make the most of your time during the internship.",
+    idiom: "His friends let him down.",
+    idiomUsed: "let him down",
+    options: {
+      a: "failed",
+      b: "comforted",
+      c: "succeeded",
+      d: "stood by",
+    },
+    answer: "a",
+    explanation:
+      "'Let him down' means to disappoint someone or fail to support them.",
   },
   {
     id: 100,
-    collocation: "Break the news",
+    idiom: "I felt like a fish out of water among all those business tycoons.",
+    idiomUsed: "a fish out of water",
+    options: {
+      a: "troubled",
+      b: "stupid",
+      c: "uncomfortable",
+      d: "inferior",
+    },
+    answer: "c",
     explanation:
-      "To inform someone about something, usually news that is significant or upsetting.",
-    origin:
-      "This phrase combines 'break,' meaning to announce or reveal, with 'the news,' referring to information.",
-    example: "I had to break the news to her about the job loss.",
+      "'A fish out of water' means feeling uncomfortable or out of place in a particular situation.",
   },
   {
     id: 101,
-    collocation: "Take responsibility for",
-    explanation: "To accept the consequences of an action.",
-    origin:
-      "This phrase combines 'take,' meaning to accept, with 'responsibility for,' referring to accountability for something.",
-    example: "He must take responsibility for his decisions.",
+    idiom: "He passed himself off as a noble man.",
+    idiomUsed: "passed himself off",
+    options: {
+      a: "was regarded as",
+      b: "pretended to be",
+      c: "was thought to be",
+      d: "was looked upon",
+    },
+    answer: "b",
+    explanation:
+      "'Passed himself off' means to pretend to be someone or something he is not.",
   },
   {
     id: 102,
-    collocation: "Do the laundry",
-    explanation: "To wash and dry clothes.",
-    origin:
-      "This phrase combines 'do,' meaning to perform, with 'the laundry,' referring to clothes that need cleaning.",
-    example: "I need to do the laundry before the weekend.",
+    idiom: "This matter has been hanging fire for the last many months.",
+    idiomUsed: "hanging fire",
+    options: {
+      a: "going on slowly",
+      b: "hotly debated",
+      c: "stuck up",
+      d: "ignored",
+    },
+    answer: "a",
+    explanation: "'Hanging fire' means to remain unresolved or to be delayed.",
   },
   {
     id: 103,
-    collocation: "Take a look",
-    explanation: "To glance or examine something briefly.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or engage in, with 'a look,' referring to a brief visual examination.",
-    example: "Can you take a look at this report?",
+    idiom:
+      "In the armed forces, it is considered a great privilege to die in harness.",
+    idiomUsed: "die in harness",
+    options: {
+      a: "die on a horse back",
+      b: "die in the battlefield",
+      c: "die while still working",
+      d: "die with honour",
+    },
+    answer: "c",
+    explanation:
+      "'Die in harness' means to die while still actively engaged in one's work.",
   },
   {
     id: 104,
-    collocation: "Give it a try",
-    explanation: "To attempt or make an effort.",
-    origin:
-      "This phrase combines 'give,' meaning to offer, with 'it a try,' referring to making an attempt.",
-    example: "If you're unsure, just give it a try!",
+    idiom: "The cricket match proved to be a big draw.",
+    idiomUsed: "a big draw",
+    options: {
+      a: "a keen contest",
+      b: "a huge attraction",
+      c: "a lovely spectacle",
+      d: "a game without any result",
+    },
+    answer: "b",
+    explanation:
+      "'A big draw' means something that attracts a lot of attention or interest.",
   },
   {
     id: 105,
-    collocation: "Make a reservation",
+    idiom:
+      "When he heard that he had once again not been selected, he lost heart.",
+    idiomUsed: "lost heart",
+    options: {
+      a: "became desperate",
+      b: "felt sad",
+      c: "became angry",
+      d: "became discouraged",
+    },
+    answer: "d",
     explanation:
-      "To arrange in advance for a service, such as a table at a restaurant or a room at a hotel.",
-    origin:
-      "This phrase combines 'make,' meaning to create or arrange, with 'a reservation,' referring to booking something in advance.",
-    example: "I need to make a reservation for dinner.",
+      "'Lost heart' means to become discouraged or to lose confidence.",
   },
   {
     id: 106,
-    collocation: "Take notes",
-    explanation: "To write down important information.",
-    origin:
-      "This phrase combines 'take,' meaning to record, with 'notes,' referring to written observations.",
-    example: "Please take notes during the lecture.",
+    idiom: "He was undecided. He let the grass grow under his feet.",
+    idiomUsed: "let the grass grow under his feet",
+    options: {
+      a: "loitered around",
+      b: "stayed out",
+      c: "sat unmoving",
+      d: "moved away",
+    },
+    answer: "a",
+    explanation:
+      "'Let the grass grow under his feet' means to delay or to be slow in taking action.",
   },
   {
     id: 107,
-    collocation: "Catch a cold",
-    explanation: "To become ill with a viral infection.",
-    origin:
-      "This phrase combines 'catch,' meaning to contract or acquire, with 'a cold,' referring to a common viral illness.",
-    example: "I think I caught a cold from my coworker.",
+    idiom:
+      "Although he has failed in the written examination, he is using backstairs influence to get the job.",
+    idiomUsed: "backstairs influence",
+    options: {
+      a: "political influence",
+      b: "backing influence",
+      c: "deserving and proper influence",
+      d: "secret and unfair influence",
+    },
+    answer: "d",
+    explanation:
+      "'Backstairs influence' refers to secretive or unethical ways of gaining advantage or influence.",
   },
   {
     id: 108,
-    collocation: "Come to a decision",
-    explanation: "To reach a conclusion or resolution.",
-    origin:
-      "This phrase combines 'come to,' meaning to arrive at, with 'a decision,' referring to a choice made after consideration.",
-    example: "After much deliberation, we came to a decision.",
+    idiom:
+      "Companies producing goods play to the gallery to boost their sales.",
+    idiomUsed: "play to the gallery",
+    options: {
+      a: "advertise",
+      b: "cater to the public taste",
+      c: "attempt to appeal to popular taste",
+      d: "depend upon the public for approval",
+    },
+    answer: "c",
+    explanation:
+      "'Play to the gallery' means to seek public approval by appealing to popular opinions.",
   },
   {
     id: 109,
-    collocation: "Face the music",
-    explanation: "To confront the consequences of one's actions.",
-    origin:
-      "This phrase combines 'face,' meaning to confront, with 'the music,' referring metaphorically to the repercussions.",
-    example: "He has to face the music after missing the deadline.",
+    idiom:
+      "Since he knew what would happen, he should be left to stew in his own juice.",
+    idiomUsed: "stew in his own juice",
+    options: {
+      a: "make a stew",
+      b: "boil",
+      c: "suffer in his own juice",
+      d: "suffer for his own act",
+    },
+    answer: "c",
+    explanation:
+      "'Stew in his own juice' means to be left to suffer the consequences of one's own actions.",
   },
   {
     id: 110,
-    collocation: "Keep a secret",
-    explanation: "To not reveal information that is meant to be confidential.",
-    origin:
-      "This phrase combines 'keep,' meaning to hold onto, with 'a secret,' referring to undisclosed information.",
-    example: "I can trust you to keep a secret.",
+    idiom: "The project did not appear to hold out bright prospects.",
+    idiomUsed: "hold out bright prospects",
+    options: {
+      a: "highlight",
+      b: "show",
+      c: "offer",
+      d: "promise",
+    },
+    answer: "d",
+    explanation:
+      "'Hold out bright prospects' means to offer or promise a hopeful or successful outcome.",
   },
   {
     id: 111,
-    collocation: "Draw a conclusion",
-    explanation: "To arrive at a judgment or opinion based on evidence.",
-    origin:
-      "This phrase combines 'draw,' meaning to reach, with 'a conclusion,' referring to a final judgment.",
-    example: "After analyzing the data, we can draw a conclusion.",
+    idiom:
+      "You have to be a cool customer and be patient if you want to get the best buys.",
+    idiomUsed: "cool customer",
+    options: {
+      a: "be calm and not excitable",
+      b: "have a cool head",
+      c: "be uncommunicative",
+      d: "be choosy",
+    },
+    answer: "a",
+    explanation:
+      "'Cool customer' means someone who remains calm and composed, especially in difficult situations.",
   },
   {
     id: 112,
-    collocation: "Take a chance",
-    explanation: "To take a risk or act without certainty of the outcome.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or accept, with 'a chance,' referring to a possibility of success or failure.",
-    example: "Sometimes, you have to take a chance to achieve your dreams.",
+    idiom:
+      "There was no opposition to the new policy by the rank and file of the Government.",
+    idiomUsed: "rank and file",
+    options: {
+      a: "the official machinery",
+      b: "the ordinary members",
+      c: "the majority",
+      d: "the cabinet ministers",
+    },
+    answer: "b",
+    explanation:
+      "'Rank and file' refers to the ordinary members of an organization, as opposed to the leaders.",
   },
   {
     id: 113,
-    collocation: "Get lost",
-    explanation: "To become lost or disoriented.",
-    origin:
-      "This phrase combines 'get,' meaning to become, with 'lost,' referring to a state of being unable to find one's way.",
-    example: "I got lost in the city and had to ask for directions.",
+    idiom:
+      "The clerk wiped the nose of his employer by submitting a false bill and was dismissed from his job.",
+    idiomUsed: "wiped the nose",
+    options: {
+      a: "cleaned the nose",
+      b: "cheated",
+      c: "abused",
+      d: "slapped",
+    },
+    answer: "b",
+    explanation:
+      "'Wiped the nose' in this context means to cheat or deceive someone.",
   },
   {
     id: 114,
-    collocation: "Raise a question",
-    explanation: "To bring up a topic for discussion or inquiry.",
-    origin:
-      "This phrase combines 'raise,' meaning to bring forth, with 'a question,' referring to an inquiry.",
-    example: "I would like to raise a question about the new policy.",
+    idiom: "I have a bone to pick with you in this matter.",
+    idiomUsed: "have a bone to pick",
+    options: {
+      a: "am in agreement",
+      b: "am angry",
+      c: "am indebted",
+      d: "will join hands",
+    },
+    answer: "b",
+    explanation:
+      "'Have a bone to pick' means to have a complaint or a point of disagreement with someone.",
   },
   {
     id: 115,
-    collocation: "Give someone a hand",
-    explanation: "To assist or help someone.",
-    origin:
-      "This phrase combines 'give,' meaning to provide, with 'someone a hand,' referring to help or assistance.",
-    example: "Can you give me a hand with this project?",
+    idiom:
+      "The new C.M stuck his neck out today and promised 10kgs. free wheat a month for all rural families.",
+    idiomUsed: "stuck his neck out",
+    options: {
+      a: "took an oath",
+      b: "took a risk",
+      c: "extended help",
+      d: "caused embarrassment",
+    },
+    answer: "b",
+    explanation:
+      "'Stuck his neck out' means to take a risk, especially by making a bold statement or promise.",
   },
   {
     id: 116,
-    collocation: "Take a step",
-    explanation: "To make a movement or progress towards a goal.",
-    origin:
-      "This phrase combines 'take,' meaning to move forward, with 'a step,' referring to an action or progress.",
-    example: "You need to take a step toward achieving your goals.",
+    idiom:
+      "Harassed by repeated acts of injustice, he decided to put his foot down.",
+    idiomUsed: "put his foot down",
+    options: {
+      a: "not to yield",
+      b: "resign",
+      c: "to accept the proposal unconditionally",
+      d: "withdraw",
+    },
+    answer: "a",
+    explanation:
+      "'Put his foot down' means to assert authority or make a firm decision to stop something.",
   },
   {
     id: 117,
-    collocation: "Give up hope",
-    explanation: "To stop believing that something will happen.",
-    origin:
-      "This phrase combines 'give up,' meaning to cease trying, with 'hope,' referring to the expectation of a positive outcome.",
-    example: "Don't give up hope; things will get better.",
+    idiom:
+      "The class could not keep a straight face on hearing the strange pronunciation of the new teacher.",
+    idiomUsed: "keep a straight face",
+    options: {
+      a: "remain silent",
+      b: "remain serious",
+      c: "remain mute",
+      d: "remain disturbed",
+    },
+    answer: "b",
+    explanation:
+      "'Keep a straight face' means to remain serious and not laugh, especially in a humorous situation.",
   },
   {
     id: 118,
-    collocation: "Call it a day",
-    explanation: "To stop working for the day.",
-    origin:
-      "This phrase combines 'call,' meaning to declare, with 'it a day,' referring to the end of a work period.",
-    example: "After a long day, I think we should call it a day.",
+    idiom:
+      "The parliamentary inquiry into the Bofors deal did not bring to light any startling facts.",
+    idiomUsed: "bring to light",
+    options: {
+      a: "prove",
+      b: "probe",
+      c: "highlight",
+      d: "disclose",
+    },
+    answer: "d",
+    explanation:
+      "'Bring to light' means to reveal or disclose something that was previously hidden or unknown.",
   },
   {
     id: 119,
-    collocation: "Hold on tight",
-    explanation: "To grasp something firmly.",
-    origin:
-      "This phrase combines 'hold on,' meaning to grasp, with 'tight,' referring to a secure grip.",
-    example: "Hold on tight; this rollercoaster goes really fast!",
+    idiom: "His speech went down well with the majority of the audience.",
+    idiomUsed: "went down well",
+    options: {
+      a: "found acceptance with",
+      b: "was attentively listened to by",
+      c: "was appreciated by",
+      d: "was applauded by",
+    },
+    answer: "c",
+    explanation:
+      "'Went down well' means to be appreciated or received positively by an audience.",
   },
   {
     id: 120,
-    collocation: "Get a haircut",
-    explanation: "To have one's hair cut or styled.",
-    origin:
-      "This phrase combines 'get,' meaning to have something done, with 'a haircut,' referring to the act of cutting hair.",
-    example: "I need to get a haircut before the wedding.",
+    idiom: "Rohit has bitten off more than he can chew.",
+    idiomUsed: "bitten off more than he can chew",
+    options: {
+      a: "is trying to do too much",
+      b: "is very greedy",
+      c: "is always hungry",
+      d: "has little regard for others",
+    },
+    answer: "a",
+    explanation:
+      "'Bitten off more than he can chew' means to take on more responsibility than one can manage.",
   },
   {
     id: 121,
-    collocation: "Pay a visit",
-    explanation: "To go to see someone or someplace.",
-    origin:
-      "This phrase combines 'pay,' meaning to give attention to, with 'a visit,' referring to going to see someone.",
-    example: "We should pay a visit to our grandparents this weekend.",
+    idiom: "The detective left no stone unturned to trace the culprit.",
+    idiomUsed: "left no stone unturned",
+    options: {
+      a: "took no pains",
+      b: "did very irrelevant things",
+      c: "resorted to illegitimate practices",
+      d: "used all available means",
+    },
+    answer: "d",
+    explanation:
+      "'Leave no stone unturned' means to use all possible methods or efforts to achieve a goal.",
   },
   {
     id: 122,
-    collocation: "Keep in mind",
-    explanation: "To remember or consider something.",
-    origin:
-      "This phrase combines 'keep,' meaning to retain, with 'in mind,' referring to mental awareness.",
-    example: "Keep in mind that the deadline is approaching.",
+    idiom: "The authorities took him to task for his negligence.",
+    idiomUsed: "took him to task",
+    options: {
+      a: "gave him additional work",
+      b: "suspended his assignment",
+      c: "reprimanded him",
+      d: "forced him to resign",
+    },
+    answer: "c",
+    explanation:
+      "'Take someone to task' means to reprimand or criticize someone for their actions.",
   },
   {
     id: 123,
-    collocation: "Make a deal",
-    explanation: "To come to an agreement or arrangement.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'a deal,' referring to an agreement.",
-    example: "They made a deal to collaborate on the project.",
+    idiom:
+      "In spite of the immense pressure exerted by the militants, the Government has decided not to give in.",
+    idiomUsed: "give in",
+    options: {
+      a: "accede",
+      b: "yield",
+      c: "oblige",
+      d: "confirm",
+    },
+    answer: "b",
+    explanation:
+      "'Give in' means to yield or surrender to pressure or demands.",
   },
   {
     id: 124,
-    collocation: "Take it easy",
-    explanation: "To relax or not to take things too seriously.",
-    origin:
-      "This phrase combines 'take,' meaning to accept or engage, with 'it easy,' referring to a relaxed approach.",
-    example: "You should take it easy and enjoy your vacation.",
+    idiom: "Their business is now on its last legs.",
+    idiomUsed: "on its last legs",
+    options: {
+      a: "about to fructify",
+      b: "about to perish",
+      c: "about to produce results",
+      d: "about to take off",
+    },
+    answer: "b",
+    explanation:
+      "'On its last legs' means to be close to failing or collapsing.",
   },
   {
     id: 125,
-    collocation: "Show interest",
-    explanation: "To demonstrate curiosity or concern about something.",
-    origin:
-      "This phrase combines 'show,' meaning to display, with 'interest,' referring to curiosity or engagement.",
-    example: "She showed interest in the new project proposal.",
+    idiom: "He went back on his promise to vote for me.",
+    idiomUsed: "went back on his promise",
+    options: {
+      a: "withdrew",
+      b: "forgot",
+      c: "reinforced",
+      d: "supported",
+    },
+    answer: "a",
+    explanation:
+      "'Go back on a promise' means to fail to keep a promise or change one's commitment.",
   },
   {
     id: 126,
-    collocation: "Take the lead",
-    explanation: "To assume control or responsibility.",
-    origin:
-      "This phrase combines 'take,' meaning to assume, with 'the lead,' referring to leadership or control.",
-    example: "Someone needs to take the lead on this project.",
+    idiom:
+      "The old beggar ran amuck and began to throw stones at the passerby.",
+    idiomUsed: "ran amuck",
+    options: {
+      a: "became desperate",
+      b: "ran about wildly",
+      c: "become annoyed",
+      d: "felt disgusted",
+    },
+    answer: "b",
+    explanation: "'Run amuck' means to behave uncontrollably and disruptively.",
   },
   {
     id: 127,
-    collocation: "Get the ball rolling",
-    explanation: "To start an activity or process.",
-    origin:
-      "This phrase combines 'get,' meaning to initiate, with 'the ball rolling,' referring to beginning something.",
-    example: "Let’s get the ball rolling on the new marketing campaign.",
+    idiom: "I cannot conceive of a time when I was without a refrigerator.",
+    idiomUsed: "conceive of",
+    options: {
+      a: "imagine",
+      b: "give birth",
+      c: "understand",
+      d: "depend",
+    },
+    answer: "a",
+    explanation:
+      "'Conceive of' means to imagine or think of something as possible.",
   },
   {
     id: 128,
-    collocation: "Keep your fingers crossed",
-    explanation: "To hope for a positive outcome.",
-    origin:
-      "This phrase combines 'keep,' meaning to hold or maintain, with 'your fingers crossed,' referring to a gesture of hope.",
-    example: "I have an interview tomorrow; keep your fingers crossed for me!",
+    idiom: "To turn over a new leaf",
+    idiomUsed: "turn over a new leaf",
+    options: {
+      a: "to change completely one's course of action",
+      b: "to shift attention to new problems after having studied the old ones thoroughly",
+      c: "to cover up one's fault by wearing new marks",
+      d: "to change old habits and adopt new ones",
+    },
+    answer: "d",
+    explanation:
+      "'Turn over a new leaf' means to change one's behavior for the better and adopt new, positive habits.",
   },
   {
     id: 129,
-    collocation: "Take a deep breath",
-    explanation: "To inhale deeply, often to calm oneself.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'a deep breath,' referring to a full inhalation.",
-    example: "Before you speak, take a deep breath and relax.",
+    idiom: "A close shave",
+    idiomUsed: "close shave",
+    options: {
+      a: "a lucky escape",
+      b: "a clean shave",
+      c: "a well-guarded secret",
+      d: "a narrow escape",
+    },
+    answer: "d",
+    explanation:
+      "'A close shave' means a narrow escape from danger or a close call.",
   },
   {
     id: 130,
-    collocation: "Give someone a call",
-    explanation: "To telephone someone.",
-    origin:
-      "This phrase combines 'give,' meaning to offer, with 'someone a call,' referring to making a phone call.",
-    example: "I'll give you a call later this evening.",
+    idiom: "To talk through one's hat",
+    idiomUsed: "talk through one's hat",
+    options: {
+      a: "to speak fluently",
+      b: "to talk nonsense",
+      c: "to talk wisdom",
+      d: "to speak at random",
+    },
+    answer: "b",
+    explanation:
+      "'Talk through one's hat' means to talk nonsense or say things without knowing the facts.",
   },
-  {
-    id: 131,
-    collocation: "Take a seat",
-    explanation: "To sit down.",
-    origin:
-      "This phrase combines 'take,' meaning to occupy, with 'a seat,' referring to a place to sit.",
-    example: "Please take a seat while you wait for your appointment.",
-  },
+  // {
+  //   id: 131,
+  //   idiom: "Ill o' the wisp",
+  //   idiomUsed: "ill o' the wisp",
+  //   options: {
+  //     a: "Anything which eludes or deceives",
+  //     b: "To act in a childish way",
+  //     c: "To act in a foolish way",
+  //     d: "To have desires unbacked by efforts"
+  //   },
+  //   answer: "a",
+  //   explanation: "'Ill o' the wisp' refers to something that is elusive or deceptive, often leading people astray."
+  // },
   {
     id: 132,
-    collocation: "Make a suggestion",
-    explanation: "To propose an idea or recommendation.",
-    origin:
-      "This phrase combines 'make,' meaning to create or present, with 'a suggestion,' referring to a proposal.",
-    example: "I would like to make a suggestion regarding the project.",
+    idiom: "To talk one's head off",
+    idiomUsed: "talk one's head off",
+    options: {
+      a: "To talk loudly",
+      b: "To talk in whispers",
+      c: "To talk to oneself",
+      d: "To talk excessively",
+    },
+    answer: "d",
+    explanation:
+      "'Talk one's head off' means to talk excessively or for a long time, often without stopping.",
   },
   {
     id: 133,
-    collocation: "Get a grip",
-    explanation: "To regain control over oneself or a situation.",
-    origin:
-      "This phrase combines 'get,' meaning to achieve, with 'a grip,' referring to control or understanding.",
-    example: "You need to get a grip on your emotions.",
+    idiom: "To keep one's head",
+    idiomUsed: "keep one's head",
+    options: {
+      a: "To be agile and active",
+      b: "To keep calm",
+      c: "To think coherently",
+      d: "None of these",
+    },
+    answer: "b",
+    explanation:
+      "'Keep one's head' means to remain calm and composed in difficult or stressful situations.",
   },
   {
     id: 134,
-    collocation: "Go for a walk",
-    explanation: "To take a stroll or go outside for exercise.",
-    origin:
-      "This phrase combines 'go for,' meaning to choose to do, with 'a walk,' referring to a stroll.",
-    example: "Let’s go for a walk in the park.",
+    idiom: "A pipe dream",
+    idiomUsed: "pipe dream",
+    options: {
+      a: "A pleasant dream",
+      b: "A bad dream",
+      c: "An impracticable plan",
+      d: "A foolish idea",
+    },
+    answer: "c",
+    explanation:
+      "'Pipe dream' refers to a plan or hope that is unlikely to happen or is impractical.",
   },
   {
     id: 135,
-    collocation: "Make a fuss",
-    explanation: "To create a lot of unnecessary excitement or activity.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'a fuss,' referring to excessive excitement or concern.",
-    example: "Don’t make a fuss over a little mistake.",
+    idiom: "To be in abeyance",
+    idiomUsed: "in abeyance",
+    options: {
+      a: "To be in trouble",
+      b: "Dual minded",
+      c: "In a fighting mood",
+      d: "In suspense",
+    },
+    answer: "d",
+    explanation:
+      "'In abeyance' means being temporarily suspended or set aside.",
   },
   {
     id: 136,
-    collocation: "Take action",
-    explanation: "To do something in order to achieve a result.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'action,' referring to doing something.",
-    example: "We need to take action to address climate change.",
+    idiom: "To spill the beans",
+    idiomUsed: "spill the beans",
+    options: {
+      a: "To reveal secret information",
+      b: "To misbehave",
+      c: "To keep secrets",
+      d: "To talk irrelevant",
+    },
+    answer: "a",
+    explanation:
+      "'Spill the beans' means to reveal a secret or disclose confidential information.",
   },
   {
     id: 137,
-    collocation: "Have a good relationship",
-    explanation: "To maintain a positive connection with someone.",
-    origin:
-      "This phrase combines 'have,' meaning to possess, with 'a good relationship,' referring to a harmonious connection.",
-    example: "They have a good relationship with their neighbors.",
+    idiom: "To save one's face",
+    idiomUsed: "save one's face",
+    options: {
+      a: "To hide oneself",
+      b: "To oppose",
+      c: "To evade disgrace",
+      d: "To say plainly",
+    },
+    answer: "c",
+    explanation: "'Save one's face' means to avoid embarrassment or disgrace.",
   },
   {
     id: 138,
-    collocation: "Get to work",
-    explanation: "To begin a task or job.",
-    origin:
-      "This phrase combines 'get,' meaning to start, with 'to work,' referring to engaging in a job or task.",
-    example: "It’s time to get to work on the presentation.",
+    idiom: "To hold something in leash",
+    idiomUsed: "hold something in leash",
+    options: {
+      a: "To restrain",
+      b: "To disappoint",
+      c: "To dismiss",
+      d: "To discourage",
+    },
+    answer: "a",
+    explanation:
+      "'Hold something in leash' means to keep something under control or restrain it.",
   },
   {
     id: 139,
-    collocation: "Make a commitment",
-    explanation: "To pledge or dedicate oneself to a task or cause.",
-    origin:
-      "This phrase combines 'make,' meaning to create or undertake, with 'a commitment,' referring to a promise or obligation.",
-    example: "You need to make a commitment if you want to succeed.",
+    idiom: "To cross swords",
+    idiomUsed: "cross swords",
+    options: {
+      a: "To fight",
+      b: "To defend",
+      c: "To kill",
+      d: "To rob",
+    },
+    answer: "a",
+    explanation:
+      "'Cross swords' means to fight or engage in a conflict, often verbally.",
   },
   {
     id: 140,
-    collocation: "Give a presentation",
-    explanation: "To formally present information to an audience.",
-    origin:
-      "This phrase combines 'give,' meaning to deliver, with 'a presentation,' referring to a formal display of information.",
-    example: "I have to give a presentation on my research findings.",
+    idiom: "To give up the ghost",
+    idiomUsed: "give up the ghost",
+    options: {
+      a: "To die",
+      b: "To make false appearance",
+      c: "To terrify others by acting in suspicious manner",
+      d: "To leave useless spirits",
+    },
+    answer: "a",
+    explanation:
+      "'Give up the ghost' means to die or to stop working or functioning (in case of machines).",
   },
   {
     id: 141,
-    collocation: "Take a chance on",
-    explanation: "To risk something for a potential reward.",
-    origin:
-      "This phrase combines 'take,' meaning to seize, with 'a chance on,' referring to risking for possible gain.",
-    example: "He decided to take a chance on the new investment.",
+    idiom: "To give up the ghost",
+    idiomUsed: "give up the ghost",
+    options: {
+      a: "To suffer",
+      b: "To fight evil forces",
+      c: "To die",
+      d: "To become rational",
+    },
+    answer: "c",
+    explanation:
+      "'Give up the ghost' means to die or stop working, often used when referring to machines or people.",
   },
   {
     id: 142,
-    collocation: "Break a record",
-    explanation: "To surpass a previous achievement or standard.",
-    origin:
-      "This phrase combines 'break,' meaning to surpass, with 'a record,' referring to the best achievement in a category.",
-    example: "She hopes to break the world record in swimming.",
+    idiom: "To stand to one's guns",
+    idiomUsed: "stand to one's guns",
+    options: {
+      a: "To keep the guns close to oneself even amid danger",
+      b: "To persevere when hardships press",
+      c: "To maintain dignified and unbending attitude",
+      d: "To maintain one's position",
+    },
+    answer: "b",
+    explanation:
+      "'Stand to one's guns' means to persevere in one's position or belief, even when faced with opposition.",
   },
   {
     id: 143,
-    collocation: "Take the opportunity",
-    explanation: "To seize a favorable chance.",
-    origin:
-      "This phrase combines 'take,' meaning to seize or accept, with 'the opportunity,' referring to a favorable circumstance.",
-    example: "You should take the opportunity to travel while you can.",
+    idiom: "To smell a rat",
+    idiomUsed: "smell a rat",
+    options: {
+      a: "To detect bad smell",
+      b: "To misunderstand",
+      c: "To suspect a trick or deceit",
+      d: "To see hidden meaning",
+    },
+    answer: "c",
+    explanation:
+      "'Smell a rat' means to suspect that something is wrong or that there is deception involved.",
   },
   {
     id: 144,
-    collocation: "Give someone a second chance",
-    explanation: "To allow someone another opportunity after a failure.",
-    origin:
-      "This phrase combines 'give,' meaning to offer, with 'someone a second chance,' referring to another opportunity.",
-    example: "He deserves a second chance after what happened.",
+    idiom: "To get cold feet",
+    idiomUsed: "get cold feet",
+    options: {
+      a: "To run for life",
+      b: "To be afraid",
+      c: "To fall sick",
+      d: "To become discourteous",
+    },
+    answer: "b",
+    explanation:
+      "'Get cold feet' means to become anxious or fearful about doing something, often at the last minute.",
   },
   {
     id: 145,
-    collocation: "Come to an agreement",
-    explanation: "To reach a mutual decision.",
-    origin:
-      "This phrase combines 'come to,' meaning to arrive at, with 'an agreement,' referring to a mutual arrangement.",
-    example: "We were finally able to come to an agreement.",
+    idiom: "A lady's man",
+    idiomUsed: "lady's man",
+    options: {
+      a: "A woman-tailor",
+      b: "A lover of woman company",
+      c: "A man working as per a lady's directions",
+      d: "A timid husband",
+    },
+    answer: "b",
+    explanation:
+      "'Lady's man' refers to a man who enjoys the company of women and is popular among them.",
   },
   {
     id: 146,
-    collocation: "Keep the peace",
-    explanation: "To maintain a calm and peaceful environment.",
-    origin:
-      "This phrase combines 'keep,' meaning to maintain, with 'the peace,' referring to a state of tranquility.",
-    example: "The mediator worked hard to keep the peace between the parties.",
+    idiom: "All agog",
+    idiomUsed: "all agog",
+    options: {
+      a: "Everybody",
+      b: "All ready",
+      c: "Restless",
+      d: "Almighty",
+    },
+    answer: "c",
+    explanation:
+      "'All agog' means to be extremely eager, excited, or impatient to know or experience something.",
   },
   {
     id: 147,
-    collocation: "Hit the ground running",
-    explanation: "To start something and proceed quickly and successfully.",
-    origin:
-      "This phrase combines 'hit,' meaning to begin, with 'the ground running,' referring to starting a task effectively.",
-    example: "We need to hit the ground running on this new project.",
+    idiom: "Hobson's choice",
+    idiomUsed: "Hobson's choice",
+    options: {
+      a: "Feeling of insecurity",
+      b: "Accept or leave the offer",
+      c: "Feeling of strength",
+      d: "Excellent choice",
+    },
+    answer: "b",
+    explanation:
+      "'Hobson's choice' refers to a situation where there is only one option available, so you must take it or leave it.",
   },
   {
     id: 148,
-    collocation: "Take a stand",
-    explanation: "To assert an opinion or position on an issue.",
-    origin:
-      "This phrase combines 'take,' meaning to assume or engage, with 'a stand,' referring to a position or opinion.",
-    example: "It’s important to take a stand on social issues.",
+    idiom: "To take the bull by the horns",
+    idiomUsed: "take the bull by the horns",
+    options: {
+      a: "To punish a person severely for his arrogance",
+      b: "To grapple courageously with a difficulty that lies in our way",
+      c: "To handle it by fierce attack",
+      d: "To bypass the legal process and take action according to one's own whims",
+    },
+    answer: "b",
+    explanation:
+      "'Take the bull by the horns' means to face a difficult situation or problem directly and with courage.",
   },
   {
     id: 149,
-    collocation: "Give a sigh",
-    explanation: "To exhale deeply as an expression of emotion.",
-    origin:
-      "This phrase combines 'give,' meaning to emit, with 'a sigh,' referring to a deep exhalation expressing relief or frustration.",
-    example: "She gave a sigh of relief when she heard the good news.",
+    idiom: "To take people by storm",
+    idiomUsed: "take people by storm",
+    options: {
+      a: "To put people in utter surprise",
+      b: "To captivate them unexpectedly",
+      c: "To exploit people's agitation",
+      d: "To bring out something sensational attracting people's attention",
+    },
+    answer: "b",
+    explanation:
+      "'Take people by storm' means to captivate or impress people suddenly and unexpectedly.",
   },
   {
     id: 150,
-    collocation: "Stay in touch",
-    explanation: "To maintain communication with someone.",
-    origin:
-      "This phrase combines 'stay,' meaning to remain, with 'in touch,' referring to keeping in contact.",
-    example: "Let’s stay in touch after the conference.",
+    idiom: "To take a leap in the dark",
+    idiomUsed: "take a leap in the dark",
+    options: {
+      a: "To take risk",
+      b: "To hazard oneself",
+      c: "To do a task secretly",
+      d: "To do a hazardous thing without any idea of the result",
+    },
+    answer: "d",
+    explanation:
+      "'Take a leap in the dark' means to undertake something risky or uncertain, without knowing the consequences.",
   },
   {
     id: 151,
-    collocation: "Take part in",
-    explanation: "To participate in an activity or event.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'part in,' referring to involvement in something.",
-    example: "I’d like to take part in the community service project.",
+    idiom: "To cast pearls before a swine",
+    idiomUsed: "cast pearls before a swine",
+    options: {
+      a: "To spend recklessly",
+      b: "To spend a lot of money on the upkeep of domestic hogs",
+      c: "To waste money over trifles",
+      d: "To offer a person a thing which he cannot appreciate",
+    },
+    answer: "d",
+    explanation:
+      "'Cast pearls before a swine' means to offer something valuable to someone who doesn't understand or appreciate it.",
   },
   {
     id: 152,
-    collocation: "Make a profit",
-    explanation: "To earn more money than spent.",
-    origin:
-      "This phrase combines 'make,' meaning to generate, with 'a profit,' referring to financial gain.",
-    example: "The business was able to make a profit in its first year.",
+    idiom: "To bring one's eggs to a bad market",
+    idiomUsed: "bring one's eggs to a bad market",
+    options: {
+      a: "To face a humiliating situation",
+      b: "To bring one's commodities to a market where there is no demand for them",
+      c: "To show one's talents before an audience which is incapable of appreciating them",
+      d: "To fail in one's plan because one goes to the wrong people for help",
+    },
+    answer: "b",
+    explanation:
+      "'Bring one's eggs to a bad market' means to try to sell or present something where it is not valued or needed.",
   },
   {
     id: 153,
-    collocation: "Get in touch with",
-    explanation: "To contact or communicate with someone.",
-    origin:
-      "This phrase combines 'get in,' meaning to initiate contact, with 'touch with,' referring to communication.",
-    example: "I’ll get in touch with you next week.",
+    idiom: "To split hairs",
+    idiomUsed: "split hairs",
+    options: {
+      a: "To sidetrack the issue",
+      b: "To quarrel over trifles",
+      c: "To indulge in over-refined arguments",
+      d: "To find faults with others",
+    },
+    answer: "c",
+    explanation:
+      "'Split hairs' means to argue about very small and unimportant details.",
   },
   {
     id: 154,
-    collocation: "Make an effort",
-    explanation: "To try hard to accomplish something.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'an effort,' referring to a strenuous attempt.",
-    example: "You should make an effort to improve your grades.",
+    idiom: "To play fast and loose",
+    idiomUsed: "play fast and loose",
+    options: {
+      a: "To trust others",
+      b: "To be undependable",
+      c: "To cheat people",
+      d: "To hurt somebody's feelings",
+    },
+    answer: "b",
+    explanation:
+      "'Play fast and loose' means to behave in a reckless or irresponsible manner, often deceitfully.",
   },
   {
     id: 155,
-    collocation: "Break the news",
-    explanation: "To inform someone about something important or upsetting.",
-    origin:
-      "This phrase combines 'break,' meaning to reveal, with 'the news,' referring to information.",
-    example: "I had to break the news about the cancellation of the event.",
+    idiom: "A snake in the grass",
+    idiomUsed: "snake in the grass",
+    options: {
+      a: "Secret or hidden enemy",
+      b: "Unforeseen happening",
+      c: "Unrecognizable danger",
+      d: "Irreliable person",
+    },
+    answer: "a",
+    explanation:
+      "'A snake in the grass' refers to a hidden enemy or someone who pretends to be a friend but is actually harmful.",
   },
   {
     id: 156,
-    collocation: "Keep track of",
-    explanation: "To monitor or maintain awareness of something.",
-    origin:
-      "This phrase combines 'keep,' meaning to retain, with 'track of,' referring to following or recording information.",
-    example: "It's important to keep track of your expenses.",
+    idiom: "To have an easy time of it",
+    idiomUsed: "have an easy time of it",
+    options: {
+      a: "To take the world lightly",
+      b: "To indulge in frivolities",
+      c: "To squander away resources",
+      d: "To live in quiet and comfort",
+    },
+    answer: "d",
+    explanation:
+      "'Have an easy time of it' means to live comfortably and without much difficulty.",
   },
   {
     id: 157,
-    collocation: "Run a business",
-    explanation: "To manage or operate a commercial enterprise.",
-    origin:
-      "This phrase combines 'run,' meaning to operate, with 'a business,' referring to a company or trade.",
-    example: "He has always wanted to run a business.",
+    idiom: "A chip off the old block",
+    idiomUsed: "chip off the old block",
+    options: {
+      a: "A piece of wood",
+      b: "An old friend",
+      c: "Characteristics of one's ancestors",
+      d: "A good bargain",
+    },
+    answer: "c",
+    explanation:
+      "'A chip off the old block' refers to someone who resembles their parents in character or appearance.",
   },
   {
     id: 158,
-    collocation: "Take a break",
-    explanation: "To pause from work or activity for rest.",
-    origin:
-      "This phrase combines 'take,' meaning to engage in, with 'a break,' referring to a period of rest.",
-    example: "Let’s take a break and grab some coffee.",
+    idiom: "To hit below the belt",
+    idiomUsed: "hit below the belt",
+    options: {
+      a: "To work confidentially",
+      b: "To harm unfairly",
+      c: "To strike at the exact position",
+      d: "To hit the correct mark",
+    },
+    answer: "b",
+    explanation:
+      "'Hit below the belt' means to act in an unfair or dishonorable way, especially in an argument or fight.",
   },
   {
     id: 159,
-    collocation: "Keep a promise",
-    explanation: "To honor or fulfill a commitment made.",
-    origin:
-      "This phrase combines 'keep,' meaning to uphold, with 'a promise,' referring to a commitment or assurance.",
-    example: "It's important to keep a promise to your friends.",
+    idiom: "To wash one's dirty linen in public",
+    idiomUsed: "wash one's dirty linen in public",
+    options: {
+      a: "To criticize one's nature in public",
+      b: "To quarrel in the open",
+      c: "To do some ugly work in public",
+      d: "To discuss dirty and scandalous matters of personal nature in the presence of strangers",
+    },
+    answer: "d",
+    explanation:
+      "'Wash one's dirty linen in public' means to discuss or expose private or embarrassing matters in front of others.",
   },
   {
     id: 160,
-    collocation: "Go on a trip",
-    explanation: "To travel to a destination.",
-    origin:
-      "This phrase combines 'go on,' meaning to embark, with 'a trip,' referring to a journey.",
-    example: "We plan to go on a trip to the mountains next month.",
+    idiom: "To wrangle over an ass's shadow",
+    idiomUsed: "wrangle over an ass's shadow",
+    options: {
+      a: "To act in a foolish way",
+      b: "To quarrel over trifles",
+      c: "To waste time on petty things",
+      d: "To do something funny",
+    },
+    answer: "b",
+    explanation:
+      "'Wrangle over an ass's shadow' means to argue or fight about trivial or insignificant matters.",
   },
   {
     id: 161,
-    collocation: "Make a list",
-    explanation: "To compile a series of items or tasks.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'a list,' referring to a series of items.",
-    example: "I need to make a list of things to do today.",
+    idiom: "By the skin of one's teeth",
+    idiomUsed: "by the skin of one's teeth",
+    options: {
+      a: "Hardly",
+      b: "In time",
+      c: "Hurriedly",
+      d: "Only just",
+    },
+    answer: "d",
+    explanation:
+      "'By the skin of one's teeth' means to narrowly escape or achieve something with the slimmest margin.",
   },
   {
     id: 162,
-    collocation: "Give a chance",
-    explanation: "To allow an opportunity for someone or something.",
-    origin:
-      "This phrase combines 'give,' meaning to offer, with 'a chance,' referring to an opportunity.",
-    example: "Let’s give him a chance to prove himself.",
+    idiom: "Harp on",
+    idiomUsed: "harp on",
+    options: {
+      a: "To comment",
+      b: "To criticise",
+      c: "To keep on talking",
+      d: "To keep on insulting",
+    },
+    answer: "c",
+    explanation:
+      "'Harp on' means to talk or complain repeatedly about a subject.",
   },
   {
     id: 163,
-    collocation: "Have a discussion",
-    explanation: "To engage in a conversation about a particular topic.",
-    origin:
-      "This phrase combines 'have,' meaning to engage in, with 'a discussion,' referring to a dialogue.",
-    example: "We need to have a discussion about the project.",
+    idiom: "To be at daggers drawn",
+    idiomUsed: "at daggers drawn",
+    options: {
+      a: "To be frightened",
+      b: "To be ready to face danger",
+      c: "To threaten one",
+      d: "To be bitter enemies",
+    },
+    answer: "d",
+    explanation:
+      "'At daggers drawn' means to be in a state of open hostility or conflict with someone.",
   },
   {
     id: 164,
-    collocation: "Go on strike",
-    explanation: "To stop working as a form of protest.",
-    origin:
-      "This phrase combines 'go on,' meaning to begin, with 'strike,' referring to a work stoppage for protest.",
-    example: "The workers decided to go on strike for better pay.",
+    idiom: "To get into hot waters",
+    idiomUsed: "get into hot waters",
+    options: {
+      a: "To be impatient",
+      b: "To suffer a huge financial loss",
+      c: "To get into trouble",
+      d: "To be in a confused state of mind",
+    },
+    answer: "c",
+    explanation:
+      "'Get into hot waters' means to find oneself in trouble or difficulties.",
   },
   {
     id: 165,
-    collocation: "Take advantage of",
-    explanation: "To exploit a situation or opportunity for benefit.",
-    origin:
-      "This phrase combines 'take,' meaning to seize, with 'advantage of,' referring to a beneficial situation.",
-    example: "You should take advantage of the sales while they last.",
+    idiom: "A fair crack of the whip",
+    idiomUsed: "a fair crack of the whip",
+    options: {
+      a: "Severe punishment",
+      b: "A good check",
+      c: "A period of importance",
+      d: "A fair opportunity",
+    },
+    answer: "d",
+    explanation:
+      "'A fair crack of the whip' means a fair or equal chance or opportunity.",
   },
   {
     id: 166,
-    collocation: "Reach a conclusion",
-    explanation: "To come to a final decision or judgment.",
-    origin:
-      "This phrase combines 'reach,' meaning to arrive at, with 'a conclusion,' referring to a final decision.",
-    example: "After reviewing all the data, we reached a conclusion.",
+    idiom: "To take with a grain of salt",
+    idiomUsed: "take with a grain of salt",
+    options: {
+      a: "To take with some reservation",
+      b: "To take with total disbelief",
+      c: "To take wholeheartedly",
+      d: "To take seriously",
+    },
+    answer: "a",
+    explanation:
+      "'Take with a grain of salt' means to view something with skepticism or not to take it literally.",
   },
   {
     id: 167,
-    collocation: "Face challenges",
-    explanation: "To confront difficulties or obstacles.",
-    origin:
-      "This phrase combines 'face,' meaning to confront, with 'challenges,' referring to difficulties.",
-    example: "Every entrepreneur must face challenges along the way.",
+    idiom: "To snap one's fingers",
+    idiomUsed: "snap one's fingers",
+    options: {
+      a: "To speak abruptly",
+      b: "To accept immediately",
+      c: "To grasp eagerly",
+      d: "To become contemptuous of",
+    },
+    answer: "d",
+    explanation:
+      "'Snap one's fingers' means to show indifference or disregard for something.",
   },
   {
     id: 168,
-    collocation: "Make a mistake",
-    explanation: "To commit an error or misjudgment.",
-    origin:
-      "This phrase combines 'make,' meaning to commit, with 'a mistake,' referring to an error.",
-    example: "It’s normal to make a mistake sometimes.",
+    idiom: "To throw down the glove",
+    idiomUsed: "throw down the glove",
+    options: {
+      a: "To resort to wrong tactics",
+      b: "To give a challenge",
+      c: "To accept defeat",
+      d: "To reject the prize",
+    },
+    answer: "b",
+    explanation: "'Throw down the glove' means to issue a challenge.",
   },
   {
     id: 169,
-    collocation: "Take a moment",
-    explanation: "To pause for a brief period.",
-    origin:
-      "This phrase combines 'take,' meaning to spend time, with 'a moment,' referring to a brief period.",
-    example: "Can you take a moment to consider my proposal?",
+    idiom: "To catch somebody on the hop",
+    idiomUsed: "catch somebody on the hop",
+    options: {
+      a: "To give someone a surprise",
+      b: "To catch somebody off guard",
+      c: "To stand in the way of someone",
+      d: "To catch somebody suddenly",
+    },
+    answer: "b",
+    explanation:
+      "'Catch somebody on the hop' means to surprise someone by happening unexpectedly or when they are unprepared.",
   },
   {
     id: 170,
-    collocation: "Show support",
-    explanation: "To demonstrate encouragement or backing.",
-    origin:
-      "This phrase combines 'show,' meaning to display, with 'support,' referring to assistance or backing.",
-    example: "It’s important to show support for your friends.",
+    idiom: "To turn up one's nose at a thing",
+    idiomUsed: "turn up one's nose",
+    options: {
+      a: "To show eagerness to have something",
+      b: "To show indifference",
+      c: "To treat it with contemptuous dislike or disgust",
+      d: "To start a grapple with it",
+    },
+    answer: "c",
+    explanation:
+      "'Turn up one's nose' means to treat something or someone with contempt or disdain.",
   },
   {
     id: 171,
-    collocation: "Take time off",
-    explanation: "To take a break from work or duties.",
-    origin:
-      "This phrase combines 'take,' meaning to accept, with 'time off,' referring to a period away from work.",
-    example: "I’m going to take time off to rest.",
+    idiom:
+      "Though he has a lot of money, yet all his plans are built upon sand.",
+    idiomUsed: "built upon sand",
+    options: {
+      a: "Established on insecure foundations",
+      b: "Based on inexperience",
+      c: "Resting on cheap material",
+      d: "Resting on immature ideas",
+    },
+    answer: "a",
+    explanation:
+      "'Built upon sand' means to be based on weak or unreliable foundations, suggesting instability.",
   },
   {
     id: 172,
-    collocation: "Keep an eye on",
-    explanation: "To watch or monitor something closely.",
-    origin:
-      "This phrase combines 'keep,' meaning to maintain, with 'an eye on,' referring to monitoring.",
-    example: "Please keep an eye on the kids while I’m in the kitchen.",
+    idiom: "His plan was so complicated that it floored his listeners.",
+    idiomUsed: "floored",
+    options: {
+      a: "Entertained",
+      b: "Puzzled",
+      c: "Annoyed",
+      d: "Encouraged",
+    },
+    answer: "b",
+    explanation: "'Floored' means to confuse or puzzle someone.",
   },
   {
     id: 173,
-    collocation: "Make an impression",
-    explanation: "To create a strong effect on someone.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'an impression,' referring to a strong effect.",
-    example: "You want to make a good impression at the interview.",
+    idiom:
+      "There has been bad blood between the two communities even before shouting.",
+    idiomUsed: "bad blood",
+    options: {
+      a: "Impure blood",
+      b: "Ill feeling",
+      c: "Bloody fights",
+      d: "Quarrels",
+    },
+    answer: "b",
+    explanation:
+      "'Bad blood' refers to feelings of hatred or resentment between people or groups.",
   },
   {
     id: 174,
-    collocation: "Give your opinion",
-    explanation: "To express a personal view or judgment.",
-    origin:
-      "This phrase combines 'give,' meaning to express, with 'your opinion,' referring to a personal belief.",
-    example: "I’d like to hear you give your opinion on this matter.",
+    idiom:
+      "The curious neighbours were disappointed as the young couple's quarrel was just a storm in a teacup.",
+    idiomUsed: "storm in a teacup",
+    options: {
+      a: "Violent quarrel",
+      b: "Fuss about a trifle",
+      c: "Brittle situation",
+      d: "Quarrel about tea cups",
+    },
+    answer: "b",
+    explanation:
+      "'Storm in a teacup' refers to a lot of fuss over something trivial or unimportant.",
   },
   {
     id: 175,
-    collocation: "Come up with",
-    explanation: "To think of or devise a plan or idea.",
-    origin:
-      "This phrase combines 'come up,' meaning to arise or develop, with 'with,' indicating the source of the idea.",
-    example: "We need to come up with a solution quickly.",
+    idiom: "Mohan always keeps himself to himself.",
+    idiomUsed: "keeps himself to himself",
+    options: {
+      a: "Is too busy",
+      b: "Is selfish",
+      c: "Is unsociable",
+      d: "Does not take sides",
+    },
+    answer: "c",
+    explanation:
+      "'Keeps himself to himself' means to be introverted or unsociable, keeping one's own company.",
   },
   {
     id: 176,
-    collocation: "Pay attention to",
-    explanation: "To focus on or heed something.",
-    origin:
-      "This phrase combines 'pay,' meaning to give, with 'attention to,' referring to focus or awareness.",
-    example: "You should pay attention to the details.",
+    idiom:
+      "While the ladies continued their small talk in the drawing room, I felt bored.",
+    idiomUsed: "small talk",
+    options: {
+      a: "Whispering",
+      b: "Backbiting",
+      c: "Gossip",
+      d: "Light conversation",
+    },
+    answer: "d",
+    explanation:
+      "'Small talk' refers to light, informal conversation about unimportant topics.",
   },
   {
     id: 177,
-    collocation: "Make a choice",
-    explanation: "To select or decide among options.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'a choice,' referring to selecting an option.",
-    example: "You need to make a choice about your future.",
+    idiom: "My car broke down on the way to the railway station.",
+    idiomUsed: "broke down",
+    options: {
+      a: "Stopped",
+      b: "Met with an accident",
+      c: "Ran out of petrol",
+      d: "Failed to work",
+    },
+    answer: "d",
+    explanation: "'Broke down' means to stop working or malfunction.",
   },
   {
     id: 178,
-    collocation: "Take responsibility for",
-    explanation: "To accept accountability for something.",
-    origin:
-      "This phrase combines 'take,' meaning to accept, with 'responsibility for,' referring to accountability.",
-    example: "You must take responsibility for your actions.",
+    idiom:
+      "My father strained every nerve to enable me to get settled in life.",
+    idiomUsed: "strained every nerve",
+    options: {
+      a: "Worked very hard",
+      b: "Spent a huge amount",
+      c: "Tried all tricks",
+      d: "Bribed several persons",
+    },
+    answer: "a",
+    explanation:
+      "'Strained every nerve' means to make every possible effort to achieve something.",
   },
   {
     id: 179,
-    collocation: "Hold a meeting",
-    explanation: "To convene a gathering for discussion.",
-    origin:
-      "This phrase combines 'hold,' meaning to conduct, with 'a meeting,' referring to a formal gathering.",
-    example: "We will hold a meeting to discuss the budget.",
+    idiom: "He is always picking holes in every project.",
+    idiomUsed: "picking holes",
+    options: {
+      a: "Creating problems in",
+      b: "Finding fault with",
+      c: "Suggesting improvement in",
+      d: "Asking irrelevant questions on",
+    },
+    answer: "b",
+    explanation:
+      "'Picking holes' means to find fault or criticize something unnecessarily.",
   },
   {
     id: 180,
-    collocation: "Call it a day",
-    explanation: "To stop working for the day.",
-    origin:
-      "This phrase combines 'call,' meaning to declare, with 'it a day,' referring to ending the workday.",
-    example: "After five hours of meetings, let’s call it a day.",
+    idiom: "The die is cast and now let us hope for the best.",
+    idiomUsed: "The die is cast",
+    options: {
+      a: "Project is over",
+      b: "Decision is made",
+      c: "Death is inevitable",
+      d: "Cloth has been dyed",
+    },
+    answer: "b",
+    explanation:
+      "'The die is cast' means a decision has been made, and there is no turning back.",
   },
   {
     id: 181,
-    collocation: "Take a look at",
-    explanation: "To examine or inspect something.",
-    origin:
-      "This phrase combines 'take,' meaning to engage with, with 'a look at,' referring to a brief examination.",
-    example: "Can you take a look at this report for me?",
+    idiom: "To throw dust in one's eyes",
+    idiomUsed: "throw dust in one's eyes",
+    options: {
+      a: "To show false things",
+      b: "To make blind",
+      c: "To harm someone",
+      d: "To deceive",
+    },
+    answer: "d",
+    explanation:
+      "'To throw dust in one's eyes' means to deceive or mislead someone.",
   },
   {
     id: 182,
-    collocation: "Get in line",
-    explanation: "To join a queue or wait for one's turn.",
-    origin:
-      "This phrase combines 'get,' meaning to position oneself, with 'in line,' referring to a queue.",
-    example: "Please get in line to buy your tickets.",
+    idiom: "To frame a person",
+    idiomUsed: "frame a person",
+    options: {
+      a: "To befool someone",
+      b: "To make one appear guilty",
+      c: "To praise someone",
+      d: "A narrow escape",
+    },
+    answer: "b",
+    explanation:
+      "'To frame a person' means to falsely implicate someone or make them appear guilty of something.",
   },
   {
     id: 183,
-    collocation: "Break the ice",
+    idiom: "To be at loggerheads",
+    idiomUsed: "be at loggerheads",
+    options: {
+      a: "To have tough encounter",
+      b: "To be at enmity or strife",
+      c: "To face stiff opposition",
+      d: "To tax one's mind and body",
+    },
+    answer: "b",
     explanation:
-      "To initiate conversation in a social setting, making people feel comfortable.",
-    origin:
-      "This phrase combines 'break,' meaning to initiate, with 'the ice,' referring to the initial awkwardness.",
-    example: "She told a joke to break the ice at the meeting.",
+      "'To be at loggerheads' means to be in conflict or dispute with someone.",
   },
   {
     id: 184,
-    collocation: "Bring to light",
+    idiom: "To lose one's head",
+    idiomUsed: "lose one's head",
+    options: {
+      a: "To go mad",
+      b: "To become nervous",
+      c: "To become confused and over excited",
+      d: "To lose the balance",
+    },
+    answer: "c",
     explanation:
-      "To reveal or make known something that was hidden or unknown.",
-    origin:
-      "This phrase combines 'bring,' meaning to present, with 'to light,' referring to making something visible.",
-    example: "The investigation brought to light new evidence.",
+      "'To lose one's head' means to become confused, overly excited, or panicked in a situation.",
   },
   {
     id: 185,
-    collocation: "Go above and beyond",
-    explanation: "To do more than what is required or expected.",
-    origin:
-      "This phrase combines 'go,' meaning to exceed, with 'above and beyond,' referring to surpassing expectations.",
-    example: "She always goes above and beyond to help her colleagues.",
+    idiom: "To throw up the sponge",
+    idiomUsed: "throw up the sponge",
+    options: {
+      a: "To surrender or give up a contest",
+      b: "To offer a challenge",
+      c: "To become utterly disappointed",
+      d: "To maintain grit and enthusiasm until the end",
+    },
+    answer: "a",
+    explanation:
+      "'To throw up the sponge' means to give up or surrender in a contest or difficult situation.",
   },
   {
     id: 186,
-    collocation: "Take it easy",
-    explanation: "To relax or not to take things too seriously.",
-    origin:
-      "This phrase combines 'take,' meaning to accept, with 'it easy,' referring to a relaxed state.",
-    example: "After the stressful week, I plan to take it easy this weekend.",
+    idiom: "To give/get the bird",
+    idiomUsed: "give/get the bird",
+    options: {
+      a: "To get the awaited",
+      b: "To have good luck",
+      c: "To send away",
+      d: "To get the impossible",
+    },
+    answer: "c",
+    explanation:
+      "'To give/get the bird' means to boo or send someone away in disapproval, often used in theater or sports.",
   },
   {
     id: 187,
-    collocation: "Count on someone",
-    explanation: "To rely or depend on someone.",
-    origin:
-      "This phrase combines 'count on,' meaning to depend or rely, with 'someone,' referring to a person.",
-    example: "You can always count on me for support.",
+    idiom: "To be rolling in money",
+    idiomUsed: "rolling in money",
+    options: {
+      a: "Wasting a lot of money",
+      b: "Very rich",
+      c: "Borrowing money liberally",
+      d: "Spending more than his income",
+    },
+    answer: "b",
+    explanation: "'To be rolling in money' means to be very wealthy or rich.",
   },
   {
     id: 188,
-    collocation: "Take the lead",
-    explanation: "To assume control or direction of a situation.",
-    origin:
-      "This phrase combines 'take,' meaning to assume, with 'the lead,' referring to being in charge.",
-    example: "She decided to take the lead on the project.",
+    idiom: "To get into a scrape",
+    idiomUsed: "get into a scrape",
+    options: {
+      a: "To get into a muddle",
+      b: "To find oneself in an awkward predicament",
+      c: "To get into irritating circumstances",
+      d: "To be trapped in a conspiracy",
+    },
+    answer: "b",
+    explanation:
+      "'To get into a scrape' means to get into a difficult or awkward situation.",
   },
   {
     id: 189,
-    collocation: "Have a good time",
-    explanation: "To enjoy oneself.",
-    origin:
-      "This phrase combines 'have,' meaning to experience, with 'a good time,' referring to enjoyment.",
-    example: "I hope you have a good time at the party!",
+    idiom: "A tall order",
+    idiomUsed: "tall order",
+    options: {
+      a: "A task difficult to perform",
+      b: "A big problem",
+      c: "A royal summon",
+      d: "A big demand",
+    },
+    answer: "a",
+    explanation:
+      "'A tall order' means a task or demand that is difficult to fulfill.",
   },
   {
     id: 190,
-    collocation: "Go for broke",
-    explanation: "To risk everything for a chance of success.",
-    origin:
-      "This phrase combines 'go for,' meaning to attempt, with 'broke,' referring to risking everything.",
-    example: "In the final round, he decided to go for broke.",
+    idiom: "To play fast and loose",
+    idiomUsed: "play fast and loose",
+    options: {
+      a: "To beguile others",
+      b: "To be winning sometimes and losing at other times",
+      c: "To play with someone's feelings",
+      d: "To play tricks",
+    },
+    answer: "c",
+    explanation:
+      "'To play fast and loose' means to act in a careless or irresponsible manner, often with people's feelings.",
   },
   {
     id: 191,
-    collocation: "Take it for granted",
-    explanation: "To assume something is true without questioning.",
-    origin:
-      "This phrase combines 'take it,' meaning to accept, with 'for granted,' referring to assuming without appreciation.",
-    example: "Don't take your health for granted; it can change quickly.",
+    idiom: "Born with a silver spoon in one's mouth",
+    idiomUsed: "born with a silver spoon in his mouth",
+    options: {
+      a: "Born in a middle-class family",
+      b: "Born in a wealthy family",
+      c: "Born in a royal family",
+      d: "Born in a family of nationalists",
+    },
+    answer: "b",
+    explanation:
+      "'Born with a silver spoon in one's mouth' means born into a wealthy or privileged family.",
   },
   {
     id: 192,
-    collocation: "Make a scene",
-    explanation: "To create a loud or dramatic disturbance in public.",
-    origin:
-      "This phrase combines 'make,' meaning to create, with 'a scene,' referring to a public disturbance.",
-    example: "She made a scene when she found out the news.",
+    idiom: "A rift in the lute",
+    idiomUsed: "rift in the lute",
+    options: {
+      a: "Caused unnecessary worries",
+      b: "Brought about disharmony",
+      c: "Caused a pleasant atmosphere",
+      d: "Brought about a disciplined atmosphere",
+    },
+    answer: "b",
+    explanation:
+      "'A rift in the lute' means a small problem or issue that can cause greater trouble or disharmony.",
   },
   {
     id: 193,
-    collocation: "Keep your cool",
-    explanation: "To remain calm in a stressful situation.",
-    origin:
-      "This phrase combines 'keep,' meaning to maintain, with 'your cool,' referring to composure.",
-    example: "It’s important to keep your cool during the exam.",
+    idiom: "Take after",
+    idiomUsed: "take after",
+    options: {
+      a: "Run after",
+      b: "Follow",
+      c: "Precede",
+      d: "Resemble",
+    },
+    answer: "d",
+    explanation:
+      "'Take after' means to resemble someone, usually a family member, in appearance or behavior.",
   },
   {
     id: 194,
-    collocation: "Turn a blind eye",
-    explanation: "To ignore something that you know is wrong.",
-    origin:
-      "This phrase combines 'turn,' meaning to change direction, with 'a blind eye,' referring to willful ignorance.",
-    example: "The manager turned a blind eye to the employee's tardiness.",
+    idiom: "By and by",
+    idiomUsed: "by and by",
+    options: {
+      a: "Soon",
+      b: "Finally",
+      c: "Gradually",
+      d: "Unexpectedly",
+    },
+    answer: "c",
+    explanation: "'By and by' means gradually or after a short time.",
   },
   {
     id: 195,
-    collocation: "Draw a conclusion",
-    explanation: "To arrive at a judgment or decision based on evidence.",
-    origin:
-      "This phrase combines 'draw,' meaning to arrive at, with 'a conclusion,' referring to a decision.",
-    example:
-      "After reviewing the evidence, they were able to draw a conclusion.",
+    idiom: "Crocodile tears",
+    idiomUsed: "crocodile tears",
+    options: {
+      a: "Pretended sorrow",
+      b: "Tears of a crocodile",
+      c: "A weeping crocodile",
+      d: "Mild regret",
+    },
+    answer: "a",
+    explanation:
+      "'Crocodile tears' refers to an insincere display of grief or sorrow.",
   },
   {
     id: 196,
-    collocation: "Put in effort",
-    explanation: "To exert energy or work toward a goal.",
-    origin:
-      "This phrase combines 'put in,' meaning to invest, with 'effort,' referring to exertion.",
-    example: "If you want to succeed, you need to put in effort.",
+    idiom: "Pulled up",
+    idiomUsed: "pulled up",
+    options: {
+      a: "Elevated",
+      b: "Rewarded",
+      c: "Punished",
+      d: "Reprimanded",
+    },
+    answer: "d",
+    explanation:
+      "'Pulled up' means to reprimand or scold someone for their actions.",
   },
   {
     id: 197,
-    collocation: "Get out of hand",
-    explanation: "To become uncontrollable or chaotic.",
-    origin:
-      "This phrase combines 'get out of,' meaning to escape control, with 'hand,' referring to control.",
-    example: "The situation got out of hand quickly.",
+    idiom: "Did a good turn",
+    idiomUsed: "did me a good turn",
+    options: {
+      a: "Returned my kindness",
+      b: "Did an act of kindness",
+      c: "Improved my prospects",
+      d: "Became suddenly good",
+    },
+    answer: "b",
+    explanation:
+      "'Did a good turn' means to do a favor or kind act for someone.",
   },
   {
     id: 198,
-    collocation: "Cross your mind",
-    explanation: "To think of something briefly.",
-    origin:
-      "This phrase combines 'cross,' meaning to pass over, with 'your mind,' referring to thoughts.",
-    example: "It never crossed my mind to ask for help.",
+    idiom: "Make hay while the sun shines",
+    idiomUsed: "make hay while the sun shines",
+    options: {
+      a: "Giving bribes to get his work done",
+      b: "Seeking advice from one and all",
+      c: "Helping those who help him",
+      d: "Making the best use of a favorable situation",
+    },
+    answer: "d",
+    explanation:
+      "'Make hay while the sun shines' means to take advantage of an opportunity while it lasts.",
   },
   {
     id: 199,
-    collocation: "Put something on hold",
-    explanation: "To temporarily stop or delay an action or decision.",
-    origin:
-      "This phrase combines 'put,' meaning to place, with 'something on hold,' referring to pausing an action.",
-    example: "I had to put my plans on hold due to unforeseen circumstances.",
+    idiom: "Fair and square",
+    idiomUsed: "fair and square",
+    options: {
+      a: "Careful",
+      b: "Considerate",
+      c: "Polite",
+      d: "Upright",
+    },
+    answer: "d",
+    explanation:
+      "'Fair and square' means to be honest and straightforward in one's actions.",
   },
   {
     id: 200,
-    collocation: "Call the shots",
-    explanation: "To be in control or make decisions.",
-    origin:
-      "This phrase combines 'call,' meaning to declare, with 'the shots,' referring to decisions.",
-    example: "In this project, she will be the one who calls the shots.",
+    idiom: "High time",
+    idiomUsed: "high time",
+    options: {
+      a: "Already late",
+      b: "Appropriate time",
+      c: "Desired occasion",
+      d: "Auspicious moment",
+    },
+    answer: "a",
+    explanation:
+      "'High time' means that it is already past the right time to take action, indicating urgency.",
+  },
+  {
+    id: 201,
+    idiom: "Stand up for",
+    idiomUsed: "standing up for the weak and oppressed",
+    options: {
+      a: "Boosting the claims of",
+      b: "Championing the cause of",
+      c: "Seeking help of others for",
+      d: "Moving about with",
+    },
+    answer: "b",
+    explanation:
+      "'Stand up for' means to defend or support someone or something, especially those who are weak or oppressed.",
+  },
+  {
+    id: 202,
+    idiom: "Give a wide berth",
+    idiomUsed: "give a wide berth to bad characters",
+    options: {
+      a: "Give publicity to",
+      b: "Publicly condemn",
+      c: "Keep away from",
+      d: "Not sympathize with",
+    },
+    answer: "c",
+    explanation:
+      "'Give a wide berth' means to avoid or keep a safe distance from someone or something undesirable.",
+  },
+  {
+    id: 203,
+    idiom: "In vogue",
+    idiomUsed: "Turban is in vogue in some communities",
+    options: {
+      a: "In fashion",
+      b: "Out of use",
+      c: "Vaguely used",
+      d: "Never used",
+    },
+    answer: "a",
+    explanation:
+      "'In vogue' means something that is currently popular or fashionable.",
+  },
+  {
+    id: 204,
+    idiom: "Cut to the quick",
+    idiomUsed: "cut to the quick when his rich son refused to recognize him",
+    options: {
+      a: "Surprised",
+      b: "Hurt intensely",
+      c: "Annoyed",
+      d: "Irritated",
+    },
+    answer: "b",
+    explanation:
+      "'Cut to the quick' means to deeply hurt someone's feelings or emotions.",
+  },
+  {
+    id: 205,
+    idiom: "Put in a word",
+    idiomUsed: "put in a word for me",
+    options: {
+      a: "Introduce",
+      b: "Assist",
+      c: "Support",
+      d: "Recommend",
+    },
+    answer: "d",
+    explanation:
+      "'Put in a word' means to recommend or speak on behalf of someone.",
+  },
+  {
+    id: 206,
+    idiom: "In cold blood",
+    idiomUsed: "murdered the man in cold blood",
+    options: {
+      a: "Coldly",
+      b: "Boldly",
+      c: "Ruthlessly",
+      d: "Deliberately",
+    },
+    answer: "c",
+    explanation:
+      "'In cold blood' means to do something, especially a violent act, in a calm, unemotional, and ruthless manner.",
+  },
+  {
+    id: 207,
+    idiom: "Sharp practices",
+    idiomUsed: "built a big business empire by his sharp practices",
+    options: {
+      a: "Extreme hard work",
+      b: "Keen business skills",
+      c: "Dishonest dealings",
+      d: "Sharp intelligence",
+    },
+    answer: "c",
+    explanation:
+      "'Sharp practices' refers to dishonest or unethical ways of doing business.",
+  },
+  {
+    id: 208,
+    idiom: "Hand in glove",
+    idiomUsed: "secretary and the treasurer are hand in glove",
+    options: {
+      a: "Very good friends",
+      b: "Constantly fighting",
+      c: "Associates in some action",
+      d: "Suspicious of each other",
+    },
+    answer: "c",
+    explanation:
+      "'Hand in glove' means to be closely associated, often in an illicit or secretive manner.",
+  },
+  {
+    id: 209,
+    idiom: "Under one's thumb",
+    idiomUsed: "keeping his wife under his thumb",
+    options: {
+      a: "Pressed down",
+      b: "Unduly under control",
+      c: "Below his thumb",
+      d: "Under tyrannical conditions",
+    },
+    answer: "b",
+    explanation:
+      "'Under one's thumb' means to be under someone's complete control or influence.",
+  },
+  {
+    id: 210,
+    idiom: "Ivory tower",
+    idiomUsed: "professors came down from their ivory towers",
+    options: {
+      a: "Detachment and seclusion",
+      b: "A tower made of ivory",
+      c: "Prison",
+      d: "Dream lands",
+    },
+    answer: "a",
+    explanation:
+      "'Ivory tower' refers to a state of detachment from the real world, often associated with intellectuals or academics who are disconnected from practical concerns.",
+  },
+  {
+    id: 211,
+    idiom: "To accept the Gauntlet",
+    idiomUsed: "accept the gauntlet",
+    options: {
+      a: "To accept defeat",
+      b: "To accept a challenge",
+      c: "To suffer humiliation",
+      d: "To accept an honour",
+    },
+    answer: "b",
+    explanation:
+      "'Accept the gauntlet' means to accept a challenge, usually one that is difficult or risky.",
+  },
+  {
+    id: 212,
+    idiom: "To pull one's socks up",
+    idiomUsed: "pull one's socks up",
+    options: {
+      a: "To prepare",
+      b: "To try hard",
+      c: "To get ready",
+      d: "To depart",
+    },
+    answer: "b",
+    explanation:
+      "'Pull one's socks up' means to make an effort to improve one's performance or behavior.",
+  },
+  {
+    id: 213,
+    idiom: "To plough the sands",
+    idiomUsed: "plough the sands",
+    options: {
+      a: "To work hard to achieve one's aim",
+      b: "To afford hope or ground for expecting a good result",
+      c: "To busy oneself in a way which cannot lead to any profitable result",
+      d: "To advance one's position in life",
+    },
+    answer: "c",
+    explanation:
+      "'Plough the sands' means to engage in futile or useless effort, something that cannot lead to any profitable outcome.",
+  },
+  {
+    id: 214,
+    idiom: "To drink like a fish",
+    idiomUsed: "drink like a fish",
+    options: {
+      a: "To drink little",
+      b: "To drink alone",
+      c: "To be a drunkard",
+      d: "To drink in the company of others",
+    },
+    answer: "c",
+    explanation:
+      "'Drink like a fish' means to drink excessively, usually referring to alcohol.",
+  },
+  {
+    id: 215,
+    idiom: "To be lost in the cloud",
+    idiomUsed: "lost in the cloud",
+    options: {
+      a: "To meet with one's death",
+      b: "To be perplexed",
+      c: "To be concealed from view",
+      d: "To find oneself in a very uncomfortable position",
+    },
+    answer: "b",
+    explanation:
+      "'Lost in the cloud' means to be confused or perplexed by something.",
+  },
+  {
+    id: 216,
+    idiom: "All and sundry",
+    idiomUsed: "all and sundry",
+    options: {
+      a: "Greater share",
+      b: "All of a sudden",
+      c: "Completion of work",
+      d: "Everyone without distinction",
+    },
+    answer: "d",
+    explanation: "'All and sundry' means everyone, without any exception.",
+  },
+  {
+    id: 217,
+    idiom: "To give currency",
+    idiomUsed: "give currency",
+    options: {
+      a: "To bestow importance",
+      b: "To misinterpret",
+      c: "To make publicly known",
+      d: "To originate",
+    },
+    answer: "c",
+    explanation:
+      "'Give currency' means to make something widely known or popular, usually an idea or belief.",
+  },
+  {
+    id: 218,
+    idiom: "To bite one's lips",
+    idiomUsed: "bite one's lips",
+    options: {
+      a: "To repress an emotion",
+      b: "To feel sorry",
+      c: "To have doubt",
+      d: "To laugh at others",
+    },
+    answer: "a",
+    explanation:
+      "'Bite one's lips' means to suppress one's emotions, especially anger or frustration.",
+  },
+  {
+    id: 219,
+    idiom: "Foam at the mouth",
+    idiomUsed: "foam at the mouth",
+    options: {
+      a: "Bitten by a snake",
+      b: "To reveal the secret",
+      c: "To be furious",
+      d: "To be in the extreme hatred",
+    },
+    answer: "c",
+    explanation: "'Foam at the mouth' means to be extremely angry or furious.",
+  },
+  {
+    id: 220,
+    idiom: "To fight to the bitter end",
+    idiomUsed: "fight to the bitter end",
+    options: {
+      a: "To fight the poison-tipped arrows",
+      b: "To fight to the last point of enemy position",
+      c: "To die fighting",
+      d: "To carry on a contest regardless of consequences",
+    },
+    answer: "d",
+    explanation:
+      "'Fight to the bitter end' means to continue fighting or struggling until the very end, no matter the consequences.",
   },
 ];
-
-// /----------
-
-// /----------

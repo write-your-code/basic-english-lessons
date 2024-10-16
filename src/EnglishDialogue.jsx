@@ -332,8 +332,10 @@ const EnglishSentences = () => {
       if (currentSpeaker === 2) {
         // u.voice = voices[111];
         u.voice = voices[117];
+        console.log("current voice: " + voices[117].name);
       } else if (currentSpeaker === 1) {
         // u.voice = voices[82];
+        console.log("current voice: " + voices[114].name);
         u.voice = voices[114];
       }
       ok = true;
@@ -704,3 +706,20 @@ const HighlightedText = ({ text, from, to, disabled, mode = 1 }) => {
     </>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

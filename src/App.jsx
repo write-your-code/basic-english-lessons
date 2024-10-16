@@ -3,11 +3,8 @@ import EnglishGrammarStaticData from "./EnglishGrammarWithStaticData";
 import EnglishIdioms from "./EnglishIdioms";
 import "./App.css";
 import { useEffect, useState } from "react";
-import {
-  collocationsEnglish,
-  englishGrammarList,
-  idiomsWithExample,
-} from "./data/List";
+import { englishGrammarList, idiomsWithExample } from "./data/List";
+import { collocationsEnglish } from "./data/Collocations";
 import { sentences } from "./data/Sentences";
 import { dailySentences, dailySentencesIn5Languages } from "./data/Languages";
 import EnglishCollocations from "./EnglishCollocations";

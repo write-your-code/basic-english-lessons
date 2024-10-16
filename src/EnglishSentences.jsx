@@ -144,8 +144,9 @@ const EnglishSentences = () => {
       if (mode === 2) {
         u.voice = voices[111];
       } else {
-        u.voice = voices[82];
-      }
+        // u.voice = voices[82];
+        u.voice = voices[114];
+      } 
       ok = true;
     }
     // start waves

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { CountDown } from "./CounDown";
 import CountDownNew from "./ProgressBarTimer";
 // import { idiomsWithExpAndVisuals } from "./data/List";
-import { collocationsEnglish } from "./data/List";
+import { collocationsEnglish } from "./data/Collocations";
 
 const EnglishCollocations = () => {
   // states
@@ -25,7 +25,7 @@ const EnglishCollocations = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 2;
+  let index = 0;
   let totalCount = collocationsEnglish.length;
   let res;
   // create a reference to synth

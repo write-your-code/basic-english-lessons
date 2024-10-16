@@ -120,12 +120,12 @@ const EnglishDailyConversation = () => {
     // adjust speed
     if (flag === 1) {
       u.pitch = 1;
-      u.rate = 0.8;
+      u.rate = 0.9;
       u.volume = 1;
     }
     if (flag === 2) {
       u.pitch = 1;
-      u.rate = 0.6;
+      u.rate = 0.7;
       u.volume = 1;
     }
     if (flag === 1 || flag === 2) {
@@ -242,9 +242,11 @@ const EnglishDailyConversation = () => {
           </span>
           {/* image avatars */}
           <div className="flex justify-between items-start top-24 w-full">
+            {/* first speaker */}
             <div className="flex flex-col gap-2 items-center">
-              <div
-                className={`relative w-[100px] h-[100px] border-2  rounded-full transition-all
+              <div className="flex items-center gap-2">
+                <div
+                  className={`relative w-[100px] h-[100px] border-4  rounded-full transition-all
             overflow-hidden ${
               speaker === 1
                 ? "w-[120px] h-[120px] border-4 border-pink-700"
@@ -252,17 +254,26 @@ const EnglishDailyConversation = () => {
                 ? "w-[80px] h-[80px]"
                 : ""
             }`}
-              >
-                <img
-                  className="absolute -top-4 object-cover "
-                  src={"/images/female-avatar.jpg"}
-                  alt="avatar"
-                />
+                >
+                  <img
+                    className="absolute -top-4 object-cover "
+                    src={"/images/female-avatar.jpg"}
+                    alt="avatar"
+                  />
+                </div>
+                {/* speech waves */}
+                {/* <div
+                  className={`transition-all ${
+                    waves && speaker === 1 ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <SpeechWaves />
+                </div> */}
               </div>
               <p className="px-2 flex-1 bg-gradient-to-t from-slate-50 to-pink-700 bg-clip-text text-transparent py-2 rounded text-center text-4xl tracking-wide">
                 {speaker && speaker === 1 ? (
                   <HighlightedText
-                    text={speaker && data.speaker1}
+                    text={speaker && data.speaker1 || ""}
                     {...highlightSection}
                     disabled={disabled}
                     // mode={1}
@@ -283,8 +294,17 @@ const EnglishDailyConversation = () => {
             </div>
             {/* second speaker */}
             <div className="flex flex-col gap-2 items-center">
-              <div
-                className={`relative w-[100px] h-[100px] border-2 rounded-full transition-all
+              <div className="flex items-center gap-2">
+                {/* speech waves */}
+                {/* <div
+                  className={`transition-all ${
+                    waves && speaker === 2 ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <SpeechWaves />
+                </div> */}
+                <div
+                  className={`relative w-[100px] h-[100px] border-4 rounded-full transition-all
             overflow-hidden ${
               speaker === 2
                 ? "w-[120px] h-[120px] border-4 border-green-700"
@@ -292,12 +312,13 @@ const EnglishDailyConversation = () => {
                 ? "w-[80px] h-[80px]"
                 : ""
             }`}
-              >
-                <img
-                  className="absolute top-0 object-cover "
-                  src={"/images/male-avatar-3.jpg"}
-                  alt="avatar"
-                />
+                >
+                  <img
+                    className="absolute top-0 object-cover "
+                    src={"/images/male-avatar-3.jpg"}
+                    alt="avatar"
+                  />
+                </div>
               </div>
               <p
                 className={`px-2 flex-1 bg-gradient-to-t from-slate-50 to-green-700 bg-clip-text text-transparent py-2 rounded text-center text-4xl tracking-wide ${

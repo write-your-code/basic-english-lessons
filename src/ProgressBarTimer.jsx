@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-const ThirtySecCounter = () => {
-  const [timeLeft, setTimeLeft] = useState(8);
+const ThirtySecCounter = ({ time = 8 }) => {
+  const [timeLeft, setTimeLeft] = useState(time);
 
   useEffect(() => {
     if (!timeLeft) return;
@@ -13,7 +13,7 @@ const ThirtySecCounter = () => {
     return () => clearInterval(intervalId);
   }, [timeLeft]);
 
-  const progress = (8 - timeLeft) / 8;
+  const progress = (time - timeLeft) / time;
 
   return (
     <div>
@@ -25,11 +25,13 @@ const ThirtySecCounter = () => {
           borderRadius: "5px",
         }}
       >
-        <div className="absolute w-full h-full flex items-center z-10 text-red-700 text-sm top-0 -ml-[5px]"
-         style={{
-          // right: "100%",
-          left: `${progress * 100}%`,
-        }}>
+        <div
+          className="absolute w-full h-full flex items-center z-10 text-red-700 text-sm top-0 -ml-[4px] font-bold"
+          style={{
+            // right: "100%",
+            left: `${progress * 100}%`,
+          }}
+        >
           <span>{timeLeft}</span>
         </div>
         <div
@@ -46,15 +48,18 @@ const ThirtySecCounter = () => {
         <span
           style={{
             // width: `${progress * 100}%`,
+            width: "100px",
+            // height: "50px",
             position: "absolute",
             // right: "100%",
             left: `${progress * 100}%`,
             height: "100%",
-            top: "-10px",
+            // top: "-10px",
+            top: "-15px",
           }}
-          className="text-4xl -ml-6"
+          className="text-3xl -ml-5"
         >
-          🌟
+          <img src="star.png" alt="" className="w-[40px] h-[40px] object-contain"/>
         </span>
       </div>
     </div>

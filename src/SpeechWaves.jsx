@@ -10,11 +10,11 @@ const SpeechWaves = ({ color = 0 }) => {
       console.log(height);
 
       document.querySelector(
-        "#bars"
+        ".bars"
       ).innerHTML += `<div class="bar" style="left:${left}px;animation-duration:${anim}ms;height:${height}px"></div>`; //`<div class="bar" style="left:${left}px">Hello</div>`;
     }
   }, []);
-  return <div id="bars" ></div>;
+  return <div id="" className="bars"></div>;
 };
 
 export default SpeechWaves;

@@ -15,7 +15,7 @@ const EnglishIdioms = () => {
     from: 0,
     to: 0,
   });
-  const [isComplete, setIsComplete] = useState(false);
+  const [option, setOption] = useState();
 
   // useRef states
   const audioRef = useRef(null);
@@ -24,11 +24,12 @@ const EnglishIdioms = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 0;
+  let index = 0
   let totalCount = idiomsWithExample.length;
   let res;
   // create a reference to synth
   const synth = window.speechSynthesis;
+  const voices = window.speechSynthesis.getVoices();
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
     res = idiomsWithExample[index];
@@ -44,10 +45,10 @@ const EnglishIdioms = () => {
     });
     speechStart(res?.idiom, 0);
     // speechStart("option a.", 0);
-    speechStart("option a.      " + res?.options.a, 0);
-    speechStart("option b.  " + res?.options.b, 0);
-    speechStart("option c. " + res?.options.c, 0);
-    speechStart("option d. " + res?.options.d, 0);
+    speechStart("option a.  " + res?.options.a, 0, "a");
+    speechStart("option b.  " + res?.options.b, 0, "b");
+    speechStart("option c.  " + res?.options.c, 0, "c");
+    speechStart("option d.  " + res?.options.d, 0, "d");
     ok = true;
     if (index + 1 === totalCount) {
       index = 0;
@@ -57,15 +58,22 @@ const EnglishIdioms = () => {
   const showTimer = () => {
     setTimer((current) => true);
     audioRef2.current?.play();
-    setTimeout(showAnswer, 8000);
+    setTimeout(showAnswer, 5000);
   };
   const showAnswer = () => {
+    audioRef2.current.currentTime = 0;
+    audioRef2.current?.pause();
     setAnswer(true);
     audioRef.current?.play();
     setTimeout(() => {
-      speechStart("option " + res?.answer + " is correct answer", 0);
+      // let rightAnswer = ['a', 'b', 'c', 'd'].filter(
+      //   (option, i) => res?.answer === res?.options[option]
+      // );
+      let rightAns = res.options[res.answer];
+      console.log("right answer", rightAns);
+      speechStart("option " + res?.answer + rightAns + " is correct answer", 0);
     }, 1500);
-    setTimeout(showReason, 6000);
+    setTimeout(showReason, 8000);
   };
   const showReason = () => {
     audioRef3.current?.play();
@@ -82,16 +90,27 @@ const EnglishIdioms = () => {
     // speechStart(res?.answer + " is correct answer because ", 0);
     speechStart(res?.explanation || res.reason, 1);
   };
-
-  const speechStart = (text, flag) => {
+  const resetCaptionPosition = () => {
+    setHighlightSection({ from: 0, to: 0 });
+  };
+  const speechStart = (text, flag, option = "") => {
     // const synth = window.speechSynthesis;
     const u = new SpeechSynthesisUtterance(text);
     setDisabled(false);
-    if (flag === 1) {
-      u.addEventListener("start", () => setDisabled(true));
+    if (1) {
+      u.addEventListener("start", () => {
+        // setDisabled(true);
+        if (option) {
+          setOption((current) => option);
+        }
+      });
       u.addEventListener("end", () => {
-        setDisabled(false);
-        ok = false;
+        // setDisabled(false);
+        if (option) {
+          setOption((current) => 0);
+        }
+        resetCaptionPosition();
+        // ok = false;
       });
       u.addEventListener("boundary", ({ charIndex, charLength }) => {
         setHighlightSection({ from: charIndex, to: charIndex + charLength });
@@ -103,10 +122,11 @@ const EnglishIdioms = () => {
     // if (isPaused) {
     //   synth.resume();
     // }
-    const voices = window.speechSynthesis.getVoices();
+    // const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
-      u.voice = voices[82];
+      // u.voice = voices[82];
+      u.voice = voices[114];
     }
     synth.speak(u);
     console.log("state:", synth.pending);
@@ -167,7 +187,8 @@ const EnglishIdioms = () => {
     );
   }
   return (
-    <div className="flex justify-center items-start pt-[10px] w-full h-screen bg-gradient-to-r from-violet-200 to-pink-200 border-8 border-white rounded">
+    // from-violet-200 to-pink-200   previous bg color
+    <div className="flex justify-center items-start pt-[10px] w-full h-screen bg-gradient-to-b from-cyan-300 to-cyan-100 border-8 border-white rounded">
       {/* <p className="text-red-600">Total: {idiomsWithExample.length}</p> */}
       <div className="mx-[250px] rounded flex flex-col gap-4 w-full justify-center items-center">
         <span className="px-2 py-0 text-teal-700 text-3xl border-b-2 border-teal-600 font-bold tracking-wide text-wrap mb-4">
@@ -177,7 +198,7 @@ const EnglishIdioms = () => {
         {timer && (
           // <div className="absolute top-[10px]">
           <div className="w-[400px] absolute top-[60px]">
-            <CountDownNew initMinute={0} initSeconds={7} />
+            <CountDownNew initMinute={0} initSeconds={8} time={5} />
           </div>
         )}
         {/* img */}
@@ -188,19 +209,32 @@ const EnglishIdioms = () => {
           <span className="px-4 text-4xl ml-1 bg-teal-900 py-4 rounded-l text-gray-100 flex  uppercase">
             Q
           </span>
-          <p
+          <div
             className={`${
-              data?.idiom.length > 38 ? "text-xl " : ""
+              data?.idiom.length > 42 ? "!text-2xl" : ""
             } px-6 flex-1 bg-teal-700 trans py-4 rounded-r`}
           >
-            {data?.idiom}
+            {/* {data?.idiom} */}
+            {data?.idiomUsed ? (
+              <div className="text-white">
+                {data?.idiom.substring(0, data?.idiom.indexOf(data?.idiomUsed))}
+                <span className="bg-gradient-to-b from-orange-400 to-cyan-50 bg-clip-text text-transparent text-4xl font-extrabold">
+                  {data?.idiomUsed}
+                </span>
+                {data?.idiom.substring(
+                  data?.idiom.indexOf(data?.idiomUsed) + data?.idiomUsed?.length
+                )}
+              </div>
+            ) : (
+              data?.idiom
+            )}
             {/* <HighlightedText
               text={data.idiom}
               {...highlightSection}
               disabled={disabled}
             /> */}
             {/* <TextToSpeech text={data?.question} /> */}
-          </p>
+          </div>
         </div>
         {/* Options */}
         <div className="flex flex-col gap-3 justify-between w-full text-nowrap mt-0">
@@ -219,7 +253,7 @@ const EnglishIdioms = () => {
                     ? "!bg-green-700 text-white "
                     : "!bg-red-700"
                   : ""
-              }  rounded-r`}
+              }  ${option === "a" ? "!scale-[1.03]   !bg-teal-500" : " scale-100"} rounded-r`}
             >
               {data?.options?.a}
             </p>
@@ -239,7 +273,7 @@ const EnglishIdioms = () => {
                     ? "!bg-green-700 text-white "
                     : "!bg-red-700"
                   : ""
-              }`}
+              } ${option === "b" ? " scale-[1.03]   !bg-teal-500 " : ""}`}
             >
               {data?.options?.b}
             </p>
@@ -258,7 +292,7 @@ const EnglishIdioms = () => {
                     ? "!bg-green-700 text-white "
                     : "!bg-red-700"
                   : ""
-              }`}
+              } ${option === "c" ? " scale-[1.03]   !bg-teal-500 " : " "}`}
             >
               {data?.options.c}
             </p>
@@ -276,7 +310,7 @@ const EnglishIdioms = () => {
                     ? "!bg-green-700 text-white "
                     : "!bg-red-700"
                   : ""
-              } `}
+              } ${option === "d" ? " scale-[1.03]   !bg-teal-500 " : " "}`}
             >
               {data?.options?.d}
             </p>
@@ -286,7 +320,7 @@ const EnglishIdioms = () => {
           {reason && (
             <p
               //   onClick={() => playReason(data)}
-              className="bg-teal-900 p-4 text-white text-wrap text-xl font-medium w-[900px] right-[180px] rounded absolute bottom-5 mx-0 trans-reason"
+              className="bg-teal-600 p-4 text-white text-wrap text-xl font-medium w-[900px] right-[180px] rounded absolute bottom-5 mx-0 trans-reason"
             >
               {/* {data?.explanation} */}
               <HighlightedText
