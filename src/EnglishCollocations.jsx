@@ -30,6 +30,8 @@ const EnglishCollocations = () => {
   let res;
   // create a reference to synth
   const synth = window.speechSynthesis;
+  const voices = window.speechSynthesis.getVoices();
+
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
     res = collocationsEnglish[index];
@@ -94,31 +96,33 @@ const EnglishCollocations = () => {
     // if (flag === 3) {
     //   setTimeout(showReason, 2000);
     // }
-    if (flag === 5) {
-      setOrigin(true);
-    }
-    if (flag === 4) {
-      setExp(true);
-    }
+
     if (flag === 2) {
-      u.pitch = 0.8;
-      u.rate = 0.8;
-      u.volume = 5;
+      u.pitch = 0.9;
+      u.rate = 0.6;
+      u.volume = 1;
     }
-    if (flag === 1) {
-      u.addEventListener("start", () => setDisabled(true));
+    // if (flag === 1) {
+      u.addEventListener("start", () => {
+        setDisabled(true);
+        if (flag === 5) {
+          setOrigin((current) => true);
+        }
+        if (flag === 4) {
+          setExp(true);
+        }
+      });
       u.addEventListener("end", () => setDisabled(false));
       u.addEventListener("boundary", ({ charIndex, charLength }) => {
         setHighlightSection({ from: charIndex, to: charIndex + charLength });
       });
-    }
+    // }
     // const handlePlay = () => {
     // const synth = window.speechSynthesis;
 
     // if (isPaused) {
     //   synth.resume();
     // }
-    const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
       // u.voice = voices[82];
@@ -233,22 +237,24 @@ const EnglishCollocations = () => {
               </div>
             )}
             {/* Origin */}
-            <div className="flex-1 flex flex-col items-start justify-center rounded text-white text-lg font-semibold">
-              <span className="px-2 text-xl py-2 rounded bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent flex items-start justify-center uppercase">
-                Origin
-              </span>
-              <p
-                className={`flex-1 py-4 px-6 rounded text-gray-700 bg-gradient-to-r from-amber-200 to-yellow-500  trans text-xl font-semibold text-wrap ${
-                  timer
-                    ? data?.exp === "d"
-                      ? "!bg-green-700 text-white "
-                      : "!bg-red-700"
-                    : ""
-                } `}
-              >
-                {data?.origin}
-              </p>
-            </div>
+            {origin && (
+              <div className="flex-1 flex flex-col items-start justify-center rounded text-white text-lg font-semibold">
+                <span className="px-2 text-xl py-2 rounded bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent flex items-start justify-center uppercase">
+                  Origin
+                </span>
+                <p
+                  className={`flex-1 py-4 px-6 rounded text-gray-700 bg-gradient-to-r from-amber-200 to-yellow-500  trans text-xl font-semibold text-wrap ${
+                    timer
+                      ? data?.exp === "d"
+                        ? "!bg-green-700 text-white "
+                        : "!bg-red-700"
+                      : ""
+                  } `}
+                >
+                  {data?.origin}
+                </p>
+              </div>
+            )}
             {/* example */}
             {reason && (
               <div className="text-left mt-6">

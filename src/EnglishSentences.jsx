@@ -5,7 +5,7 @@ import CountDownNew from "./ProgressBarTimer";
 import { sentences } from "./data/Sentences";
 import SpeechWaves from "./SpeechWaves";
 
-const EnglishSentences = () => {
+const EnglishSentences = ({ startedIndex = 0 }) => {
   // states
   const [data, setData] = useState();
   const [waves, setWaves] = useState();
@@ -29,17 +29,19 @@ const EnglishSentences = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 0;
+  let index = startedIndex || 0;
   let totalCount = sentences.length;
   let res;
   // create a reference to synth
   const synth = window.speechSynthesis;
+  const voices = window.speechSynthesis.getVoices();
+
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
     res = sentences[index];
     audioRef1.current?.play();
     setSpeaker(0);
-    speechStart("Next senetnce ", 0);
+    // speechStart("Next senetnce ", 0);
     // const dataArray = await res.json();
     setExp(false);
     setOrigin(false);
@@ -118,7 +120,7 @@ const EnglishSentences = () => {
     }
     if (flag === 2) {
       u.pitch = 1;
-      u.rate = 0.7;
+      u.rate = 0.6;
       u.volume = 1;
     }
     if (flag === 1 || flag === 2) {
@@ -138,15 +140,15 @@ const EnglishSentences = () => {
       });
     }
 
-    const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
       if (mode === 2) {
-        u.voice = voices[111];
+        // u.voice = voices[111];
+        u.voice = voices[125];
       } else {
         // u.voice = voices[82];
         u.voice = voices[114];
-      } 
+      }
       ok = true;
     }
     // start waves
@@ -205,6 +207,10 @@ const EnglishSentences = () => {
     };
   }, []);
   useEffect(() => {
+    speechStart(
+      "hello everyone. this video includes over 1000 Everyday English Sentences to make you fluent while speaking english, so lets start. dont forget to like and subscribe.  enjoy the video.",
+      0
+    );
     getData();
   }, []);
 
@@ -220,8 +226,9 @@ const EnglishSentences = () => {
     );
   }
   return (
-    <div className="bg-black w-full h-full py-2 rounded">
-      <div className="flex justify-center items-start mt-[30px] w-full h-[515px]">
+    <div className="bg-gradient-to-r from-indigo-500 z-20 to-blue-500 w-full h-full py-2 rounded border-4 border-white">
+      {/* <div className="bg-black/[0.2] fixed inset-0 z-[1] block w-full h-full"></div> */}
+      <div className="flex justify-center items-start mt-[0px] w-full h-[569px] z-20">
         <span className="px-2 py-0 text-cyan-50 ml-4 border-b-2">
           {questionNo}
         </span>
@@ -232,14 +239,18 @@ const EnglishSentences = () => {
           <CountDownNew initMinute={0} initSeconds={7} />
         </div>
       )} */}
-        <div className="mx-[200px] flex flex-col gap-4 w-full justify-center items-center relative mt-10">
+
+        <div className="mx-[200px] flex flex-col gap-4 w-full justify-center items-center relative mt-1">
+          <span className="px-1 text-2xl font-bold my-2 bg-gradient-to-b from-indigo-700 to-blue-600 uppercase  tracking-wider text-cyan-50 rounded py-1">
+            Everyday English Sentences
+          </span>
           {/* image avatars */}
-          <div className="flex justify-between items-center absolute top-0">
+          <div className="flex justify-between items-center absolute top-16">
             <div
-              className={`relative w-[100px] h-[100px] border-2 border-white rounded-full transition-all
+              className={`relative w-[100px] h-[100px] border-2 rounded-full transition-all
             overflow-hidden ${
               speaker === 1
-                ? "w-[120px] h-[120px] border-4 border-green-700"
+                ? "w-[120px] h-[120px] border-8 border-green-700"
                 : speaker === 2
                 ? "w-[80px] h-[80px]"
                 : ""
@@ -247,7 +258,7 @@ const EnglishSentences = () => {
             >
               <img
                 className="absolute -top-4 object-cover "
-                src={"/images/female-avatar.jpg"}
+                src={"./images/female-avatar.jpg"}
                 alt="avatar"
               />
             </div>
@@ -261,10 +272,10 @@ const EnglishSentences = () => {
               <SpeechWaves />
             </div>
             <div
-              className={`relative w-[100px] h-[100px] border-2 border-white rounded-full transition-all
+              className={`relative w-[100px] h-[100px] border-2 rounded-full transition-all
             overflow-hidden ${
               speaker === 2
-                ? "w-[120px] h-[120px] border-4 border-green-700"
+                ? "w-[120px] h-[120px] border-8 border-green-700"
                 : speaker === 1
                 ? "w-[80px] h-[80px]"
                 : ""
@@ -272,7 +283,7 @@ const EnglishSentences = () => {
             >
               <img
                 className="absolute top-0 object-cover "
-                src={"/images/male-avatar-3.jpg"}
+                src={"./images/male-avatar-3.jpg"}
                 alt="avatar"
               />
             </div>
@@ -338,7 +349,7 @@ const EnglishSentences = () => {
             {/* <span className="text-cyan-50 text-lg">For Example:</span> */}
             <p
               //   onClick={() => playReason(data)}
-              className="p-4 py-2 mt-0 text-white text-nowrap text-xl font-normal rounded mx-1 text-center"
+              className="p-4 py-2 mt-0 text-white text-nowrap text-xl font-semibold rounded mx-1 text-center"
             >
               {/* {data?.explanation} */}
               <HighlightedText
@@ -396,14 +407,18 @@ const HighlightedText = ({ text, from, to, disabled, mode = 1 }) => {
           highlight.length === 0
             ? "bg-transparent"
             : mode === 1
-            ? "bg-white text-pink-500 mt-0"
-            : "text-pink-500 mt-0"
-        }  rounded px-[0px] ${mode === 1 ? "font-semibold" : "font-normal"}`}
+            ? "bg-white text-blue-500 mt-0"
+            : "text-blue-700 mt-0"
+        }  rounded px-[0px] ${mode === 1 ? "font-semibold" : ""}`}
       >
         {highlight}
         {/* {finish.length} */}
       </span>
-      {finish}
+      <span
+        className={`${highlight.length === 0 ? "opacity-0" : "opacity-100"}`}
+      >
+        {finish}
+      </span>
     </>
   );
 };

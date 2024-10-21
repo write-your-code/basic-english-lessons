@@ -305,7 +305,7 @@ const EnglishToMultiLanguages = () => {
             >
               <img
                 className="absolute top-0 w-full h-full object-cover "
-                src={"/images/american-female.png"}
+                src={"./images/american-female.png"}
                 alt="avatar"
               />
             </div>
@@ -324,7 +324,7 @@ const EnglishToMultiLanguages = () => {
             >
               <img
                 className="absolute top-0 w-full h-full object-cover "
-                src={"/images/arab-female.png"}
+                src={"./images/arab-female.png"}
                 alt="avatar"
               />
             </div>
@@ -343,7 +343,7 @@ const EnglishToMultiLanguages = () => {
             >
               <img
                 className="absolute top-0 w-full h-full object-cover "
-                src={"/images/russian-female.png"}
+                src={"./images/russian-female.png"}
                 alt="avatar"
               />
             </div>
@@ -362,7 +362,7 @@ const EnglishToMultiLanguages = () => {
             >
               <img
                 className="absolute top-0 w-full h-full object-cover "
-                src={"/images/french-female.png"}
+                src={"./images/french-female.png"}
                 alt="avatar"
               />
             </div>
@@ -381,7 +381,7 @@ const EnglishToMultiLanguages = () => {
             >
               <img
                 className="absolute top-0 w-full h-full object-cover "
-                src={"/images/german-female.png"}
+                src={"./images/german-female.png"}
                 alt="avatar"
               />
             </div>

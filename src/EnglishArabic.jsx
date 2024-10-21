@@ -318,7 +318,7 @@ const EnglishArabic = () => {
             >
               <img
                 className="w-full h-full object-cover "
-                src={"/images/american-female.png"}
+                src={"./images/american-female.png"}
                 alt="avatar"
               />
             </div>
@@ -343,7 +343,7 @@ const EnglishArabic = () => {
             >
               <img
                 className="w-full h-full object-cover "
-                src={"/images/arab-female.png"}
+                src={"./images/arab-female.png"}
                 alt="avatar"
               />
             </div>

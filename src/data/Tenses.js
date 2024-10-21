@@ -437,7 +437,7 @@ const tensesArray = [
 
 const sentences = {
   simplePresent: [
-    "I wake up at 6:00 a.m. every morning.",
+    "I wake up at 6.00 a.m. every morning.",
     "She teaches English at a local school.",
     "They enjoy playing football on weekends.",
     "He works in a hospital as a nurse.",
@@ -822,7 +822,7 @@ const sentences = {
 const quizQuestions = {
   simplePresent: [
     {
-      question: "I ______ up at 6:00 a.m. every morning.",
+      question: "I ______ up at 6.00 a.m. every morning.",
       options: {
         a: "woke",
         b: "wake",
@@ -1001,7 +1001,7 @@ export const listAll12TensesMcqs = {
   simplePresent: [
     { type: "simple Present" },
     {
-      question: "I ______ up at 6:00 a.m. every morning.",
+      question: "I ______ up at 6.00 a.m. every morning.",
       options: {
         a: "woke",
         b: "wake",
@@ -4564,7 +4564,7 @@ export const listAll12TensesMcqs = {
 // ------------------------------ combine tenses------------------------------
 export const listAll12TensesMixMcqs = [
   {
-    question: "I ______ up at 6:00 a.m. every morning.",
+    question: "I ______ up at 6.00 a.m. every morning.",
     options: {
       a: "woke",
       b: "wake",
@@ -5983,10 +5983,10 @@ export const listAll12TensesMixMcqs = [
     id: 35,
     question: "______ you ______ on your assignment all day?",
     options: {
-      a: "Were",
-      b: "Was",
-      c: "Did",
-      d: "Are",
+      a: "Were,working",
+      b: "Was,worked",
+      c: "Did,working",
+      d: "Are,work",
     },
     answer: "a",
     explanation:
@@ -6009,10 +6009,10 @@ export const listAll12TensesMixMcqs = [
     id: 37,
     question: "What ______ you ______ when the earthquake occurred?",
     options: {
-      a: "were",
-      b: "was",
-      c: "did",
-      d: "are",
+      a: "were,doing",
+      b: "was,doing",
+      c: "did,doing",
+      d: "are,do",
     },
     answer: "a",
     explanation:
@@ -6033,12 +6033,12 @@ export const listAll12TensesMixMcqs = [
   },
   {
     id: 39,
-    question: "______ she ______ a letter to her pen pal?",
+    question: "______ she writing a letter to her pen pal?",
     options: {
       a: "Was",
       b: "Were",
       c: "Did",
-      d: "Is",
+      d: "Are",
     },
     answer: "a",
     explanation:
@@ -7600,7 +7600,7 @@ export const listAll12TensesMixMcqs = [
   },
   {
     question:
-      "I __________ working all afternoon and have just finished the assignment.",
+      "I ______ working all afternoon and have just finished the assignment.",
     options: {
       a: "have been",
       b: "had been",
@@ -7612,7 +7612,7 @@ export const listAll12TensesMixMcqs = [
       "The present perfect continuous tense 'have been' is used to describe an action that started in the past and continues up to the present.",
   },
   {
-    question: "Rohan __________ the movie before he read the review.",
+    question: "Rohan ______ the movie before he read the review.",
     options: {
       a: "watches",
       b: "have watched",
@@ -7625,7 +7625,7 @@ export const listAll12TensesMixMcqs = [
   },
   {
     question:
-      "He __________ in the States but he still does not have a command over the English language.",
+      "He ______ in the States but he still does not have a command over the English language.",
     options: {
       a: "have been living",
       b: "has been living",
@@ -7637,7 +7637,7 @@ export const listAll12TensesMixMcqs = [
       "'Has been living' is in present perfect continuous tense, used to describe an action that started in the past and is still continuing.",
   },
   {
-    question: "By the next month, we shall __________ the project.",
+    question: "By the next month, we shall ______ the project.",
     options: {
       a: "has completed",
       b: "completing",
@@ -7649,7 +7649,7 @@ export const listAll12TensesMixMcqs = [
       "'Shall have completed' is the future perfect tense, used to indicate that an action will be completed before a certain time in the future.",
   },
   {
-    question: "Every boy and girl __________ in the class today.",
+    question: "Every boy and girl ______ in the class today.",
     options: {
       a: "are present",
       b: "is present",
@@ -7661,7 +7661,7 @@ export const listAll12TensesMixMcqs = [
       "When using 'every,' the verb is singular, so 'is present' is the correct choice.",
   },
   {
-    question: "He __________ daily for a year now.",
+    question: "He ______ daily for a year now.",
     options: {
       a: "exercises",
       b: "was exercising",
@@ -7673,7 +7673,7 @@ export const listAll12TensesMixMcqs = [
       "'Has been exercising' is present perfect continuous tense, indicating a repetitive action started in the past and continues in the present.",
   },
   {
-    question: "I __________ this book since morning.",
+    question: "I ______ this book since morning.",
     options: {
       a: "had been reading",
       b: "has been reading",
@@ -7698,7 +7698,7 @@ export const listAll12TensesMixMcqs = [
   },
   {
     question:
-      "According to the prevailing rate, two dozen __________ rupees one hundred.",
+      "According to the prevailing rate, two dozen ______ rupees one hundred.",
     options: {
       a: "costs",
       b: "cost",
@@ -7710,7 +7710,7 @@ export const listAll12TensesMixMcqs = [
       "'Cost' is the correct form because 'dozen' is treated as a plural noun here.",
   },
   {
-    question: "The Council __________ made its decision.",
+    question: "The Council ______ made its decision.",
     options: {
       a: "have",
       b: "have had",
@@ -7747,7 +7747,7 @@ export const listAll12TensesMixMcqs = [
   },
   {
     question:
-      "Identify the tense used in the following sentence. 'When I reached the bookstore, all the copies had already been sold.'",
+      "Identify the tense:'When I reached the bookstore, all the copies had already been sold.'",
     options: {
       a: "Past perfect tense",
       b: "Past indefinite tense",
@@ -7759,7 +7759,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense shows an action that was completed before another action in the past.",
   },
   {
-    question: "The wise leader and politician __________ assassinated.",
+    question: "The wise leader and politician ______ assassinated.",
     options: {
       a: "are",
       b: "has been",
@@ -7771,7 +7771,7 @@ export const listAll12TensesMixMcqs = [
       "'Has been' is used as the subject is singular, despite referring to two titles.",
   },
   {
-    question: "Neither of the paintings __________ sold.",
+    question: "Neither of the paintings ______ sold.",
     options: {
       a: "have been",
       b: "were",
@@ -7783,7 +7783,7 @@ export const listAll12TensesMixMcqs = [
       "When 'neither' is used, the verb is singular, so 'was' is correct.",
   },
   {
-    question: "Sita or her brothers __________ to be blamed.",
+    question: "Sita or her brothers ______ to be blamed.",
     options: {
       a: "is",
       b: "has",
@@ -7795,7 +7795,7 @@ export const listAll12TensesMixMcqs = [
       "When two subjects are connected by 'or,' the verb agrees with the subject closer to it.",
   },
   {
-    question: "The Chief guest, with his wife, __________.",
+    question: "The Chief guest, with his wife, ______.",
     options: {
       a: "has left",
       b: "are leaving",
@@ -7807,7 +7807,7 @@ export const listAll12TensesMixMcqs = [
       "The subject is singular (The Chief guest), so 'has left' is correct.",
   },
   {
-    question: "The quality of products __________ over time.",
+    question: "The quality of products ______ over time.",
     options: {
       a: "are degrading",
       b: "has been degrading",
@@ -7819,7 +7819,7 @@ export const listAll12TensesMixMcqs = [
       "The subject 'quality' is singular, so 'has been degrading' is the correct form.",
   },
   {
-    question: "The news __________ not updated timely.",
+    question: "The news ______ not updated timely.",
     options: {
       a: "were",
       b: "have",
@@ -7830,7 +7830,7 @@ export const listAll12TensesMixMcqs = [
     reason: "'News' is singular, so 'is' is the correct verb form.",
   },
   {
-    question: "They __________ into their cars and drove away.",
+    question: "They ______ into their cars and drove away.",
     options: {
       a: "has got",
       b: "have got",
@@ -7841,7 +7841,7 @@ export const listAll12TensesMixMcqs = [
     reason: "The sentence is in past tense, so 'got' is the correct choice.",
   },
   {
-    question: "The book __________ on the table.",
+    question: "The book ______ on the table.",
     options: {
       a: "are",
       b: "is",
@@ -7852,7 +7852,7 @@ export const listAll12TensesMixMcqs = [
     reason: "'Is' is correct because the subject 'book' is singular.",
   },
   {
-    question: "The sun __________ in the east.",
+    question: "The sun ______ in the east.",
     options: {
       a: "rise",
       b: "rises",
@@ -7864,7 +7864,7 @@ export const listAll12TensesMixMcqs = [
       "'Rises' is used for general truths, and the present indefinite tense is correct.",
   },
   {
-    question: "The children __________ playing in the park.",
+    question: "The children ______ playing in the park.",
     options: {
       a: "is",
       b: "was",
@@ -7875,7 +7875,7 @@ export const listAll12TensesMixMcqs = [
     reason: "'Are' is correct because the subject 'children' is plural.",
   },
   {
-    question: "She __________ to the market every day.",
+    question: "She ______ to the market every day.",
     options: {
       a: "go",
       b: "going",
@@ -7887,7 +7887,7 @@ export const listAll12TensesMixMcqs = [
       "'Goes' is present indefinite tense used to describe habitual actions.",
   },
   {
-    question: "They __________ their work already.",
+    question: "They ______ their work already.",
     options: {
       a: "have finished",
       b: "finishing",
@@ -7899,7 +7899,7 @@ export const listAll12TensesMixMcqs = [
       "Present perfect tense 'have finished' is used to describe an action completed in the recent past.",
   },
   {
-    question: "I __________ him yesterday.",
+    question: "I ______ him yesterday.",
     options: {
       a: "see",
       b: "saw",
@@ -7911,7 +7911,7 @@ export const listAll12TensesMixMcqs = [
       "Past indefinite tense 'saw' is used to describe an action completed in the past.",
   },
   {
-    question: "He __________ his homework before going out to play.",
+    question: "He ______ his homework before going out to play.",
     options: {
       a: "has finished",
       b: "had finished",
@@ -7923,7 +7923,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense 'had finished' shows that the homework was completed before another action.",
   },
   {
-    question: "By this time next year, she __________ her studies.",
+    question: "By this time next year, she ______ her studies.",
     options: {
       a: "will complete",
       b: "will have completed",
@@ -7936,7 +7936,7 @@ export const listAll12TensesMixMcqs = [
   },
   {
     question:
-      "We __________ on the project for three months by the end of this week.",
+      "We ______ on the project for three months by the end of this week.",
     options: {
       a: "have been working",
       b: "will have been working",
@@ -7948,7 +7948,7 @@ export const listAll12TensesMixMcqs = [
       "Future perfect continuous tense 'will have been working' is used to show an ongoing action that will be completed by a specific time in the future.",
   },
   {
-    question: "She __________ when I entered the room.",
+    question: "She ______ when I entered the room.",
     options: {
       a: "is reading",
       b: "was reading",
@@ -7960,8 +7960,7 @@ export const listAll12TensesMixMcqs = [
       "Past continuous tense 'was reading' is used to describe an action that was ongoing in the past.",
   },
   {
-    question:
-      "She __________ the guitar for five years by the end of this year.",
+    question: "She ______ the guitar for five years by the end of this year.",
     options: {
       a: "has played",
       b: "had played",
@@ -7973,7 +7972,7 @@ export const listAll12TensesMixMcqs = [
       "The future perfect tense 'will have played' shows an action that will be completed by a certain point in the future.",
   },
   {
-    question: "He __________ when the bell rang.",
+    question: "He ______ when the bell rang.",
     options: {
       a: "is sleeping",
       b: "was sleeping",
@@ -7985,7 +7984,7 @@ export const listAll12TensesMixMcqs = [
       "Past continuous tense 'was sleeping' indicates an ongoing action in the past interrupted by another event.",
   },
   {
-    question: "They __________ for a walk every evening.",
+    question: "They ______ for a walk every evening.",
     options: {
       a: "go",
       b: "going",
@@ -7997,7 +7996,7 @@ export const listAll12TensesMixMcqs = [
       "Present indefinite tense 'go' is used to describe habitual actions.",
   },
   {
-    question: "I __________ my friend tomorrow.",
+    question: "I ______ my friend tomorrow.",
     options: {
       a: "am meeting",
       b: "meet",
@@ -8009,7 +8008,7 @@ export const listAll12TensesMixMcqs = [
       "'Am meeting' is present continuous tense used to describe a planned future event.",
   },
   {
-    question: "By the time you arrive, we __________ the movie.",
+    question: "By the time you arrive, we ______ the movie.",
     options: {
       a: "will finish",
       b: "finished",
@@ -8021,7 +8020,7 @@ export const listAll12TensesMixMcqs = [
       "Future perfect tense 'will have finished' indicates an action that will be completed by a certain time in the future.",
   },
   {
-    question: "He __________ his homework before the teacher asked for it.",
+    question: "He ______ his homework before the teacher asked for it.",
     options: {
       a: "has finished",
       b: "had finished",
@@ -8033,7 +8032,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense 'had finished' is used to show an action that was completed before another past event.",
   },
   {
-    question: "At 9 PM yesterday, I __________ TV.",
+    question: "At 9 PM yesterday, I ______ TV.",
     options: {
       a: "watched",
       b: "am watching",
@@ -8045,7 +8044,7 @@ export const listAll12TensesMixMcqs = [
       "Past continuous tense 'was watching' is used to indicate an ongoing action in the past.",
   },
   {
-    question: "By next month, they __________ in their new house.",
+    question: "By next month, they ______ in their new house.",
     options: {
       a: "will be living",
       b: "live",
@@ -8057,7 +8056,7 @@ export const listAll12TensesMixMcqs = [
       "Future continuous tense 'will be living' is used to describe an action that will be ongoing at a specific point in the future.",
   },
   {
-    question: "I __________ him yesterday.",
+    question: "I ______ him yesterday.",
     options: {
       a: "saw",
       b: "see",
@@ -8069,7 +8068,7 @@ export const listAll12TensesMixMcqs = [
       "Past indefinite tense 'saw' is used to describe an action that took place in the past.",
   },
   {
-    question: "She __________ to the store later today.",
+    question: "She ______ to the store later today.",
     options: {
       a: "goes",
       b: "is going",
@@ -8081,7 +8080,7 @@ export const listAll12TensesMixMcqs = [
       "Present continuous tense 'is going' is used to describe a future event that is planned.",
   },
   {
-    question: "I __________ this book since last week.",
+    question: "I ______ this book since last week.",
     options: {
       a: "have been reading",
       b: "was reading",
@@ -8093,7 +8092,7 @@ export const listAll12TensesMixMcqs = [
       "Present perfect continuous tense 'have been reading' is used to describe an action that started in the past and is still continuing.",
   },
   {
-    question: "He __________ by the time I arrived.",
+    question: "He ______ by the time I arrived.",
     options: {
       a: "left",
       b: "has left",
@@ -8105,7 +8104,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense 'had left' shows an action that was completed before another past action.",
   },
   {
-    question: "They __________ the match before it started raining.",
+    question: "They ______ the match before it started raining.",
     options: {
       a: "have finished",
       b: "finished",
@@ -8117,7 +8116,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense 'had finished' indicates an action completed before another past event.",
   },
   {
-    question: "I __________ him by the end of this week.",
+    question: "I ______ him by the end of this week.",
     options: {
       a: "will meet",
       b: "meet",
@@ -8129,7 +8128,7 @@ export const listAll12TensesMixMcqs = [
       "Future indefinite tense 'will meet' is used for actions that will happen in the future.",
   },
   {
-    question: "She __________ the room when I walked in.",
+    question: "She ______ the room when I walked in.",
     options: {
       a: "was cleaning",
       b: "cleaned",
@@ -8141,7 +8140,7 @@ export const listAll12TensesMixMcqs = [
       "Past continuous tense 'was cleaning' describes an action that was ongoing when another action occurred.",
   },
   {
-    question: "We __________ the new movie next weekend.",
+    question: "We ______ the new movie next weekend.",
     options: {
       a: "watch",
       b: "watched",
@@ -8153,7 +8152,7 @@ export const listAll12TensesMixMcqs = [
       "Future continuous tense 'will be watching' is used to describe an action that will be ongoing at a specific future time.",
   },
   {
-    question: "She __________ when I saw her last.",
+    question: "She ______ when I saw her last.",
     options: {
       a: "is crying",
       b: "was crying",
@@ -8165,7 +8164,7 @@ export const listAll12TensesMixMcqs = [
       "Past continuous tense 'was crying' describes an action that was ongoing in the past.",
   },
   {
-    question: "By the end of this month, they __________ for six months.",
+    question: "By the end of this month, they ______ for six months.",
     options: {
       a: "will work",
       b: "will have worked",
@@ -8177,7 +8176,7 @@ export const listAll12TensesMixMcqs = [
       "Future perfect tense 'will have worked' shows an action that will be completed by a certain time in the future.",
   },
   {
-    question: "He __________ here for two years by next month.",
+    question: "He ______ here for two years by next month.",
     options: {
       a: "has been living",
       b: "will have been living",
@@ -8189,7 +8188,7 @@ export const listAll12TensesMixMcqs = [
       "Future perfect continuous tense 'will have been living' indicates an action that will continue up to a specific point in the future.",
   },
   {
-    question: "I __________ for the exam all week.",
+    question: "I ______ for the exam all week.",
     options: {
       a: "studied",
       b: "am studying",
@@ -8201,7 +8200,7 @@ export const listAll12TensesMixMcqs = [
       "Present perfect continuous tense 'have been studying' describes an action that started in the past and is ongoing.",
   },
   {
-    question: "They __________ the project by next year.",
+    question: "They ______ the project by next year.",
     options: {
       a: "finish",
       b: "will have finished",
@@ -8213,7 +8212,7 @@ export const listAll12TensesMixMcqs = [
       "Future perfect tense 'will have finished' is used to describe an action that will be completed before a specified future time.",
   },
   {
-    question: "The team __________ the game by the time I arrived.",
+    question: "The team ______ the game by the time I arrived.",
     options: {
       a: "won",
       b: "had won",
@@ -8225,7 +8224,7 @@ export const listAll12TensesMixMcqs = [
       "Past perfect tense 'had won' is used to show an action that was completed before another past action.",
   },
   {
-    question: "We __________ to the museum last weekend.",
+    question: "We ______ to the museum last weekend.",
     options: {
       a: "went",
       b: "go",
@@ -8237,7 +8236,7 @@ export const listAll12TensesMixMcqs = [
       "Past indefinite tense 'went' describes a completed action in the past.",
   },
   {
-    question: "He __________ his homework before dinner.",
+    question: "He ______ his homework before dinner.",
     options: {
       a: "finishes",
       b: "finished",
@@ -8249,7 +8248,7 @@ export const listAll12TensesMixMcqs = [
       "Past indefinite tense 'finished' is used to describe an action completed in the past.",
   },
   {
-    question: "They __________ at the meeting yesterday.",
+    question: "They ______ at the meeting yesterday.",
     options: {
       a: "are",
       b: "were",
@@ -8260,7 +8259,7 @@ export const listAll12TensesMixMcqs = [
     reason: "'Were' is the correct past form of 'to be' for plural subjects.",
   },
   {
-    question: "I __________ to the store every week.",
+    question: "I ______ to the store every week.",
     options: {
       a: "go",
       b: "went",
@@ -8272,4 +8271,1575 @@ export const listAll12TensesMixMcqs = [
   },
 
   // Total of 100 questions complete
+
+  // tenses from examveda starts here
+  {
+    id: 1,
+    question: "Identify the tense: I have been working on the problem.",
+    options: {
+      a: "Present Continuous",
+      b: "Present Perfect Continuous",
+      c: "Past Perfect",
+      d: "Past Continuous",
+    },
+    answer: "b",
+    explanation:
+      "The sentence 'I have been working on the problem' is in the Present Perfect Continuous tense, indicating an action that started in the past and is still continuing.",
+  },
+  {
+    id: 2,
+    question: "Identify the tense: They will have been writing their letters.",
+    options: {
+      a: "Future Perfect Continuous",
+      b: "Future Continuous",
+      c: "Present Perfect Continuous",
+      d: "Present Perfect",
+    },
+    answer: "a",
+    explanation:
+      "The sentence 'They will have been writing their letters' is in the Future Perfect Continuous tense, showing an ongoing action that will have been happening at a specific time in the future.",
+  },
+  {
+    id: 3,
+    question: "Identify the tense: I will represent him in court.",
+    options: {
+      a: "Simple Present",
+      b: "Simple Future",
+      c: "Simple Past",
+      d: "Future Continuous",
+    },
+    answer: "b",
+    explanation:
+      "The sentence 'I will represent him in court' is in the Simple Future tense, indicating a future action.",
+  },
+  {
+    id: 4,
+    question: "Identify the tense: I will give him a gift.",
+    options: {
+      a: "Simple Present",
+      b: "Simple Past",
+      c: "Present Continuous",
+      d: "Simple Future",
+    },
+    answer: "d",
+    explanation:
+      "The sentence 'I will give him a gift' is in the Simple Future tense, expressing a future action.",
+  },
+  {
+    id: 5,
+    question: "Identify the tense: They are working on the project together.",
+    options: {
+      a: "Simple Present",
+      b: "Present Continuous",
+      c: "Simple Past",
+      d: "Past Continuous",
+    },
+    answer: "b",
+    explanation:
+      "The sentence 'They are working on the project together' is in the Present Continuous tense, showing an action that is happening right now.",
+  },
+  {
+    id: 6,
+    question:
+      "Identify the form of the Future Simple Tense from the given options:",
+    options: {
+      a: "Subject + simple future of the verb 'to be' + present participle",
+      b: "Subject + simple future of the verb 'to have' + past participle",
+      c: "Subject + simple future of the verb 'to do' + present participle",
+      d: "Subject + simple future of the verb 'to be' + past participle",
+    },
+    answer: "a",
+    explanation:
+      "The correct form of the Future Simple tense uses 'Subject + simple future of the verb 'to be' + present participle'.",
+  },
+  {
+    id: 7,
+    question: "Identify the tense: She speaks well.",
+    options: {
+      a: "Present Perfect",
+      b: "Simple Present",
+      c: "Present Continuous",
+      d: "Simple Future",
+    },
+    answer: "b",
+    explanation:
+      "The sentence 'She speaks well' is in the Simple Present tense, indicating a general or habitual action.",
+  },
+  {
+    id: 8,
+    question: "Identify the tense: She has eaten her food.",
+    options: {
+      a: "Simple Present",
+      b: "Present Perfect",
+      c: "Simple Past",
+      d: "Past Perfect",
+    },
+    answer: "b",
+    explanation:
+      "The sentence 'She has eaten her food' is in the Present Perfect tense, showing that the action has been completed in the present.",
+  },
+  {
+    id: 9,
+    question: "Choose the most appropriate word: I'll help him if he ______.",
+    options: {
+      a: "ask",
+      b: "asked",
+      c: "asks",
+      d: "will ask",
+    },
+    answer: "c",
+    explanation:
+      "'I'll help him if he asks' is the correct usage because 'asks' fits the conditional clause in the sentence.",
+  },
+  {
+    id: 10,
+    question: "Choose the most appropriate word: The war ______ in 1937.",
+    options: {
+      a: "start",
+      b: "will start",
+      c: "is starting",
+      d: "started",
+    },
+    answer: "d",
+    explanation:
+      "The correct sentence is 'The war started in 1937, using the Simple Past tense to indicate a past event.",
+  },
+  {
+    id: 11,
+    question:
+      "Fill in the blanks with the most appropriate words: Look! There ______ a man sitting at the first table near the door. He ______ at us.",
+    options: {
+      a: "was/looks",
+      b: "had been/looked",
+      c: "were/had looked",
+      d: "is/is looking",
+    },
+    answer: "d",
+    explanation:
+      "The present continuous tense is used here because it describes an ongoing action happening right now.",
+  },
+  {
+    id: 12,
+    question:
+      "North Korea still ______ a vast police state that ______ a network of concentration camps spanning the country.",
+    options: {
+      a: "was maintaining/has included",
+      b: "had maintained/would include",
+      c: "is maintaining/had included",
+      d: "maintains/includes",
+      e: "maintained/will include",
+    },
+    answer: "d",
+    explanation:
+      "The simple present tense is appropriate as this is a current fact about North Korea.",
+  },
+  {
+    id: 13,
+    question:
+      "Complete the given sentence using appropriate form of the verb: I'm too tired to walk home. I think ______ a taxi.",
+    options: {
+      a: "I have got",
+      b: "I am getting",
+      c: "I got",
+      d: "I'll get",
+    },
+    answer: "d",
+    explanation:
+      "The future tense 'I'll get' is used to express a spontaneous decision made at the moment.",
+  },
+  {
+    id: 14,
+    question:
+      "A: Is that your pure wool pullover in the washing machine? It ______ you know! B: No, I ______ it several times in the machine already. I use the wool cycle and it's fine.",
+    options: {
+      a: "was shrinking",
+      b: "has shrunk",
+      c: "will shrink",
+      d: "is going to shrink",
+      e: "is shrinking",
+    },
+    answer: "e",
+    explanation:
+      "The present continuous is used because it describes an action happening now (shrinking).",
+  },
+  {
+    id: 15,
+    question: "The hens ______ into the house if you had shut the door.",
+    options: {
+      a: "would not have got",
+      b: "did not get",
+      c: "does not get",
+      d: "not got",
+    },
+    answer: "a",
+    explanation:
+      "The past conditional tense 'would not have got' is used to express what could have happened if the door had been shut.",
+  },
+  {
+    id: 16,
+    question: "Identify the tense: He has called out to him.",
+    options: {
+      a: "Simple Past",
+      b: "Past Perfect",
+      c: "Present Perfect",
+      d: "Present Perfect Continuous",
+    },
+    answer: "c",
+    explanation:
+      "This sentence uses the present perfect tense, which connects a past action to the present.",
+  },
+  {
+    id: 17,
+    question:
+      "Fill in the blank with the most appropriate word: Where is Comrade A? He ______ tennis.",
+    options: {
+      a: "plays",
+      b: "is playing",
+      c: "played",
+      d: "has been playing",
+    },
+    answer: "b",
+    explanation:
+      "The present continuous tense 'is playing' describes an action happening right now.",
+  },
+  {
+    id: 18,
+    question:
+      "Fill in the blank with the most appropriate word: Look at the little boys! They ______ with stones.",
+    options: {
+      a: "play",
+      b: "will play",
+      c: "are playing",
+      d: "is playing",
+    },
+    answer: "c",
+    explanation:
+      "'Are playing' is used because the boys are currently playing with stones.",
+  },
+  {
+    id: 19,
+    question:
+      "Fill in the blank with the most appropriate word with the help of the hint in the brackets: The population of the world ______ very fast. (Happening right now)",
+    options: {
+      a: "rise",
+      b: "rises",
+      c: "is rising",
+      d: "rose",
+    },
+    answer: "c",
+    explanation:
+      "The present continuous 'is rising' is used for an action happening right now.",
+  },
+  {
+    id: 20,
+    question:
+      "Complete the sentence with the appropriate form of the given verb: They've invited me to their house. They ______ (be) offended if I don't go.",
+    options: {
+      a: "are being",
+      b: "will be",
+      c: "are",
+      d: "have been",
+    },
+    answer: "b",
+    explanation: "'Will be' is used to describe a future outcome.",
+  },
+  {
+    id: 21,
+    question:
+      "Fill in the blank with the most appropriate word: A: Can I speak to Mr. Rich? B: I'm sorry, he ______.",
+    options: {
+      a: "open",
+      b: "live",
+      c: "speak",
+      d: "take",
+    },
+    answer: "c",
+    explanation:
+      "'Speak' is appropriate as the verb that fits the context of a conversation.",
+  },
+  {
+    id: 22,
+    question: "My parents _____ in a very small flat.",
+    options: {
+      a: "live",
+      b: "opens",
+      c: "speak",
+      d: "take",
+    },
+    answer: "a",
+    explanation:
+      "'Live' is used here in the present simple tense, describing a habitual action.",
+  },
+  {
+    id: 23,
+    question:
+      "Fill in the blank with the most appropriate word: Princess Diana_____ in 1997.",
+    options: {
+      a: "die",
+      b: "died",
+      c: "dies",
+      d: "dye",
+    },
+    answer: "b",
+    explanation:
+      "The past simple tense 'died' is used to refer to a specific event in the past.",
+  },
+  {
+    id: 24,
+    question:
+      "The last time we ______ dinner with them, they ______ for a new house.",
+    options: {
+      a: "have, looked",
+      b: "had, were looking",
+      c: "were, looking",
+      d: "had, looked",
+    },
+    answer: "b",
+    explanation:
+      "Past continuous tense 'were looking' shows an ongoing action in the past.",
+  },
+  {
+    id: 25,
+    question:
+      "Fill in the blanks with the most appropriate option: Why ______ you come yesterday? We ____ a good time.",
+    options: {
+      a: "didn't, had",
+      b: "did, have",
+      c: "don't, have",
+      d: "were, had",
+    },
+    answer: "a",
+    explanation: "'Didn’t' and 'had' are used to express actions in the past.",
+  },
+  {
+    id: 26,
+    question:
+      "Fill in the blank with the most appropriate word: He ______ an aspirin half an hour ago.",
+    options: {
+      a: "took",
+      b: "takes",
+      c: "taken",
+      d: "take",
+    },
+    answer: "a",
+    explanation:
+      "The simple past tense 'took' is used for an action completed in the past.",
+  },
+  {
+    id: 27,
+    question:
+      "Fill in the blank with the most appropriate option: He ___ out five minutes ago.",
+    options: {
+      a: "went",
+      b: "was",
+      c: "has",
+      d: "is",
+    },
+    answer: "a",
+    explanation:
+      "'Went' is in the past simple, indicating an action completed a few minutes ago.",
+  },
+  {
+    id: 28,
+    question:
+      "The Bastille Prison, where many important people ______ at one time imprisoned, ______ today visited by tourists.",
+    options: {
+      a: "were, is",
+      b: "was, is",
+      c: "are, have",
+      d: "are, was",
+    },
+    answer: "b",
+    explanation:
+      "The sentence describes past events with 'was' and current situations with 'is.'",
+  },
+  {
+    id: 29,
+    question:
+      "Choose from the options given below so as to complete the sentence correctly: I ______ on this project for months without success.",
+    options: {
+      a: "had been working",
+      b: "have been working",
+      c: "was working",
+      d: "worked",
+    },
+    answer: "b",
+    explanation:
+      "Present perfect continuous is used to show an action that started in the past and continues now.",
+  },
+  {
+    id: 30,
+    question:
+      "Fill in the blank with the most appropriate word: I'll stay home if it ______.",
+    options: {
+      a: "is sleeping",
+      b: "sleeps",
+      c: "slept",
+      d: "was sleeping",
+    },
+    answer: "a",
+    explanation:
+      "Present continuous is used for an ongoing or future event, depending on context.",
+  },
+  {
+    id: 41,
+    question: "You ______ for being late to the party.",
+    options: {
+      a: "apologized",
+      b: "apologizing",
+      c: "are apologizing",
+      d: "apologize",
+    },
+    answer: "b",
+  },
+  {
+    id: 42,
+    question:
+      "Fill in the blank using the appropriate verb form: Can you wait for me? It ______ very long.",
+    options: {
+      a: "won't take",
+      b: "isn't taking",
+      c: "doesn't take",
+      d: "wasn't taking",
+    },
+    answer: "a",
+  },
+  {
+    id: 43,
+    question:
+      "In the blanks with the most appropriate option: My dog______a lot but it ______ at the moment.",
+    options: {
+      a: "barks, isn't barking",
+      b: "barked, doesn't bark",
+      c: "barks, doesn't bark",
+      d: "was barking, isn't barking",
+    },
+    answer: "c",
+  },
+  {
+    id: 44,
+    question:
+      "My son ______ very well at university this term because he ______ out late at night anymore.",
+    options: {
+      a: "is doing, doesn't go",
+      b: "doesn't do, goes",
+      c: "did, doesn't go",
+      d: "was doing, won't go",
+    },
+    answer: "a",
+  },
+  {
+    id: 45,
+    question:
+      "Fill in the blank with the most appropriate word: The computer ______ guaranteed by the company.",
+    options: {
+      a: "is",
+      b: "was",
+      c: "has been",
+      d: "were",
+    },
+    answer: "c",
+  },
+  {
+    id: 46,
+    question:
+      "Fill in the blank with the most appropriate option: Who ______ to see me last week?",
+    options: {
+      a: "came",
+      b: "was coming",
+      c: "had come",
+      d: "did come",
+    },
+    answer: "a",
+  },
+  {
+    id: 47,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ the meeting on Friday.",
+    options: {
+      a: "is holding",
+      b: "holds",
+      c: "held",
+      d: "hold",
+    },
+    answer: "a",
+  },
+  {
+    id: 48,
+    question:
+      "Fill in the blank with the most appropriate word: I think he ______ the answers to the questions.",
+    options: {
+      a: "knows",
+      b: "knew",
+      c: "has known",
+      d: "know",
+    },
+    answer: "a",
+  },
+  {
+    id: 49,
+    question:
+      "Fill in the blank with the most appropriate word: The cake ______ by the time the guests arrived.",
+    options: {
+      a: "had eaten",
+      b: "had been eaten",
+      c: "was eaten",
+      d: "was eating",
+    },
+    answer: "b",
+  },
+  {
+    id: 50,
+    question:
+      "Fill in the blank with the most appropriate word: If it ______ tomorrow, we will cancel the trip.",
+    options: {
+      a: "rains",
+      b: "rain",
+      c: "will rain",
+      d: "is raining",
+    },
+    answer: "a",
+  },
+  {
+    id: 51,
+    question:
+      "Fill in the blank with the most appropriate word: She has ______ her homework already.",
+    options: {
+      a: "finished",
+      b: "finish",
+      c: "finishing",
+      d: "finishes",
+    },
+    answer: "a",
+  },
+  {
+    id: 52,
+    question: "Choose the correct option: They______the movie last night.",
+    options: {
+      a: "saw",
+      b: "see",
+      c: "seen",
+      d: "seeing",
+    },
+    answer: "a",
+  },
+  {
+    id: 53,
+    question:
+      "Fill in the blank with the most appropriate word: The book ______ on the table.",
+    options: {
+      a: "is lying",
+      b: "lies",
+      c: "lay",
+      d: "laying",
+    },
+    answer: "b",
+  },
+  {
+    id: 54,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ in Paris for two years.",
+    options: {
+      a: "has lived",
+      b: "lived",
+      c: "is living",
+      d: "lives",
+    },
+    answer: "a",
+  },
+  {
+    id: 55,
+    question:
+      "Fill in the blank with the most appropriate word: The children ______ to the park every Sunday.",
+    options: {
+      a: "go",
+      b: "went",
+      c: "going",
+      d: "gone",
+    },
+    answer: "a",
+  },
+  {
+    id: 56,
+    question:
+      "Fill in the blank with the most appropriate word: If I ______ enough money, I would travel the world.",
+    options: {
+      a: "had",
+      b: "have",
+      c: "will have",
+      d: "would have",
+    },
+    answer: "a",
+  },
+  {
+    id: 57,
+    question:
+      "Fill in the blank with the most appropriate word: The flowers ______ beautifully in the garden.",
+    options: {
+      a: "bloom",
+      b: "blooms",
+      c: "bloomed",
+      d: "blooming",
+    },
+    answer: "a",
+  },
+  {
+    id: 58,
+    question:
+      "Choose the correct option: She ______ her keys at home yesterday.",
+    options: {
+      a: "forgot",
+      b: "forgets",
+      c: "forgetting",
+      d: "has forgotten",
+    },
+    answer: "a",
+  },
+  {
+    id: 59,
+    question:
+      "Fill in the blank with the most appropriate word: The train ______ at 10 AM.",
+    options: {
+      a: "leaves",
+      b: "left",
+      c: "leave",
+      d: "is leaving",
+    },
+    answer: "a",
+  },
+  {
+    id: 60,
+    question:
+      "Fill in the blank with the most appropriate word: We ______ lunch when the phone rang.",
+    options: {
+      a: "were having",
+      b: "had",
+      c: "have",
+      d: "are having",
+    },
+    answer: "a",
+  },
+  {
+    id: 61,
+    question:
+      "Fill in the blank with the most appropriate word: They ______ a new car last month.",
+    options: {
+      a: "bought",
+      b: "buy",
+      c: "buys",
+      d: "buying",
+    },
+    answer: "a",
+  },
+  {
+    id: 62,
+    question:
+      "Fill in the blank with the most appropriate word: He always ______ coffee in the morning.",
+    options: {
+      a: "drinks",
+      b: "drank",
+      c: "drink",
+      d: "drinking",
+    },
+    answer: "a",
+  },
+  {
+    id: 63,
+    question:
+      "Fill in the blank with the most appropriate word: The movie ______ at the cinema last week.",
+    options: {
+      a: "was showing",
+      b: "showed",
+      c: "shows",
+      d: "showing",
+    },
+    answer: "b",
+  },
+  {
+    id: 64,
+    question:
+      "Fill in the blank with the most appropriate word: The cake ______ very delicious.",
+    options: {
+      a: "tastes",
+      b: "taste",
+      c: "tasted",
+      d: "tasting",
+    },
+    answer: "a",
+  },
+  {
+    id: 65,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ to the gym every day.",
+    options: {
+      a: "goes",
+      b: "went",
+      c: "is going",
+      d: "going",
+    },
+    answer: "a",
+  },
+  {
+    id: 66,
+    question: "Choose the correct option: I ______ breakfast at 7 AM today.",
+    options: {
+      a: "had",
+      b: "have",
+      c: "have had",
+      d: "was having",
+    },
+    answer: "a",
+  },
+  {
+    id: 67,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ to the party last Saturday.",
+    options: {
+      a: "didn't go",
+      b: "doesn't go",
+      c: "won't go",
+      d: "doesn't went",
+    },
+    answer: "a",
+  },
+  {
+    id: 68,
+    question:
+      "Fill in the blank with the most appropriate word: If it ______ tomorrow, we will go to the beach.",
+    options: {
+      a: "isn't raining",
+      b: "doesn't rain",
+      c: "wasn't raining",
+      d: "hasn't rained",
+    },
+    answer: "b",
+  },
+  {
+    id: 69,
+    question:
+      "Fill in the blank with the most appropriate word: They ______ in the garden when it started to rain.",
+    options: {
+      a: "were playing",
+      b: "played",
+      c: "are playing",
+      d: "was playing",
+    },
+    answer: "a",
+  },
+  {
+    id: 70,
+    question:
+      "Fill in the blank with the most appropriate word: The sun ______ in the east.",
+    options: {
+      a: "rises",
+      b: "rose",
+      c: "risen",
+      d: "rising",
+    },
+    answer: "a",
+  },
+  {
+    id: 101,
+    question:
+      "By the time we ______ our preparations for the congress, most of the participants ______ at the hall.",
+    options: {
+      a: "had finished",
+      b: "have finished",
+      c: "will have finished",
+      d: "finished",
+    },
+    answer: "a",
+    explanation:
+      "The past perfect 'had finished' indicates that the preparations were completed before the participants arrived.",
+  },
+  {
+    id: 102,
+    question:
+      "A: What would you like to eat? B: ______ a sandwich, please. (I/have)",
+    options: {
+      a: "I’ll have",
+      b: "I have",
+      c: "I had",
+      d: "I was having",
+    },
+    answer: "a",
+    explanation:
+      "'I’ll have' is the correct future form that fits the request for a menu choice.",
+  },
+  {
+    id: 103,
+    question:
+      "One feels that there ______ any noticeable improvement in the human rights problem in Africa until all the African countries ______ their economic difficulties.",
+    options: {
+      a: "won't be / overcome",
+      b: "is / overcame",
+      c: "was / was overcoming",
+      d: "are / were overcoming",
+    },
+    answer: "a",
+    explanation:
+      "The phrase 'won't be' indicates a future expectation, while 'overcome' suggests resolving economic difficulties.",
+  },
+  {
+    id: 104,
+    question:
+      "People go to the tomb of the Unknown Soldier to stand in silence for a minute to honor the memory of those who ____ in wars.",
+    options: {
+      a: "were killed",
+      b: "are killed",
+      c: "was killed",
+      d: "will be killed",
+    },
+    answer: "a",
+    explanation:
+      "'Were killed' is the correct past passive form to honor those who died in wars.",
+  },
+  {
+    id: 105,
+    question:
+      "No zoologist ______ able to keep a gorilla under close observation in the dark jungles in which he ______.",
+    options: {
+      a: "has been / has lived",
+      b: "was / lived",
+      c: "is / lives",
+      d: "will be / will live",
+    },
+    answer: "a",
+    explanation:
+      "The present perfect 'has been' emphasizes that it's an ongoing situation, while 'has lived' denotes the gorilla's past existence.",
+  },
+  {
+    id: 106,
+    question: "We must do something soon before it ______(be) too late.",
+    options: {
+      a: "is",
+      b: "was",
+      c: "be",
+      d: "will be",
+    },
+    answer: "a",
+    explanation: "'Is' indicates the present urgency of the situation.",
+  },
+  {
+    id: 107,
+    question:
+      "What I ______ is that we ______ to think seriously about a thorough reform in the legal system.",
+    options: {
+      a: "propose",
+      b: "proposed",
+      c: "will propose",
+      d: "was proposing",
+    },
+    answer: "a",
+    explanation:
+      "The present simple 'propose' suggests an ongoing consideration.",
+  },
+  {
+    id: 108,
+    question: "You should ______ exercise daily.",
+    options: {
+      a: "exercise",
+      b: "exercises",
+      c: "exercised",
+      d: "was exercising",
+    },
+    answer: "a",
+    explanation: "The base form 'exercise' correctly completes the suggestion.",
+  },
+  {
+    id: 109,
+    question: "They ______ to London in 1995.",
+    options: {
+      a: "moved",
+      b: "move",
+      c: "moving",
+      d: "have moved",
+    },
+    answer: "a",
+    explanation:
+      "'Moved' is the past simple tense indicating a completed action in 1995.",
+  },
+  {
+    id: 110,
+    question: "He has been ______ the plants for two hours.",
+    options: {
+      a: "watering",
+      b: "watered",
+      c: "waters",
+      d: "water",
+    },
+    answer: "a",
+    explanation:
+      "The present participle 'watering' shows the action is ongoing.",
+  },
+  {
+    id: 111,
+    question: "We ______ breakfast in bed.",
+    options: {
+      a: "had",
+      b: "have",
+      c: "have had",
+      d: "were having",
+    },
+    answer: "a",
+    explanation: "'Had' suggests that the action was completed in the past.",
+  },
+  {
+    id: 112,
+    question:
+      "To the astronomers of the Middle Ages, the most important classical authorities on natural philosophy ______ Aristotle and Ptolemy, since both ______ frameworks that explained the whole universe.",
+    options: {
+      a: "were / had created",
+      b: "was / created",
+      c: "are / are creating",
+      d: "have been / created",
+    },
+    answer: "a",
+    explanation:
+      "The past simple 'were' and past perfect 'had created' suggest that Aristotle and Ptolemy were foundational figures.",
+  },
+  {
+    id: 113,
+    question:
+      "As my son ______ down by the river, I ______ his room thoroughly.",
+    options: {
+      a: "was fishing / cleaned",
+      b: "fished / clean",
+      c: "fishes / have cleaned",
+      d: "is fishing / will clean",
+    },
+    answer: "a",
+    explanation:
+      "The past continuous 'was fishing' indicates an action happening while another action (cleaning) was occurring.",
+  },
+  {
+    id: 114,
+    question:
+      "'When you see Ann, can you ask her to phone me?' 'Sure,______her.'",
+    options: {
+      a: "I’ll ask",
+      b: "I asked",
+      c: "I’m going to ask",
+      d: "I ask",
+    },
+    answer: "a",
+    explanation:
+      "'I’ll ask' is the future form appropriate for the promise made.",
+  },
+  {
+    id: 115,
+    question: "The electric light bulb ______ by Edison.",
+    options: {
+      a: "was invented",
+      b: "is invented",
+      c: "invented",
+      d: "invents",
+    },
+    answer: "a",
+    explanation:
+      "'Was invented' is the correct past passive form indicating who created the invention.",
+  },
+  {
+    id: 116,
+    question: "The peace which Istanbul once ______ . . . . away.",
+    options: {
+      a: "knew / has swept",
+      b: "had / was sweeping",
+      c: "was / has swept",
+      d: "knows / sweeps",
+    },
+    answer: "c",
+    explanation:
+      "'Was' is past, while 'has swept' indicates an ongoing effect from the past.",
+  },
+  {
+    id: 117,
+    question: "'Where ___ (Martin/come) from?' 'He's Scottish.'",
+    options: {
+      a: "does Martin come",
+      b: "do Martin come",
+      c: "does Martin comes",
+      d: "does Martin came",
+    },
+    answer: "a",
+    explanation: "'Does Martin come' is the correct interrogative form.",
+  },
+  {
+    id: 118,
+    question: "They ______ a football match in the evening.",
+    options: {
+      a: "are playing",
+      b: "played",
+      c: "have played",
+      d: "was playing",
+    },
+    answer: "a",
+    explanation:
+      "The present continuous 'are playing' suggests an action happening in the evening.",
+  },
+  {
+    id: 119,
+    question: "Tim ______ a master's degree as soon as he ______ to Canada.",
+    options: {
+      a: "will have / arrives",
+      b: "has / arrive",
+      c: "had / was arriving",
+      d: "was going / went",
+    },
+    answer: "a",
+    explanation:
+      "'Will have' suggests a future completion of obtaining the degree after arriving.",
+  },
+  {
+    id: 120,
+    question:
+      "The managing director ______ Sid to sales manager and ever since then, he ______ everybody around.",
+    options: {
+      a: "has promoted / has been bossing",
+      b: "was promoting / bossed",
+      c: "has been promoting / bossing",
+      d: "promoted / was bossing",
+    },
+    answer: "c",
+    explanation:
+      "'Has been promoting' shows ongoing action since the promotion, while 'has been bossing' indicates continuous behavior.",
+  },
+  {
+    id: 71,
+    question:
+      "Fill in the blank with the most appropriate word: They ______ breakfast when the phone rang.",
+    options: {
+      a: "had",
+      b: "were having",
+      c: "have",
+      d: "are having",
+    },
+    answer: "b",
+    explanation:
+      "The correct answer is 'were having' because it indicates that the action was in progress when the phone rang, which is the past continuous tense.",
+  },
+  {
+    id: 72,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ her homework before dinner.",
+    options: {
+      a: "finished",
+      b: "finish",
+      c: "finishing",
+      d: "finishes",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'finished' because it indicates that the action of completing the homework was completed in the past.",
+  },
+  {
+    id: 73,
+    question:
+      "Fill in the blank with the most appropriate word: He ______ to the store last week.",
+    options: {
+      a: "goes",
+      b: "going",
+      c: "went",
+      d: "gone",
+    },
+    answer: "c",
+    explanation:
+      "The correct answer is 'went' because it is the simple past tense of 'go', indicating that the action occurred last week.",
+  },
+  {
+    id: 74,
+    question:
+      "Fill in the blank with the most appropriate word: If she ______ hard, she will pass the exam.",
+    options: {
+      a: "studies",
+      b: "study",
+      c: "studied",
+      d: "studying",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'studies' because it follows the conditional structure, indicating a future possibility based on her action.",
+  },
+  {
+    id: 75,
+    question:
+      "Fill in the blank with the most appropriate word: The teacher ______ the homework yesterday.",
+    options: {
+      a: "assigns",
+      b: "assigned",
+      c: "assigning",
+      d: "assign",
+    },
+    answer: "b",
+    explanation:
+      "The correct answer is 'assigned' because it is in the past tense, indicating that the teacher gave out the homework yesterday.",
+  },
+  {
+    id: 76,
+    question:
+      "Fill in the blank with the most appropriate word: I ______ my car to the mechanic.",
+    options: {
+      a: "took",
+      b: "take",
+      c: "taking",
+      d: "taken",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'took' because it is the past tense of 'take', indicating that the action was completed in the past.",
+  },
+  {
+    id: 77,
+    question:
+      "Fill in the blank with the most appropriate word: We ______ in the park every Saturday.",
+    options: {
+      a: "play",
+      b: "played",
+      c: "playing",
+      d: "plays",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'play' because it indicates a habitual action that occurs regularly every Saturday.",
+  },
+  {
+    id: 78,
+    question:
+      "Fill in the blank with the most appropriate word: The film ______ by the time we arrived.",
+    options: {
+      a: "had started",
+      b: "started",
+      c: "starts",
+      d: "was starting",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'had started' because it shows that the action was completed before we arrived, using the past perfect tense.",
+  },
+  {
+    id: 79,
+    question:
+      "Fill in the blank with the most appropriate word: They usually ______ to the gym after work.",
+    options: {
+      a: "go",
+      b: "going",
+      c: "went",
+      d: "gone",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'go' because it describes a regular action or routine.",
+  },
+  {
+    id: 80,
+    question:
+      "Fill in the blank with the most appropriate word: The book ______ interesting.",
+    options: {
+      a: "is",
+      b: "was",
+      c: "will be",
+      d: "being",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'is' because it describes a current state or quality of the book.",
+  },
+  {
+    id: 81,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ to music while studying.",
+    options: {
+      a: "listens",
+      b: "listened",
+      c: "listening",
+      d: "listen",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'listens' because it indicates a regular activity she does while studying.",
+  },
+  {
+    id: 82,
+    question:
+      "Fill in the blank with the most appropriate word: If it ______ tomorrow, we will stay inside.",
+    options: {
+      a: "rains",
+      b: "rained",
+      c: "rain",
+      d: "raining",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'rains' as it follows the first conditional structure for future events.",
+  },
+  {
+    id: 83,
+    question:
+      "Fill in the blank with the most appropriate word: I ______ dinner when she called.",
+    options: {
+      a: "was cooking",
+      b: "cooked",
+      c: "cook",
+      d: "cooking",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'was cooking' because it indicates that the action was ongoing when she called.",
+  },
+  {
+    id: 84,
+    question:
+      "Fill in the blank with the most appropriate word: He ______ his homework before the meeting.",
+    options: {
+      a: "finishes",
+      b: "finish",
+      c: "finished",
+      d: "finishing",
+    },
+    answer: "c",
+    explanation:
+      "The correct answer is 'finished' because it indicates that the action was completed in the past before another event.",
+  },
+  {
+    id: 85,
+    question:
+      "Fill in the blank with the most appropriate word: She ______ a great time at the party last night.",
+    options: {
+      a: "has",
+      b: "had",
+      c: "have",
+      d: "having",
+    },
+    answer: "b",
+    explanation:
+      "The correct answer is 'had' because it indicates that the action occurred in the past.",
+  },
+  {
+    id: 86,
+    question:
+      "Fill in the blank with the most appropriate word: They ______ going to the beach if the weather is nice.",
+    options: {
+      a: "are",
+      b: "were",
+      c: "will be",
+      d: "be",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'are' because it indicates a plan for the near future.",
+  },
+  {
+    id: 87,
+    question:
+      "Fill in the blank with the most appropriate word: The children ______ outside when it started to rain.",
+    options: {
+      a: "played",
+      b: "play",
+      c: "playing",
+      d: "were playing",
+    },
+    answer: "d",
+    explanation:
+      "The correct answer is 'were playing' as it indicates an ongoing action that was interrupted by another event.",
+  },
+  {
+    id: 88,
+    question:
+      "Fill in the blank with the most appropriate word: He ______ a letter to his friend yesterday.",
+    options: {
+      a: "writes",
+      b: "write",
+      c: "wrote",
+      d: "writing",
+    },
+    answer: "c",
+    explanation:
+      "The correct answer is 'wrote' because it is the simple past tense of 'write'.",
+  },
+  {
+    id: 89,
+    question:
+      "Fill in the blank with the most appropriate word: If she ______ harder, she would have passed the test.",
+    options: {
+      a: "studied",
+      b: "study",
+      c: "studies",
+      d: "studying",
+    },
+    answer: "a",
+    explanation:
+      "The correct answer is 'studied' as it uses the second conditional form to express a hypothetical situation in the past.",
+  },
+  {
+    id: 90,
+    question:
+      "Fill in the blank with the most appropriate word: They ______ to a concert last night.",
+    options: {
+      a: "go",
+      b: "went",
+      c: "gone",
+      d: "going",
+    },
+    answer: "b",
+    explanation:
+      "The correct answer is 'went' because it indicates an action that occurred in the past.",
+  },
+  {
+    id: 31,
+    question:
+      "It's a bit cold. You decide to close the window. You say: ______",
+    options: {
+      A: "I think I've closed the window.",
+      B: "I think I'm close the window.",
+      C: "I think I'll close the window.",
+      D: "I think I'd closed the window.",
+    },
+    answer: "C",
+    explanation:
+      "I'll is the contraction for I will, indicating a decision made at the moment.",
+  },
+  {
+    id: 32,
+    question: "My friend _____ for me when I arrived.",
+    options: {
+      A: "waited",
+      B: "was waited",
+      C: "was waiting",
+      D: "has been waiting",
+    },
+    answer: "A",
+    explanation:
+      "Waited is the simple past form indicating an action that was completed in the past.",
+  },
+  {
+    id: 33,
+    question: "How long will she ______ in London?",
+    options: {
+      A: "being staying",
+      B: "stays",
+      C: "to stay",
+      D: "stay",
+    },
+    answer: "D",
+    explanation:
+      "Stay is the correct form to use with will for future actions.",
+  },
+  {
+    id: 34,
+    question: "Every day of last week my aunt ___ a plate.",
+    options: {
+      A: "breaks",
+      B: "broke",
+      C: "was breaking",
+      D: "none of these",
+    },
+    answer: "B",
+    explanation:
+      "Broke is the simple past tense form of the verb, indicating a completed action in the past.",
+  },
+  {
+    id: 35,
+    question: "I ______ an accident today. I don't know the man involved.",
+    options: {
+      A: "See",
+      B: "Saw",
+      C: "Has seen",
+      D: "Had seen",
+    },
+    answer: "B",
+    explanation:
+      "Saw is the simple past form, used to indicate an action that occurred today.",
+  },
+  {
+    id: 36,
+    question:
+      "In the years ahead, it seems likely that people ______ even greater control over nature.",
+    options: {
+      A: "to acquire",
+      B: "will be acquired",
+      C: "will acquire",
+      D: "will have been acquired",
+    },
+    answer: "C",
+    explanation:
+      "Will acquire indicates a future action that is expected to happen.",
+  },
+  {
+    id: 37,
+    question:
+      "The practice of working women ______ so widespread that the working mother ______ now not an unusual factor in the world.",
+    options: {
+      A: "becomes/was",
+      B: "became/is",
+      C: "had become/is",
+      D: "has become/is",
+      E: "became/was",
+    },
+    answer: "D",
+    explanation:
+      "Has become is the present perfect tense, indicating a change that has happened over time, while is indicates the current state.",
+  },
+  {
+    id: 38,
+    question: "The boss made him ____ the report all from the beginning.",
+    options: {
+      A: "write",
+      B: "written",
+      C: "wrote",
+      D: "writes",
+    },
+    answer: "A",
+    explanation:
+      "Write is the base form of the verb, which follows 'made him' indicating an obligation.",
+  },
+  {
+    id: 39,
+    question:
+      "Listen! The coach ______ the strengths of our opponents because our team ______ against them before.",
+    options: {
+      A: "has explained",
+      B: "weren't playing",
+      C: "explains",
+      D: "won't play",
+      E: "is explaining",
+    },
+    answer: "A",
+    explanation:
+      "Has explained indicates an action that has relevance to the present.",
+  },
+  {
+    id: 40,
+    question: "Last year, I ______ to Museum on holiday.",
+    options: {
+      A: "am going",
+      B: "was going",
+      C: "went",
+      D: "had gone",
+    },
+    answer: "C",
+    explanation:
+      "Went is the simple past form, used for actions completed in the past.",
+  },
+    {
+        id: 91,
+        question: "It rained! he didn't think it ______.",
+        options: {
+            A: "is going to rain",
+            B: "was going to rain",
+            C: "was raining",
+            D: "had rained"
+        },
+        answer: "B",
+        explanation: "The correct form 'was going to rain' is used to express an expectation of something that was thought would happen but didn’t."
+    },
+    {
+        id: 92,
+        question: "I ______ my boss privately tomorrow and I ______ quite nervous about it.",
+        options: {
+            A: "have seen/am feeling",
+            B: "see/was feeling",
+            C: "am seeing/feel",
+            D: "saw/felt",
+            E: "was seeing/have felt"
+        },
+        answer: "C",
+        explanation: "The future arrangement is expressed using 'am seeing' (present continuous), and 'feel' indicates a current state of emotion."
+    },
+    {
+        id: 93,
+        question: "I ______Tom since he ______ school.",
+        options: {
+            A: "have seen/leave",
+            B: "saw/has left",
+            C: "hadn't seen/left",
+            D: "haven't seen/left"
+        },
+        answer: "D",
+        explanation: "'Haven't seen' is in the present perfect to express an action from the past until now, and 'left' is in the simple past tense."
+    },
+    {
+        id: 94,
+        question: "His hopes of making a fortune ______ when his factory burned down.",
+        options: {
+            A: "were dashed",
+            B: "have dashed",
+            C: "was dashed",
+            D: "will be dashed"
+        },
+        answer: "A",
+        explanation: "The correct answer is 'were dashed,' which uses the passive form in the past tense to describe what happened to his hopes."
+    },
+    {
+        id: 95,
+        question: "The king ______ struck with horror at the description I ______ given him of those terrible incidents",
+        options: {
+            A: "was/had",
+            B: "is/was",
+            C: "was/has",
+            D: "were/had",
+            E: "has/was"
+        },
+        answer: "A",
+        explanation: "'was struck' – is past simple tense, It indicates that the action of being struck with horror happened in the past.'had given' – is the past perfect tense. It show that an action (giving the description) happened before another action in the past (the king being struck with horror)."
+    },
+    {
+        id: 96,
+        question: "He probably ________ be back in time for dinner.",
+        options: {
+            A: "Isn't",
+            B: "Wasn't",
+            C: "Won't",
+            D: "Doesn't"
+        },
+        answer: "C",
+        explanation: "'Won't' is the future negative form used here to indicate that he likely won't be back in time."
+    },
+    {
+        id: 97,
+        question: "'I need some money.' 'OK, ________How much do you need?'",
+        options: {
+            A: "I've lend you some.",
+            B: "I'm lending you some.",
+            C: "I've been lending you some.",
+            D: "I'll lend you some."
+        },
+        answer: "D",
+        explanation: "'I'll lend you some' is the correct spontaneous offer in the future form."
+    },
+    {
+        id: 98,
+        question: "They _____ their new car two weeks ago.",
+        options: {
+            A: "bought",
+            B: "buy",
+            C: "have bought",
+            D: "will buy"
+        },
+        answer: "A",
+        explanation: "'Bought' is the simple past tense, indicating an action completed two weeks ago."
+    },
+    {
+        id: 99,
+        question: "I ________ doing this work since Monday.",
+        options: {
+            A: "Was",
+            B: "Have been",
+            C: "Had been",
+            D: "Will have been"
+        },
+        answer: "B",
+        explanation: "'Have been' is the present perfect continuous tense to indicate an ongoing action from the past until the present."
+    },
+    {
+        id: 100,
+        question: "What______ if you press this button?",
+        options: {
+            A: "happens",
+            B: "happened",
+            C: "will happen",
+            D: "have happened"
+        },
+        answer: "A",
+        explanation: "'Happens' is in the present simple tense, used in conditional clauses to indicate what occurs as a result of pressing the button."
+    }
 ];

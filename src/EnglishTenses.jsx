@@ -41,6 +41,8 @@ const EnglishTenses = () => {
   let res;
   // create a reference to synth
   const synth = window.speechSynthesis;
+  const voices = window.speechSynthesis.getVoices();
+
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
     // res = listAll12TensesMcqs[current_tense][QuestionIndex];
@@ -84,15 +86,23 @@ const EnglishTenses = () => {
     // RESET OPTION
     setOption((current) => "E");
     audioRef2.current?.play();
-    setTimeout(showAnswer, 8000);
+    setTimeout(showAnswer, 5000);
   };
   const showAnswer = () => {
+    audioRef2.current.currentTime = 0;
+    audioRef2.current?.pause();
+    setTimer((current) => false);
+    // setTimer(false);
     setAnswer(true);
     audioRef.current?.play();
     setTimeout(() => {
-      speechStart("option " + res?.answer + " is correct answer", 0);
+      speechStart(
+        `option ${res?.answer}. 
+          ${res.options[res?.answer]}` + " is correct answer",
+        0
+      );
     }, 1500);
-    setTimeout(showReason, 6000);
+    setTimeout(showReason, 7000);
   };
   const showReason = () => {
     audioRef3.current?.play();
@@ -139,10 +149,10 @@ const EnglishTenses = () => {
     // if (isPaused) {
     //   synth.resume();
     // }
-    const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
-      u.voice = voices[82];
+      // u.voice = voices[82];
+      u.voice = voices[114];
     }
     synth.speak(u);
     console.log("state:", synth.pending);
@@ -203,33 +213,43 @@ const EnglishTenses = () => {
     );
   }
   return (
-    <div className="flex justify-center items-start mt-[30px] w-full h-[500px]">
+    <div className="flex justify-center items-start pt-[30px] w-full h-[600px] bg-white border-8 border-violet-500 rounded">
       {/* <p className="text-red-600">Total: {idiomsWithExample.length}</p> */}
-      <div className="mx-[250px] flex flex-col gap-4 w-full justify-center items-center">
-        <span className="px-2 py-0 text-teal-700 text-3xl border-b-2 border-teal-600 font-semibold text-wrap mb-4 capitalize">
-          English Idioms -{listAll12TensesMcqs.simplePresent[0].type}
+      <div className="mx-[250px] rounded flex flex-col gap-4 w-full justify-center items-center">
+        <span className="px-2 py-0 bg-gradient-to-b from-violet-700 to-purple-400 bg-clip-text text-transparent text-4xl font-semibold text-wrap mb-3 capitalize">
+          {/* Mix English Tenses -{listAll12TensesMcqs.simplePresent[0].type} */}
+          Mix English Tenses
         </span>
         {/* timer */}
-        {1 && (
+        {timer && (
           // <div className="absolute top-[10px]">
-          <div className="w-[400px] absolute top-[90px]">
-            <CountDownNew initMinute={0} initSeconds={7} />
+          <div className="w-[400px] absolute top-[30px] -right-20">
+            <CountDown initMinute={0} initSeconds={7} time={5} />
           </div>
         )}
         {/* img */}
         {/* <img src={data?.visualAid} alt="" className="w-6 h-6" /> */}
         {/* {idiomsWithExpAndVisuals200.length} */}
         {/* Question */}
-        <div className="flex-1 flex  rounded text-white text-2xl font-semibold mb-4 w-full">
-          <span className="px-4 text-xl ml-1 bg-teal-700 py-4 rounded-l text-gray-100 flex  uppercase">
+        <div className="flex-1 flex  rounded text-white text-2xl font-semibold mt-0 mb-4 w-full">
+          <span className="px-4 text-xl ml-1 bg-gradient-to-r from-violet-700 to-purple-700 py-4 rounded-l text-gray-100 flex  uppercase">
             Q
           </span>
           <p
             className={`${
               data?.length > 50 ? "text-lg " : ""
-            } px-6 flex-1 bg-teal-500 trans py-4 rounded-r`}
+            } px-6 flex-1 bg-gradient-to-r from-violet-500 to-purple-500 trans py-4 rounded-r`}
           >
-            {data?.question}
+            {/* {data?.question} */}
+            {data?.question.includes(":") ? (
+              <>
+                {data?.question.split(":")[0]}
+                <br />
+                {data?.question.split(":")[1]}
+              </>
+            ) : (
+              data?.question
+            )}
             {/* <HighlightedText
               text={data.idiom}
               {...highlightSection}
@@ -245,18 +265,20 @@ const EnglishTenses = () => {
           <div
             className={`flex-1  flex items-center text-white text-lg font-semibold `}
           >
-            <span className="px-4 text-xl ml-1 bg-teal-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
-              a {option}
+            <span className="px-4 text-xl ml-1 bg-gradient-to-r from-violet-700 to-purple-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
+              a{/* {option} */}
             </span>
             <p
               className={`flex-1 px-6 text-xl  trans py-3 ${
                 answer
                   ? data?.answer === "a"
-                    ? "!bg-green-700 text-white "
-                    : "!bg-red-700"
+                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
+                    : "!bg-gradient-to-b from-red-700 to-red-600"
                   : ""
               }   ${
-                option === "a" ? " bg-orange-300 " : " bg-teal-500 "
+                option === "a"
+                  ? " bg-gradient-to-r from-violet-900 to-purple-900 "
+                  : " bg-gradient-to-r from-violet-500 to-purple-500"
               } rounded-r`}
             >
               {data?.options?.a}
@@ -267,17 +289,21 @@ const EnglishTenses = () => {
             className="flex-1   flex items-center justify-end
               rounded text-white text-lg font-semibold"
           >
-            <span className="px-4 text-xl ml-1 bg-teal-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
+            <span className="px-4 text-xl ml-1 bg-gradient-to-r from-violet-700 to-purple-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
               b
             </span>
             <p
               className={`flex-1 py-3 px-6 rounded-r text-white text-xl font-semibold ${
                 answer
                   ? data?.answer === "b"
-                    ? "!bg-green-700 text-white "
-                    : "!bg-red-700"
+                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
+                    : "!bg-gradient-to-b from-red-700 to-red-600"
                   : ""
-              }  ${option === "b" ? " bg-orange-300 " : " bg-teal-500 "}`}
+              }  ${
+                option === "b"
+                  ? " bg-gradient-to-r from-violet-900 to-purple-900 "
+                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+              }`}
             >
               {data?.options?.b}
             </p>
@@ -286,17 +312,21 @@ const EnglishTenses = () => {
           {/* <div className="flex justify-between items-center w-full gap-2"> */}
           {/* option C */}
           <div className="flex-1  flex items-center rounded text-white text-lg font-semibold">
-            <span className="px-4 text-xl ml-1 bg-teal-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
+            <span className="px-4 text-xl ml-1 bg-gradient-to-r from-violet-700 to-purple-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
               c
             </span>
             <p
               className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold ${
                 answer
                   ? data?.answer === "c"
-                    ? "!bg-green-700 text-white "
-                    : "!bg-red-700"
+                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
+                    : "!bg-gradient-to-b from-red-700 to-red-600"
                   : ""
-              }  ${option === "c" ? " bg-orange-300 " : " bg-teal-500 "}`}
+              }  ${
+                option === "c"
+                  ? " bg-gradient-to-r from-violet-900 to-purple-900 "
+                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+              }`}
             >
               {data?.options.c}
             </p>
@@ -304,17 +334,21 @@ const EnglishTenses = () => {
 
           {/* option D */}
           <div className="flex-1  flex items-center justify-end  rounded text-white text-lg font-semibold">
-            <span className="px-4 text-xl ml-1 bg-teal-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
+            <span className="px-4 text-xl ml-1 bg-gradient-to-r from-violet-700 to-purple-700 py-3 rounded-l text-gray-100 flex items-center uppercase">
               d
             </span>
             <p
               className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold ${
                 answer
                   ? data?.answer === "d"
-                    ? "!bg-green-700 text-white "
-                    : "!bg-red-700"
+                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
+                    : "!bg-gradient-to-b from-red-700 to-red-600"
                   : ""
-              } ${option === "d" ? " bg-orange-300 " : " bg-teal-500 "}`}
+              } ${
+                option === "d"
+                  ? " bg-gradient-to-r from-violet-900 to-purple-900 "
+                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+              }`}
             >
               {data?.options?.d}
             </p>
@@ -324,13 +358,13 @@ const EnglishTenses = () => {
           {1 && (
             <p
               //   onClick={() => playReason(data)}
-              className={`bg-teal-900 p-4  text-white text-wrap text-lg font-medium w-[700px] rounded absolute bottom-4  mx-10 transition-all ${
+              className={`bg-green-700 p-4  text-white text-wrap text-lg font-medium w-[700px] rounded absolute bottom-4  mx-10 transition-all ${
                 reason ? "translate-x-0" : "-translate-x-[200%]"
               } `}
             >
               {/* {data?.explanation} */}
               <HighlightedText
-                text={data?.explanation || data?.reason}
+                text={data?.explanation || data?.reason || ""}
                 {...highlightSection}
                 disabled={disabled}
               />
@@ -380,8 +414,10 @@ const HighlightedText = ({ text, from, to, disabled }) => {
       {start}
       <span
         className={`${
-          highlight.length === 0 ? "bg-transparent" : "bg-white text-black"
-        }  rounded py-1 px-[1px]`}
+          highlight.length === 0
+            ? "bg-transparent"
+            : "bg-gradient-to-r from-cyan-50 to-cyan-100 text-green-700"
+        }  rounded py-1 px-[0px]`}
       >
         {highlight}
         {/* {highlight.length} */}

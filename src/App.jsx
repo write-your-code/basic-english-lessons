@@ -14,6 +14,7 @@ import EnglishToMultiLanguages from "./EnglishToMultiLanguages";
 import EnglishTenses from "./EnglishTenses";
 import EnglishDialogue from "./EnglishDialogue";
 import EnglishDailyConversation from "./EnglishDailyConversation";
+import ElectionDesign from "./ElectionDesign";
 import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
 import { conversation } from "./data/dailyConversation";
 
@@ -24,6 +25,7 @@ function App() {
   const [text, setText] = useState(
     "It is dummy text and cannot be changed to something other than dummy text"
   );
+  const [startedIndex, setStartedIndex] = useState(0);
 
   const synth = window.speechSynthesis;
   // const allVoices = window.speechSynthesis.getVoices();
@@ -147,12 +149,18 @@ function App() {
             >
               English Daily Conversation - {conversation?.length}
             </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(11)}
+            >
+              Election Data -{/* {ElectionDesign?.length} */}
+            </button>
           </div>
           {/* voice box and textarea */}
 
           <div className="flex flex-col mt-5 gap-2">
             {/* <p>{allVoices[0]?.name}</p> */}
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <select
                 name=""
                 id=""
@@ -175,6 +183,13 @@ function App() {
               >
                 Load voices
               </button>
+              <span>starting Index</span>
+              <input
+                type="text"
+                className="border-2 p-1 rounded"
+                value={startedIndex}
+                onChange={(e) => setStartedIndex(e.target.value)}
+              />
             </div>
             <textarea
               name="text"
@@ -202,12 +217,15 @@ function App() {
       {layout === 2 && <EnglishIdioms />}
       {layout === 3 && <EnglishGrammarStaticData speakerId={selectedVoice} />}
       {layout === 4 && <EnglishCollocations />}
-      {layout === 5 && <EnglishSentences />}
+      {layout === 5 && <EnglishSentences startedIndex={startedIndex} />}
       {layout === 6 && <EnglishArabic />}
       {layout === 7 && <EnglishToMultiLanguages />}
-      {layout === 8 && <EnglishTenses />}
-      {layout === 9 && <EnglishDialogue />}
-      {layout === 10 && <EnglishDailyConversation />}
+      {layout === 8 && <EnglishTenses startedIndex={startedIndex} />}
+      {layout === 9 && <EnglishDialogue startedIndex={startedIndex} />}
+      {layout === 10 && (
+        <EnglishDailyConversation startedIndex={startedIndex} />
+      )}
+      {layout === 11 && <ElectionDesign startedIndex={startedIndex} />}
     </main>
   );
 }

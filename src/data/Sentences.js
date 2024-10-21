@@ -279,6 +279,67 @@ export const sentences = [
   { sentence: "The cat is asleep under the table." },
   { sentence: "The outside of the house needs painting." },
   { sentence: "The outside of the house needs painting." },
+  // chatgpt script
+  {
+    timestamp: "00:00",
+    sentence: "The story begins in a small town.",
+  },
+  {
+    timestamp: "00:10",
+    sentence: "Sarah was excited about the upcoming festival.",
+  },
+  {
+    timestamp: "00:20",
+    sentence: "She invited her friends to join her.",
+  },
+  {
+    timestamp: "00:30",
+    sentence: "They planned to decorate the town square.",
+  },
+  {
+    timestamp: "00:40",
+    sentence: "On the day of the festival, it started to rain.",
+  },
+  {
+    timestamp: "00:50",
+    sentence: "The townspeople gathered to discuss what to do.",
+  },
+  {
+    timestamp: "01:00",
+    sentence: "Sarah suggested moving the festival indoors.",
+  },
+  {
+    timestamp: "01:10",
+    sentence: "Everyone agreed it was a good idea.",
+  },
+  {
+    timestamp: "01:20",
+    sentence: "They quickly set up in the community center.",
+  },
+  {
+    timestamp: "01:30",
+    sentence: "The festival began, and spirits were high.",
+  },
+  {
+    timestamp: "01:40",
+    sentence: "Local bands played music, and everyone danced.",
+  },
+  {
+    timestamp: "01:50",
+    sentence: "Sarah felt proud of the community's resilience.",
+  },
+  {
+    timestamp: "02:00",
+    sentence: "As the night went on, they enjoyed fireworks.",
+  },
+  {
+    timestamp: "02:10",
+    sentence: "Despite the rain, it became a night to remember.",
+  },
+  {
+    timestamp: "40:02",
+    sentence: "Mic was stopped by the police for driving over the speed limit.",
+  },
   {
     timestamp: "32:09",
     sentence:
@@ -454,7 +515,7 @@ export const sentences = [
   },
   {
     timestamp: "39:05",
-    sentence: "You can’t leave until your homework is done.",
+    sentence: "You can’t leave until your task is done.",
   },
   {
     timestamp: "39:13",
@@ -462,17 +523,17 @@ export const sentences = [
   },
   {
     timestamp: "39:27",
-    sentence: "I used to think he was a pretty decent guy.",
+    sentence: "He used to think he was a pretty decent guy.",
   },
   {
     timestamp: "39:34",
     sentence:
-      "I had thought he was a decent person, but I may have been wrong.",
+      "I had thought she was a decent person, but I may have been wrong.",
   },
   {
     timestamp: "39:41",
     sentence:
-      "They’ve just hit the halfway mark in the project—only a little further to go.",
+      "We’ve just hit the halfway mark in the project—only a little further to go.",
   },
   {
     timestamp: "39:48",
@@ -480,10 +541,439 @@ export const sentences = [
   },
   {
     timestamp: "39:55",
-    sentence: "The police pulled him over for exceeding the speed limit.",
+    sentence: "The police pulled her over for exceeding the speed limit.",
   },
   {
     timestamp: "40:02",
-    sentence: "He was stopped by the police for driving over the speed limit.",
+    sentence: "Mic was stopped by the police for driving over the speed limit.",
   },
+  //  onwards from timestamp 40:02
+  {
+    timestamp: "00:01",
+    sentence: "You should think before you speak.",
+  },
+  {
+    timestamp: "00:02",
+    sentence: "Just take your time next time.",
+  },
+  {
+    timestamp: "00:03",
+    sentence: "Look both ways before you cross the street.",
+  },
+  {
+    timestamp: "00:04",
+    sentence: "The best thing to do is not to go there.",
+  },
+  {
+    timestamp: "00:05",
+    sentence: "I recommend going to bed earlier.",
+  },
+  {
+    timestamp: "00:06",
+    sentence: "My advice is to go and speak to a doctor.",
+  },
+  {
+    timestamp: "00:07",
+    sentence: "Don't bite off more than you can chew.",
+  },
+  {
+    timestamp: "00:08",
+    sentence: "Try walking to work rather than taking the bus.",
+  },
+  {
+    timestamp: "00:09",
+    sentence: "Go out and have a good time; enjoy yourself.",
+  },
+  {
+    timestamp: "00:10",
+    sentence: "Just sit back and relax.",
+  },
+  {
+    timestamp: "00:11",
+    sentence: "Be careful; the floor is slippery.",
+  },
+  {
+    timestamp: "00:12",
+    sentence: "Be kind to others; it costs nothing.",
+  },
+  {
+    timestamp: "00:13",
+    sentence: "Stay positive; good things will come.",
+  },
+  {
+    timestamp: "00:14",
+    sentence: "Practice makes perfect; keep trying.",
+  },
+  {
+    timestamp: "00:15",
+    sentence: "Don't let fear hold you back.",
+  },
+  {
+    timestamp: "00:16",
+    sentence: "Take it one step at a time.",
+  },
+  {
+    timestamp: "00:17",
+    sentence: "Keep your friends close, but your enemies closer.",
+  },
+  {
+    timestamp: "00:18",
+    sentence: "Don't burn bridges; you may need to cross them again.",
+  },
+  {
+    timestamp: "00:19",
+    sentence: "Make sure to save your work regularly.",
+  },
+  {
+    timestamp: "00:20",
+    sentence: "Listen to your gut; it often knows best.",
+  },
+  {
+    timestamp: "00:21",
+    sentence: "Enjoy the little things in life.",
+  },
+  {
+    timestamp: "00:22",
+    sentence: "Stay curious and keep learning.",
+  },
+  {
+    timestamp: "00:23",
+    sentence: "Cherish your loved ones; time is precious.",
+  },
+  {
+    timestamp: "00:24",
+    sentence: "Don't be afraid to ask for help.",
+  },
+  {
+    timestamp: "00:25",
+    sentence: "Focus on what you can control.",
+  },
+  {
+    timestamp: "00:26",
+    sentence: "Always look for the silver lining.",
+  },
+  {
+    timestamp: "00:27",
+    sentence: "Life is short; make the most of it.",
+  },
+  {
+    timestamp: "00:28",
+    sentence: "Trust your instincts; they usually guide you right.",
+  },
+  {
+    timestamp: "00:29",
+    sentence: "Be open to new experiences.",
+  },
+  {
+    timestamp: "00:30",
+    sentence: "Surround yourself with positive people.",
+  },
+  {
+    timestamp: "00:31",
+    sentence: "Embrace change; it's a part of life.",
+  },
+  {
+    timestamp: "00:32",
+    sentence: "Take time for yourself; self-care is important.",
+  },
+  {
+    timestamp: "00:33",
+    sentence: "Celebrate your successes, big or small.",
+  },
+  {
+    timestamp: "00:34",
+    sentence: "Don't dwell on the past; focus on the future.",
+  },
+  {
+    timestamp: "00:35",
+    sentence: "Be the change you wish to see in the world.",
+  },
+  {
+    timestamp: "00:36",
+    sentence: "Dream big; your aspirations are valid.",
+  },
+  {
+    timestamp: "00:37",
+    sentence: "Remember to smile; it's contagious.",
+  },
+  {
+    timestamp: "00:38",
+    sentence: "Stay true to yourself; authenticity is key.",
+  },
+  {
+    timestamp: "00:39",
+    sentence: "Learn from your mistakes; they are valuable lessons.",
+  },
+  {
+    timestamp: "00:40",
+    sentence: "Keep your mind open; new ideas can inspire you.",
+  },
+  {
+    timestamp: "00:41",
+    sentence: "Have faith in your abilities; you can achieve greatness.",
+  },
+  {
+    timestamp: "00:42",
+    sentence: "Stay humble; it's a sign of strength.",
+  },
+  {
+    timestamp: "00:43",
+    sentence: "Practice gratitude; it changes your perspective.",
+  },
+  {
+    timestamp: "00:44",
+    sentence: "Be adventurous; life is meant to be explored.",
+  },
+  {
+    timestamp: "00:45",
+    sentence: "Find joy in the journey, not just the destination.",
+  },
+  {
+    timestamp: "00:46",
+    sentence: "Take a moment to breathe; it helps clear your mind.",
+  },
+  {
+    timestamp: "00:47",
+    sentence: "Be patient; good things take time.",
+  },
+  {
+    timestamp: "00:48",
+    sentence: "Focus on progress, not perfection.",
+  },
+  {
+    timestamp: "00:49",
+    sentence: "Share your knowledge; it can empower others.",
+  },
+  {
+    timestamp: "00:50",
+    sentence: "Laugh often; it's good for the soul.",
+  },
+  {
+    timestamp: "00:51",
+    sentence: "Express your feelings; it's a form of strength.",
+  },
+  {
+    timestamp: "00:52",
+    sentence: "Trust the process; everything will fall into place.",
+  },
+  {
+    timestamp: "00:53",
+    sentence: "Be mindful; live in the moment.",
+  },
+  {
+    timestamp: "00:54",
+    sentence: "Stay organized; it helps reduce stress.",
+  },
+  {
+    timestamp: "00:55",
+    sentence: "Embrace your uniqueness; it's what makes you special.",
+  },
+  {
+    timestamp: "00:56",
+    sentence: "Stay motivated; keep your goals in sight.",
+  },
+  {
+    timestamp: "00:57",
+    sentence: "Look for solutions, not problems.",
+  },
+  {
+    timestamp: "00:58",
+    sentence: "Take pride in your achievements.",
+  },
+  {
+    timestamp: "00:59",
+    sentence: "Find your passion; it fuels your purpose.",
+  },
+  {
+    timestamp: "01:00",
+    sentence: "Stay grounded; remember your roots.",
+  },
+  {
+    timestamp: "01:01",
+    sentence: "Keep pushing forward; obstacles are temporary.",
+  },
+  {
+    timestamp: "01:02",
+    sentence: "Surround yourself with love and positivity.",
+  },
+  {
+    timestamp: "01:03",
+    sentence: "Your mindset shapes your reality.",
+  },
+  {
+    timestamp: "01:04",
+    sentence: "Believe in yourself; self-confidence is powerful.",
+  },
+  {
+    timestamp: "01:05",
+    sentence: "Take a step back; sometimes, a new perspective helps.",
+  },
+  {
+    timestamp: "01:06",
+    sentence: "Stay curious; it's the key to lifelong learning.",
+  },
+  {
+    timestamp: "01:07",
+    sentence: "Never stop growing; there's always room for improvement.",
+  },
+  {
+    timestamp: "01:08",
+    sentence: "Find balance; it's crucial for well-being.",
+  },
+  {
+    timestamp: "01:09",
+    sentence: "Be proactive; take charge of your life.",
+  },
+  {
+    timestamp: "01:10",
+    sentence: "Give back; helping others enriches your life.",
+  },
+  {
+    "timestamp": "01:11",
+    "sentence": "Mic was stopped by the police for driving over the speed limit."
+  },
+  {
+    "timestamp": "01:12",
+    "sentence": "You can’t control everything; just let things be."
+  },
+  {
+    "timestamp": "01:13",
+    "sentence": "Get your priorities straight."
+  },
+  {
+    "timestamp": "01:14",
+    "sentence": "Don't put all your eggs in one basket."
+  },
+  {
+    "timestamp": "01:15",
+    "sentence": "It’s better to have loved and lost than never to have loved at all."
+  },
+  {
+    "timestamp": "01:16",
+    "sentence": "Follow your heart; it knows the way."
+  },
+  {
+    "timestamp": "01:17",
+    "sentence": "What doesn’t kill you makes you stronger."
+  },
+  {
+    "timestamp": "01:18",
+    "sentence": "Don’t count the days; make the days count."
+  },
+  {
+    "timestamp": "01:19",
+    "sentence": "A journey of a thousand miles begins with a single step."
+  },
+  {
+    "timestamp": "01:20",
+    "sentence": "Success is not the key to happiness; happiness is the key to success."
+  },
+  {
+    "timestamp": "01:21",
+    "sentence": "Sometimes, you have to take a leap of faith."
+  },
+  {
+    "timestamp": "01:22",
+    "sentence": "Be the reason someone smiles today."
+  },
+  {
+    "timestamp": "01:23",
+    "sentence": "Don't let yesterday take up too much of today."
+  },
+  {
+    "timestamp": "01:24",
+    "sentence": "The future belongs to those who believe in the beauty of their dreams."
+  },
+  {
+    "timestamp": "01:25",
+    "sentence": "If you can dream it, you can do it."
+  },
+  {
+    "timestamp": "01:26",
+    "sentence": "Your life is your story; write well, edit often."
+  },
+  {
+    "timestamp": "01:27",
+    "sentence": "Be yourself; everyone else is already taken."
+  },
+  {
+    "timestamp": "01:28",
+    "sentence": "In the end, we only regret the chances we didn’t take."
+  },
+  {
+    "timestamp": "01:29",
+    "sentence": "Take time to make your soul happy."
+  },
+  {
+    "timestamp": "01:30",
+    "sentence": "Do something today that your future self will thank you for."
+  },
+    {
+      "timestamp": "01:20:05",
+      "sentence": "It's purely coincidental that we both chose to call our daughters Emily."
+    },
+    {
+      "timestamp": "01:20:15",
+      "sentence": "They successfully resisted pressure from their competitors to increase prices."
+    },
+    {
+      "timestamp": "01:20:24",
+      "sentence": "Downstairs there's a breakfast room and guests can relax there."
+    },
+    {
+      "timestamp": "01:20:33",
+      "sentence": "I was browsing through a magazine one day when an old photograph caught my eye."
+    },
+    {
+      "timestamp": "01:20:42",
+      "sentence": "The ballet school offers free places and scholarship to children who are exceptionally talented."
+    },
+    {
+      "timestamp": "01:20:51",
+      "sentence": "Writing a list of random English sentences is harder than I initially thought it would be."
+    },
+    {
+      "timestamp": "01:21:47",
+      "sentence": "How's it going? Same as always."
+    },
+    {
+      "timestamp": "01:22:05",
+      "sentence": "I am not getting involved; it was just as I thought."
+    },
+    {
+      "timestamp": "01:22:18",
+      "sentence": "Time is running out; it's nice of you to say so."
+    },
+    {
+      "timestamp": "01:22:34",
+      "sentence": "I'm thinking the same; I can't say anything."
+    },
+    {
+      "timestamp": "01:22:50",
+      "sentence": "I tried again and again."
+    },
+    {
+      "timestamp": "01:23:00",
+      "sentence": "I don't know if I still have it; do it this way."
+    },
+    {
+      "timestamp": "01:23:18",
+      "sentence": "These things aren't mine; I'd better be on my way."
+    },
+    {
+      "timestamp": "01:23:36",
+      "sentence": "Don't get up; just enjoy yourself."
+    },
+    {
+      "timestamp": "01:23:58",
+      "sentence": "The weather was fantastic; I fully understand."
+    },
+    {
+      "timestamp": "01:24:13",
+      "sentence": "This makes no sense; I'll show you the way."
+    },
+    {
+      "timestamp": "01:24:28",
+      "sentence": "How long will it take?"
+    }  
 ];

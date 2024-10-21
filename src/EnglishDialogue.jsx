@@ -22,6 +22,9 @@ const EnglishSentences = () => {
     example: "",
   });
   const [origin, setOrigin] = useState(false);
+  const [idiomsUsed, setIdiomsUsed] = useState([]);
+  const [showIdiomsUsed, setShowIdiomsUsed] = useState(false);
+  const [idiomBlock, setIdiomBlock] = useState(-1);
   const [reason, setReason] = useState(false);
   const [explanation, setExplanation] = useState(0);
   const [timer, setTimer] = useState(false);
@@ -40,12 +43,14 @@ const EnglishSentences = () => {
 
   let ok = true;
   let outerIndex = 0;
-  let index = 19;
+  let index = 18;
   let totalCount = story[0]?.dialogues?.length;
   console.log("length of dialogues:", totalCount);
   let res;
   // create a reference to synth
   const synth = window.speechSynthesis;
+  const voices = window.speechSynthesis.getVoices();
+
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
     res = story[outerIndex];
@@ -53,11 +58,12 @@ const EnglishSentences = () => {
     setSpeaker(0);
     // speechStart("Next senetnce ", 0);
     // const dataArray = await res.json();
-    // setExp(false);
+    setIdiomsUsed((current) => res?.dialogues);
+    console.log("dialogues are: ", idiomsUsed);
     setOrigin(false);
     // setTimer(false);
     setReason(false);
-    console.log(outerIndex);
+    // console.log("index , outerindex", index, outerIndex);
     setData((current) => {
       return res;
     });
@@ -70,10 +76,12 @@ const EnglishSentences = () => {
     // check who is first speaker male or female
     let remainder = res.top === "M" ? 1 : 0;
     res.dialogues.map((dialogue, i) => {
+      // index++;
+      console.log("index , outerindex", index, outerIndex);
       if (i % 2 === remainder) {
         // speak normal speed
         if (dialogue.scene) {
-          speechStart(dialogue.dialogue, 1, 0, 1, 0, 0, 0, dialogue);
+          speechStart(dialogue.dialogue, 1, 0, 1, 0, 0, 0);
           return;
         }
         speechStart(dialogue.dialogue, 1, 0, 1, 0, 1, 0, dialogue);
@@ -153,10 +161,26 @@ const EnglishSentences = () => {
         }
         // );
       }
-      // if (index + 1 === totalCount) {
+      // data?.map((object) =>
+      //   setIdiomsUsed((current) => [...current, { idiom: object?.idiom }])
+      // );
+      // console.log("data is:", idiomsUsed[0].idiom);
+      // if (index + 1 >= res?.dialogues?.length) {
       //   index = 0;
+      //   setShowIdiomsUsed(current=> true)
+      //   speechStart("lets discuss idioms used in this dialogue");
+      //   console.log("idioms used:", idiomsUsed);
+      //   setIdiomBlock((current) => 0);
+      //   idiomsUsed?.map((idiom) => {
+      //     if (idiom?.idiom) {
+      //       speechStart(idiom?.idiom);
+      //       speechStart(idiom?.explanation);
+      //       setIdiomBlock((current) => current + 1);
+      //     }
+      //   });
+      //   let newArray = [];
       //   outerIndex = 1;
-      // } else index++;
+      // }
       // setQuestionNo(index);
       resetCaptionPosition();
     });
@@ -232,10 +256,27 @@ const EnglishSentences = () => {
     }
     // if (speed === 1 || speed === 2) {
     u.addEventListener("start", () => {
-      if (index + 1 === totalCount) {
+      if (dialogueObject && !explain && speed === 1) {
+        index++;
+        console.log("index insite tart event: " + index);
+      }
+      if (index + 1 >= res?.dialogues?.length) {
         index = 0;
+        setShowIdiomsUsed((current) => true);
+        speechForIdioms("lets discuss idioms used in this dialogue");
+        console.log("idioms used:", idiomsUsed);
+        setIdiomBlock((current) => 0);
+        idiomsUsed?.map((idiom) => {
+          if (idiom?.idiom) {
+            speechForIdioms(idiom?.idiom);
+            speechForIdioms(idiom?.explanation);
+            setIdiomBlock((current) => current + 1);
+          }
+        });
+        speechForIdioms("scene change", 1);
+        let newArray = [];
         outerIndex = 1;
-      } else index++;
+      }
       setQuestionNo(index);
       // set waves
       setTimeout(() => {
@@ -325,7 +366,6 @@ const EnglishSentences = () => {
     });
     // }
 
-    const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     u.voice = voices[125];
     if (voices.length > 0) {
@@ -351,6 +391,144 @@ const EnglishSentences = () => {
     // setIsPaused(false);
   };
 
+  const speechForIdioms = (
+    text,
+    changeFlag = 0,
+    speed = 1,
+    caption = 0,
+    mode = 0,
+    currentPart = 0,
+    currentSpeaker = 0,
+    explain = 0,
+    dialogueObject = null
+  ) => {
+    audioRef1.current?.play();
+    // const synth = window.speechSynthesis;
+    // console.log("type: " + text?.length);
+    var u = new SpeechSynthesisUtterance(text);
+
+    setDisabled(false);
+
+    if (speed === 2) {
+      u.pitch = 1;
+      u.rate = 0.85;
+      u.volume = 1;
+    }
+    // if (speed === 1 || speed === 2) {
+    u.addEventListener("start", () => {
+      if(changeFlag) {
+        setShowIdiomsUsed(current => false);
+      }
+      // })
+      setQuestionNo(index);
+      setWaves(true);
+      // set captions
+      if (caption !== 0) {
+        setCurrentCaption((current) => caption);
+      }
+      if (currentPart === 0) {
+        setOrigin((current) => true);
+      } else {
+        setOrigin((current) => false);
+      }
+      if (currentSpeaker === 1) {
+        setSpeakerText((current) => ({
+          ...current,
+          firstSpeaker: text,
+        }));
+        console.log("spekaer text changed:", speakerText);
+      } else if (currentSpeaker === 2) {
+        setSpeakerText((current) => ({
+          ...current,
+          secondSpeaker: text,
+        }));
+      }
+      // set explain true if explain passed 1
+      if (explain) {
+        audioRef1.current?.play();
+        setWaves((current) => false);
+        setExplanation((current) => 1);
+        console.log("set explain run", explain);
+        setSpeakerText((current) => ({
+          ...current,
+          idiom: dialogueObject?.idiom,
+          explanation: "It means :" + dialogueObject?.explanation,
+          example: "For example :" + dialogueObject?.example,
+        }));
+      } else {
+        setExplanation((current) => 0);
+      }
+
+      if (currentPart === 1) {
+        setDesc((current) => true);
+      } else {
+        setDesc((current) => false);
+      }
+      if (currentSpeaker === 1) {
+        setSpeakerText((current) => ({
+          ...current,
+          currentIdiom: dialogueObject.idiom,
+          secondSpeaker: "",
+          firstSpeaker: text,
+        }));
+        console.log("spekaer text changed:", speakerText);
+        // speechStart(dialogue.dialogue, 1, 0, 1, 0);
+      } else if (currentSpeaker === 2) {
+        setSpeakerText((current) => ({
+          ...current,
+          currentIdiom: dialogueObject.idiom,
+          firstSpeaker: "",
+          secondSpeaker: text,
+        }));
+
+        // speechStart(dialogue.dialogue, 1, 0, 1, 0);
+      }
+
+      if (currentSpeaker === 1) {
+        setSpeaker((current) => 1);
+      } else if (currentSpeaker === 2) {
+        setSpeaker((current) => 2);
+      }
+      // else {
+      //   setSpeaker((current) => 0);
+      // }
+    })
+
+    u.addEventListener("end", () => {
+      setWaves(false);
+      resetCaptionPosition();
+      setCurrentCaption(0);
+      // setExplanation(0);
+    })
+    u.addEventListener("boundary", ({ charIndex, charLength }) => {
+      setHighlightSection({ from: charIndex, to: charIndex + charLength });
+    });
+    // }
+
+    // console.log("voices", voices);
+    u.voice = voices[125];
+    if (voices.length > 0) {
+      if (currentSpeaker === 2) {
+        // u.voice = voices[111];
+        u.voice = voices[117];
+        console.log("current voice: " + voices[117].name);
+      } else if (currentSpeaker === 1) {
+        // u.voice = voices[82];
+        console.log("current voice: " + voices[114].name);
+        u.voice = voices[114];
+      }
+      ok = true;
+    }
+    // start waves
+    // if (synth.speaking) {
+    //   // setWaves(true);
+    // }
+    synth.speak(u);
+    console.log("state:", synth.pending);
+    // console.log("startng voice:", text, synth.pending);
+
+    // setIsPaused(false);
+  };
   useEffect(() => {
     // const intervalId = setInterval(getData, 32000);
     // const intervalId1 = setInterval(showAnswer, 20000);
@@ -402,41 +580,71 @@ const EnglishSentences = () => {
     );
   }
   return (
-    <div className="bg-black w-full h-full py-2 rounded overflow-hidden">
-      <div className="flex justify-center items-start mt-[10px] w-full h-[560px]">
-        <span className="px-2 py-0 text-cyan-50 ml-4 border-b-2">
-          {questionNo}
-        </span>
-        {/* <p className="text-red-600">Total: {collocationsEnglish.length}</p> */}
-        {/* {timer && (
+    <div className="bg-black w-full py-2 rounded h-[600px] overflow-hidden">
+      {/* Origin */}
+      {showIdiomsUsed && (
+        <div className="w-full h-[600px] gap-2 rounded text-white text-sm font-semibold absolute left-0 top-0">
+          <span className="px-2 text-xl py-2 rounded text-gray-100 flex items-start justify-center flex-wrap gap-2 uppercase">
+            Idioms Used {idiomsUsed.length} - {idiomBlock}
+          </span>
+          <div className="flex gap-3 items-stretch justify-center flex-wrap mx-2">
+            {idiomsUsed?.map((idiom, i) =>
+              idiom.idiom ? (
+                <p
+                  className={`w-[45%] flex flex-col justify-center items-center gap-2 py-1 px-1 rounded border-2 border-teal-600 text-white/[0.9] text-[1rem] font-semibold flex-wrap ${
+                    i === idiomBlock ? "bg-teal-500" : ""
+                  }
+              `}
+                >
+                  Idiom: {idiom?.idiom}
+                  <p className="flex flex-wrap max-w-2xl">
+                    Meaning: {idiom?.explanation}
+                  </p>
+                </p>
+              ) : (
+                ""
+              )
+            )}
+          </div>
+        </div>
+      )}
+      {/* start here */}
+      {!showIdiomsUsed && (
+        <div className="flex justify-center items-start mt-[10px] w-full h-[560px]">
+          <span className="px-2 py-0 text-cyan-50 ml-4 border-b-2">
+            {questionNo} - {Object.keys(data).length} -{index}-
+            {data.dialogues.length}
+          </span>
+          {/* <p className="text-red-600">Total: {collocationsEnglish.length}</p> */}
+          {/* {timer && (
         // <div className="absolute top-[10px]">
         <div className="absolute top-[30px] w-[660px]">
           <CountDownNew initMinute={0} initSeconds={7} />
         </div>
       )} */}
-        <div className="mx-[200px] flex flex-col gap-4 w-full justify-center items-center relative mt-2">
-          {/* Title */}
-          <div className="flex-1 flex-col  rounded text-white text-2xl justify-center items-center font-semibold w-full mt-[10px]">
-            {/* <span className="px-4 text-lg ml-[0] py-4 rounded-l text-gray-100 uppercase">
+          <div className="mx-[200px] flex flex-col gap-4 w-full justify-center items-center relative mt-2">
+            {/* Title */}
+            <div className="flex-1 flex-col  rounded text-white text-2xl justify-center items-center font-semibold w-full mt-[10px]">
+              {/* <span className="px-4 text-lg ml-[0] py-4 rounded-l text-gray-100 uppercase">
               Title
             </span> */}
-            <p className="px-4 flex-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent py-2 rounded text-center text-xl">
-              {data?.title}
-              {/* <HighlightedText
+              <p className="px-4 flex-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent py-2 rounded text-center text-xl">
+                {data?.title}
+                {/* <HighlightedText
                 text={data.title}
                 {...highlightSection}
                 disabled={disabled}
               /> */}
-              {/* <TextToSpeech text={data?.question} /> */}
-            </p>
-          </div>
-          {/* image avatars */}
-          <div className="flex justify-between items-center w-full">
-            {/* <span className="text-red-400">{speaker}</span> */}
-            {/* first avatar */}
-            <div className="flex flex-col items-center justify-center gap-2">
-              <div
-                className={`relative w-[100px] h-[100px] border-4 rounded-full transition-all
+                {/* <TextToSpeech text={data?.question} /> */}
+              </p>
+            </div>
+            {/* image avatars */}
+            <div className="flex justify-between items-center w-full">
+              {/* <span className="text-red-400">{speaker}</span> */}
+              {/* first avatar */}
+              <div className="flex flex-col items-center justify-center gap-2">
+                <div
+                  className={`relative w-[100px] h-[100px] border-4 rounded-full transition-all
                 overflow-hidden ${
                   speaker === 1
                     ? "w-[120px] h-[120px] border-4 border-green-600 "
@@ -444,49 +652,52 @@ const EnglishSentences = () => {
                     ? " w-[80px] h-[80px]"
                     : ""
                 }`}
-              >
-                <img
-                  className="absolute -top-4 object-cover "
-                  src={"/images/female-avatar.jpg"}
-                  alt="avatar"
-                />
-              </div>
-              {/* speech waves */}
-              <span className="text-xs text-white">{data.firstSpeaker}</span>
-              {speaker === 1 && (
-                <div
-                  className={`transition-all mb-4 ${
-                    waves && speaker === 1 ? "opacity-100" : "opacity-0"
-                  }`}
                 >
-                  <SpeechWaves />
+                  <img
+                    className="absolute -top-4 object-cover "
+                    src={"./images/female-avatar.jpg"}
+                    alt="avatar"
+                  />
                 </div>
-              )}
+                {/* speech waves */}
+                <span className="text-xs text-white">{data.firstSpeaker}</span>
+                {speaker === 1 && (
+                  <div
+                    className={`transition-all mb-4 ${
+                      waves && speaker === 1 ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    <SpeechWaves />
+                  </div>
+                )}
 
-              {/* speaker text */}
-              <div
-                className={`text-white ${
-                  speakerText?.firstSpeaker.length > 80 ? "text-md" : "text-2xl"
-                } mx-2 max-w-[400px]`}
-              >
-                {speakerText?.firstSpeaker.substring(
-                  0,
-                  speakerText?.firstSpeaker.indexOf(speakerText?.currentIdiom)
-                )}
-                <span className="bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-3xl font-bold">
-                  {speaker === 1 && speakerText?.currentIdiom}
-                </span>
-                {speakerText?.firstSpeaker.substring(
-                  speakerText?.firstSpeaker.indexOf(speakerText.currentIdiom) +
-                    speakerText?.currentIdiom?.length
-                )}
+                {/* speaker text */}
+                <div
+                  className={`text-white ${
+                    speakerText?.firstSpeaker.length > 80
+                      ? "text-md"
+                      : "text-2xl"
+                  } mx-2 max-w-[400px]`}
+                >
+                  {speakerText?.firstSpeaker.substring(
+                    0,
+                    speakerText?.firstSpeaker.indexOf(speakerText?.currentIdiom)
+                  )}
+                  <span className="bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-3xl font-bold">
+                    {speaker === 1 && speakerText?.currentIdiom}
+                  </span>
+                  {speakerText?.firstSpeaker.substring(
+                    speakerText?.firstSpeaker.indexOf(
+                      speakerText.currentIdiom
+                    ) + speakerText?.currentIdiom?.length
+                  )}
+                </div>
               </div>
-            </div>
 
-            {/* second avatar */}
-            <div className="flex flex-col items-center justify-center gap-2">
-              <div
-                className={`relative w-[100px] h-[100px] border-2 rounded-full transition-all
+              {/* second avatar */}
+              <div className="flex flex-col items-center justify-center gap-2">
+                <div
+                  className={`relative w-[100px] h-[100px] border-2 rounded-full transition-all
             overflow-hidden ${
               speaker === 2
                 ? "w-[120px] h-[120px] border-4 border-green-700"
@@ -494,58 +705,60 @@ const EnglishSentences = () => {
                 ? "w-[80px] h-[80px]"
                 : ""
             }`}
-              >
-                <img
-                  className="absolute top-0 object-cover "
-                  src={"/images/male-avatar-3.jpg"}
-                  alt="avatar"
-                />
-              </div>
-              <span className="text-xs text-white">{data.secondSpeaker}</span>
-              {/* speech waves */}
-              {speaker === 2 && (
-                <div
-                  className={`transition-all mb-4 ${
-                    waves && speaker === 2 ? "opacity-100" : "opacity-0"
-                  }`}
                 >
-                  <SpeechWaves />
+                  <img
+                    className="absolute top-0 object-cover "
+                    src={"./images/male-avatar-3.jpg"}
+                    alt="avatar"
+                  />
                 </div>
-              )}
-              {/* speaker text */}
-              <div
-                className={`text-white ${`text-white ${
-                  speakerText?.firstSpeaker.length > 80 ? "text-md" : "text-2xl"
-                } mx-2 max-w-[400px]`} mx-5 max-w-[400px]`}
-              >
-                <div className="text-white">
-                  {speakerText?.secondSpeaker.substring(
-                    0,
-                    speakerText?.secondSpeaker.indexOf(
-                      speakerText?.currentIdiom
-                    )
-                  )}
-                  <span className="bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-3xl font-bold">
-                    {speaker === 2 && speakerText?.currentIdiom}
-                  </span>
-                  {speakerText?.secondSpeaker.substring(
-                    speakerText?.secondSpeaker.indexOf(
-                      speakerText.currentIdiom
-                    ) + speakerText?.currentIdiom?.length
-                  )}
+                <span className="text-xs text-white">{data.secondSpeaker}</span>
+                {/* speech waves */}
+                {speaker === 2 && (
+                  <div
+                    className={`transition-all mb-4 ${
+                      waves && speaker === 2 ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    <SpeechWaves />
+                  </div>
+                )}
+                {/* speaker text */}
+                <div
+                  className={`text-white ${`text-white ${
+                    speakerText?.firstSpeaker.length > 80
+                      ? "text-md"
+                      : "text-2xl"
+                  } mx-2 max-w-[400px]`} mx-5 max-w-[400px]`}
+                >
+                  <div className="text-white">
+                    {speakerText?.secondSpeaker.substring(
+                      0,
+                      speakerText?.secondSpeaker.indexOf(
+                        speakerText?.currentIdiom
+                      )
+                    )}
+                    <span className="bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-3xl font-bold">
+                      {speaker === 2 && speakerText?.currentIdiom}
+                    </span>
+                    {speakerText?.secondSpeaker.substring(
+                      speakerText?.secondSpeaker.indexOf(
+                        speakerText.currentIdiom
+                      ) + speakerText?.currentIdiom?.length
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-3 justify-between w-full mt-1">
-            {/* descripton */}
-            {desc && (
-              <div className="flex-1 flex flex-col items-start justify-start rounded bg-gradient-to-t text-cyan-50 text-lg font-semibold">
-                <span className="px-2 text-xl py-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent uppercase">
-                  Background
-                </span>
-                <p
-                  className={`flex-1 py-4 px-6 rounded bg-gradient-to-b from-red-600 to-orange-300 trans text-xl font-semibold text-wrap
+            <div className="flex flex-col gap-3 justify-between w-full mt-1">
+              {/* descripton */}
+              {desc && (
+                <div className="flex-1 flex flex-col items-start justify-start rounded bg-gradient-to-t text-cyan-50 text-lg font-semibold">
+                  <span className="px-2 text-xl py-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent uppercase">
+                    Background
+                  </span>
+                  <p
+                    className={`flex-1 py-4 px-6 rounded bg-gradient-to-b from-red-600 to-orange-300 trans text-xl font-semibold text-wrap
                      ${
                        timer
                          ? data?.description === "c"
@@ -553,127 +766,112 @@ const EnglishSentences = () => {
                            : "!bg-red-700"
                          : ""
                      }`}
-                >
-                  {data?.description}
-                </p>
-              </div>
-            )}
+                  >
+                    {data?.description}
+                  </p>
+                </div>
+              )}
 
-            {/* Origin */}
-            {/* <div className="flex-1 flex flex-col items-start justify-center rounded text-white text-lg font-semibold">
-              <span className="px-2 text-xl py-2 rounded text-gray-100 flex items-start justify-center uppercase">
-                Origin
-              </span>
-              <p
-                className={`flex-1 py-4 px-6 rounded bg-teal-600 text-white/[0.9] trans text-lg font-semibold text-wrap ${
-                  timer
-                    ? data?.exp === "d"
-                      ? "!bg-green-700 text-white "
-                      : "!bg-red-700"
-                    : ""
-                } `}
-              >
-                {data?.origin}
-              </p>
-            </div> */}
-            {/* example */}
+              {/* example */}
+            </div>
           </div>
-        </div>
-        {/* explanation:{explanation} */}
-        {explanation && (
-          <div className="text-center absolute bottom-8 max-w-[90%] ">
-            {/* <span className="text-cyan-50 text-lg">For Example:</span> */}
-            {["idiom", "explanation", "example"].map((s, i) => (
-              <div
-                className="px-2 py-2 mb-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize border border-white/[0.6] relative"
-                key={s}
-              >
-                {/* {data?.explanation} */}
-                {s === "idiom" ? (
-                  currentCaption === 1 ? (
-                    <>
-                      {/* <span className=" absolute -top-[10px]">
+          {/* explanation:{explanation} */}
+          {explanation && (
+            <div className="text-center absolute bottom-8 max-w-[90%] ">
+              {/* <span className="text-cyan-50 text-lg">For Example:</span> */}
+              {["idiom", "explanation", "example"].map((s, i) => (
+                <div
+                  className="px-2 py-2 mb-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize border border-white/[0.6] relative"
+                  key={s}
+                >
+                  {/* {data?.explanation} */}
+                  {s === "idiom" ? (
+                    currentCaption === 1 ? (
+                      <>
+                        {/* <span className=" absolute -top-[10px]">
                         Idiom
                       </span> */}
+                        <HighlightedText
+                          text={speakerText[s]}
+                          {...highlightSection}
+                          disabled={disabled}
+                          // mode={2}
+                        />
+                      </>
+                    ) : (
+                      <>
+                        {/* <div className="relative flex"> */}
+                        {/* <span className="absolute -top-[40]">
+                        Idiom :
+                      </span> */}
+                        <p>{speakerText[s]}</p>
+                        {/* </div> */}
+                      </>
+                    )
+                  ) : (
+                    ""
+                  )}
+                  {/* show explanation */}
+                  {s === "explanation" ? (
+                    currentCaption === 2 ? (
                       <HighlightedText
                         text={speakerText[s]}
                         {...highlightSection}
                         disabled={disabled}
                         // mode={2}
                       />
-                    </>
-                  ) : (
-                    <>
-                      {/* <div className="relative flex"> */}
-                      {/* <span className="absolute -top-[40]">
-                        Idiom :
-                      </span> */}
+                    ) : (
                       <p>{speakerText[s]}</p>
-                      {/* </div> */}
-                    </>
-                  )
-                ) : (
-                  ""
-                )}
-                {/* show explanation */}
-                {s === "explanation" ? (
-                  currentCaption === 2 ? (
-                    <HighlightedText
-                      text={speakerText[s]}
-                      {...highlightSection}
-                      disabled={disabled}
-                      // mode={2}
-                    />
+                    )
                   ) : (
-                    <p>{speakerText[s]}</p>
-                  )
-                ) : (
-                  ""
-                )}
-                {/* in explain s value {s} */}
-                {s === "example" ? (
-                  currentCaption === 3 ? (
-                    <HighlightedText
-                      text={speakerText[s]}
-                      {...highlightSection}
-                      disabled={disabled}
-                      // mode={2}
-                    />
+                    ""
+                  )}
+                  {/* in explain s value {s} */}
+                  {s === "example" ? (
+                    currentCaption === 3 ? (
+                      <HighlightedText
+                        text={speakerText[s]}
+                        {...highlightSection}
+                        disabled={disabled}
+                        // mode={2}
+                      />
+                    ) : (
+                      <p>{speakerText[s]}</p>
+                    )
                   ) : (
-                    <p>{speakerText[s]}</p>
-                  )
-                ) : (
-                  ""
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-        {/* {audios} */}
-        <>
-          <audio ref={audioRef}>
-            <source src="Ding.mp3" type="audio/mpeg" />
-            <p>Your browser does not support the audio element.</p>
-          </audio>
+                    ""
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+          {/* {audios} */}
+          <>
+            <audio ref={audioRef}>
+              <source src="Ding.mp3" type="audio/mpeg" />
+              <p>Your browser does not support the audio element.</p>
+            </audio>
 
-          <audio ref={audioRef1}>
-            <source src="Swoosh.mp3" type="audio/mpeg" />
-            <p>Your browser does not support the audio element.</p>
-          </audio>
+            <audio ref={audioRef1}>
+              <source src="Swoosh.mp3" type="audio/mpeg" />
+              <p>Your browser does not support the audio element.</p>
+            </audio>
 
-          <audio ref={audioRef2}>
-            <source src="Clock.mp3" type="audio/mpeg" />
-            <p>Your browser does not support the audio element.</p>
-          </audio>
+            <audio ref={audioRef2}>
+              <source src="Clock.mp3" type="audio/mpeg" />
+              <p>Your browser does not support the audio element.</p>
+            </audio>
 
-          <audio ref={audioRef3}>
-            <source src="Pop.mp3" type="audio/mpeg" />
-            <p>Your browser does not support the audio element.</p>
-          </audio>
-        </>
-        {/* )} */}
-      </div>
+            <audio ref={audioRef3}>
+              <source src="Pop.mp3" type="audio/mpeg" />
+              <p>Your browser does not support the audio element.</p>
+            </audio>
+          </>
+          {/* )} */}
+        </div>
+      )}
     </div>
+    // </div>
   );
 };
 
@@ -706,20 +904,3 @@ const HighlightedText = ({ text, from, to, disabled, mode = 1 }) => {
     </>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

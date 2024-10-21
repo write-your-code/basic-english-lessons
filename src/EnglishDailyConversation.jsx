@@ -6,7 +6,7 @@ import "./EnglishDailyConversation.css";
 import { conversation } from "./data/dailyConversation";
 import SpeechWaves from "./SpeechWaves";
 
-const EnglishDailyConversation = () => {
+const EnglishDailyConversation = ({ startedIndex = 0 }) => {
   // states
   const [data, setData] = useState();
   const [waves, setWaves] = useState();
@@ -30,7 +30,7 @@ const EnglishDailyConversation = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 0;
+  let index = startedIndex || 0;
   let totalCount = conversation.length;
   let res;
   // create a reference to synth
@@ -113,7 +113,7 @@ const EnglishDailyConversation = () => {
     speechStart(res?.sentence, 1);
   };
 
-  const speechStart = (text, flag, mode = 0) => {
+  const speechStart = (text = "Let's move to next question", flag, mode = 0) => {
     // const synth = window.speechSynthesis;
     const u = new SpeechSynthesisUtterance(text);
     setDisabled(false);
@@ -241,9 +241,9 @@ const EnglishDailyConversation = () => {
             Daily English Conversation
           </span>
           {/* image avatars */}
-          <div className="flex justify-between items-start top-24 w-full">
+          <div className="flex justify-between gap-12 items-start mt-8 w-full">
             {/* first speaker */}
-            <div className="flex flex-col gap-2 items-center">
+            <div className="flex-1 flex flex-col gap-2 items-center">
               <div className="flex items-center gap-2">
                 <div
                   className={`relative w-[100px] h-[100px] border-4  rounded-full transition-all
@@ -257,7 +257,7 @@ const EnglishDailyConversation = () => {
                 >
                   <img
                     className="absolute -top-4 object-cover "
-                    src={"/images/female-avatar.jpg"}
+                    src={"./images/female-avatar.jpg"}
                     alt="avatar"
                   />
                 </div>
@@ -273,7 +273,7 @@ const EnglishDailyConversation = () => {
               <p className="px-2 flex-1 bg-gradient-to-t from-slate-50 to-pink-700 bg-clip-text text-transparent py-2 rounded text-center text-4xl tracking-wide">
                 {speaker && speaker === 1 ? (
                   <HighlightedText
-                    text={speaker && data.speaker1 || ""}
+                    text={(speaker && data.speaker1) || ""}
                     {...highlightSection}
                     disabled={disabled}
                     // mode={1}
@@ -288,12 +288,13 @@ const EnglishDailyConversation = () => {
             <div
               className={`transition-all ${
                 waves ? "opacity-100" : "opacity-0"
-              }`}
+              } absolute top-8 flex justify-center w-full`}
             >
-              <SpeechWaves />
+              {/* <SpeechWaves /> */}
+              <img src="./waves.gif" alt="" className="" />
             </div>
             {/* second speaker */}
-            <div className="flex flex-col gap-2 items-center">
+            <div className="flex-1 flex flex-col gap-2 items-center">
               <div className="flex items-center gap-2">
                 {/* speech waves */}
                 {/* <div
@@ -315,7 +316,7 @@ const EnglishDailyConversation = () => {
                 >
                   <img
                     className="absolute top-0 object-cover "
-                    src={"/images/male-avatar-3.jpg"}
+                    src={"./images/male-avatar-3.jpg"}
                     alt="avatar"
                   />
                 </div>
@@ -483,7 +484,11 @@ const HighlightedText = ({
   return (
     <div
       className={`font-semibold ${
-        text?.length > 60 ? "text-xl text-wrap" : ""
+        text?.length > 60
+          ? text?.length > 100
+            ? "text-xl text-wrap"
+            : "text-2xl"
+          : ""
       } `}
     >
       {start}
