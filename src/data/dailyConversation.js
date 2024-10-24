@@ -5691,13 +5691,13 @@ export const conversation = [
   },
   {
     speaker1: "How tall is your father?",
-    speaker2: "I think he is 6 feet 1 inch tall.",
+    speaker2: "I think he is 6 feet 3 inch tall.",
   },
-  { speaker1: "How long is the table?", speaker2: "The table is 4 feet long." },
+  { speaker1: "How long is the table?", speaker2: "The table is 3 feet long." },
   {
     speaker1: "How old are your grandparents?",
     speaker2:
-      "I think my grandfather is about 60, and my grandmother is about 52.",
+      "I think my grandfather is about 70, and my grandmother is about 72.",
   },
   {
     speaker1: "How often do you come to class?",
@@ -8156,7 +8156,7 @@ export const TwoHoursQuestionAndAnswers = [
   },
   {
     speaker1: "What's your favorite snack?",
-    speaker2: "My favorite snack is trail mix.",
+    speaker2: "I love yogurt, frozen or just cold.",
   },
   {
     speaker1: "Do you use any apps for communication?",
@@ -11062,6 +11062,2620 @@ export const TwoHoursQuestionAndAnswers = [
   },
   {
     speaker1: "Do you believe in luck?",
-    speaker2: "Yes, I believe in luck.",
+    speaker2: "Yes, I believe in luck as well as hardwork.",
+  },
+  {
+    speaker1: "Do you have a pet?",
+    speaker2: "Yes, I have a parrot.",
+  },
+  {
+    speaker1: "Are you good at remembering names?",
+    speaker2: "Not really, I struggle with that.",
+  },
+  {
+    speaker1: "Do you like watching documentaries?",
+    speaker2: "Yes, I find them quite informative.",
+  },
+  {
+    speaker1: "Are you a fan of video games?",
+    speaker2: "Not really, I don't play them often.",
+  },
+  {
+    speaker1: "Are you skilled at any musical instrument?",
+    speaker2: "No, I don't play any instrument.",
+  },
+  {
+    speaker1: "Do you enjoy gardening?",
+    speaker2: "Not really, I am not into gardening.",
+  },
+  {
+    speaker1: "Are you a fan of art museums?",
+    speaker2: "Yes, I appreciate art and enjoy museums.",
+  },
+  {
+    speaker1: "Are you a fan of science fiction movies?",
+    speaker2: "Yes, I appreciate art and enjoy museums.",
+  },
+  {
+    speaker1: "Do you have a favorite type of cuisine?",
+    speaker2: "No, I like trying different types of foods.",
+  },
+  {
+    speaker1: "Are you a good swimmer?",
+    speaker2: "Yes, I am comfortable in the water.",
+  },
+  {
+    speaker1: "Have you ever taken a road trip?",
+    speaker2: "Yes, I have been on a few road trips.",
+  },
+  {
+    speaker1: "Are you into photography?",
+    speaker2: "Not really, I don't own a camera.",
+  },
+  {
+    speaker1: "Do you like attending festivals?",
+    speaker2: "Yes, I enjoy the festive atmosphere.",
+  },
+  {
+    speaker1: "Have you ever tried bungee jumping?",
+    speaker2: "No, I am not interested in bungee jumping.",
+  },
+  {
+    speaker1: "Are you a fan of board games?",
+    speaker2: "Yes, I enjoy playing video games.",
+  },
+  {
+    speaker1: "Have you ever attended a sports event?",
+    speaker2: "Yes, I have been to a few sports matches.",
+  },
+  {
+    speaker1: "Do you enjoy hiking?",
+    speaker2: "Yes, I like exploring nature through hikes.",
+  },
+  {
+    speaker1: "Are you good at solving puzzles?",
+    speaker2: "Yes, I enjoy challenging puzzles.",
+  },
+  {
+    speaker1: "Are you a fan of classical music?",
+    speaker2: "Yes, I appreciate classical compositions.",
+  },
+  {
+    speaker1: "Do you enjoy camping?",
+    speaker2: "No, I am not a fan of camping.",
+  },
+  {
+    speaker1: "Have you ever tried skydiving?",
+    speaker2: "No, I have not attempted skydiving.",
+  },
+  {
+    speaker1: "Is it hot outside?",
+    speaker2: "Yes, it's quite hot.",
+  },
+  {
+    speaker1: "Does your mom cook dinner every day?",
+    speaker2: "Yes, my mom cooks dinner every day.",
+  },
+  {
+    speaker1: "Do you have a smartphone?",
+    speaker2: "Yes, I have a smartphone.",
+  },
+  {
+    speaker1: "What time do you go to bed?",
+    speaker2: "I go to bed at 11:00 p.m.",
+  },
+  {
+    speaker1: "Do you enjoy listening to music?",
+    speaker2: "Yes, I love listening to music.",
+  },
+  {
+    speaker1: "What's your favorite type of music?",
+    speaker2: "My favorite type of music is rock.",
+  },
+  {
+    speaker1: "Do you play any sports?",
+    speaker2: "Yes, I play basketball.",
+  },
+  {
+    speaker1: "What's your favorite sport to watch?",
+    speaker2: "My favorite sport to watch is basketball.",
+  },
+  {
+    speaker1: "Do you exercise regularly?",
+    speaker2: "Yes, I go to the gym regularly.",
+  },
+  {
+    speaker1: "Will you join us for dinner tonight?",
+    speaker2: "Yes, I will. Thank you for inviting me.",
+  },
+  {
+    speaker1: "What do you plan to do after graduation?",
+    speaker2: "I am planning to travel around Europe for a few months.",
+  },
+  {
+    speaker1: "Are you going to the concert next week?",
+    speaker2: "Yes, I am. I already bought my ticket.",
+  },
+  {
+    speaker1: "Did you have a good time at the party last night?",
+    speaker2: "Yes, I did. It was a lot of fun.",
+  },
+  {
+    speaker1: "Are you going to visit your family during the holidays?",
+    speaker2: "Yes, I am. I'm looking forward to spending time with them.",
+  },
+  {
+    speaker1: "Will you be attending the conference next month?",
+    speaker2: "Yes, I will. I've already registered for it.",
+  },
+  {
+    speaker1: "What do you think you'll do if you win the lottery?",
+    speaker2:
+      "I'll probably travel around the world and then invest some of the money.",
+  },
+  {
+    speaker1: "What are you currently reading?",
+    speaker2:
+      "I'm reading a mystery book called 'Anatomy of a Murder'. It's really intriguing.",
+  },
+  {
+    speaker1: "Where would you like to go on your next vacation?",
+    speaker2: "I would like to go to Singapore.",
+  },
+  {
+    speaker1: "Do you prefer traveling by plane or by train?",
+    speaker2: "I prefer traveling by train",
+  },
+  {
+    speaker1: "What are your hobbies?",
+    speaker2: "My hobbies are reading, playing sports, cooking, etc.",
+  },
+  {
+    speaker1: "What's your favorite app?",
+    speaker2: "My favorite app is Instagram.",
+  },
+  {
+    speaker1: "Are you good with computers?",
+    speaker2: "Yes, I'm pretty good with computers.",
+  },
+  {
+    speaker1: "What's your favorite website?",
+    speaker2: "My favorite website is YouTube.",
+  },
+  {
+    speaker1: "How long have you been here?",
+    speaker2: "I have been here for three weeks.",
+  },
+  {
+    speaker1: "What is your hobby?",
+    speaker2: "I like playing sports, especially swimming.",
+  },
+  {
+    speaker1: "How much money do you have?",
+    speaker2: "I only have $10, not a lot.",
+  },
+  {
+    speaker1: "Do you enjoy reading?",
+    speaker2: "Yes, I love reading books.",
+  },
+  {
+    speaker1: "Where did you go on your last vacation?",
+    speaker2: "I went to Thailand.",
+  },
+  {
+    speaker1: "What's your favorite music genre?",
+    speaker2: "I like listening to rock music.",
+  },
+  {
+    speaker1: "What's your favorite animal?",
+    speaker2: "I love dolphins.",
+  },
+  {
+    speaker1: "What's your dream job?",
+    speaker2: "I want to be a pilot.",
+  },
+  {
+    speaker1: "Have you ever ridden a horse?",
+    speaker2: "Yes, I have ridden a horse.",
+  },
+  {
+    speaker1: "Can you whistle?",
+    speaker2: "Yes, I can whistle.",
+  },
+  {
+    speaker1: "What's your favorite flower?",
+    speaker2: "My favorite flower is the rose.",
+  },
+  {
+    speaker1: "Do you like to go for long walks?",
+    speaker2: "Yes, I find long walks relaxing.",
+  },
+  {
+    speaker1: "Do you like to go to the beach?",
+    speaker2: "Yes, I enjoy going to the beach.",
+  },
+  {
+    speaker1: "Are you hungry?",
+    speaker2: "Yes, I'm starving.",
+  },
+  {
+    speaker1: "What's your favorite type of cuisine?",
+    speaker2: "I love Mexican cuisine.",
+  },
+  {
+    speaker1: "Are you allergic to anything?",
+    speaker2: "Yes, I'm allergic to cats.",
+  },
+  {
+    speaker1: "Are you thirsty?",
+    speaker2: "A little.",
+  },
+  {
+    speaker1: "What do you want to eat?",
+    speaker2: "Some fruit.",
+  },
+  {
+    speaker1: "Do you like fast food?",
+    speaker2: "I love fast food",
+  },
+  {
+    speaker1: "Do you drive a car?",
+    speaker2: "Yes, it's a truck.",
+  },
+  {
+    speaker1: "Are you sick?",
+    speaker2: "Yeah, I have a slight cold.",
+  },
+  {
+    speaker1: "When are you leaving?",
+    speaker2: "I'm leaving on Monday.",
+  },
+  {
+    speaker1: "What time are you leaving?",
+    speaker2: "I'm leaving at 4:00.",
+  },
+  {
+    speaker1: "Where are your friends?",
+    speaker2: "They went to the restaurant.",
+  },
+  {
+    speaker1: "Are there a lot of people there?",
+    speaker2: "No, only like ten.",
+  },
+  {
+    speaker1: "Is it going to rain today?",
+    speaker2: "No, I don't think so.",
+  },
+  {
+    speaker1: "Are you afraid?",
+    speaker2: "No, I'm not afraid of anything.",
+  },
+  {
+    speaker1: "Are you busy at the moment?",
+    speaker2: "Yes, I am studying.",
+  },
+  {
+    speaker1: "Would you like to come with us?",
+    speaker2: "Yeah, that would be great.",
+  },
+  {
+    speaker1: "What do you plan to do after graduation?",
+    speaker2: "I am planning to travel around Europe for a few months.",
+  },
+  {
+    speaker1: "Are you going to the concert next week?",
+    speaker2: "Yes, I am. I already bought my ticket.",
+  },
+  {
+    speaker1: "Did you have a good time at the party last night?",
+    speaker2: "Yes, I did. It was a lot of fun.",
+  },
+  {
+    speaker1: "Are you going to visit your family during the holidays?",
+    speaker2: "Yes, I am. I'm looking forward to spending time with them.",
+  },
+  {
+    speaker1: "Will you be attending the conference next month?",
+    speaker2: "Yes, I will. I've already registered for it.",
+  },
+  {
+    speaker1: "What do you think you'll do if you win the lottery?",
+    speaker2:
+      "I'll probably travel around the world and then invest some of the money.",
+  },
+  {
+    speaker1: "What are you currently reading?",
+    speaker2:
+      "I'm reading a mystery novel called 'The Girl on the Train.' It's really intriguing.",
+  },
+  {
+    speaker1: "Where would you like to go on your next vacation?",
+    speaker2: "I would like to go to Australia.",
+  },
+  {
+    speaker1: "Do you prefer traveling by plane or by train?",
+    speaker2: "I prefer traveling by train.",
+  },
+  {
+    speaker1: "What are your hobbies?",
+    speaker2: "My hobbies are reading, playing sports, cooking, etc.",
+  },
+  {
+    speaker1: "What's your favorite app?",
+    speaker2: "My favorite app is Instagram.",
+  },
+  {
+    speaker1: "Are you good with computers?",
+    speaker2: "Yes, I'm pretty good with computers.",
+  },
+  {
+    speaker1: "What's your favorite website?",
+    speaker2: "My favorite website is YouTube.",
+  },
+  {
+    speaker1: "How long have you been here?",
+    speaker2: "I have been here for three weeks.",
+  },
+  {
+    speaker1: "What is your hobby?",
+    speaker2: "I like playing sports, especially swimming.",
+  },
+  {
+    speaker1: "How much money do you have?",
+    speaker2: "I only have $10, not a lot.",
+  },
+  {
+    speaker1: "Do you enjoy reading?",
+    speaker2: "Yes, I love reading books.",
+  },
+  {
+    speaker1: "Where did you go on your last vacation?",
+    speaker2: "I went to Thailand.",
+  },
+  {
+    speaker1: "What's your favorite music genre?",
+    speaker2: "I like listening to rock music.",
+  },
+  {
+    speaker1: "What's your favorite animal?",
+    speaker2: "I love dolphins.",
+  },
+  {
+    speaker1: "What's your dream job?",
+    speaker2: "I want to be a pilot.",
+  },
+  {
+    speaker1: "Have you ever ridden a horse?",
+    speaker2: "Yes, I have ridden a horse.",
+  },
+  {
+    speaker1: "Can you whistle?",
+    speaker2: "Yes, I can whistle.",
+  },
+  {
+    speaker1: "What's your favorite flower?",
+    speaker2: "My favorite flower is the rose.",
+  },
+  {
+    speaker1: "Do you like to go for long walks?",
+    speaker2: "Yes, I find long walks relaxing.",
+  },
+  {
+    speaker1: "Do you like to go to the beach?",
+    speaker2: "Yes, I enjoy going to the beach.",
+  },
+  {
+    speaker1: "Are you hungry?",
+    speaker2: "Yes, I'm starving.",
+  },
+  {
+    speaker1: "What's your favorite type of cuisine?",
+    speaker2: "I love Mexican cuisine.",
+  },
+  {
+    speaker1: "Are you allergic to anything?",
+    speaker2: "Yes, I'm allergic to cats.",
+  },
+  {
+    speaker1: "Are you thirsty?",
+    speaker2: "A little.",
+  },
+  {
+    speaker1: "What do you want to eat?",
+    speaker2: "Some fruit.",
+  },
+  {
+    speaker1: "Do you like Indian food?",
+    speaker2: "I love Indian food.",
+  },
+  {
+    speaker1: "Do you drive a car?",
+    speaker2: "Yes, it's a truck.",
+  },
+  {
+    speaker1: "Are you sick?",
+    speaker2: "Yeah, I have a slight cold.",
+  },
+  {
+    speaker1: "When are you leaving?",
+    speaker2: "I'm leaving on Monday.",
+  },
+  {
+    speaker1: "What time are you leaving?",
+    speaker2: "I'm leaving at 4:00.",
+  },
+  {
+    speaker1: "Where are your friends?",
+    speaker2: "They went to the restaurant.",
+  },
+  {
+    speaker1: "Are there a lot of people there?",
+    speaker2: "No, only like ten.",
+  },
+  {
+    speaker1: "Is it going to rain today?",
+    speaker2: "No, I don't think so.",
+  },
+  {
+    speaker1: "Are you afraid?",
+    speaker2: "No, I'm not afraid of anything.",
+  },
+  {
+    speaker1: "Are you busy at the moment?",
+    speaker2: "I am not.",
+  },
+  {
+    speaker1: "Would you like to come with us?",
+    speaker2: "Yeah, that would be great.",
+  },
+  {
+    speaker1: "When are you coming back?",
+    speaker2: "I'll be back on Tuesday.",
+  },
+  {
+    speaker1: "How soon can you pay me back?",
+    speaker2: "I can pay you back tomorrow.",
+  },
+  {
+    speaker1: "How long have you known each other?",
+    speaker2: "Since we were children.",
+  },
+  {
+    speaker1: "Who would you like to speak to?",
+    speaker2: "I would like to speak to John.",
+  },
+  {
+    speaker1: "How was your day?",
+    speaker2: "Really good.",
+  },
+  {
+    speaker1: "What's your profession?",
+    speaker2: "I'm an English teacher.",
+  },
+  {
+    speaker1: "Do you work from home?",
+    speaker2: "No, I work at an office.",
+  },
+  {
+    speaker1: "Can I ask you a few personal questions?",
+    speaker2: "Certainly.",
+  },
+  {
+    speaker1: "How many children do you have?",
+    speaker2: "I have two children, a boy and a girl.",
+  },
+  {
+    speaker1: "What time do you open?",
+    speaker2: "We open at 8:00 in the morning.",
+  },
+  {
+    speaker1: "Where is the closest restaurant?",
+    speaker2: "There is one over there.",
+  },
+  {
+    speaker1: "Do you want to see a movie tonight?",
+    speaker2: "Sure, sounds good.",
+  },
+  {
+    speaker1: "Isn't it a beautiful day?",
+    speaker2: "Yes, it's beautiful.",
+  },
+  {
+    speaker1: "Where are you going for your vacation?",
+    speaker2: "I'm not sure. I might go to Italy.",
+  },
+  {
+    speaker1: "How come this is so expensive?",
+    speaker2: "It's good quality.",
+  },
+  {
+    speaker1: "Why are you studying English?",
+    speaker2: "To communicate when I travel.",
+  },
+  {
+    speaker1: "Do you know where my phone is?",
+    speaker2: "Your phone is on the table.",
+  },
+  {
+    speaker1: "What did you say?",
+    speaker2: "I said, where are you from?",
+  },
+  {
+    speaker1: "Where would you like to go?",
+    speaker2: "I'd like to go home.",
+  },
+  {
+    speaker1: "What's your favorite type of book?",
+    speaker2: "I love reading about different cultures.",
+  },
+  {
+    speaker1: "Do you want to walk or take the bus?",
+    speaker2: "Let's take the bus.",
+  },
+  {
+    speaker1: "How long have you been learning English?",
+    speaker2: "For two years.",
+  },
+  {
+    speaker1: "Should I call you tonight?",
+    speaker2: "No, call me in the morning.",
+  },
+  {
+    speaker1: "Is your wife a doctor?",
+    speaker2: "No, she's a teacher.",
+  },
+  {
+    speaker1: "Are you going to study tonight?",
+    speaker2: "I tried but I probably won't.",
+  },
+  {
+    speaker1: "Can you hear me clearly?",
+    speaker2: "Yes, I can hear you very clearly.",
+  },
+  {
+    speaker1: "What did you buy?",
+    speaker2: "We got some new clothes on sale.",
+  },
+  {
+    speaker1: "What do you do?",
+    speaker2: "I'm a textile designer.",
+  },
+  {
+    speaker1: "Do you have a boyfriend?",
+    speaker2: "No, I don't have a boyfriend.",
+  },
+  {
+    speaker1: "Do you know who Dave is?",
+    speaker2: "No, I don't know.",
+  },
+  {
+    speaker1: "What time do you open your store?",
+    speaker2: "My store opens at 7 a.m. in the morning.",
+  },
+  {
+    speaker1: "What time do you close?",
+    speaker2: "We close at 5 p.m.",
+  },
+  {
+    speaker1: "What time does the movie start?",
+    speaker2: "The movie starts at 1 a.m. at night.",
+  },
+  {
+    speaker1: "What time does the flight leave?",
+    speaker2: "The flight leaves at 10 p.m.",
+  },
+  {
+    speaker1: "Are you allergic to anything?",
+    speaker2: "Yes, I'm allergic to smoke.",
+  },
+  {
+    speaker1: "Where is the closest bus stand?",
+    speaker2: "Behind the apartment.",
+  },
+  {
+    speaker1: "Where do you want to go?",
+    speaker2: "I want to go to the markeet.",
+  },
+  {
+    speaker1: "What kind of people do you like?",
+    speaker2: "I like honest and simple people.",
+  },
+  {
+    speaker1: "Can you speak slowly?",
+    speaker2: "I will try my best to speak slowly.",
+  },
+  {
+    speaker1: "May I ask you something?",
+    speaker2: "Yes, what's your question?",
+  },
+  {
+    speaker1: "Will she marry him?",
+    speaker2: "Yes of course , He is a great man.",
+  },
+  {
+    speaker1: "Why were you absent yesterday?",
+    speaker2: "I was sick yesterday so I stayed home.",
+  },
+  {
+    speaker1: "Are you feeling okay?",
+    speaker2: "I don't feel well.",
+  },
+  {
+    speaker1: "What are you smiling about?",
+    speaker2: "I think I am in love.",
+  },
+  {
+    speaker1: "Do you need a few minutes?",
+    speaker2: "I think we're ready.",
+  },
+  {
+    speaker1: "What's new with you?",
+    speaker2: "I got a new job in the city.",
+  },
+  {
+    speaker1: "Were you with anyone?",
+    speaker2: "I was all alone.",
+  },
+  {
+    speaker1: "Are you still feeling sick?",
+    speaker2: "I feel much better.",
+  },
+  {
+    speaker1: "Would you like something to eat?",
+    speaker2: "No, I'm full.",
+  },
+  {
+    speaker1: "Do you think you're healthy?",
+    speaker2: "I eat vegetables each day and exercise regularly.",
+  },
+  {
+    speaker1: "Can you play drums?",
+    speaker2: "I prefer other musical instruments.",
+  },
+  {
+    speaker1: "What's your favorite cheese?",
+    speaker2: "My favorite cheese is cheddar.",
+  },
+  {
+    speaker1: "Is it windy?",
+    speaker2: "The wind is quite strong.",
+  },
+  {
+    speaker1: "Do you like skiing?",
+    speaker2: "Yes, I love skiing.",
+  },
+  {
+    speaker1: "Do you like speaking Italian?",
+    speaker2: "I'm not very good at speaking Italian.",
+  },
+  {
+    speaker1: "What's your favorite candy?",
+    speaker2: "I like mint candies.",
+  },
+  {
+    speaker1: "Is it your coat?",
+    speaker2: "Yes, it's my coat.",
+  },
+  {
+    speaker1: "Where is your car?",
+    speaker2: "It's in the parking lot.",
+  },
+  {
+    speaker1: "Do you have a bicycle?",
+    speaker2: "I own a mountain bike.",
+  },
+  {
+    speaker1: "What's your favorite pastry?",
+    speaker2: "My favorite pastry is a croissant.",
+  },
+  {
+    speaker1: "Do you like yoga?",
+    speaker2: "No, I don't like yoga.",
+  },
+  {
+    speaker1: "Do you like jogging?",
+    speaker2: "Yes, I jog for fitness.",
+  },
+  {
+    speaker1: "What's your favorite subject?",
+    speaker2: "I enjoy history the most.",
+  },
+  {
+    speaker1: "Where is the library?",
+    speaker2: "The library is near the school.",
+  },
+  {
+    speaker1: "Where is your house?",
+    speaker2: "My house is near the school.",
+  },
+  {
+    speaker1: "What's your favorite drink?",
+    speaker2: "My favorite is a milkshake.",
+  },
+  {
+    speaker1: "Where do you buy groceries?",
+    speaker2: "I shop at the local farmers market.",
+  },
+  {
+    speaker1: "Did she admit her mistake?",
+    speaker2: "Yes, she admitted it sincerely.",
+  },
+  {
+    speaker1: "Did they announce the winner?",
+    speaker2: "Yes, they announced it last night.",
+  },
+  {
+    speaker1: "Did you implement the new system?",
+    speaker2: "Yes, we implemented it today.",
+  },
+  {
+    speaker1: "Did he perform well on stage?",
+    speaker2: "Yes, he performed amazingly well.",
+  },
+  {
+    speaker1: "Where do you buy shoes?",
+    speaker2: "I buy them from a local boutique.",
+  },
+  {
+    speaker1: "Can you drive a truck?",
+    speaker2: "No, I've only driven cars.",
+  },
+  {
+    speaker1: "Do you have a smartwatch?",
+    speaker2: "Yes, it tracks my fitness activities.",
+  },
+  {
+    speaker1: "Did you recommend this restaurant?",
+    speaker2: "Yes, I highly recommend it.",
+  },
+  {
+    speaker1: "Is it raining?",
+    speaker2: "No, the skies are clear.",
+  },
+  {
+    speaker1: "What's your favorite snack?",
+    speaker2: "I love munching on trail mix.",
+  },
+  {
+    speaker1: "Where do you keep your books?",
+    speaker2: "I have a large bookshelf in my room.",
+  },
+  {
+    speaker1: "Is it crowded here?",
+    speaker2: "No, there aren't many people around.",
+  },
+  {
+    speaker1: "Did you verify the information?",
+    speaker2: "Yes, I verified it twice.",
+  },
+  {
+    speaker1: "Did you assist your colleague?",
+    speaker2: "Yes, I assisted him all day.",
+  },
+  {
+    speaker1: "Did you celebrate your birthday?",
+    speaker2: "Yes, I celebrated it joyfully.",
+  },
+  {
+    speaker1: "Where do you go for fun?",
+    speaker2: "I often go to amusement parks.",
+  },
+  {
+    speaker1: "Do you have a collection?",
+    speaker2: "Yes, I collect vintage postcards.",
+  },
+  {
+    speaker1: "Is it sunny today?",
+    speaker2: "Yes, it's bright and sunny outside.",
+  },
+  {
+    speaker1: "Did she admit her feelings?",
+    speaker2: "Yes, she admitted them honestly.",
+  },
+  {
+    speaker1: "Did you implement the plan?",
+    speaker2: "Yes, I implemented it successfully.",
+  },
+  {
+    speaker1: "How are you?",
+    speaker2: "I'm good, thank you.",
+  },
+  {
+    speaker1: "How old are you?",
+    speaker2: "I'm 24 years old.",
+  },
+  {
+    speaker1: "Are you busy?",
+    speaker2: "No, I'm not busy.",
+  },
+  {
+    speaker1: "Do you speak English?",
+    speaker2: "Yes, I speak English.",
+  },
+  {
+    speaker1: "What time is it?",
+    speaker2: "It's 4:00.",
+  },
+  {
+    speaker1: "How do you travel to work?",
+    speaker2: "I take the bus.",
+  },
+  {
+    speaker1: "What do you do for fun?",
+    speaker2: "I like reading books.",
+  },
+  {
+    speaker1: "Are you married?",
+    speaker2: "No, I'm not married.",
+  },
+  {
+    speaker1: "Can I have the bill, please?",
+    speaker2: "Certainly, here you are.",
+  },
+  {
+    speaker1: "What's your favorite color?",
+    speaker2: "My favorite color is blue.",
+  },
+  {
+    speaker1: "Have you been to London?",
+    speaker2: "No, I haven't been there yet.",
+  },
+  {
+    speaker1: "How's the weather today?",
+    speaker2: "It's sunny and warm.",
+  },
+  {
+    speaker1: "What's your favorite food?",
+    speaker2: "I love pasta.",
+  },
+  {
+    speaker1: "Are you feeling okay?",
+    speaker2: "I don't feel well.",
+  },
+  {
+    speaker1: "What are you smiling about?",
+    speaker2: "I think I am in love.",
+  },
+  {
+    speaker1: "Do you need a few minutes?",
+    speaker2: "I think we're ready.",
+  },
+  {
+    speaker1: "What's new with you?",
+    speaker2: "I got a new job in the city.",
+  },
+  {
+    speaker1: "Were you with anyone?",
+    speaker2: "I was all alone.",
+  },
+  {
+    speaker1: "Are you still feeling sick?",
+    speaker2: "I feel much better.",
+  },
+  {
+    speaker1: "Would you like something to eat?",
+    speaker2: "No, I'm full.",
+  },
+  {
+    speaker1: "Do you think you're healthy?",
+    speaker2: "I eat vegetables each day and exercise regularly.",
+  },
+  {
+    speaker1: "Can you play drums?",
+    speaker2: "I prefer other musical instruments.",
+  },
+  {
+    speaker1: "What's your favorite cheese?",
+    speaker2: "My favorite cheese is cheddar.",
+  },
+  {
+    speaker1: "Is it windy?",
+    speaker2: "The wind is quite strong.",
+  },
+  {
+    speaker1: "Do you like skiing?",
+    speaker2: "Yes, I love skiing.",
+  },
+  {
+    speaker1: "Do you like speaking Italian?",
+    speaker2: "I'm not very good at speaking Italian.",
+  },
+  {
+    speaker1: "What's your favorite candy?",
+    speaker2: "I like mint candies.",
+  },
+  {
+    speaker1: "Is it your coat?",
+    speaker2: "Yes, it's my coat.",
+  },
+  {
+    speaker1: "Where is your car?",
+    speaker2: "It's in the parking lot.",
+  },
+  {
+    speaker1: "Do you have a bicycle?",
+    speaker2: "I own a mountain bike.",
+  },
+  {
+    speaker1: "What's your favorite pastry?",
+    speaker2: "My favorite pastry is a croissant.",
+  },
+  {
+    speaker1: "Do you like yoga?",
+    speaker2: "Yes, I like yoga.",
+  },
+  {
+    speaker1: "Do you like jogging?",
+    speaker2: "Yes, I jog for fitness.",
+  },
+  {
+    speaker1: "What's your favorite subject?",
+    speaker2: "I enjoy history the most.",
+  },
+  {
+    speaker1: "Where is the library?",
+    speaker2: "The library is near the school.",
+  },
+  {
+    speaker1: "Where is your house?",
+    speaker2: "My house is near the school.",
+  },
+  {
+    speaker1: "What's your favorite drink?",
+    speaker2: "My favorite is a milkshake.",
+  },
+  {
+    speaker1: "Where do you buy groceries?",
+    speaker2: "I shop at the local farmers market.",
+  },
+  {
+    speaker1: "Did she admit her mistake?",
+    speaker2: "Yes, she admitted it sincerely.",
+  },
+  {
+    speaker1: "Did they announce the winner?",
+    speaker2: "Yes, they announced it last night.",
+  },
+  {
+    speaker1: "Did you implement the new system?",
+    speaker2: "Yes, we implemented it today.",
+  },
+  {
+    speaker1: "Did he perform well on stage?",
+    speaker2: "Yes, he performed amazingly well.",
+  },
+  {
+    speaker1: "Where do you buy shoes?",
+    speaker2: "I buy them from a local store.",
+  },
+  {
+    speaker1: "Can you drive a truck?",
+    speaker2: "No, I've only driven cars.",
+  },
+  {
+    speaker1: "Do you have a smartwatch?",
+    speaker2: "Yes, it tracks my fitness activities.",
+  },
+  {
+    speaker1: "Did you recommend this restaurant?",
+    speaker2: "Yes, I highly recommend it.",
+  },
+  {
+    speaker1: "Is it raining?",
+    speaker2: "No, the skies are clear.",
+  },
+  {
+    speaker1: "What's your favorite snack?",
+    speaker2: "I love munching on trail mix.",
+  },
+  {
+    speaker1: "Where do you keep your books?",
+    speaker2: "I have a large bookshelf in my room.",
+  },
+  {
+    speaker1: "Is it crowded here?",
+    speaker2: "No, there aren't many people around.",
+  },
+  {
+    speaker1: "Did you verify the information?",
+    speaker2: "Yes, I verified it twice.",
+  },
+  {
+    speaker1: "Did you assist your colleague?",
+    speaker2: "Yes, I assisted him all day.",
+  },
+  {
+    speaker1: "Did you celebrate your birthday?",
+    speaker2: "Yes, I celebrated it joyfully.",
+  },
+  {
+    speaker1: "Where do you go for fun?",
+    speaker2: "I often go to amusement parks.",
+  },
+  {
+    speaker1: "Do you have a collection?",
+    speaker2: "Yes, I collect coins.",
+  },
+  {
+    speaker1: "Is it sunny today?",
+    speaker2: "Yes, it's bright and sunny outside.",
+  },
+  {
+    speaker1: "Did she admit her feelings?",
+    speaker2: "Yes, she admitted them honestly.",
+  },
+  {
+    speaker1: "Did you implement the plan?",
+    speaker2: "Yes, I implemented it successfully.",
+  },
+  {
+    speaker1: "How are you?",
+    speaker2: "I'm good, thank you.",
+  },
+  {
+    speaker1: "How old are you?",
+    speaker2: "I'm 29 years old.",
+  },
+  {
+    speaker1: "Are you busy?",
+    speaker2: "No, I'm not busy.",
+  },
+  {
+    speaker1: "Do you speak English?",
+    speaker2: "Yes, I speak English.",
+  },
+  {
+    speaker1: "What time is it?",
+    speaker2: "It's 3:00.",
+  },
+  {
+    speaker1: "How do you travel to work?",
+    speaker2: "I take the bus.",
+  },
+  {
+    speaker1: "What do you do for fun?",
+    speaker2: "I like reading books.",
+  },
+  {
+    speaker1: "Are you married?",
+    speaker2: "No, I'm not married.",
+  },
+  {
+    speaker1: "Can I have the bill, please?",
+    speaker2: "Certainly, here you are.",
+  },
+  {
+    speaker1: "What's your favorite color?",
+    speaker2: "My favorite color is indigo.",
+  },
+  {
+    speaker1: "Have you been to London?",
+    speaker2: "No, I haven't been there yet.",
+  },
+  {
+    speaker1: "How's the weather today?",
+    speaker2: "It's sunny and warm.",
+  },
+  {
+    speaker1: "What's your favorite food?",
+    speaker2: "I love burger.",
+  },
+  {
+    speaker1: "Do you have any pets?",
+    speaker2: "Yes, I have a dog.",
+  },
+  {
+    speaker1: "Where is the nearest supermarket?",
+    speaker2: "It's just around the corner.",
+  },
+  {
+    speaker1: "What's your job?",
+    speaker2: "I'm a teacher.",
+  },
+  {
+    speaker1: "Can you help me with my homework?",
+    speaker2: "Of course, I'd be happy to help.",
+  },
+  {
+    speaker1: "Are you busy right now?",
+    speaker2: "No, I'm not busy at the moment.",
+  },
+  {
+    speaker1: "What's your phone number?",
+    speaker2: "It's 333-1234-5678.",
+  },
+  {
+    speaker1: "Where did you go on your last vacation?",
+    speaker2: "I went to the zoo.",
+  },
+  {
+    speaker1: "What's your favorite movie?",
+    speaker2: "I like horror movies.",
+  },
+  {
+    speaker1: "Would you like some tea?",
+    speaker2: "Yes, I would love to",
+  },
+  {
+    speaker1: "Do you play any musical instruments?",
+    speaker2: "I play the voilin.",
+  },
+  {
+    speaker1: "What's your favorite season?",
+    speaker2: "I like Summer.",
+  },
+  {
+    speaker1: "Do you have any allergies?",
+    speaker2: "No, I don't have any allergies.",
+  },
+  {
+    speaker1: "Can I borrow your pen?",
+    speaker2: "Sure, here you go.",
+  },
+  {
+    speaker1: "What time do you wake up?",
+    speaker2: "I usually wake up at 8 AM.",
+  },
+  {
+    speaker1: "Is there a pharmacy nearby?",
+    speaker2: "Yes, there's one across the street.",
+  },
+  {
+    speaker1: "How many languages do you speak?",
+    speaker2: "I speak two languages.",
+  },
+  {
+    speaker1: "What's your favorite sport?",
+    speaker2: "I enjoy playing tennis.",
+  },
+  {
+    speaker1: "Do you have any plans for the weekend?",
+    speaker2: "I'm going to visit my friends.",
+  },
+  {
+    speaker1: "How much does it cost?",
+    speaker2: "It's $200.",
+  },
+  {
+    speaker1: "What's your dream job?",
+    speaker2: "I'd love to be a photographer.",
+  },
+  {
+    speaker1: "Can I have a glass of water?",
+    speaker2: "Certainly, here you are.",
+  },
+  {
+    speaker1: "Where did you learn English?",
+    speaker2: "I learned it at school.",
+  },
+  {
+    speaker1: "Do you have a favorite hobby?",
+    speaker2: "I like painting.",
+  },
+  {
+    speaker1: "What's your favorite type of music?",
+    speaker2: "I enjoy listening to pop music.",
+  },
+  {
+    speaker1: "Have you ever been to a concert?",
+    speaker2: "Yes, I've been to a few.",
+  },
+  {
+    speaker1: "What's your favorite subject in school?",
+    speaker2: "I like English.",
+  },
+  {
+    speaker1: "Do you have any weekend plans?",
+    speaker2: "I'm going hiking.",
+  },
+  {
+    speaker1: "What's your shoe size?",
+    speaker2: "It's seven.",
+  },
+  {
+    speaker1: "Can you cook?",
+    speaker2: "Yes, I can cook simple meals.",
+  },
+  {
+    speaker1: "What's your favorite holiday?",
+    speaker2: "I like Christmas.",
+  },
+  {
+    speaker1: "Do you have any children?",
+    speaker2: "No, I don't have any children.",
+  },
+  {
+    speaker1: "How long have you lived here?",
+    speaker2: "I've lived here for 15 years.",
+  },
+  {
+    speaker1: "What's your favorite TV show?",
+    speaker2: "I enjoy watching horror shows.",
+  },
+  {
+    speaker1: "Do you have a driver's license?",
+    speaker2: "Yes, I do.",
+  },
+  {
+    speaker1: "Are you a morning person?",
+    speaker2: "No, I prefer evenings.",
+  },
+  {
+    speaker1: "What's your favorite place in the world?",
+    speaker2: "I love the beach.",
+  },
+  {
+    speaker1: "Do you have any weekend plans?",
+    speaker2: "I'm going to a movie.",
+  },
+  {
+    speaker1: "How often do you exercise?",
+    speaker2: "I exercise four times a week.",
+  },
+  {
+    speaker1: "What's your favorite type of exercise?",
+    speaker2: "I like jogging.",
+  },
+  {
+    speaker1: "Can you ride a bike?",
+    speaker2: "Yes, I can.",
+  },
+  {
+    speaker1: "What's your favorite holiday destination?",
+    speaker2: "I love going to the mountains.",
+  },
+  {
+    speaker1: "Do you like to dance?",
+    speaker2: "Yes, I enjoy dancing.",
+  },
+  {
+    speaker1: "What's your favorite type of weather?",
+    speaker2: "I like it when it's sunny.",
+  },
+  {
+    speaker1: "Are you a vegetarian?",
+    speaker2: "No, I eat meat.",
+  },
+  {
+    speaker1: "Do you have a favorite restaurant?",
+    speaker2: "Yes, it's a Chinese restaurant.",
+  },
+  {
+    speaker1: "What's your favorite kind of pizza?",
+    speaker2: "I like pepperoni pizza.",
+  },
+  {
+    speaker1: "Can you play a musical instrument?",
+    speaker2: "Yes, I play the voilin.",
+  },
+  {
+    speaker1: "What's your favorite type of pasta?",
+    speaker2: "I like spaghetti.",
+  },
+  {
+    speaker1: "Do you have any weekend plans?",
+    speaker2: "I'm going shopping.",
+  },
+  {
+    speaker1: "What's your favorite type of fruit?",
+    speaker2: "I love oranges.",
+  },
+  {
+    speaker1: "Do you have a best friend?",
+    speaker2: "Yes, I do.",
+  },
+  {
+    speaker1: "What's your favorite type of chocolate?",
+    speaker2: "I enjoy dark chocolate.",
+  },
+  {
+    speaker1: "Can you ride a skateboard?",
+    speaker2: "No, I can't.",
+  },
+  {
+    speaker1: "Are you good at remembering names?",
+    speaker2: "Not really, I struggle with that.",
+  },
+  {
+    speaker1: "Do you like watching documentaries?",
+    speaker2: "Yes, I find them quite informative.",
+  },
+  {
+    speaker1: "Are you a fan of video games?",
+    speaker2: "Not really, I don't play them often.",
+  },
+  {
+    speaker1: "Are you skilled at any musical instrument?",
+    speaker2: "No, I don't play any instrument.",
+  },
+  {
+    speaker1: "Do you enjoy gardening?",
+    speaker2: "Not really, I am not into gardening.",
+  },
+  {
+    speaker1: "Are you a fan of art museums?",
+    speaker2: "Yes, I appreciate art and enjoy museums.",
+  },
+  {
+    speaker1: "Are you a fan of science fiction movies?",
+    speaker2: "Yes, I enjoy them a lot.",
+  },
+  {
+    speaker1: "Do you have a favorite type of cuisine?",
+    speaker2: "No, I like trying different types of foods.",
+  },
+  {
+    speaker1: "Are you a good swimmer?",
+    speaker2: "Yes, I am comfortable in the water.",
+  },
+  {
+    speaker1: "Have you ever taken a road trip?",
+    speaker2: "Yes, I have been on a few road trips.",
+  },
+  {
+    speaker1: "Are you into photography?",
+    speaker2: "Not really, I don't own a camera.",
+  },
+  {
+    speaker1: "Do you like attending festivals?",
+    speaker2: "Yes, I enjoy the festive atmosphere.",
+  },
+  {
+    speaker1: "Have you ever tried bungee jumping?",
+    speaker2: "No, I am not interested in bungee jumping.",
+  },
+  {
+    speaker1: "Are you a fan of board games?",
+    speaker2: "Yes, I enjoy playing them.",
+  },
+  {
+    speaker1: "Have you ever attended a sports event?",
+    speaker2: "Yes, I have been to a few sports matches.",
+  },
+  {
+    speaker1: "Do you enjoy hiking?",
+    speaker2: "Yes, I like exploring nature through hikes.",
+  },
+  {
+    speaker1: "Are you good at solving puzzles?",
+    speaker2: "Yes, I enjoy challenging puzzles.",
+  },
+  {
+    speaker1: "Are you a fan of classical music?",
+    speaker2: "Yes, I appreciate classical compositions.",
+  },
+  {
+    speaker1: "Do you enjoy camping?",
+    speaker2: "No, I am not a fan of camping.",
+  },
+  {
+    speaker1: "Have you ever tried skydiving?",
+    speaker2: "No, I have not attempted skydiving.",
+  },
+  {
+    speaker1: "Is it hot outside?",
+    speaker2: "Yes, it's quite hot.",
+  },
+  {
+    speaker1: "Does your mom cook dinner every day?",
+    speaker2: "Yes, my mom cooks dinner every day.",
+  },
+  {
+    speaker1: "Do you have a smartphone?",
+    speaker2: "Yes, I have a smartphone.",
+  },
+  {
+    speaker1: "What time do you go to bed?",
+    speaker2: "I go to bed at 11:00 PM.",
+  },
+  {
+    speaker1: "Do you enjoy listening to music?",
+    speaker2: "Yes, I love listening to music.",
+  },
+  {
+    speaker1: "What's your favorite type of music?",
+    speaker2: "My favorite type of music is rock.",
+  },
+  {
+    speaker1: "Do you play any sports?",
+    speaker2: "Yes, I play basketball.",
+  },
+  {
+    speaker1: "What's your favorite sport to watch?",
+    speaker2: "My favorite sport to watch is basketball.",
+  },
+  {
+    speaker1: "Do you exercise regularly?",
+    speaker2: "Yes, I go to the gym regularly.",
+  },
+  {
+    speaker1: "Will you join us for dinner tonight?",
+    speaker2: "Yes, I will. Thank you for inviting me.",
+  },
+  {
+    speaker1: "What do you plan to do after graduation?",
+    speaker2: "I am planning to travel around Europe for a few months.",
+  },
+  {
+    speaker1: "Are you going to the concert next week?",
+    speaker2: "Yes, I am. I already bought my ticket.",
+  },
+  {
+    speaker1: "Did you have a good time at the party last night?",
+    speaker2: "Yes, I did. It was a lot of fun.",
+  },
+  {
+    speaker1: "Are you going to visit your family during the holidays?",
+    speaker2: "Yes, I am. I'm looking forward to spending time with them.",
+  },
+  {
+    speaker1: "Will you be attending the conference next month?",
+    speaker2: "Yes, I will. I've already registered for it.",
+  },
+  {
+    speaker1: "What do you think you'll do if you win the lottery?",
+    speaker2:
+      "I'll probably travel around the world and then invest some of the money.",
+  },
+  {
+    speaker1: "What are you currently reading?",
+    speaker2:
+      "I'm reading a mystery novel called 'The Girl on the Train.' It's really intriguing.",
+  },
+  {
+    speaker1: "Where would you like to go on your next vacation?",
+    speaker2: "I would like to go to Switzerland.",
+  },
+  {
+    speaker1: "Do you prefer traveling by plane or by train?",
+    speaker2: "I prefer traveling by train.",
+  },
+  {
+    speaker1: "What are your hobbies?",
+    speaker2: "My hobbies are reading, playing sports, and cooking.",
+  },
+  {
+    speaker1: "What's your favorite app?",
+    speaker2: "My favorite app is Google Maps.",
+  },
+  {
+    speaker1: "Are you good at Math?",
+    speaker2:
+      "Yes, I find math to be less stressful to study, compared to other subjects.",
+  },
+  {
+    speaker1: "What's your favorite website?",
+    speaker2: "My favorite website is YouTube.",
+  },
+  {
+    speaker1: "How long have you been here?",
+    speaker2: "I have been here for 5 weeks.",
+  },
+  {
+    speaker1: "What is your hobby?",
+    speaker2: "I like playing sports, especially soccer.",
+  },
+  {
+    speaker1: "How much money do you have?",
+    speaker2: "I only have $20, not a lot.",
+  },
+  {
+    speaker1: "Do you enjoy reading?",
+    speaker2: "Yes, I love reading books.",
+  },
+  {
+    speaker1: "Where did you go on your last vacation?",
+    speaker2: "I went to Thailand.",
+  },
+  {
+    speaker1: "What's your favorite music genre?",
+    speaker2: "I like listening to rock music.",
+  },
+  {
+    speaker1: "What's your favorite animal?",
+    speaker2: "I love dolphins.",
+  },
+  {
+    speaker1: "What's your dream job?",
+    speaker2: "I want to be a pilot.",
+  },
+  {
+    speaker1: "Have you ever ridden a horse?",
+    speaker2: "Yes, I have ridden a horse.",
+  },
+  {
+    speaker1: "Can you whistle?",
+    speaker2: "Yes, I can whistle.",
+  },
+  {
+    speaker1: "What's your favorite flower?",
+    speaker2: "My favorite flower is the rose.",
+  },
+  {
+    speaker1: "Do you like to go for long walks?",
+    speaker2: "Yes, I find long walks relaxing.",
+  },
+  {
+    speaker1: "Do you like to go to the beach?",
+    speaker2: "Yes, I enjoy going to the beach.",
+  },
+  {
+    speaker1: "Are you hungry?",
+    speaker2: "Yes, I'm starving.",
+  },
+  {
+    speaker1: "What's your favorite type of cuisine?",
+    speaker2: "I love Mexican cuisine.",
+  },
+  {
+    speaker1: "Are you allergic to anything?",
+    speaker2: "Yes, I'm allergic to cats.",
+  },
+  {
+    speaker1: "Are you thirsty?",
+    speaker2: "A little.",
+  },
+  {
+    speaker1: "What do you want to eat?",
+    speaker2: "Some fruit.",
+  },
+  {
+    speaker1: "Do you like Indian food?",
+    speaker2: "I love Indian food.",
+  },
+  {
+    speaker1: "Are you feeling okay?",
+    speaker2: "I don't feel well.",
+  },
+  {
+    speaker1: "What are you smiling about?",
+    speaker2: "I think I am in love.",
+  },
+  {
+    speaker1: "Do you need a few minutes?",
+    speaker2: "I think we're ready.",
+  },
+  {
+    speaker1: "What's new with you?",
+    speaker2: "I got a new job in the city.",
+  },
+  {
+    speaker1: "Were you with anyone?",
+    speaker2: "I was all alone.",
+  },
+  {
+    speaker1: "Are you still feeling sick?",
+    speaker2: "I feel much better.",
+  },
+  {
+    speaker1: "Would you like something to eat?",
+    speaker2: "No, I'm full.",
+  },
+  {
+    speaker1: "Do you think you're healthy?",
+    speaker2: "I eat vegetables each day and exercise regularly.",
+  },
+  {
+    speaker1: "How did you make it?",
+    speaker2: "I know how to do it.",
+  },
+  {
+    speaker1: "Do you like shopping?",
+    speaker2: "Yes, I'm a shopaholic.",
+  },
+  {
+    speaker1: "What's your favorite website?",
+    speaker2: "I think it's probably YouTube.com.",
+  },
+  {
+    speaker1: "Where are my keys?",
+    speaker2:
+      "I don't know. They were on the table, but they're not there now.",
+  },
+  {
+    speaker1: "What are you doing?",
+    speaker2: "I'm doing my homework.",
+  },
+  {
+    speaker1: "What do you think about this book?",
+    speaker2: "I think the book is very interesting.",
+  },
+  {
+    speaker1: "Do you travel much?",
+    speaker2: "I'd like to. I used to travel several times a year.",
+  },
+  {
+    speaker1: "Do you play sports?",
+    speaker2: "No, I used to swim every day.",
+  },
+  {
+    speaker1: "Are you coming with me?",
+    speaker2: "No, I don't think so. I'm staying here.",
+  },
+  {
+    speaker1: "How high is the fence?",
+    speaker2: "It's about 6 ft high.",
+  },
+  {
+    speaker1: "Can you read websites in English?",
+    speaker2: "Yes, I can. Most useful websites are written in English.",
+  },
+  {
+    speaker1: "Do you have a driving license?",
+    speaker2: "Yes, I do. I always keep it in my purse.",
+  },
+  {
+    speaker1: "Do you like it here?",
+    speaker2: "I love it here.",
+  },
+  {
+    speaker1: "Should I go to the store?",
+    speaker2: "No, I'll go.",
+  },
+  {
+    speaker1: "Have you ever been to South Korea?",
+    speaker2: "Yes, once.",
+  },
+  {
+    speaker1: "Are your parents at home?",
+    speaker2: "No, they're out.",
+  },
+  {
+    speaker1: "Don't you want to watch TV?",
+    speaker2: "No, I'd rather read my novel.",
+  },
+  {
+    speaker1: "What do you usually shop for?",
+    speaker2: "I usually shop for clothes. I'm a big fashion fan.",
+  },
+  {
+    speaker1: "How far is it from here?",
+    speaker2: "It's about a mile.",
+  },
+  {
+    speaker1: "Have you read this book?",
+    speaker2: "Yes, I've read it twice.",
+  },
+  {
+    speaker1: "What's wrong?",
+    speaker2: "I'm feeling a bit down.",
+  },
+  {
+    speaker1: "With whom did you go?",
+    speaker2: "I went with my best friend.",
+  },
+  {
+    speaker1: "Which one is it?",
+    speaker2: "It's the red one.",
+  },
+  {
+    speaker1: "Whom can you count on?",
+    speaker2: "It's the blue one.",
+  },
+  {
+    speaker1: "How did it happen?",
+    speaker2: "It was an accident.",
+  },
+  {
+    speaker1: "How does it work?",
+    speaker2: "It works by using electricity.",
+  },
+  {
+    speaker1: "How do you know?",
+    speaker2: "I know because I saw it.",
+  },
+  {
+    speaker1: "How can we improve?",
+    speaker2: "We can improve by working together.",
+  },
+  {
+    speaker1: "How do you feel about it?",
+    speaker2: "I feel good about it.",
+  },
+  {
+    speaker1: "How was your day?",
+    speaker2: "My day was good, thanks for asking.",
+  },
+  {
+    speaker1: "What are you going to do tomorrow?",
+    speaker2: "I'm not sure yet.",
+  },
+  {
+    speaker1: "How long have you been working?",
+    speaker2: "This will be my 20th year in the business.",
+  },
+  {
+    speaker1: "How long have you been unemployed?",
+    speaker2: "It's been 2 months already.",
+  },
+  {
+    speaker1: "Why don't you come to the movies with me?",
+    speaker2: "Let me grab my purse.",
+  },
+  {
+    speaker1: "Have you got used to life in Canada?",
+    speaker2: "Yes, I have got used to it.",
+  },
+  {
+    speaker1: "Do you drink alcohol?",
+    speaker2: "Occasionally, I drink alcohol.",
+  },
+  {
+    speaker1: "Do you want to get off here?",
+    speaker2: "No, I'll get off on the next stop.",
+  },
+  {
+    speaker1: "How do you feel about this one?",
+    speaker2: "This one is better than the first one.",
+  },
+  {
+    speaker1: "Do I need an operation?",
+    speaker2: "I don't think that will be necessary.",
+  },
+  {
+    speaker1: "How was it?",
+    speaker2: "It was very interesting.",
+  },
+  {
+    speaker1: "What do you study?",
+    speaker2: "My major is economics.",
+  },
+  {
+    speaker1: "Do you have any hobbies?",
+    speaker2: "I like skiing.",
+  },
+  {
+    speaker1: "Do you have one in a smaller size?",
+    speaker2: "Sorry, but the smaller sizes are out of stock.",
+  },
+  {
+    speaker1: "What are you going to do with the books?",
+    speaker2: "Sell them to a secondhand bookstore.",
+  },
+  {
+    speaker1: "Where is the library?",
+    speaker2: "It's around the corner from the post office.",
+  },
+  {
+    speaker1: "Why not go out for a walk?",
+    speaker2: "I'm a little sick.",
+  },
+  {
+    speaker1: "What do you do in your free time?",
+    speaker2: "I like cooking at home.",
+  },
+  {
+    speaker1: "How about having dinner with me?",
+    speaker2: "I like cooking at home.",
+  },
+  {
+    speaker1: "May I come over next Monday?",
+    speaker2: "Yes, please come anytime.",
+  },
+  {
+    speaker1: "Will you come and pick me up?",
+    speaker2: "What time?",
+  },
+  {
+    speaker1: "Did you have a good weekend?",
+    speaker2: "Yes, it was nice.",
+  },
+  {
+    speaker1: "How was your flight?",
+    speaker2: "It was not bad.",
+  },
+  {
+    speaker1: "Is this your first time in the US?",
+    speaker2: "Yes, it is. I'm very excited.",
+  },
+  {
+    speaker1: "Do you like cream or sugar in your coffee?",
+    speaker2: "Yes, my favorite is French vanilla creamer.",
+  },
+  {
+    speaker1: "Do you have any plans to go sightseeing?",
+    speaker2: "Yes, every day.",
+  },
+  {
+    speaker1: "How long will you be staying?",
+    speaker2: "Two weeks.",
+  },
+  {
+    speaker1: "Are you familiar with this area?",
+    speaker2: "A little bit. I work nearby.",
+  },
+  {
+    speaker1: "What's your occupation?",
+    speaker2: "I'm a freelance web designer.",
+  },
+  {
+    speaker1: "How long have you been skiing?",
+    speaker2: "Only 5 years. I will teach you some basics.",
+  },
+  {
+    speaker1: "Do you do any sport in your free time?",
+    speaker2: "I play sports.",
+  },
+  {
+    speaker1: "What do you do when you have free time?",
+    speaker2: "I love to read and listen to music.",
+  },
+  {
+    speaker1: "Who is your favorite author?",
+    speaker2: "I have so many, but I really like books about history.",
+  },
+  {
+    speaker1: "Would you like to try bungee jumping with me?",
+    speaker2:
+      "Yes , Bungee jumping is different and, in my opinion, it is more of a mental challenge than skydiving. This is because it is YOU who decides to jump",
+  },
+  {
+    speaker1: "Excuse me, do you need any help?",
+    speaker2: "Yes, I am looking for a new book to read.",
+  },
+  {
+    speaker1: "What kind of books are you interested in?",
+    speaker2: "I like fantasy books. I love Harry Potter.",
+  },
+  {
+    speaker1: "How many times a week do you exercise?",
+    speaker2: "I exercise 4 days each week.",
+  },
+  {
+    speaker1: "How much do you weigh?",
+    speaker2: "I think about 185 lb.",
+  },
+  {
+    speaker1: "Do you often go to concerts?",
+    speaker2: "I don't go often.",
+  },
+  {
+    speaker1: "When did you buy the car?",
+    speaker2: "This April.",
+  },
+  {
+    speaker1: "Do you have a lot of sleepless nights?",
+    speaker2: "Not recently, but I did before.",
+  },
+  {
+    speaker1: "Have you heard the weather forecast?",
+    speaker2: "No, what does it say?",
+  },
+  {
+    speaker1: "What kind of product do you want?",
+    speaker2: "I want a facial moisturizer.",
+  },
+  {
+    speaker1: "Can you run fast?",
+    speaker2: "No, I run very slowly, but my brother is fast.",
+  },
+  {
+    speaker1: "What would you like to drink?",
+    speaker2: "What do you have?",
+  },
+  {
+    speaker1: "Are there any questions?",
+    speaker2: "No questions, everything's clear.",
+  },
+  {
+    speaker1: "Who broke this window?",
+    speaker2: "Your neighbor broke the window.",
+  },
+  {
+    speaker1: "When do you get up every day?",
+    speaker2: "I usually get up at 7:00.",
+  },
+  {
+    speaker1: "What kind of sports do you like?",
+    speaker2: "I like swimming.",
+  },
+  {
+    speaker1: "How do you feel today?",
+    speaker2: "Just so-so.",
+  },
+  {
+    speaker1: "How many people are in your family?",
+    speaker2: "We are seven in the family.",
+  },
+  {
+    speaker1: "Have you heard the weather forecast?",
+    speaker2: "No, what does it say?",
+  },
+  {
+    speaker1: "How was your holiday?",
+    speaker2: "It was fun and exciting.",
+  },
+  {
+    speaker1: "Don't you think we should break up?",
+    speaker2: "Is that what you really want?",
+  },
+  {
+    speaker1: "When will the birthday party start?",
+    speaker2: "It will start around noon.",
+  },
+  {
+    speaker1: "Weren't you just there 2 days ago?",
+    speaker2:
+      "Practice makes perfect and it is good both for your body and spirit.",
+  },
+  {
+    speaker1: "Do you like your new job?",
+    speaker2: "It's okay, but I wish it were more interesting.",
+  },
+  {
+    speaker1: "Hello, did you hear me?",
+    speaker2: "Sorry, I didn't get your question.",
+  },
+  {
+    speaker1: "How long have you been living here?",
+    speaker2: "I've been living here for 6 months.",
+  },
+  {
+    speaker1: "Where did you move from?",
+    speaker2: "I moved from the countryside.",
+  },
+  {
+    speaker1: "Any plans today?",
+    speaker2: "Why don't we play Scrabble outside?",
+  },
+  {
+    speaker1: "Hello, how may I help you?",
+    speaker2: "I would like to get a haircut.",
+  },
+  {
+    speaker1: "Are you sure it's no problem?",
+    speaker2: "I have a lot of experience.",
+  },
+  {
+    speaker1: "What's the reason for the occasion?",
+    speaker2: "It's my housewarming. I just moved here.",
+  },
+  {
+    speaker1: "Have you eaten anything today?",
+    speaker2: "No, I just had some tea this morning.",
+  },
+  {
+    speaker1: "Have you read the newspaper?",
+    speaker2: "No, why? What happened?",
+  },
+  {
+    speaker1: "Have you been to this conference before?",
+    speaker2: "No, it's my first time.",
+  },
+  {
+    speaker1: "Where exactly?",
+    speaker2: "In the mall's food court.",
+  },
+  {
+    speaker1: "Do you prefer movies or television shows?",
+    speaker2: "I can't live without movies.",
+  },
+  {
+    speaker1: "What's your name?",
+    speaker2: "My name is Jack.",
+  },
+  {
+    speaker1: "How are you?",
+    speaker2: "I'm good, thank you. And you?",
+  },
+  {
+    speaker1: "I am fine. Where are you from?",
+    speaker2: "I'm from Canada.",
+  },
+  {
+    speaker1: "Do you speak English?",
+    speaker2: "Yes, I speak a little English.",
+  },
+  {
+    speaker1: "What's your favorite color?",
+    speaker2: "My favorite color is red.",
+  },
+  {
+    speaker1: "Are you married?",
+    speaker2: "No, I'm single.",
+  },
+  {
+    speaker1: "How old are you?",
+    speaker2: "I'm 24 years old.",
+  },
+  {
+    speaker1: "Do you have any siblings?",
+    speaker2: "Yes, I have one brother and one sister.",
+  },
+  {
+    speaker1: "What do you do?",
+    speaker2: "I'm a student.",
+  },
+  {
+    speaker1: "What time is it?",
+    speaker2: "It's 3:00.",
+  },
+  {
+    speaker1: "Do you like coffee?",
+    speaker2: "Yes, I like coffee very much.",
+  },
+  {
+    speaker1: "How many oranges are there?",
+    speaker2: "There are three oranges.",
+  },
+  {
+    speaker1: "Is it hot today?",
+    speaker2: "Yes, it's very hot today.",
+  },
+  {
+    speaker1: "What are you doing?",
+    speaker2: "I'm reading a book.",
+  },
+  {
+    speaker1: "Can you swim?",
+    speaker2: "Yes, I can swim.",
+  },
+  {
+    speaker1: "What color is your car?",
+    speaker2: "My car is red.",
+  },
+  {
+    speaker1: "What do you like to do in your free time?",
+    speaker2: "I like to listen to music.",
+  },
+  {
+    speaker1: "Do you have a pet?",
+    speaker2: "Yes, I have a dog.",
+  },
+  {
+    speaker1: "What's your favorite food?",
+    speaker2: "My favorite food is pizza.",
+  },
+  {
+    speaker1: "Do you have a job?",
+    speaker2: "Yes, I work as a teacher.",
+  },
+  {
+    speaker1: "Can you play the guitar?",
+    speaker2: "No, I can't play the guitar.",
+  },
+  {
+    speaker1: "Where did you go yesterday?",
+    speaker2: "I went to the park.",
+  },
+  {
+    speaker1: "What's the weather like?",
+    speaker2: "It's sunny.",
+  },
+  {
+    speaker1: "What did you eat for breakfast?",
+    speaker2: "I ate eggs and toast.",
+  },
+  {
+    speaker1: "How do you go to school?",
+    speaker2: "I go to school by bus.",
+  },
+  {
+    speaker1: "What's your favorite movie?",
+    speaker2: "My favorite movie is The Mummy.",
+  },
+  {
+    speaker1: "Do you like to travel?",
+    speaker2: "Yes, I love to travel.",
+  },
+  {
+    speaker1: "What's your dream job?",
+    speaker2: "My dream job is to be a scientist.",
+  },
+  {
+    speaker1: "Do you like sports?",
+    speaker2: "Yes, I like playing football.",
+  },
+  {
+    speaker1: "What did you do last weekend?",
+    speaker2: "I went to the beach.",
+  },
+  {
+    speaker1: "How many languages do you speak?",
+    speaker2: "I speak three languages.",
+  },
+  {
+    speaker1: "Where is the nearest supermarket?",
+    speaker2: "It's on Main Street, next to the bank.",
+  },
+  {
+    speaker1: "What's your favorite season?",
+    speaker2: "My favorite season is Winter.",
+  },
+  {
+    speaker1: "Do you prefer tea or coffee?",
+    speaker2: "I prefer tea.",
+  },
+  {
+    speaker1: "How are you feeling today?",
+    speaker2: "I'm feeling a bit tired today.",
+  },
+  {
+    speaker1: "What's your favorite book?",
+    speaker2: "My favorite book is Harry Potter.",
+  },
+  {
+    speaker1: "Can you help me?",
+    speaker2: "Yes, what do you need?",
+  },
+  {
+    speaker1: "Where did you learn English?",
+    speaker2: "I learned English at school.",
+  },
+  {
+    speaker1: "What time do you wake up?",
+    speaker2: "I wake up at 7 AM.",
+  },
+  {
+    speaker1: "Do you have any plans for the weekend?",
+    speaker2: "Yes, I'm going to visit my family.",
+  },
+  {
+    speaker1: "Do you like to cook?",
+    speaker2: "Yes, I enjoy cooking very much.",
+  },
+  {
+    speaker1: "What's your favorite TV show?",
+    speaker2: "My favorite TV show is Friends.",
+  },
+  {
+    speaker1: "Can you drive a car?",
+    speaker2: "Yes, I can drive.",
+  },
+  {
+    speaker1: "What's your favorite type of music?",
+    speaker2: "I like pop music.",
+  },
+  {
+    speaker1: "Do you have a computer?",
+    speaker2: "Yes, I have a laptop.",
+  },
+  {
+    speaker1: "What color are your eyes?",
+    speaker2: "My eyes are brown.",
+  },
+  {
+    speaker1: "Do you like to dance?",
+    speaker2: "No, I don't like dancing.",
+  },
+  {
+    speaker1: "What's your father's name?",
+    speaker2: "My father's name is John.",
+  },
+  {
+    speaker1: "How many rooms are there in your house?",
+    speaker2: "There are five rooms.",
+  },
+  {
+    speaker1: "Do you like ice cream?",
+    speaker2: "Yes, I love ice cream.",
+  },
+  {
+    speaker1: "What did you do for your last birthday?",
+    speaker2: "I had a party with my friends.",
+  },
+  {
+    speaker1: "Do you exercise regularly?",
+    speaker2: "Yes, I go to the gym three times a week.",
+  },
+  {
+    speaker1: "Have you ever been to another country?",
+    speaker2: "Yes, I've been to France.",
+  },
+  {
+    speaker1: "What do you usually have for lunch?",
+    speaker2: "I usually have a sandwich.",
+  },
+  {
+    speaker1: "Do you prefer hot or cold weather?",
+    speaker2: "I prefer hot weather.",
+  },
+  {
+    speaker1: "What's your mother's name?",
+    speaker2: "My mother's name is Mary.",
+  },
+  {
+    speaker1: "What's your favorite dessert?",
+    speaker2: "My favorite dessert is chocolate cake.",
+  },
+  {
+    speaker1: "How do you relax?",
+    speaker2: "I relax by taking a long walk.",
+  },
+  {
+    speaker1: "What's your favorite drink?",
+    speaker2: "My favorite drink is water.",
+  },
+  {
+    speaker1: "Are you good at drawing?",
+    speaker2: "No, I'm not very good at drawing.",
+  },
+  {
+    speaker1: "What's your favorite fruit?",
+    speaker2: "My favorite fruit is an apple.",
+  },
+  {
+    speaker1: "Do you prefer the city or the countryside?",
+    speaker2: "I prefer the countryside.",
+  },
+  {
+    speaker1: "Do you like to go shopping?",
+    speaker2: "Yes, I like shopping.",
+  },
+  {
+    speaker1: "What's your favorite vegetable?",
+    speaker2: "My favorite vegetable is broccoli.",
+  },
+  {
+    speaker1: "Have you ever been on a boat?",
+    speaker2: "Yes, I've been on a boat.",
+  },
+  {
+    speaker1: "Do you like to go to the beach?",
+    speaker2: "Yes, I love the beach.",
+  },
+  {
+    speaker1: "What's your favorite game?",
+    speaker2: "My favorite game is chess.",
+  },
+  {
+    speaker1: "How do you get to work?",
+    speaker2: "I take the subway to work.",
+  },
+  {
+    speaker1: "Do you have a garden?",
+    speaker2: "No, I don't have a garden.",
+  },
+  {
+    speaker1: "What's your favorite thing to do on weekends?",
+    speaker2: "I love hiking in the mountains.",
+  },
+  {
+    speaker1: "What's your favorite snack?",
+    speaker2: "My favorite snack is popcorn.",
+  },
+  {
+    speaker1: "Do you use social media?",
+    speaker2: "Yes, I use social media regularly.",
+  },
+  {
+    speaker1: "What's your favorite time of day?",
+    speaker2: "My favorite time of day is evening.",
+  },
+  {
+    speaker1: "Do you have a favorite restaurant?",
+    speaker2: "Yes, my favorite restaurant serves Italian food.",
+  },
+  {
+    speaker1: "Have you ever been to a concert?",
+    speaker2: "Yes, I've been to a few concerts.",
+  },
+  {
+    speaker1: "Do you prefer to travel by plane, train, or car?",
+    speaker2: "I prefer to travel by plane.",
+  },
+  {
+    speaker1: "What color is your bedroom?",
+    speaker2: "My bedroom is painted light pink.",
+  },
+  {
+    speaker1: "What's your favorite thing to do with friends?",
+    speaker2: "I love going to the movies with my friends.",
+  },
+  {
+    speaker1: "What's your favorite kind of pizza?",
+    speaker2: "I love pepperoni pizza.",
+  },
+  {
+    speaker1: "Do you have any plants at home?",
+    speaker2: "Yes, I have a few indoor plants.",
+  },
+  {
+    speaker1: "What's your favorite day of the week?",
+    speaker2: "My favorite day is Saturday because I can relax.",
+  },
+  {
+    speaker1: "Do you like to write stories or poems?",
+    speaker2: "I like to write stories when I have time.",
+  },
+  {
+    speaker1: "What's your favorite thing to wear?",
+    speaker2: "I love wearing comfortable jeans and a t-shirt.",
+  },
+  {
+    speaker1: "What's your favorite fruit juice?",
+    speaker2: "My favorite juice is orange juice.",
+  },
+  {
+    speaker1: "Do you like to watch cartoons?",
+    speaker2: "Yes, I enjoy watching cartoons sometimes.",
+  },
+  {
+    speaker1: "Do you like to take photographs?",
+    speaker2: "Yes, I enjoy taking photos, especially of nature.",
+  },
+  {
+    speaker1: "Do you like to sing?",
+    speaker2: "Yes, I like singing, but I'm not very good at it.",
+  },
+  {
+    speaker1: "What did you buy from the store last time?",
+    speaker2: "I bought some fruits and vegetables.",
+  },
+  {
+    speaker1: "Have you ever been to a zoo?",
+    speaker2: "Yes, I've been to the zoo many times.",
+  },
+  {
+    speaker1: "Do you have a best friend?",
+    speaker2: "Yes, I have a best friend named Alex.",
+  },
+  {
+    speaker1: "What's your favorite thing to do in the city?",
+    speaker2: "My favorite thing to do is visit museums.",
+  },
+  {
+    speaker1: "What's the last movie you saw?",
+    speaker2: "The last movie I saw was The Incredibles 2.",
+  },
+  {
+    speaker1: "What's something you're really good at?",
+    speaker2: "I'm really good at solving puzzles.",
+  },
+  {
+    speaker1: "What's your favorite thing to do on a rainy day?",
+    speaker2: "I love to read a book or watch movies on rainy days.",
+  },
+  {
+    speaker1: "Do you like to learn new things?",
+    speaker2: "I'm always curious and love learning.",
+  },
+  {
+    speaker1: "Tea or coffee?",
+    speaker2: "Tea for sure!",
+  },
+  {
+    speaker1: "How are you feeling today?",
+    speaker2: "A bit tired, honestly.",
+  },
+  {
+    speaker1: "What's your favorite book?",
+    speaker2: "Harry Potter, hands down!",
+  },
+  {
+    speaker1: "Can you help me?",
+    speaker2: "Of course! What do you need?",
+  },
+  {
+    speaker1: "Where did you learn English?",
+    speaker2: "I learned it at school.",
+  },
+  {
+    speaker1: "What time do you wake up?",
+    speaker2: "Usually around 7 AM.",
+  },
+  {
+    speaker1: "Got any weekend plans?",
+    speaker2: "Yep, visiting my family!",
+  },
+  {
+    speaker1: "Do you like cooking?",
+    speaker2: "I love it! It’s fun!",
+  },
+  {
+    speaker1: "What's your favorite TV show?",
+    speaker2: "Definitely Friends.",
+  },
+  {
+    speaker1: "Can you drive?",
+    speaker2: "Yep, I can!",
+  },
+  {
+    speaker1: "What's your favorite music?",
+    speaker2: "I’m all about pop music.",
+  },
+  {
+    speaker1: "Do you have a computer?",
+    speaker2: "Yeah, I have a laptop.",
+  },
+  {
+    speaker1: "What color are your eyes?",
+    speaker2: "They’re brown.",
+  },
+  {
+    speaker1: "Do you like dancing?",
+    speaker2: "Not really, but it's fun to watch!",
+  },
+  {
+    speaker1: "What’s your dad’s name?",
+    speaker2: "He’s John!",
+  },
+  {
+    speaker1: "How many rooms in your house?",
+    speaker2: "There are five.",
+  },
+  {
+    speaker1: "Love ice cream?",
+    speaker2: "Oh yes, who doesn’t?",
+  },
+  {
+    speaker1: "What did you do for your last birthday?",
+    speaker2: "Had a fun party with my friends!",
+  },
+  {
+    speaker1: "Do you work out?",
+    speaker2: "Yeah, three times a week!",
+  },
+  {
+    speaker1: "Been to any other countries?",
+    speaker2: "Yep, I’ve been to France!",
+  },
+  {
+    speaker1: "What's your go-to lunch?",
+    speaker2: "A classic sandwich!",
+  },
+  {
+    speaker1: "Hot or cold weather?",
+    speaker2: "Hot weather for sure!",
+  },
+  {
+    speaker1: "What’s your mom’s name?",
+    speaker2: "She’s Mary.",
+  },
+  {
+    speaker1: "What's your favorite dessert?",
+    speaker2: "Chocolate cake, always!",
+  },
+  {
+    speaker1: "How do you relax?",
+    speaker2: "A nice long walk.",
+  },
+  {
+    speaker1: "What’s your favorite drink?",
+    speaker2: "Water—it’s simple and healthy!",
+  },
+  {
+    speaker1: "Are you good at drawing?",
+    speaker2: "Not really, but I try!",
+  },
+  {
+    speaker1: "What’s your favorite fruit?",
+    speaker2: "Apples!",
+  },
+  {
+    speaker1: "City or countryside?",
+    speaker2: "I love the peace of the countryside.",
+  },
+  {
+    speaker1: "Do you like shopping?",
+    speaker2: "Yep, it’s fun!",
+  },
+  {
+    speaker1: "What's your favorite veggie?",
+    speaker2: "Broccoli—it’s delicious!",
+  },
+  {
+    speaker1: "Ever been on a boat?",
+    speaker2: "Yes, and it was awesome!",
+  },
+  {
+    speaker1: "Love the beach?",
+    speaker2: "Absolutely, it’s my happy place!",
+  },
+  {
+    speaker1: "What's your favorite game?",
+    speaker2: "I’m a chess fan.",
+  },
+  {
+    speaker1: "How do you get to work?",
+    speaker2: "I take the subway.",
+  },
+  {
+    speaker1: "Got a garden?",
+    speaker2: "Nope, but I’d love one!",
+  },
+  {
+    speaker1: "What’s your weekend hobby?",
+    speaker2: "Hiking in the mountains.",
+  },
+  {
+    speaker1: "What's your favorite snack?",
+    speaker2: "Popcorn, for sure.",
+  },
+  {
+    speaker1: "Do you use social media?",
+    speaker2: "Yep, quite a bit!",
+  },
+  {
+    speaker1: "Favorite time of day?",
+    speaker2: "Evening—perfect to unwind.",
+  },
+  {
+    speaker1: "Do you have a favorite restaurant?",
+    speaker2: "Yep, I love Italian food.",
+  },
+  {
+    speaker1: "Been to any concerts?",
+    speaker2: "Yes, I’ve been to a few.",
+  },
+  {
+    speaker1: "Plane, train, or car?",
+    speaker2: "I love flying!",
+  },
+  {
+    speaker1: "What color is your room?",
+    speaker2: "It’s light pink.",
+  },
+  {
+    speaker1: "Favorite thing to do with friends?",
+    speaker2: "Going to the movies!",
+  },
+  {
+    speaker1: "Favorite pizza topping?",
+    speaker2: "Pepperoni!",
+  },
+  {
+    speaker1: "Do you have plants at home?",
+    speaker2: "Yes, just a few.",
+  },
+  {
+    speaker1: "Favorite day of the week?",
+    speaker2: "Saturday—time to relax!",
+  },
+  {
+    speaker1: "Do you like writing stories?",
+    speaker2: "Yeah, I write when I have time.",
+  },
+  {
+    speaker1: "What's your favorite outfit?",
+    speaker2: "Comfy jeans and a t-shirt.",
+  },
+  {
+    speaker1: "Favorite juice?",
+    speaker2: "Orange juice!",
+  },
+  {
+    speaker1: "Do you watch cartoons?",
+    speaker2: "Sometimes, they’re fun!",
+  },
+  {
+    speaker1: "Do you like photography?",
+    speaker2: "Yes, especially nature pics!",
+  },
+  {
+    speaker1: "Do you sing?",
+    speaker2: "I do, but I’m not great at it!",
+  },
+  {
+    speaker1: "What did you buy last at the store?",
+    speaker2: "Some fruit and veggies.",
+  },
+  {
+    speaker1: "Ever been to a zoo?",
+    speaker2: "Yes, many times!",
+  },
+  {
+    speaker1: "Do you have a best friend?",
+    speaker2: "Yes, my best friend is Alex.",
+  },
+  {
+    speaker1: "Favorite thing to do in the city?",
+    speaker2: "Visiting museums!",
+  },
+  {
+    speaker1: "What's the last movie you saw?",
+    speaker2: "The Incredibles 2!",
+  },
+  {
+    speaker1: "What are you really good at?",
+    speaker2: "I’m great at solving puzzles!",
+  },
+  {
+    speaker1: "Favorite thing to do on a rainy day?",
+    speaker2: "Reading a book or watching a movie.",
+  },
+  {
+    speaker1: "Do you like learning new things?",
+    speaker2: "Always! I love learning!",
   },
 ];

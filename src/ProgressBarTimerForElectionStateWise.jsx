@@ -7,13 +7,14 @@ const ThirtySecCounter = ({
   diff,
   name,
   votes,
-  item,
+  mode = "new",
   // progress=0
 }) => {
   const [timeLeft, setTimeLeft] = useState(time);
   const [showRsult, setShowResult] = useState(false);
 
   let progress = 0;
+  let interval = mode === "new" ? 20 : 5;
   useEffect(() => {
     // if (!timeLeft) {
     //   setShowResult(true);
@@ -23,14 +24,14 @@ const ThirtySecCounter = ({
       // setTimeLeft((current) => 0);
       // time = 0;
       setShowResult(true);
-      progress = 0;
+      // progress = 0;
       console.log("end running", progress);
       return;
     }
     setShowResult(false);
     const intervalId = setInterval(() => {
       setTimeLeft((prevTimeLeft) => prevTimeLeft + 0.1);
-    }, 10);
+    }, interval);
     return () => {
       clearInterval(intervalId);
       // clearInterval(intervalId1);
@@ -38,31 +39,31 @@ const ThirtySecCounter = ({
   }, [timeLeft]);
 
   useEffect(() => {
-    const intervalId1 = setInterval(() => {
-      setTimeLeft((prevTimeLeft) => time);
-      console.log("set time run");
-      progress = 0;
-    }, 11000);
-    return () => {
-      // clearInterval(intervalId);
-      clearInterval(intervalId1);
-    };
+    // const intervalId1 = setInterval(() => {
+    //   setTimeLeft((prevTimeLeft) => time);
+    //   console.log("set time run");
+    //   progress = 0;
+    // }, 11000);
+    // return () => {
+    //   // clearInterval(intervalId);
+    //   clearInterval(intervalId1);
+    // };
   }, []);
-  // useEffect(() => {
-  //   // setTimeLeft((current) => 0);
-  //   // setTimeLeft((current) => 0);
-  //   // const intervalId1 = setInterval(() => {
-  //   //   setTimeLeft((prevTimeLeft) => time);
-  //   //   console.log("set time run");
-  //   //   progress = 0;
-  //   // }, 11000);
-  //   // return () => {
-  //   //   // clearInterval(intervalId);
-  //   //   clearInterval(intervalId1);
-  //   // };
-  //   setTimeLeft((prevTimeLeft) => time);
-  //   // progress = 0;
-  // }, [time]);
+  useEffect(() => {
+    // setTimeLeft((current) => 0);
+    // setTimeLeft((current) => 0);
+    // const intervalId1 = setInterval(() => {
+    //   setTimeLeft((prevTimeLeft) => time);
+    //   console.log("set time run");
+    //   progress = 0;
+    // }, 11000);
+    // return () => {
+    //   // clearInterval(intervalId);
+    //   clearInterval(intervalId1);
+    // };
+    setTimeLeft((prevTimeLeft) => time);
+    // progress = 0;
+  }, [time]);
 
   progress = (timeLeft - time) / 100;
   // console.log("progress amount: " + progress);
@@ -79,14 +80,36 @@ const ThirtySecCounter = ({
       >
         {showRsult && (
           <>
+            {(mode !== "old" && diff>0) && (
+              <span
+                className={`capitalize absolute h-full ${
+                  color === 2 ? "text-green-500" : "text-green-500"
+                } flex items-end gap-2 right-[200px] -top-16 pb-2 text-3xl font-semibold`}
+              >
+                {color === 2 ? "Kamala" : "Trump"}
+                <b className="text-wrap !text-lg font-normal">projected winner</b>
+              </span>
+            )}
             <span className="text-sm absolute h-full text-cyan-50 flex items-start right-[20px] top-0 font-semibold">
               {color === 2 ? (
-                <i className="text-white">Kamala</i>
+                <i
+                  className={`${
+                    mode === "old" ? "text-cyan-50/[0.85]" : "text-blue-500"
+                  }`}
+                >
+                  {mode === "new" ? "Kamala" : "Biden"}
+                </i>
               ) : (
-                <i className="text-white">Trump</i>
+                <i
+                  className={`${
+                    mode === "old" ? "text-cyan-50/[0.85]" : "text-red-500"
+                  }`}
+                >
+                  Trump
+                </i>
               )}
             </span>
-            <span className="text-sm absolute h-full text-cyan-50 flex items-start -right-[10px] text-nowrap top-5 font-semibold re">
+            <span className="text-lg absolute h-full text-cyan-50 flex items-start right-[10px] text-nowrap top-5 font-semibold">
               {diff >= 0 ? (
                 diff > 0 ? (
                   <i
@@ -101,7 +124,9 @@ const ThirtySecCounter = ({
                     {diff.toFixed(2)}
                   </i>
                 )
-              ) : (
+              ) : ""}
+              {/* replaced */}
+              {/* (
                 <i
                   className={`${
                     color === 2 ? "bg-blue-500" : "bg-red-500"
@@ -109,12 +134,16 @@ const ThirtySecCounter = ({
                 >
                   {diff?.toFixed(2)}
                 </i>
-              )}
+              ) */}
             </span>
           </>
         )}
         <div
-          className="absolute w-full h-full flex items-center z-10 text-cyan-50 text-2xl top-0 ml-[5px] font-bold transition-all"
+          className={`absolute w-full h-full flex items-center z-10 text-cyan-50 ${
+            mode === "new"
+              ? "text-cyan-50 text-4xl"
+              : "text-cyan-50/[0.85] text-xl"
+          } top-0 ml-[10px] font-bold transition-all`}
           style={{
             // right: "100%",
             left: `${progress * 100}%`,

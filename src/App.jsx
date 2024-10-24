@@ -14,9 +14,10 @@ import EnglishToMultiLanguages from "./EnglishToMultiLanguages";
 import EnglishTenses from "./EnglishTenses";
 import EnglishDialogue from "./EnglishDialogue";
 import EnglishDailyConversation from "./EnglishDailyConversation";
-import ElectionDesign from "./ElectionDesign";
+// import ElectionDesign from "./ElectionDesign";
+import ElectionDesign from "./ElectionDesignSingleStateWise";
 import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
-import { conversation } from "./data/dailyConversation";
+import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
 
 function App() {
   const [layout, setLayout] = useState(0);
@@ -147,7 +148,7 @@ function App() {
               className="text-white bg-green-600 p-2 mx-2"
               onClick={() => setLayout(10)}
             >
-              English Daily Conversation - {conversation?.length}
+              English Daily Conversation - {TwoHoursQuestionAndAnswers?.length}
             </button>
             <button
               className="text-white bg-green-600 p-2 mx-2"
@@ -214,11 +215,11 @@ function App() {
 
       {/* LAYOUTS */}
       {layout === 1 && <EnglishGrammar />}
-      {layout === 2 && <EnglishIdioms />}
+      {layout === 2 && <EnglishIdioms startedIndex={startedIndex}/>}
       {layout === 3 && <EnglishGrammarStaticData speakerId={selectedVoice} />}
-      {layout === 4 && <EnglishCollocations />}
+      {layout === 4 && <EnglishCollocations startedIndex={startedIndex}/>}
       {layout === 5 && <EnglishSentences startedIndex={startedIndex} />}
-      {layout === 6 && <EnglishArabic />}
+      {layout === 6 && <EnglishArabic startedIndex={startedIndex}/>}
       {layout === 7 && <EnglishToMultiLanguages />}
       {layout === 8 && <EnglishTenses startedIndex={startedIndex} />}
       {layout === 9 && <EnglishDialogue startedIndex={startedIndex} />}

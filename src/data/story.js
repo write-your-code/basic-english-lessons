@@ -139,6 +139,7 @@ export const story = [
       },
 
       { ch: "sara", dialogue: "Okay, let’s go find her." },
+      { end: true },
     ],
   },
   {
@@ -283,6 +284,7 @@ export const story = [
         ch: "Natasha",
         dialogue: "I’m going back to my Chinese lessons now.",
       },
+      { end: true },
     ],
   },
 ];

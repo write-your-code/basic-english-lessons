@@ -238,7 +238,7 @@ const EnglishTenses = () => {
           <p
             className={`${
               data?.length > 50 ? "text-lg " : ""
-            } px-6 flex-1 bg-gradient-to-r from-violet-500 to-purple-500 trans py-4 rounded-r`}
+            } px-6 flex-1  trans py-4 rounded-r bg-gradient-to-r from-violet-500 to-purple-500`}
           >
             {/* {data?.question} */}
             {data?.question.includes(":") ? (
@@ -269,16 +269,16 @@ const EnglishTenses = () => {
               a{/* {option} */}
             </span>
             <p
-              className={`flex-1 px-6 text-xl  trans py-3 ${
+              className={`flex-1 px-6 text-xl  trans py-3 bg-gradient-to-r from-violet-500 to-purple-500 ${
                 answer
                   ? data?.answer === "a"
-                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
-                    : "!bg-gradient-to-b from-red-700 to-red-600"
+                    ? "!bg-gradient-to-b !from-green-700 !to-green-500"
+                    : "!bg-gradient-to-b !from-red-700 !to-red-600"
                   : ""
               }   ${
                 option === "a"
                   ? " bg-gradient-to-r from-violet-900 to-purple-900 "
-                  : " bg-gradient-to-r from-violet-500 to-purple-500"
+                  : " "
               } rounded-r`}
             >
               {data?.options?.a}
@@ -293,16 +293,16 @@ const EnglishTenses = () => {
               b
             </span>
             <p
-              className={`flex-1 py-3 px-6 rounded-r text-white text-xl font-semibold ${
+              className={`flex-1 py-3 px-6 rounded-r text-white text-xl font-semibold bg-gradient-to-r from-violet-500 to-purple-500 ${
                 answer
                   ? data?.answer === "b"
-                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
-                    : "!bg-gradient-to-b from-red-700 to-red-600"
+                    ? "!bg-gradient-to-b !from-green-700 !to-green-500 "
+                    : "!bg-gradient-to-b !from-red-700 !to-red-600"
                   : ""
               }  ${
                 option === "b"
                   ? " bg-gradient-to-r from-violet-900 to-purple-900 "
-                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+                  : "  "
               }`}
             >
               {data?.options?.b}
@@ -316,16 +316,16 @@ const EnglishTenses = () => {
               c
             </span>
             <p
-              className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold ${
+              className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold bg-gradient-to-r from-violet-500 to-purple-500 ${
                 answer
                   ? data?.answer === "c"
-                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
-                    : "!bg-gradient-to-b from-red-700 to-red-600"
+                    ? "!bg-gradient-to-b !from-green-700 !to-green-500 "
+                    : "!bg-gradient-to-b !from-red-700 !to-red-600"
                   : ""
               }  ${
                 option === "c"
                   ? " bg-gradient-to-r from-violet-900 to-purple-900 "
-                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+                  : "  "
               }`}
             >
               {data?.options.c}
@@ -338,16 +338,16 @@ const EnglishTenses = () => {
               d
             </span>
             <p
-              className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold ${
+              className={`flex-1 py-3 px-6 rounded-r  trans text-white text-xl font-semibold bg-gradient-to-r from-violet-500 to-purple-500 ${
                 answer
                   ? data?.answer === "d"
-                    ? "!bg-gradient-to-b from-green-700 to-green-500 "
-                    : "!bg-gradient-to-b from-red-700 to-red-600"
+                    ? "!bg-gradient-to-b !from-green-700 !to-green-500 "
+                    : "!bg-gradient-to-b !from-red-700 !to-red-600"
                   : ""
               } ${
                 option === "d"
                   ? " bg-gradient-to-r from-violet-900 to-purple-900 "
-                  : " bg-gradient-to-r from-violet-500 to-purple-500 "
+                  : "  "
               }`}
             >
               {data?.options?.d}

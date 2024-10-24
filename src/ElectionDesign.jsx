@@ -3,8 +3,9 @@ import ProgressBarTimer from "./ProgressBarTimerForElection";
 import { data } from "./data/ElectionData";
 
 const ElectionDesign = () => {
+  // data = data[0]
   return (
-    <div className="px-20 grid grid-cols-3 gap-4  pt-4 h-screen w-full bg-gray-700">
+    <div className="px-20 grid grid-cols-3 gap-2 pt-4 h-screen w-full bg-gray-700">
       {data?.map((item) => (
         <div className="bg-gray-900 p-3 pb-0 rounded h-[220px]">
           <div className="text-3xl flex justify-between items-center text-white font-semibold z-10 w-full">
@@ -20,6 +21,7 @@ const ElectionDesign = () => {
                 name={item.name}
                 votes={item.votes}
                 time={item.trump}
+                diff={item.trump - item.kamala}
                 img={"./images/trump.jpg"}
                 color={1}
               />
@@ -27,6 +29,7 @@ const ElectionDesign = () => {
                 name={item.name}
                 votes={item.votes}
                 time={item.kamala}
+                // diff={item.trump - item.kamala}
                 img={"./images/kamala.jpg"}
                 color={2}
               />
@@ -37,6 +40,7 @@ const ElectionDesign = () => {
                 name={item.name}
                 votes={item.votes}
                 time={item.kamala}
+                diff={item.kamala - item.trump}
                 img={"./images/kamala.jpg"}
                 color={2}
               />
@@ -44,6 +48,7 @@ const ElectionDesign = () => {
                 name={item.name}
                 votes={item.votes}
                 time={item.trump}
+                // diff={item.kamala - item.trump}
                 img={"./images/trump.jpg"}
                 color={1}
               />

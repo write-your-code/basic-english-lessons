@@ -43,7 +43,7 @@ const EnglishSentences = () => {
 
   let ok = true;
   let outerIndex = 0;
-  let index = 18;
+  let index = 0;
   let totalCount = story[0]?.dialogues?.length;
   console.log("length of dialogues:", totalCount);
   let res;
@@ -80,7 +80,7 @@ const EnglishSentences = () => {
       console.log("index , outerindex", index, outerIndex);
       if (i % 2 === remainder) {
         // speak normal speed
-        if (dialogue.scene) {
+        if (dialogue?.scene) {
           speechStart(dialogue.dialogue, 1, 0, 1, 0, 0, 0);
           return;
         }
@@ -226,6 +226,31 @@ const EnglishSentences = () => {
     // speechStart(res?.exp + " is correct exp because ", 0);
     speechStart(res?.example, 1);
   };
+  const explainIdiomsStart = () => {
+    // if (dialogueObject && !explain && speed === 1 && currentSpeaker === 2) {
+    //   index++;
+    //   console.log("index insite tart event: " + index);
+    // }
+    // if (index + 1 >= res?.dialogues?.length) {
+    index = 0;
+    setShowIdiomsUsed((current) => true);
+    speechStart("let's discuss idioms used in this dialogue");
+    console.log("idioms used:", idiomsUsed);
+    setIdiomBlock((current) => 0);
+    res?.dialogues?.map((idioms) => {
+      if (idioms?.idiom) {
+        speechStart(idioms?.idiom, 0);
+        speechStart("means" + idioms?.explanation, 0);
+        setIdiomBlock((current) => current + 1);
+      }
+      outerIndex = 1;
+      speechStart("move to next", 250);
+    });
+
+    // speechForIdioms("scene change", 1);
+    let newArray = [];
+  };
+
   const playSentence = () => {
     setDisabled(false);
     // speechStart(res?.exp + " is correct exp because ", 0);
@@ -256,28 +281,13 @@ const EnglishSentences = () => {
     }
     // if (speed === 1 || speed === 2) {
     u.addEventListener("start", () => {
-      if (dialogueObject && !explain && speed === 1) {
-        index++;
-        console.log("index insite tart event: " + index);
+      if (dialogueObject?.end && speed !== 250) {
+        setTimeout(() => {
+          explainIdiomsStart();
+        }, 1000);
+        return;
       }
-      if (index + 1 >= res?.dialogues?.length) {
-        index = 0;
-        setShowIdiomsUsed((current) => true);
-        speechForIdioms("lets discuss idioms used in this dialogue");
-        console.log("idioms used:", idiomsUsed);
-        setIdiomBlock((current) => 0);
-        idiomsUsed?.map((idiom) => {
-          if (idiom?.idiom) {
-            speechForIdioms(idiom?.idiom);
-            speechForIdioms(idiom?.explanation);
-            setIdiomBlock((current) => current + 1);
-          }
-        });
-        speechForIdioms("scene change", 1);
-        let newArray = [];
-        outerIndex = 1;
-      }
-      setQuestionNo(index);
+      setQuestionNo((current) => index);
       // set waves
       setTimeout(() => {
         console.log("inside settime out");
@@ -354,16 +364,20 @@ const EnglishSentences = () => {
       //   setSpeaker((current) => 0);
       // }
     });
-
+    u.addEventListener("boundary", ({ charIndex, charLength }) => {
+      setHighlightSection({ from: charIndex, to: charIndex + charLength });
+    });
     u.addEventListener("end", () => {
       setWaves(false);
       resetCaptionPosition();
       setCurrentCaption(0);
+      if (speed === 250) {
+        setShowIdiomsUsed((current) => false);
+        getData();
+      }
       // setExplanation(0);
     });
-    u.addEventListener("boundary", ({ charIndex, charLength }) => {
-      setHighlightSection({ from: charIndex, to: charIndex + charLength });
-    });
+
     // }
 
     // console.log("voices", voices);
@@ -416,8 +430,8 @@ const EnglishSentences = () => {
     }
     // if (speed === 1 || speed === 2) {
     u.addEventListener("start", () => {
-      if(changeFlag) {
-        setShowIdiomsUsed(current => false);
+      if (changeFlag) {
+        setShowIdiomsUsed((current) => false);
       }
       // })
       setQuestionNo(index);
@@ -492,14 +506,14 @@ const EnglishSentences = () => {
       // else {
       //   setSpeaker((current) => 0);
       // }
-    })
+    });
 
     u.addEventListener("end", () => {
       setWaves(false);
       resetCaptionPosition();
       setCurrentCaption(0);
       // setExplanation(0);
-    })
+    });
     u.addEventListener("boundary", ({ charIndex, charLength }) => {
       setHighlightSection({ from: charIndex, to: charIndex + charLength });
     });
@@ -585,7 +599,7 @@ const EnglishSentences = () => {
       {showIdiomsUsed && (
         <div className="w-full h-[600px] gap-2 rounded text-white text-sm font-semibold absolute left-0 top-0">
           <span className="px-2 text-xl py-2 rounded text-gray-100 flex items-start justify-center flex-wrap gap-2 uppercase">
-            Idioms Used {idiomsUsed.length} - {idiomBlock}
+            Idioms Used {idiomsUsed?.length} - {idiomBlock}
           </span>
           <div className="flex gap-3 items-stretch justify-center flex-wrap mx-2">
             {idiomsUsed?.map((idiom, i) =>
@@ -674,20 +688,22 @@ const EnglishSentences = () => {
                 {/* speaker text */}
                 <div
                   className={`text-white ${
-                    speakerText?.firstSpeaker.length > 80
+                    speakerText?.firstSpeaker?.length > 80
                       ? "text-md"
                       : "text-2xl"
                   } mx-2 max-w-[400px]`}
                 >
-                  {speakerText?.firstSpeaker.substring(
+                  {speakerText?.firstSpeaker?.substring(
                     0,
-                    speakerText?.firstSpeaker.indexOf(speakerText?.currentIdiom)
+                    speakerText?.firstSpeaker?.indexOf(
+                      speakerText?.currentIdiom
+                    )
                   )}
                   <span className="bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-3xl font-bold">
                     {speaker === 1 && speakerText?.currentIdiom}
                   </span>
-                  {speakerText?.firstSpeaker.substring(
-                    speakerText?.firstSpeaker.indexOf(
+                  {speakerText?.firstSpeaker?.substring(
+                    speakerText?.firstSpeaker?.indexOf(
                       speakerText.currentIdiom
                     ) + speakerText?.currentIdiom?.length
                   )}
@@ -777,11 +793,11 @@ const EnglishSentences = () => {
           </div>
           {/* explanation:{explanation} */}
           {explanation && (
-            <div className="text-center absolute bottom-8 max-w-[90%] ">
+            <div className="text-center absolute bottom-8 max-w-[90%] border-2 border-green-700 rounded">
               {/* <span className="text-cyan-50 text-lg">For Example:</span> */}
               {["idiom", "explanation", "example"].map((s, i) => (
                 <div
-                  className="px-2 py-2 mb-1 bg-gradient-to-t from-rose-400 to-red-500 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize border border-white/[0.6] relative"
+                  className="px-2 py-2 mb-1 bg-gradient-to-b from-cyan-100 to-red-500 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize relative"
                   key={s}
                 >
                   {/* {data?.explanation} */}

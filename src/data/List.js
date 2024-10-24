@@ -8869,7 +8869,7 @@ export const idiomsWithExample = [
     options: {
       a: "Highlight",
       b: "Show",
-      c: "Offer",
+      c: "Appear",
       d: "Promise",
     },
     answer: "c",
@@ -9915,7 +9915,7 @@ export const idiomsWithExample = [
     options: {
       a: "Highlight",
       b: "Show",
-      c: "Offer",
+      c: "Appear",
       d: "Promise",
     },
     answer: "d",
@@ -10059,7 +10059,7 @@ export const idiomsWithExample = [
     options: {
       a: "Highlight",
       b: "Show",
-      c: "Offer",
+      c: "Appear",
       d: "Promise",
     },
     answer: "d",
@@ -10110,7 +10110,7 @@ export const idiomsWithExample = [
   {
     id: 4,
     idiom:
-      "The autographed bat from the famous cricketer Sunil Gavaskar is worth a jew's eye.",
+      "The autographed bat from the famous cricketer Andrew Flintoff is worth a jew's eye.",
     idiomUsed: "worth a jew's eye",
     options: {
       a: "Not a worthy possession",
@@ -10142,7 +10142,7 @@ export const idiomsWithExample = [
     options: {
       a: "Highlight",
       b: "Show",
-      c: "Offer",
+      c: "Appear",
       d: "Promise",
     },
     answer: "d",
@@ -11047,7 +11047,7 @@ export const idiomsWithExample = [
     options: {
       a: "highlight",
       b: "show",
-      c: "offer",
+      c: "appear",
       d: "promise",
     },
     answer: "d",
@@ -11598,7 +11598,7 @@ export const idiomsWithExample = [
     options: {
       a: "highlight",
       b: "show",
-      c: "offer",
+      c: "Appear",
       d: "promise",
     },
     answer: "d",

@@ -4,7 +4,7 @@ import CountDownNew from "./ProgressBarTimer";
 // import { idiomsWithExpAndVisuals } from "./data/List";
 import { idiomsWithExample } from "./data/List";
 
-const EnglishIdioms = () => {
+const EnglishIdioms = ({ startedIndex = 0 }) => {
   // states
   const [data, setData] = useState();
   const [answer, setAnswer] = useState(false);
@@ -24,7 +24,7 @@ const EnglishIdioms = () => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = 0
+  let index = startedIndex || 0;
   let totalCount = idiomsWithExample.length;
   let res;
   // create a reference to synth
@@ -62,7 +62,7 @@ const EnglishIdioms = () => {
   };
   const showAnswer = () => {
     audioRef2.current.currentTime = 0;
-    audioRef2.current?.pause();
+    audioRef2.current.pause();
     setAnswer(true);
     audioRef.current?.play();
     setTimeout(() => {
@@ -212,7 +212,7 @@ const EnglishIdioms = () => {
           <div
             className={`${
               data?.idiom.length > 42 ? "!text-2xl" : ""
-            } px-6 flex-1 bg-teal-700 trans py-4 rounded-r`}
+            } px-6 flex-1 bg-teal-700 trans py-4 rounded-r capitalize`}
           >
             {/* {data?.idiom} */}
             {data?.idiomUsed ? (
@@ -253,7 +253,9 @@ const EnglishIdioms = () => {
                     ? "!bg-green-700 text-white "
                     : "!bg-red-700"
                   : ""
-              }  ${option === "a" ? "!scale-[1.03]   !bg-teal-500" : " scale-100"} rounded-r`}
+              }  ${
+                option === "a" ? "!scale-[1.03]   !bg-teal-500" : " scale-100"
+              } rounded-r`}
             >
               {data?.options?.a}
             </p>
@@ -320,7 +322,7 @@ const EnglishIdioms = () => {
           {reason && (
             <p
               //   onClick={() => playReason(data)}
-              className="bg-teal-600 p-4 text-white text-wrap text-xl font-medium w-[900px] right-[180px] rounded absolute bottom-5 mx-0 trans-reason"
+              className="bg-teal-600 p-4 text-white text-wrap text-xl font-medium w-[900px] right-[180px] rounded absolute bottom-5 mx-0"
             >
               {/* {data?.explanation} */}
               <HighlightedText
