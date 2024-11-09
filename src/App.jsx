@@ -7,6 +7,7 @@ import { englishGrammarList, idiomsWithExample } from "./data/List";
 import { collocationsEnglish } from "./data/Collocations";
 import { sentences } from "./data/Sentences";
 import { dailySentences, dailySentencesIn5Languages } from "./data/Languages";
+import { words } from "./data/Synonyms";
 import EnglishCollocations from "./EnglishCollocations";
 import EnglishSentences from "./EnglishSentences";
 import EnglishArabic from "./EnglishArabic";
@@ -15,9 +16,15 @@ import EnglishTenses from "./EnglishTenses";
 import EnglishDialogue from "./EnglishDialogue";
 import EnglishDailyConversation from "./EnglishDailyConversation";
 // import ElectionDesign from "./ElectionDesign";
-import ElectionDesign from "./ElectionDesignSingleStateWise";
+import ElectionDesignAll50States from "./ElectionDesignAll50States";
+// import ElectionDesign from "./ElectionDesignSingleStateWise";
+import ElectionDesign from "./ElectionDesignSingleStateWisesWithVoice";
+import NewElectionDesignElectionDay from "./ElectionDesignSingleStateWiseWithLeadElectionDay";
+import NewElectionDesignElectionDayShortVersion from "./ElectionDesignSingleStateWisesWithVoiceShortVersion";
+import EnglishSynonyms from "./EnglishSynonyms";
 import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
 import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
+import { dataCompleteWithElectionStats } from "./data/ElectionData";
 
 function App() {
   const [layout, setLayout] = useState(0);
@@ -27,6 +34,17 @@ function App() {
     "It is dummy text and cannot be changed to something other than dummy text"
   );
   const [startedIndex, setStartedIndex] = useState(0);
+  let t = 0;
+  let h = 0;
+  dataCompleteWithElectionStats.map((item) => {
+    if (item.trump > item.kamala) {
+      t += parseInt(item.votes);
+    }
+    if (item.kamala > item.trump) {
+      h += parseInt(item.votes);
+    }
+  });
+  console.log("t and h arguments", { t, h });
 
   const synth = window.speechSynthesis;
   // const allVoices = window.speechSynthesis.getVoices();
@@ -156,6 +174,30 @@ function App() {
             >
               Election Data -{/* {ElectionDesign?.length} */}
             </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(12)}
+            >
+              Election Data all 50 states -{/* {ElectionDesign?.length} */}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(13)}
+            >
+              English Synonyms - {words.length}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(14)}
+            >
+              Election Day New -{/* {ElectionDesign?.length} */}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(15)}
+            >
+              Election Result Short -{/* {ElectionDesign?.length} */}
+            </button>
           </div>
           {/* voice box and textarea */}
 
@@ -215,11 +257,11 @@ function App() {
 
       {/* LAYOUTS */}
       {layout === 1 && <EnglishGrammar />}
-      {layout === 2 && <EnglishIdioms startedIndex={startedIndex}/>}
+      {layout === 2 && <EnglishIdioms startedIndex={startedIndex} />}
       {layout === 3 && <EnglishGrammarStaticData speakerId={selectedVoice} />}
-      {layout === 4 && <EnglishCollocations startedIndex={startedIndex}/>}
+      {layout === 4 && <EnglishCollocations startedIndex={startedIndex} />}
       {layout === 5 && <EnglishSentences startedIndex={startedIndex} />}
-      {layout === 6 && <EnglishArabic startedIndex={startedIndex}/>}
+      {layout === 6 && <EnglishArabic startedIndex={startedIndex} />}
       {layout === 7 && <EnglishToMultiLanguages />}
       {layout === 8 && <EnglishTenses startedIndex={startedIndex} />}
       {layout === 9 && <EnglishDialogue startedIndex={startedIndex} />}
@@ -227,6 +269,16 @@ function App() {
         <EnglishDailyConversation startedIndex={startedIndex} />
       )}
       {layout === 11 && <ElectionDesign startedIndex={startedIndex} />}
+      {layout === 12 && (
+        <ElectionDesignAll50States startedIndex={startedIndex} />
+      )}
+      {layout === 13 && <EnglishSynonyms startedIndex={startedIndex} />}
+      {layout === 14 && (
+        <NewElectionDesignElectionDay startedIndex={startedIndex} />
+      )}
+      {layout === 15 && (
+        <NewElectionDesignElectionDayShortVersion startedIndex={startedIndex} />
+      )}
     </main>
   );
 }
