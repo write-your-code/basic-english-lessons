@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ThirtySecCounter = ({
   time = 8,
@@ -8,11 +8,15 @@ const ThirtySecCounter = ({
   name,
   votes,
   mode = "new",
+  setTrumpNumber = 0,
+  setKamalaNumber = 0,
+  setShowVoteShare = 0,
   // progress=0
 }) => {
   const [timeLeft, setTimeLeft] = useState(time);
   const [showRsult, setShowResult] = useState(false);
 
+  const audioRef = useRef(null);
   let progress = 0;
   let interval = mode === "new" ? 20 : 5;
   useEffect(() => {
@@ -21,9 +25,17 @@ const ThirtySecCounter = ({
     //   return;
     // }
     if ((progress * 100).toFixed(2) >= time) {
-      // setTimeLeft((current) => 0);
-      // time = 0;
-      setShowResult(true);
+      if (diff > 0 && color === 1) {
+        setTrumpNumber((current) => current + parseInt(votes));
+      }
+      if (diff > 0 && color === 2) {
+        setKamalaNumber((current) => current + parseInt(votes));
+      }
+      setShowResult((current) => {
+        setShowVoteShare && audioRef?.current?.play();
+        return true;
+      });
+      // setShowResult(true);
       // progress = 0;
       console.log("end running", progress);
       return;
@@ -82,9 +94,9 @@ const ThirtySecCounter = ({
           <>
             {mode !== "old" && diff > 0 && (
               <span
-                className={`capitalize absolute h-full ${
+                className={`uppercase absolute h-full ${
                   color === 2 ? "text-blue-500" : "text-red-500"
-                } flex items-end gap-2 right-[200px] -top-16 pb-2 text-3xl font-semibold`}
+                } flex items-end gap-2 right-[200px] -top-20 pb-2 text-3xl font-semibold`}
               >
                 {color === 2 ? "Kamala (DEM)" : "Trump (GOP)"}
                 <b className="text-wrap !text-2xl font-normal">Leading</b>
@@ -191,6 +203,11 @@ const ThirtySecCounter = ({
           />
         </span>
       </div>
+      {/* audios */}
+      <audio ref={audioRef}>
+        <source src="Ding.mp3" type="audio/mpeg" />
+        <p>Your browser does not support the audio element.</p>
+      </audio>
     </div>
   );
 };

@@ -15,6 +15,7 @@ import EnglishToMultiLanguages from "./EnglishToMultiLanguages";
 import EnglishTenses from "./EnglishTenses";
 import EnglishDialogue from "./EnglishDialogue";
 import EnglishDailyConversation from "./EnglishDailyConversation";
+import EnglishDailyConversationV1 from "./EnglishDailyConversation-V1";
 // import ElectionDesign from "./ElectionDesign";
 import ElectionDesignAll50States from "./ElectionDesignAll50States";
 // import ElectionDesign from "./ElectionDesignSingleStateWise";
@@ -22,7 +23,9 @@ import ElectionDesign from "./ElectionDesignSingleStateWisesWithVoice";
 import NewElectionDesignElectionDay from "./ElectionDesignSingleStateWiseWithLeadElectionDay";
 import NewElectionDesignElectionDayShortVersion from "./ElectionDesignSingleStateWisesWithVoiceShortVersion";
 import EnglishSynonyms from "./EnglishSynonyms";
+import EnglishLevelTest from "./EnglishLevelTest";
 import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
+// import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
 import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
 import { dataCompleteWithElectionStats } from "./data/ElectionData";
 
@@ -198,6 +201,19 @@ function App() {
             >
               Election Result Short -{/* {ElectionDesign?.length} */}
             </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(16)}
+            >
+              English Daily Conversation V1 -
+              {TwoHoursQuestionAndAnswers?.length}
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(17)}
+            >
+              EnglishLevelTest-{TwoHoursQuestionAndAnswers?.length}
+            </button>
           </div>
           {/* voice box and textarea */}
 
@@ -278,6 +294,12 @@ function App() {
       )}
       {layout === 15 && (
         <NewElectionDesignElectionDayShortVersion startedIndex={startedIndex} />
+      )}
+      {layout === 16 && (
+        <EnglishDailyConversationV1 startedIndex={startedIndex} />
+      )}
+      {layout === 17 && (
+        <EnglishLevelTest startedIndex={startedIndex} />
       )}
     </main>
   );

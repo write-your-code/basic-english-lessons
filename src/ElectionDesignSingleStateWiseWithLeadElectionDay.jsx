@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import ProgressBarTimer from "./ProgressBarTimerForElectionStateWiseWithLeadElectionDay";
-import { withJudePredicted } from "./data/ElectionData";
+import { dataCompleteWithElectionStats } from "./data/ElectionData";
 
-const ElectionDesign = () => {
+const ElectionDesign = ({ startedIndex = 0 }) => {
   // const [start, setStart] = useState(0);
   const [item, setItem] = useState();
-  const [data, setData] = useState(withJudePredicted);
-  const [trumpNumer, setTrumpNumber] = useState(277);
-  const [kamalaNumer, setKamalaNumber] = useState(224);
+  const [data, setData] = useState(dataCompleteWithElectionStats);
+  const [showVoteShare, setShowVoteShare] = useState(0);
+  const [trumpNumer, setTrumpNumber] = useState(150);
+  const [kamalaNumer, setKamalaNumber] = useState(134);
   // let data = withJudePredicted;
-  let index = 0;
+  let index = startedIndex || 0;
   // let item;
   const getData = () => {
     // item = data[index];
@@ -27,7 +28,7 @@ const ElectionDesign = () => {
       // setStart(0);
       getData();
       console.log("useefect run", index, JSON.stringify(item));
-    }, 40000);
+    }, 25000);
     return () => {
       clearInterval(id);
     };
@@ -111,13 +112,13 @@ const ElectionDesign = () => {
                   className="w-[80px] h-[100px] rounded object-cover border-2 "
                 />
                 <span
-                  className="text-red-400 text-2xl font-semibold 
-                text-nowrap absolute left-[110%] -bottom-4"
+                  className="text-red-400 text-4xl font-semibold 
+                text-nowrap absolute left-[110%] -bottom-6"
                 >
                   <span>Donald Trump</span>
-                  <span className="text-lg bg-white p-1 rounded font-bold text-red-700   ml-2">
+                  {/* <span className="text-lg bg-white p-1 rounded font-bold text-red-700   ml-2">
                     74,247,470 votes (50.5%)
-                  </span>
+                  </span> */}
                 </span>
               </span>
             </div>
@@ -163,12 +164,12 @@ const ElectionDesign = () => {
                   className="w-[80px] h-[100px] rounded object-cover border-2"
                 />
                 <span
-                  className="text-blue-400 text-2xl font-semibold 
-                text-nowrap absolute right-[110%] -bottom-4"
+                  className="text-blue-400 text-4xl font-semibold 
+                text-nowrap absolute right-[110%] -bottom-6"
                 >
-                  <span className="text-lg bg-white p-1 rounded font-bold text-blue-700 mr-2">
+                  {/* <span className="text-lg bg-white p-1 rounded font-bold text-blue-700 mr-2">
                     70,345,377 votes (47.9%)
-                  </span>
+                  </span> */}
                   <span>Kamala Harris</span>
                 </span>
               </span>
@@ -183,13 +184,11 @@ const ElectionDesign = () => {
           🟢 Live Results{" "}
           <span className="text-xl">(Presidential Election 24)</span>
         </span>
-        <div className="text-5xl flex justify-between items-center text-white font-semibold z-10 w-full">
+        <div className="text-5xl flex justify-between items-center text-white font-semibold z-10 w-full  rounded p-2">
           <span>{item?.name}</span>
-          <p className="text-wrap text-3xl">
+          <p className="text-wrap ">
             {item?.votes}
-            <i className="text-xs capitalize text-wrap ml-1">
-              Presidential votes
-            </i>
+            <span className="capitalize text-2xl text-wrap ml-1">PV</span>
           </p>
         </div>
         {item?.trump > item?.kamala ? (
@@ -204,6 +203,9 @@ const ElectionDesign = () => {
               progress={0}
               color={1}
               mode={"new"}
+              setTrumpNumber={setTrumpNumber}
+              setKamalaNumber={setKamalaNumber}
+              setShowVoteShare={setShowVoteShare}
             />
             <ProgressBarTimer
               // item={item}
@@ -215,6 +217,8 @@ const ElectionDesign = () => {
               progress={0}
               color={2}
               mode={"new"}
+              setTrumpNumber={setTrumpNumber}
+              setKamalaNumber={setKamalaNumber}
             />
           </>
         ) : (
@@ -228,6 +232,9 @@ const ElectionDesign = () => {
               progress={0}
               color={2}
               mode={"new"}
+              setTrumpNumber={setTrumpNumber}
+              setKamalaNumber={setKamalaNumber}
+              setShowVoteShare={setShowVoteShare}
             />
             <ProgressBarTimer
               name={item?.name}
@@ -238,14 +245,14 @@ const ElectionDesign = () => {
               progress={0}
               color={1}
               mode={"new"}
+              setTrumpNumber={setTrumpNumber}
+              setKamalaNumber={setKamalaNumber}
             />
           </>
         )}
         <div className="text-right">
           <span className="text-cyan-50 text-right">
-            {index % 2 === 0
-              ? "🟢 EST. 97% of votes counted"
-              : "🟢 EST. 84% of votes counted"}
+            🟢 EST. {item?.votesCount} of votes counted
           </span>
         </div>
       </div>

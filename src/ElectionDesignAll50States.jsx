@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ProgressBarTimer from "./ProgressBarTimerForAll50States";
 // import { dataCompleteWithSummaryLatest } from "./data/ElectionData";
-import { dataCompleteWithElectionStats } from "./data/ElectionData";
+import { dataCompleteWithElectionStatsAll50 } from "./data/ElectionData";
 
 const ElectionDesign = () => {
   const [trumpNumer, setTrumpNumber] = useState(295);
   const [kamalaNumer, setKamalaNumber] = useState(226);
-  const [trumpNumer1, setTrumpNumber1] = useState(295);
+  const [trumpNumer1, setTrumpNumber1] = useState(312);
   const [kamalaNumer1, setKamalaNumber1] = useState(226);
   const [show, setShow] = useState(false);
 
@@ -117,7 +117,7 @@ const ElectionDesign = () => {
                     <span className="text-xl bg-white p-1 rounded mr-1">
                       50.5%
                     </span>{" "}
-                    votes : 74,247,470
+                    votes : 74,264,010
                   </span>
                 </span>
               </span>
@@ -169,7 +169,7 @@ const ElectionDesign = () => {
                 text-nowrap absolute right-[110%] -bottom-0"
                 >
                   <span className="text-lg rounded font-bold text-blue-500 mr-2">
-                    votes : 70,345,377
+                    votes : 70,356,521
                     <span className="text-xl bg-white p-1 rounded ml-2">
                       47.9%
                     </span>
@@ -323,7 +323,7 @@ const ElectionDesign = () => {
       {/* end top bar total votes comparison */}
       {/* trump-{trump} --- kamala-{kamala} */}
       <div className="px-[1px] grid grid-cols-10 gap-[5px] pt-1 h-full w-full bg-black">
-        {dataCompleteWithElectionStats?.map((item) => (
+        {dataCompleteWithElectionStatsAll50?.map((item) => (
           <div
             className={`${
               show
