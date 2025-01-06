@@ -1388,7 +1388,7 @@ export const dailyExpressions = [
     title: "Why are you up?",
     id: 6,
     meaning: "Why are you awake?",
-    example: "It's 3 a.m.! Why are you up?",
+    example: "It's 2 a.m.! Why are you up?",
   },
   {
     title: "Long time no see",

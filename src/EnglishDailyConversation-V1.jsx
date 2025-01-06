@@ -330,7 +330,7 @@ const EnglishDailyConversation = ({ startedIndex = 0 }) => {
                 </div>
               </div>
               <p
-                className={`px-2 text-green-600 py-2 rounded text-center text-4xl tracking-wide ${
+                className={`px-2 text-green-600 py-2 rounded text-center text-5xl tracking-wide ${
                   speaker === 2 ? "opacity-100" : "opacity-0"
                 }`}
               >

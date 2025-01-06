@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CountDown } from "./CountDownLevelQuiz";
 // import CountDownNew from "./ProgressBarTimer";
-// import { idiomsWithExpAndVisuals } from "./data/List";
-import { test2 } from "./data/EnglishLevelTest";
+// import { questionsWithExpAndVisuals } from "./data/List";
+import { test6 } from "./data/EnglishLevelTest";
+import TypewriterField from "./TypewriterField";
+import { text } from "./data/Typewritetext";
+import Typewriter from "./Typewriter";
 
 const EnglishIdioms = ({ startedIndex = 0 }) => {
   // states
@@ -12,6 +15,7 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
   const [reason, setReason] = useState(false);
   const [timer, setTimer] = useState(false);
   const [disabled, setDisabled] = useState(true);
+  const [typewrite, setTypewrite] = useState(1);
   const [highlightSection, setHighlightSection] = useState({
     from: 0,
     to: 0,
@@ -25,17 +29,38 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
   const audioRef3 = useRef(null);
 
   let ok = true;
-  let index = startedIndex || 0;
-  let totalCount = test2.length;
+  // let index = startedIndexForIndex || 0;
+  let index = (startedIndex && Number(startedIndex) - 1) || 0;
+  let totalCount = test6.length;
   let res;
+  let type = 1;
   // create a reference to synth
   const synth = window.speechSynthesis;
   const voices = window.speechSynthesis.getVoices();
   const getData = async () => {
     // const res = await fetch("http://localhost:8000/test");
-    res = test2[index];
+
+    res = test6[index];
+    if (type) {
+      speechStart(text, 0, "typewrite");
+      // return;
+    }
+    // state variable to show question no
+    setQuestionNo((current) => index);
+
     audioRef1.current?.play();
-    speechStart("Next question", 0);
+    // A1-A2 Start
+    speechStart(
+      index + 1 === 1
+        ? `question  ${index + 1} , Level A1 A2`
+        : index + 1 === 21
+        ? `question  ${index + 1}, Level B1 B2`
+        : index + 1 === 41
+        ? `question  ${index + 1} Level C1 C2`
+        : `question  ${index + 1}`,
+      -111
+    );
+
     // const dataArray = await res.json();
     setAnswer(false);
     setTimer(false);
@@ -44,18 +69,19 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
     setData((current) => {
       return res;
     });
-    // speechStart(res?.idiom, 0);
-    speechStart(res?.idiom.replace(/___/g, ". blank space. "), 0);
+    // speechStart(res?.question, 0);
     // speechStart("option a.", 0);
+
+    speechStart(res?.question.replace(/______/g, ". blank space. "), 0);
     speechStart("option a.  " + res?.options.a, 0, "a");
     speechStart("option b.  " + res?.options.b, 0, "b");
     speechStart("option c.  " + res?.options.c, 0, "c");
-    // speechStart("option d.  " + res?.options.d, 0, "d");
+    speechStart("option d.  " + res?.options.d, 0, "d");
     ok = true;
-    if (index + 1 === totalCount) {
-      index = 0;
-      setQuestionNo(0);
-    } else index++;
+    // if (index + 1 === totalCount) {
+    //   index = 0;
+    //   // setQuestionNo(0);
+    // } else index++;
   };
 
   const showTimer = () => {
@@ -105,9 +131,13 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
     setDisabled(false);
     if (1) {
       u.addEventListener("start", () => {
-        // setDisabled(true);
-        if (text === "Next question") {
-          setQuestionNo((current) => (current += 1));
+        if (flag === -111) {
+          if (index + 1 === totalCount) {
+            index = 0;
+          } else {
+            index++;
+            // setQuestionNo((current) => (current += 1));
+          }
         }
         if (option) {
           setOption((current) => option);
@@ -119,6 +149,13 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
           setOption((current) => 0);
         }
         resetCaptionPosition();
+        // to set typewrite false once completed
+        if (option === "typewrite") {
+          setTypewrite((current) => 0);
+          type = 0;
+          console.log("inside typewrite option", typewrite);
+          // getData();
+        }
         // ok = false;
       });
       u.addEventListener("boundary", ({ charIndex, charLength }) => {
@@ -134,9 +171,9 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
     // const voices = window.speechSynthesis.getVoices();
     // console.log("voices", voices);
     if (voices.length > 0) {
-      // u.voice = voices[123];
+      u.voice = voices[123];
       // u.voice = voices[124];
-      u.voice = voices[105];
+      // u.voice = voices[105];
       // u.voice = voices[114];  // perfect child voice
     }
     synth.speak(u);
@@ -147,48 +184,27 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
   };
 
   useEffect(() => {
-    // const intervalId = setInterval(getData, 32000);
-    // // const intervalId1 = setInterval(showAnswer, 20000);
-    // return () => {
-    //   clearInterval(intervalId);
-    //   //   clearInterval(intervalId1);
-    // };
-    // --------------------
-    // showTimer();
-
     const intervalId = setInterval(() => {
       if (!synth.speaking && ok) {
         console.log("timer value:", timer);
-        // if (!isComplete) {
-        // const intervalId1 = setTimeout(showTimer, 1000);
         showTimer();
-        // const intervalId1 = setTimeout(showAnswer, 10000);
-        // const intervalId2 = setTimeout(showReason, 13000);
-        // const intervalId3 = setTimeout(getData, 32000);
-        // const intervalId2 = setTimeout(showAnswer, 13000);
-        // setIsComplete((current) => true);
         ok = false;
-        // const intervalId4 = setTimeout(getData, 25000);
-        // }
         console.log("setinterval inside run:");
       }
     }, 3000);
 
     return () => {
       clearInterval(intervalId);
-      // clearInterval(intervalId1);
-      // clearInterval(intervalId2);
-      // clearInterval(intervalId3);
-      // clearInterval(intervalId4);
     };
   }, []);
   useEffect(() => {
     getData();
   }, []);
 
-  //   const { question, a, b, c, d } = data;
-
-  if (!data) {
+  if (typewrite) {
+    return <TypewriterField />;
+  }
+  if (!data && !typewrite) {
     return (
       <div className="flex justify-center items-center mt-[50px] w-full h-[500px]">
         <div className="w-full h-full flex justify-center items-center">
@@ -201,8 +217,8 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
     // from-violet-200 to-pink-200   previous bg color
     <div
       className={`flex justify-center items-start pt-16 w-full h-screen ${
-        questionNo > 10
-          ? questionNo > 20
+        questionNo + 1 > 20
+          ? questionNo + 1 > 40
             ? "bg-gradient-to-b from-red-100 to-red-200"
             : "bg-gradient-to-b from-orange-100 to-orange-200"
           : "bg-gradient-to-b from-cyan-300 to-cyan-200"
@@ -211,12 +227,12 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
       {/* <p className="text-red-600">Total: {test2.length}</p> */}
       <div className="mx-[250px] rounded flex flex-col gap-4 w-full justify-center items-center">
         <div className="flex items-center !w-full justify-between p-2 text-gray-700 text-lg tracking-wide text-wrap border border-teal-900 rounded">
-          <span className="text-sm">
-            {questionNo}/{totalCount}
+          <span className="text-md">
+            {questionNo + 1}/{totalCount}
           </span>
           <span className="text-gray-700 text-xl tracking-wide text-wrap flex-1">
-            {questionNo > 10
-              ? questionNo > 20
+            {questionNo + 1 > 20
+              ? questionNo + 1 > 40
                 ? "C1-C2 (Advanced) English Level Test"
                 : "B1-B2 (Intermediate) English Level Test"
               : "A1-A2 (Beginner) English Level Test"}
@@ -239,22 +255,26 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
           </span> */}
           <div
             className={`${
-              data?.idiom.length > 42 ? "!text-2xl" : ""
-            } px-6 flex-1 py-4 rounded-r capitalize`}
+              data?.question.length > 42 ? "!text-2xl" : ""
+            } px-6 flex-1 py-4 rounded-r`}
           >
-            {/* {data?.idiom} */}
-            {data?.idiomUsed ? (
+            {/* {data?.question} */}
+            {data?.questionUsed ? (
               <div className="text-gray-700">
-                {data?.idiom.substring(0, data?.idiom.indexOf(data?.idiomUsed))}
+                {data?.question.substring(
+                  0,
+                  data?.question.indexOf(data?.questionUsed)
+                )}
                 <span className="bg-gradient-to-b from-orange-400 to-cyan-50 bg-clip-text text-transparent text-4xl font-extrabold">
-                  {data?.idiomUsed}
+                  {data?.questionUsed}
                 </span>
-                {data?.idiom.substring(
-                  data?.idiom.indexOf(data?.idiomUsed) + data?.idiomUsed?.length
+                {data?.question.substring(
+                  data?.question.indexOf(data?.questionUsed) +
+                    data?.questionUsed?.length
                 )}
               </div>
             ) : (
-              data?.idiom
+              data?.question
             )}
           </div>
         </div>
@@ -281,9 +301,7 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
                       ? "!bg-green-700 text-gray-100 "
                       : "!bg-red-700 text-gray-100 "
                     : ""
-                }  ${
-                  option === "a" ? "!scale-[1.03]   !bg-teal-500" : " scale-100"
-                } rounded-r`}
+                }  ${option === "a" ? "!bg-teal-400" : " scale-100"} rounded-r`}
               >
                 {data?.options?.a}
               </p>
@@ -303,7 +321,7 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
                       ? "!bg-green-700 text-gray-100 "
                       : "!bg-red-700 text-gray-100 "
                     : ""
-                } ${option === "b" ? " scale-[1.03]   !bg-teal-500 " : ""}`}
+                } ${option === "b" ? " !bg-teal-400" : ""}`}
               >
                 {data?.options?.b}
               </p>
@@ -320,29 +338,29 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
                       ? "!bg-green-700 text-gray-100 "
                       : "!bg-red-700 text-gray-100 "
                     : ""
-                } ${option === "c" ? " scale-[1.03]   !bg-teal-500 " : " "}`}
+                } ${option === "c" ? " !bg-teal-400" : " "}`}
               >
                 {data?.options.c}
               </p>
             </div>
 
             {/* option D */}
-            {/* <div className="flex-1  flex items-center justify-end  rounded text-gray-700 font-semibold">
-            <span className="px-4 ml-1 border border-teal-900 py-3 rounded-l text-gray-700 flex items-center uppercase">
-            d
-            </span>
-            <p
-            className={`flex-1 py-3 px-6 rounded-r border border-teal-900 trans-shorttext-gray-700 text-2xl font-semibold ${
-              answer
-              ? data?.answer === "d"
-              ? "!bg-green-700 text-gray-100 "
-              : "!bg-red-700 text-gray-100 "
-              : ""
-              } ${option === "d" ? " scale-[1.03]   !bg-teal-500 " : " "}`}
+            <div className="flex-1  flex items-center justify-end  rounded text-gray-700 font-semibold">
+              <span className="px-4 ml-1 border border-teal-900 py-3 rounded-l text-gray-700 flex items-center uppercase">
+                d
+              </span>
+              <p
+                className={`flex-1 py-3 px-6 rounded-r border border-teal-900 trans-short  font-semibold ${
+                  answer
+                    ? data?.answer === "d"
+                      ? "!bg-green-700 text-gray-100 "
+                      : "!bg-red-700 text-gray-100 "
+                    : ""
+                } ${option === "d" ? "!bg-teal-400" : " "}`}
               >
-              {data?.options?.d}
+                {data?.options?.d}
               </p>
-              </div> */}
+            </div>
           </div>
           {/*  Reason */}
           <div
@@ -397,9 +415,9 @@ const EnglishIdioms = ({ startedIndex = 0 }) => {
 export default EnglishIdioms;
 
 const splitText = (text, from, to) => [
-  text.slice(0, from),
-  text.slice(from, to),
-  text.slice(to),
+  text?.slice(0, from),
+  text?.slice(from, to),
+  text?.slice(to),
 ];
 
 const HighlightedText = ({ text, from, to, disabled }) => {

@@ -793,11 +793,11 @@ const EnglishSentences = () => {
           </div>
           {/* explanation:{explanation} */}
           {explanation && (
-            <div className="text-center absolute bottom-8 max-w-[90%] border-2 border-green-700 rounded">
+            <div className="text-center absolute bottom-8 max-w-[90%] border-2 border-green-700 bg-white rounded">
               {/* <span className="text-cyan-50 text-lg">For Example:</span> */}
               {["idiom", "explanation", "example"].map((s, i) => (
                 <div
-                  className="px-2 py-2 mb-1 bg-gradient-to-b from-cyan-100 to-red-500 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize relative"
+                  className="px-2 py-2 mb-1 bg-gradient-to-b from-gray-500 to-red-700 bg-clip-text text-transparent text-wrap text-xl font-semibold rounded mx-1 text-center capitalize relative"
                   key={s}
                 >
                   {/* {data?.explanation} */}

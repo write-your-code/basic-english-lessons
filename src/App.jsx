@@ -22,8 +22,10 @@ import ElectionDesignAll50States from "./ElectionDesignAll50States";
 import ElectionDesign from "./ElectionDesignSingleStateWisesWithVoice";
 import NewElectionDesignElectionDay from "./ElectionDesignSingleStateWiseWithLeadElectionDay";
 import NewElectionDesignElectionDayShortVersion from "./ElectionDesignSingleStateWisesWithVoiceShortVersion";
+import NewElectionDesignElectionDayShortVersionV1 from "./ElectionDesignSingleStateWisesWithVoiceShortVersion-V1";
 import EnglishSynonyms from "./EnglishSynonyms";
 import EnglishLevelTest from "./EnglishLevelTest";
+import EnglishStoryTelling from "./EnglishStoryTelling";
 import { listAll12TensesMcqs, listAll12TensesMixMcqs } from "./data/Tenses";
 // import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
 import { TwoHoursQuestionAndAnswers } from "./data/dailyConversation";
@@ -214,6 +216,18 @@ function App() {
             >
               EnglishLevelTest-{TwoHoursQuestionAndAnswers?.length}
             </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(18)}
+            >
+              EnglishStoryTelling
+            </button>
+            <button
+              className="text-white bg-green-600 p-2 mx-2"
+              onClick={() => setLayout(19)}
+            >
+              New Election Short-V1
+            </button>
           </div>
           {/* voice box and textarea */}
 
@@ -298,8 +312,12 @@ function App() {
       {layout === 16 && (
         <EnglishDailyConversationV1 startedIndex={startedIndex} />
       )}
-      {layout === 17 && (
-        <EnglishLevelTest startedIndex={startedIndex} />
+      {layout === 17 && <EnglishLevelTest startedIndex={startedIndex} />}
+      {layout === 18 && <EnglishStoryTelling startedIndex={startedIndex} />}
+      {layout === 19 && (
+        <NewElectionDesignElectionDayShortVersionV1
+          startedIndex={startedIndex}
+        />
       )}
     </main>
   );

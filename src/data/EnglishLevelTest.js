@@ -1793,3 +1793,784 @@ export const test5 = [
       "'Motivational' describes something that inspires and encourages action. The other options have negative connotations.",
   },
 ];
+
+// level test from - https://test-english.com/level-test/
+export const test6 = [
+  {
+    id: 1,
+    question: "I always ______ bus.",
+    options: {
+      a: "going to work with",
+      b: "going to work by",
+      c: "go to work with",
+      d: "go to work by",
+    },
+    answer: "d",
+    explanation:
+      "The correct phrase is 'go to work by bus,' a common structure used with means of transport.",
+  },
+  {
+    id: 2,
+    question: "Sorry, but this chair is ______.",
+    options: {
+      a: "me",
+      b: "mine",
+      c: "my",
+      d: "our",
+    },
+    answer: "b",
+    explanation:
+      "'Mine' is the appropriate possessive pronoun, showing ownership of the chair.",
+  },
+  {
+    id: 3,
+    question: "Person A: How old ______?  , Person B: 'I ______.'",
+    options: {
+      a: "are you , am 20 years old.",
+      b: "have you , have 20 years old",
+      c: "are you , am 20 years.",
+      d: "do you have , have 20 years.",
+    },
+    answer: "a",
+    explanation:
+      "We ask age with 'How old are you?' and respond with 'I am 20 years old.'",
+  },
+  {
+    id: 4,
+    question: "They ______ to the cinema.",
+    options: {
+      a: "not usually go",
+      b: "don't usually go",
+      c: "don't go usually",
+      d: "do not go usually",
+    },
+    answer: "b",
+    explanation:
+      "In negative sentences, 'usually' is placed between 'don't' and the main verb.",
+  },
+  {
+    id: 5,
+    question: "Where ______?",
+    options: {
+      a: "your sister works",
+      b: "your sister work",
+      c: "does your sister work",
+      d: "do your sister work",
+    },
+    answer: "c",
+    explanation:
+      "The auxiliary verb 'does' is used for questions in the present simple tense.",
+  },
+  {
+    id: 6,
+    question: "The test is ______ February.",
+    options: {
+      a: "in",
+      b: "at",
+      c: "on",
+      d: "over",
+    },
+    answer: "a",
+    explanation: "We use 'in' for months and longer periods in English.",
+  },
+  {
+    id: 7,
+    question: "I eat pasta ______ week.",
+    options: {
+      a: "twice in a",
+      b: "twice a",
+      c: "one time a",
+      d: "once in a",
+    },
+    answer: "b",
+    explanation:
+      "The phrase 'twice a week' follows the standard pattern for frequency expressions.",
+  },
+  {
+    id: 8,
+    question: "I don't have ______ free time.",
+    options: {
+      a: "many",
+      b: "any",
+      c: "a lot",
+      d: "some",
+    },
+    answer: "b",
+    explanation:
+      "'Any' is used in negative sentences to indicate zero quantity.",
+  },
+  {
+    id: 9,
+    question: "'______ to the cinema tomorrow?'",
+    options: {
+      a: "We will go",
+      b: "Do we go",
+      c: "We go",
+      d: "Shall we go",
+    },
+    answer: "d",
+    explanation:
+      "'Shall we go?' is a polite way to suggest or propose something.",
+  },
+  {
+    id: 10,
+    question: "We went to the market ______ some vegetables.",
+    options: {
+      a: "to buy",
+      b: "for buy",
+      c: "for to buy",
+      d: "for buying",
+    },
+    answer: "a",
+    explanation:
+      "'To buy' is the correct infinitive form for expressing purpose.",
+  },
+  {
+    id: 11,
+    question: "Sorry, but when you called I ______ a shower.",
+    options: {
+      a: "had",
+      b: "did have",
+      c: "was having",
+      d: "were having",
+    },
+    answer: "c",
+    explanation:
+      "'Was having' is the correct past continuous tense to describe an action in progress at a specific time in the past.",
+  },
+  {
+    id: 12,
+    question: "______ are very friendly and very intelligent.",
+    options: {
+      a: "Dolphins",
+      b: "The dolphins",
+      c: "A dolphin",
+      d: "The dolphin",
+    },
+    answer: "a",
+    explanation:
+      "We use the plural form 'Dolphins' to speak about the entire species in general.",
+  },
+  {
+    id: 13,
+    question: "Somebody stole ______ yesterday.",
+    options: {
+      a: "the car of my mother",
+      b: "my car mother",
+      c: "my mother's car",
+      d: "my mother car",
+    },
+    answer: "c",
+    explanation:
+      "'My mother's car' is the correct possessive form, showing ownership.",
+  },
+  {
+    id: 14,
+    question: "______ with me?",
+    options: {
+      a: "Do you like to dance",
+      b: "Would you like to dance",
+      c: "Do you like dance",
+      d: "Would you like dancing",
+    },
+    answer: "b",
+    explanation:
+      "'Would you like to dance?' is the most polite and grammatically correct way to make this offer.",
+  },
+  {
+    id: 15,
+    question: "She is ______ her sister, I think.",
+    options: {
+      a: "more happier than",
+      b: "more happy that",
+      c: "happier that",
+      d: "happier than",
+    },
+    answer: "d",
+    explanation:
+      "When comparing, we use the comparative form 'happier' without adding 'more.'",
+  },
+  {
+    id: 16,
+    question: "I couldn't eat ______ before the exam.",
+    options: {
+      a: "nothing",
+      b: "anything",
+      c: "everything",
+      d: "something",
+    },
+    answer: "b",
+    explanation:
+      "In negative sentences, 'anything' is used to indicate a lack of options.",
+  },
+  {
+    id: 17,
+    question: "Please, pass me the remote. ______ TV.",
+    options: {
+      a: "I'm watching",
+      b: "I will watch",
+      c: "I'm going to watch",
+      d: "I might watch",
+    },
+    answer: "a",
+    explanation: "'I'm watching' is used for an action happening right now.",
+  },
+  {
+    id: 18,
+    question: "I'll call you when I ______ home.",
+    options: {
+      a: "arrive",
+      b: "'m going to arrive",
+      c: "will arrive",
+      d: "arrived",
+    },
+    answer: "a",
+    explanation:
+      "After 'when,' we use the present simple to refer to future events.",
+  },
+  {
+    id: 19,
+    question: "______ Japan?",
+    options: {
+      a: "Have you ever gone in",
+      b: "Do you have been in",
+      c: "Have you ever been to",
+      d: "Have you ever been into",
+    },
+    answer: "c",
+    explanation:
+      "'Have you ever been to' is the correct structure to ask about experiences with specific places.",
+  },
+  {
+    id: 20,
+    question: "He drives very ______.",
+    options: {
+      a: "slow",
+      b: "slower",
+      c: "more slowly",
+      d: "slowly",
+    },
+    answer: "d",
+    explanation:
+      "Adverbs describe actions, so 'slowly' is used to describe how he drives.",
+  },
+  {
+    id: 21,
+    question: "Can you ______ the lights? I can't see.",
+    options: {
+      a: "open",
+      b: "turn on",
+      c: "start",
+      d: "put on",
+    },
+    answer: "b",
+    explanation:
+      "'Turn on' is the correct phrase used for electrical devices like lights.",
+  },
+  {
+    id: 22,
+    question: "We couldn't find a taxi, ______ we walked home.",
+    options: {
+      a: "so",
+      b: "because",
+      c: "but",
+      d: "although",
+    },
+    answer: "a",
+    explanation: "'So' is used to show the result of not finding a taxi.",
+  },
+  {
+    id: 23,
+    question: "Tomorrow I ______ get up early; it's my day off.",
+    options: {
+      a: "mustn't",
+      b: "must",
+      c: "haven't to",
+      d: "don't have to",
+    },
+    answer: "d",
+    explanation: "'Don't have to' indicates that something is not necessary.",
+  },
+  {
+    id: 24,
+    question: "I ______ this coffee. It tastes horrible.",
+    options: {
+      a: "am not like",
+      b: "don't like",
+      c: "'m not liking",
+      d: "not like",
+    },
+    answer: "b",
+    explanation:
+      "'Don't like' is used for general dislike, and 'like' is a stative verb.",
+  },
+  {
+    id: 25,
+    question: "We ______ yesterday.",
+    options: {
+      a: "arrived",
+      b: "did arrive",
+      c: "have arrive",
+      d: "have arrived",
+    },
+    answer: "a",
+    explanation:
+      "In simple past, 'arrived' is used for actions completed in the past.",
+  },
+  {
+    id: 26,
+    question: "When I arrive home, I'm going to have a ______ bath.",
+    options: {
+      a: "relaxing",
+      b: "relaxed",
+      c: "relax",
+      d: "relaxation",
+    },
+    answer: "a",
+    explanation:
+      "'Relaxing' is the correct adjective to describe a bath intended to reduce stress or fatigue.",
+  },
+  {
+    id: 27,
+    question: "A: 'We don't have any milk.' B: 'Really? I ______ more.'",
+    options: {
+      a: "'m going to buy",
+      b: "'ll buy",
+      c: "'m buying",
+      d: "buy",
+    },
+    answer: "b",
+    explanation:
+      "'I'll buy' is used here to show a spontaneous decision made at the moment of speaking.",
+  },
+  {
+    id: 28,
+    question: "We ______ to seeing you next Thursday.",
+    options: {
+      a: "really want",
+      b: "hope",
+      c: "are looking forward",
+      d: "really wish",
+    },
+    answer: "c",
+    explanation:
+      "'Are looking forward' is the correct expression to convey excitement about a future event.",
+  },
+  {
+    id: 29,
+    question: "I'd like to go ______ in the park.",
+    options: {
+      a: "to walking",
+      b: "for walk",
+      c: "for a walk",
+      d: "to walk",
+    },
+    answer: "c",
+    explanation:
+      "'For a walk' is the correct phrase used to indicate an activity involving walking for pleasure.",
+  },
+  {
+    id: 30,
+    question: "German ______ in Germany, Austria, and Switzerland.",
+    options: {
+      a: "is spoken",
+      b: "spoken",
+      c: "speaks",
+      d: "is speak",
+    },
+    answer: "a",
+    explanation:
+      "'Is spoken' is the correct passive form to indicate where the German language is used.",
+  },
+  {
+    id: 31,
+    question: "I ______ your book. It's fantastic. I'll finish it tonight.",
+    options: {
+      a: "'ve been reading",
+      b: "read",
+      c: "'ve read",
+      d: "'m read",
+    },
+    answer: "a",
+    explanation:
+      "'Have been reading' indicates an action that started in the past and is still ongoing.",
+  },
+  {
+    id: 32,
+    question: "He went on a business ______ to New York.",
+    options: {
+      a: "travel",
+      b: "journey",
+      c: "commute",
+      d: "trip",
+    },
+    answer: "d",
+    explanation:
+      "'Trip' is the correct word for a short visit, especially for a specific purpose like business.",
+  },
+  {
+    id: 33,
+    question: "If I tell you a secret, ______ anyone?",
+    options: {
+      a: "are you tell",
+      b: "do you tell",
+      c: "will you tell",
+      d: "are you telling",
+    },
+    answer: "c",
+    explanation:
+      "'Will you tell' is used to ask about a future action conditional on the statement.",
+  },
+  {
+    id: 34,
+    question: "My brother and I don't ______ very well.",
+    options: {
+      a: "get off",
+      b: "get on",
+      c: "go on",
+      d: "break off",
+    },
+    answer: "b",
+    explanation:
+      "'Get on' means to have a friendly relationship, so 'don't get on' means the opposite.",
+  },
+  {
+    id: 35,
+    question: "I ______ fifty pages, but I have to read fifty more.",
+    options: {
+      a: "'ve been reading",
+      b: "was reading",
+      c: "'ve reading",
+      d: "'ve read",
+    },
+    answer: "d",
+    explanation:
+      "'Have read' is used to indicate the completed portion of a task up to the present moment.",
+  },
+  {
+    id: 36,
+    question: "If I ______ you, I wouldn't do it.",
+    options: {
+      a: "was",
+      b: "were",
+      c: "would be",
+      d: "am",
+    },
+    answer: "b",
+    explanation:
+      "In hypothetical situations, 'were' is used for all subjects, making it a subjunctive mood.",
+  },
+  {
+    id: 37,
+    question: "This painting ______ a fortune.",
+    options: {
+      a: "is worth",
+      b: "is value",
+      c: "values",
+      d: "worths",
+    },
+    answer: "a",
+    explanation:
+      "'Is worth' is the correct phrase used to express value or price.",
+  },
+  {
+    id: 38,
+    question: "She is the same age ______ me.",
+    options: {
+      a: "than",
+      b: "that",
+      c: "what",
+      d: "as",
+    },
+    answer: "d",
+    explanation:
+      "'As' is the correct preposition to use in comparisons of equality.",
+  },
+  {
+    id: 39,
+    question: "It's obvious that you...",
+    options: {
+      a: "don't drive as faster as me.",
+      b: "drive faster than me.",
+      c: "drive more fast than I.",
+      d: "drive no faster than I.",
+    },
+    answer: "b",
+    explanation:
+      "'Drive faster than me' uses the correct comparative structure and maintains clarity.",
+  },
+  {
+    id: 40,
+    question: "The boat sank, but they ______ swim to the shore.",
+    options: {
+      a: "could",
+      b: "were able to",
+      c: "can",
+      d: "abled to",
+    },
+    answer: "b",
+    explanation:
+      "'Were able to' is used to indicate a specific achievement in the past.",
+  },
+  {
+    id: 41,
+    question: "If I had known that she was there, I ______ hello.",
+    options: {
+      a: "would say",
+      b: "said",
+      c: "had said",
+      d: "would have said",
+    },
+    answer: "d",
+    explanation:
+      "'Would have said' is used in conditional sentences to express what could have happened in the past.",
+  },
+  {
+    id: 42,
+    question: "I think he ______ in prison for what he did.",
+    options: {
+      a: "should put",
+      b: "could been put",
+      c: "should be put",
+      d: "could put",
+    },
+    answer: "c",
+    explanation:
+      "'Should be put' is the correct passive structure to suggest what ought to happen.",
+  },
+  {
+    id: 43,
+    question: "He ______ him with his homework.",
+    options: {
+      a: "told me to help",
+      b: "said me that I help",
+      c: "said me I help",
+      d: "told me that I help",
+    },
+    answer: "a",
+    explanation:
+      "'Told me to help' uses the correct reporting verb structure with an infinitive.",
+  },
+  {
+    id: 44,
+    question: "We ______. We hired a very good interior designer.",
+    options: {
+      a: "redecorated the kitchen",
+      b: "had redecorated the kitchen",
+      c: "got redecorated the kitchen",
+      d: "had the kitchen redecorated",
+    },
+    answer: "d",
+    explanation:
+      "'Had the kitchen redecorated' is the correct causative structure to indicate a service done for you.",
+  },
+  {
+    id: 45,
+    question: "A: 'I had a sauna yesterday.' B: '______? That's great.'",
+    options: {
+      a: "Did you",
+      b: "You did",
+      c: "Had you",
+      d: "Didn't you",
+    },
+    answer: "a",
+    explanation:
+      "'Did you' is the proper question tag to confirm an action in the past tense.",
+  },
+  {
+    id: 46,
+    question: "I wonder ______ at the party.",
+    options: {
+      a: "who was she talking",
+      b: "who she was talking to",
+      c: "who was she talking to",
+      d: "who she was talking",
+    },
+    answer: "b",
+    explanation:
+      "Correct word order in indirect questions is essential; 'who she was talking to' avoids inversion.",
+  },
+  {
+    id: 47,
+    question: "Which is correct?",
+    options: {
+      a: "How older people are, wiser they become",
+      b: "If older people are, wiser they become",
+      c: "The more old the people, the more wise",
+      d: "The older people are, the wiser they become",
+    },
+    answer: "d",
+    explanation:
+      "'The older... the wiser' follows the proper comparative structure for expressing proportionality.",
+  },
+  {
+    id: 48,
+    question: "I bought a ______ jacket.",
+    options: {
+      a: "nice red leather",
+      b: "leather nice red",
+      c: "red nice leather",
+      d: "red leather nice",
+    },
+    answer: "a",
+    explanation:
+      "The adjective order in English is 'opinion-size-age-shape-color-origin-material-purpose'.",
+  },
+  {
+    id: 49,
+    question: "By 2025 we ______ the cure for type 1 diabetes.",
+    options: {
+      a: "will be discovering",
+      b: "are discovering",
+      c: "are going to be discovering",
+      d: "will have discovered",
+    },
+    answer: "d",
+    explanation:
+      "'Will have discovered' refers to an action expected to be completed by a specific future time.",
+  },
+  {
+    id: 50,
+    question: "The building ______.",
+    options: {
+      a: "was damaged badly in the hurricane last year",
+      b: "was badly damaged last year in the hurricane",
+      c: "was badly damaged in the hurricane last year",
+      d: "last year was damaged badly in the hurricane",
+    },
+    answer: "c",
+    explanation:
+      "Correct placement of adverbs ensures clarity; 'was badly damaged' is the ideal word order.",
+  },
+  {
+    id: 51,
+    question: "If only he ______ doing that. It's so annoying!",
+    options: {
+      a: "had stopped",
+      b: "would stop",
+      c: "would have stopped",
+      d: "stopped",
+    },
+    answer: "b",
+    explanation:
+      "'Would stop' expresses a strong desire for a change in someone's current behavior.",
+  },
+  {
+    id: 52,
+    question: "If my parents hadn't met, I ______ here now.",
+    options: {
+      a: "wouldn't be",
+      b: "wouldn't have been",
+      c: "hadn't been",
+      d: "weren't",
+    },
+    answer: "a",
+    explanation:
+      "'Wouldn't be' is used in a mixed conditional to link a past event to a present result.",
+  },
+  {
+    id: 53,
+    question:
+      "I like the job, but I think it'll be difficult to ______ nights.",
+    options: {
+      a: "be used to working",
+      b: "uses to work",
+      c: "get used to working",
+      d: "get used to work",
+    },
+    answer: "c",
+    explanation:
+      "'Get used to working' refers to the process of becoming accustomed to a new routine.",
+  },
+  {
+    id: 54,
+    question: "You ______ me immediately. Now it's too late.",
+    options: {
+      a: "had told",
+      b: "would have told",
+      c: "should tell",
+      d: "should have told",
+    },
+    answer: "d",
+    explanation:
+      "'Should have told' indicates an action that was necessary but not done in the past.",
+  },
+  {
+    id: 55,
+    question: "Not only ______ you, but he also lied to you.",
+    options: {
+      a: "did he disrespect",
+      b: "he disrespected",
+      c: "he did disrespect",
+      d: "he has disrespected",
+    },
+    answer: "a",
+    explanation:
+      "'Did he disrespect' uses inversion for emphasis, a common structure with 'not only'.",
+  },
+  {
+    id: 56,
+    question: "______ should be angry, not you.",
+    options: {
+      a: "It's me who",
+      b: "It's I",
+      c: "Who",
+      d: "There's me who",
+    },
+    answer: "a",
+    explanation:
+      "'It's me who' is colloquially used for emphasis, though 'It's I' is more formal.",
+  },
+  {
+    id: 57,
+    question: "I ______ you, but I forgot.",
+    options: {
+      a: "would tell",
+      b: "was telling",
+      c: "will tell",
+      d: "was going to tell",
+    },
+    answer: "d",
+    explanation:
+      "'Was going to tell' expresses an intention that was not fulfilled due to some reason.",
+  },
+  {
+    id: 58,
+    question: "It's ______ to Paris.",
+    options: {
+      a: "a two hours journey",
+      b: "two hours' journey",
+      c: "a two hour's journey",
+      d: "a two-hours journey",
+    },
+    answer: "b",
+    explanation:
+      "Possessive apostrophes are used correctly in 'two hours' journey'.",
+  },
+  {
+    id: 59,
+    question: "They ______ to arrive next Friday.",
+    options: {
+      a: "are set",
+      b: "are on the verge",
+      c: "are due",
+      d: "are on the brink",
+    },
+    answer: "c",
+    explanation:
+      "'Are due' is used to refer to a scheduled or expected event in the near future.",
+  },
+  {
+    id: 60,
+    question: "I didn't want to do it in the past, but now I ______.",
+    options: {
+      a: "would want",
+      b: "'m wanting to",
+      c: "want",
+      d: "want to",
+    },
+    answer: "d",
+    explanation:
+      "'Want to' is the correct form to express a current desire or intention.",
+  },
+];

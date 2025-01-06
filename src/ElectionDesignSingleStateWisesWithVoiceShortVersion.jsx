@@ -8,8 +8,8 @@ const ElectionDesign = ({ startedIndex = 0 }) => {
   const [item, setItem] = useState();
   const [showVoteShare, setShowVoteShare] = useState(0);
   const [data, setData] = useState(dataCompleteWithElectionStats);
-  const [trumpNumer, setTrumpNumber] = useState(150);
-  const [kamalaNumer, setKamalaNumber] = useState(134);
+  const [trumpNumer, setTrumpNumber] = useState(0);
+  const [kamalaNumer, setKamalaNumber] = useState(0);
   // let data = withJudePredicted;
 
   const synth = window.speechSynthesis;
